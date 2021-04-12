@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AreaCatalogoController;
 use App\Http\Controllers\DepartamentoCatalogoController;
 Use App\Http\Controllers\PuestoCatalogoController;
+Use App\Http\Controllers\PuestoTipoCatalogoController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -31,5 +32,8 @@ Route::get('area/{area}',[AreaCatalogoController::class,'show']);
 //Departamentos
 Route::get('departamentos',[DepartamentoCatalogoController::class, 'index']);
 
-//puestos
+//Puestos
 Route::get('puestos',[PuestoCatalogoController::class, 'index']);
+
+//PuestosTipos
+Route::get('puestostipos',[PuestoTipoCatalogoController::class, 'index']);

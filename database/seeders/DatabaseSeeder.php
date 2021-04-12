@@ -2,7 +2,6 @@
 
 namespace Database\Seeders;
 
-use App\Models\AreaCatalogo;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -18,5 +17,6 @@ class DatabaseSeeder extends Seeder
         $this->call(AreaCatalogoSeeder::class);
         $this->call(DepartamentoCatalogoSeeder::class);
         $this->call(PuestoCatalogoSeeder::class);
+        $this->call(PuestoTipoCatalogoSeeder::class);
     }
 }
