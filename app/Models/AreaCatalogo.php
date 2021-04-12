@@ -8,4 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class AreaCatalogo extends Model
 {
     use HasFactory;
+
+    public $incrementing = false;
+
+    protected $table = "area_catalogos";
 }
