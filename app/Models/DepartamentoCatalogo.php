@@ -5,16 +5,16 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class AreaCatalogo extends Model
+class DepartamentoCatalogo extends Model
 {
     use HasFactory;
 
     public $incrementing = false;
 
-    protected $table = "area_catalogos";
+    protected $table = "departamento_catalogos";
 
-    public function departamentos()
+    public function areas()
     {
-        return $this->hasOne(DepartamentoCatalogo::class);
+        return $this->hasOne(AreaCatalogo::class,'id','id_area');
     }
 }
