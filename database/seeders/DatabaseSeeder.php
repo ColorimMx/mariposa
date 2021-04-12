@@ -18,5 +18,6 @@ class DatabaseSeeder extends Seeder
         $this->call(DepartamentoCatalogoSeeder::class);
         $this->call(PuestoCatalogoSeeder::class);
         $this->call(PuestoTipoCatalogoSeeder::class);
+        $this->call(EstadoCivilCatalogoSeeder::class);
     }
 }
