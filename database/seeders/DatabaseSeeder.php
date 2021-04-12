@@ -17,5 +17,6 @@ class DatabaseSeeder extends Seeder
         // \App\Models\User::factory(10)->create();
         $this->call(AreaCatalogoSeeder::class);
         $this->call(DepartamentoCatalogoSeeder::class);
+        $this->call(PuestoCatalogoSeeder::class);
     }
 }

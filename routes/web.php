@@ -1,7 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\AreaCatalogoController;
+use App\Http\Controllers\DepartamentoCatalogoController;
+Use App\Http\Controllers\PuestoCatalogoController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -27,4 +29,7 @@ Route::get('area/create',[AreaCatalogoController::class, 'create']);
 Route::get('area/{area}',[AreaCatalogoController::class,'show']);
 
 //Departamentos
-Route::get('departamentos',[\App\Http\Controllers\DepartamentoCatalogoController::class, 'index']);
+Route::get('departamentos',[DepartamentoCatalogoController::class, 'index']);
+
+//puestos
+Route::get('puestos',[PuestoCatalogoController::class, 'index']);
