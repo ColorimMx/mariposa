@@ -10,8 +10,8 @@ class DepartamentoCatalogo extends Model
     use HasFactory;
 
     public $incrementing = false;
-
     protected $table = "departamento_catalogos";
+    protected $dateFormat = 'Y-m-d\TH:i:s.v';
 
     public function areas()
     {

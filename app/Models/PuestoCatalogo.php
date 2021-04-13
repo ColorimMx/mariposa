@@ -10,6 +10,7 @@ class PuestoCatalogo extends Model
     use HasFactory;
 
     public $incrementing = false;
-
     protected $table = "puesto_catalogos";
+    protected $dateFormat = 'Y-m-d\TH:i:s.v';
+
 }
