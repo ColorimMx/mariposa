@@ -6,6 +6,7 @@ use App\Http\Controllers\DepartamentoCatalogoController;
 Use App\Http\Controllers\PuestoCatalogoController;
 Use App\Http\Controllers\PuestoTipoCatalogoController;
 use App\Http\Controllers\EstadoCivilCatalogoController;
+use App\Http\Controllers\NivelEstudioCatalogoController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -41,3 +42,6 @@ Route::get('puestostipos',[PuestoTipoCatalogoController::class, 'index']);
 
 //EstadosCiviles
 Route::get('estadosciviles',[EstadoCivilCatalogoController::class, 'index']);
+
+//NivelesEstudios
+Route::get('nivelesestudios',[NivelEstudioCatalogoController::class, 'index']);
