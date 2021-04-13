@@ -20,5 +20,6 @@ class DatabaseSeeder extends Seeder
         $this->call(PuestoTipoCatalogoSeeder::class);
         $this->call(EstadoCivilCatalogoSeeder::class);
         $this->call(NivelEstudioCatalogoSeeder::class);
+        $this->call(ContratoTipoCatalogoSeeder::class);
     }
 }

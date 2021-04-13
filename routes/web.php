@@ -7,6 +7,7 @@ Use App\Http\Controllers\PuestoCatalogoController;
 Use App\Http\Controllers\PuestoTipoCatalogoController;
 use App\Http\Controllers\EstadoCivilCatalogoController;
 use App\Http\Controllers\NivelEstudioCatalogoController;
+use App\Http\Controllers\ContratoTipoCatalogoController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -45,3 +46,6 @@ Route::get('estadosciviles',[EstadoCivilCatalogoController::class, 'index']);
 
 //NivelesEstudios
 Route::get('nivelesestudios',[NivelEstudioCatalogoController::class, 'index']);
+
+//TiposContratos
+Route::get('contratostipos',[ContratoTipoCatalogoController::class, 'index']);
