@@ -9,6 +9,7 @@ use App\Http\Controllers\EstadoCivilCatalogoController;
 use App\Http\Controllers\NivelEstudioCatalogoController;
 use App\Http\Controllers\ContratoTipoCatalogoController;
 Use App\Http\Controllers\PersonalTipoCatalogoController;
+use App\Http\Controllers\JornadaTipoCatalogoController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -53,3 +54,6 @@ Route::get('contratostipos',[ContratoTipoCatalogoController::class, 'index']);
 
 //TiposPersonal
 Route::get('personaltipos',[PersonalTipoCatalogoController::class, 'index']);
+
+//TiposJornadas
+Route::get('jornadastipos',[JornadaTipoCatalogoController::class, 'index']);

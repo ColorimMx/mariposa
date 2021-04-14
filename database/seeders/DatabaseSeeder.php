@@ -22,5 +22,6 @@ class DatabaseSeeder extends Seeder
         $this->call(NivelEstudioCatalogoSeeder::class);
         $this->call(ContratoTipoCatalogoSeeder::class);
         $this->call(PersonalTipoCatalogoSeeder::class);
+        $this->call(JornadaTipoCatalogoSeeder::class);
     }
 }
