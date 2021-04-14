@@ -10,6 +10,7 @@ use App\Http\Controllers\NivelEstudioCatalogoController;
 use App\Http\Controllers\ContratoTipoCatalogoController;
 Use App\Http\Controllers\PersonalTipoCatalogoController;
 use App\Http\Controllers\JornadaTipoCatalogoController;
+use App\Http\Controllers\NominaTipoCatalogoController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -57,3 +58,6 @@ Route::get('personaltipos',[PersonalTipoCatalogoController::class, 'index']);
 
 //TiposJornadas
 Route::get('jornadastipos',[JornadaTipoCatalogoController::class, 'index']);
+
+//NominasJornadas
+Route::get('nominastipos',[NominaTipoCatalogoController::class, 'index']);
