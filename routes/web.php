@@ -12,6 +12,7 @@ Use App\Http\Controllers\PersonalTipoCatalogoController;
 use App\Http\Controllers\JornadaTipoCatalogoController;
 use App\Http\Controllers\NominaTipoCatalogoController;
 use App\Http\Controllers\LocalidadCatalogoController;
+use App\Http\Controllers\EmpresaCatalogoController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -65,5 +66,8 @@ Route::get('nominastipos',[NominaTipoCatalogoController::class, 'index']);
 
 //Localidades
 Route::get('localidades',[LocalidadCatalogoController::class, 'index']);
+
+//Empresas
+Route::get('empresas',[EmpresaCatalogoController::class, 'index']);
 
 
