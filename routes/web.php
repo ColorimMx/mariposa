@@ -13,6 +13,7 @@ use App\Http\Controllers\JornadaTipoCatalogoController;
 use App\Http\Controllers\NominaTipoCatalogoController;
 use App\Http\Controllers\LocalidadCatalogoController;
 use App\Http\Controllers\EmpresaCatalogoController;
+use App\Http\Controllers\EstatusEstudioCatalogoController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -69,5 +70,8 @@ Route::get('localidades',[LocalidadCatalogoController::class, 'index']);
 
 //Empresas
 Route::get('empresas',[EmpresaCatalogoController::class, 'index']);
+
+//Estatus Estudios
+Route::get('estatusestudios',[EstatusEstudioCatalogoController::class, 'index']);
 
 
