@@ -14,6 +14,7 @@ use App\Http\Controllers\NominaTipoCatalogoController;
 use App\Http\Controllers\LocalidadCatalogoController;
 use App\Http\Controllers\EmpresaCatalogoController;
 use App\Http\Controllers\EstatusEstudioCatalogoController;
+use App\Http\Controllers\SatPaisCatalogoController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -73,5 +74,8 @@ Route::get('empresas',[EmpresaCatalogoController::class, 'index']);
 
 //Estatus Estudios
 Route::get('estatusestudios',[EstatusEstudioCatalogoController::class, 'index']);
+
+//SAT Paises
+Route::get('satpaises',[SatPaisCatalogoController::class, 'index']);
 
 

@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\SatPaisCatalogo;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -27,5 +28,6 @@ class DatabaseSeeder extends Seeder
         $this->call(LocalidadCatalogoSeeder::class);
         $this->call(EmpresaCatalogoSeeder::class);
         $this->call(EstatusEstudioCatalogoSeeder::class);
+        $this->call(SatPaisCatalogoSeeder::class);
     }
 }
