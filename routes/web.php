@@ -15,6 +15,7 @@ use App\Http\Controllers\LocalidadCatalogoController;
 use App\Http\Controllers\EmpresaCatalogoController;
 use App\Http\Controllers\EstatusEstudioCatalogoController;
 use App\Http\Controllers\SatPaisCatalogoController;
+use App\Http\Controllers\SatEstadoCatalogoController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -77,5 +78,8 @@ Route::get('estatusestudios',[EstatusEstudioCatalogoController::class, 'index'])
 
 //SAT Paises
 Route::get('satpaises',[SatPaisCatalogoController::class, 'index']);
+
+//SAT Estados
+Route::get('satestados',[SatEstadoCatalogoController::class,'index']);
 
 

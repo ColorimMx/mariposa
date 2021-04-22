@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\SatEstadoCatalogo;
 use App\Models\SatPaisCatalogo;
 use Illuminate\Database\Seeder;
 
@@ -29,5 +30,6 @@ class DatabaseSeeder extends Seeder
         $this->call(EmpresaCatalogoSeeder::class);
         $this->call(EstatusEstudioCatalogoSeeder::class);
         $this->call(SatPaisCatalogoSeeder::class);
+        $this->call(SatEstadoCatalogoSeeder::class);
     }
 }
