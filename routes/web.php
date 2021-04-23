@@ -18,6 +18,7 @@ use App\Http\Controllers\SatPaisCatalogoController;
 use App\Http\Controllers\SatEstadoCatalogoController;
 use App\Http\Controllers\SatMunicipioCatalogoController;
 use App\Http\Controllers\SatLocalidadCatalogoController;
+use App\Http\Controllers\EmpleadoCatalogoController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -89,3 +90,6 @@ Route::get('satmunicipios',[SatMunicipioCatalogoController::class,'index']);
 
 //SAT Localidades
 Route::get('satlocalidades',[SatLocalidadCatalogoController::class,'index']);
+
+//Empleados
+Route::get('empleados',[EmpleadoCatalogoController::class,'index']);

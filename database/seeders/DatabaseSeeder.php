@@ -33,5 +33,6 @@ class DatabaseSeeder extends Seeder
         $this->call(SatEstadoCatalogoSeeder::class);
         $this->call(SatMunicipioCatalogoSeeder::class);
         $this->call(SatLocalidadCatalogoSeeder::class);
+        $this->call(EmpleadoCatalogoSeeder::class);
     }
 }
