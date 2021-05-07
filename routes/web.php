@@ -19,6 +19,7 @@ use App\Http\Controllers\SatEstadoCatalogoController;
 use App\Http\Controllers\SatMunicipioCatalogoController;
 use App\Http\Controllers\SatLocalidadCatalogoController;
 use App\Http\Controllers\EmpleadoCatalogoController;
+use App\Http\Controllers\MenuCatalogoController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -33,6 +34,8 @@ use App\Http\Controllers\EmpleadoCatalogoController;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('menu',[MenuCatalogoController::class, 'index']);
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');

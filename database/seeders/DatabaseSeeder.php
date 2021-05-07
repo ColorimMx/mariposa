@@ -34,5 +34,8 @@ class DatabaseSeeder extends Seeder
         $this->call(SatMunicipioCatalogoSeeder::class);
         $this->call(SatLocalidadCatalogoSeeder::class);
         $this->call(EmpleadoCatalogoSeeder::class);
+        $this->call(MenuCatalogoSeeder::class);
+        $this->call(SubMenuCatalogoSeeder::class);
+        $this->call(SubItemMenuCatalogoSeeder::class);
     }
 }
