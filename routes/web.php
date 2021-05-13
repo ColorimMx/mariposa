@@ -54,7 +54,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 })->name('dashboard');
 
 //Areas
-Route::get('areas',[\App\Http\Controllers\AreaCatalogoController::class, 'index']);
+Route::get('areas',[AreaCatalogoController::class, 'index']);
 Route::get('area/create',[AreaCatalogoController::class, 'create']);
 Route::get('area/{area}',[AreaCatalogoController::class,'show']);
 
