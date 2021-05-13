@@ -93,7 +93,7 @@
                         <p>Tabla 2. Valor de las opciones de respuesta</p>
                         <div class="table-responsive">
                             <table class="table table-bordered table-striped" 
-                                   style="width: 0; height: 0; margin-left: 0; margin-right: auto;">
+                                   style="width: 0; height: 0; margin-left: auto; margin-right: auto;">
                                 <tbody>
                                 <tr style="height: 0;">
                                     <td style="padding: 2px 2px 1px;border-left-style: dashed; border-left-width: 1px; border-left-color: #3f3f3f; border-right-style: dashed; border-right-width: 1px; border-right-color: #3f3f3f; border-top-style: dashed; border-top-width: 1px; border-top-color: #3f3f3f; border-bottom-style: dashed; border-bottom-width: 1px; border-bottom-color: #3f3f3f;  width: 351px; vertical-align: middle; background-color: #0012ff;"
