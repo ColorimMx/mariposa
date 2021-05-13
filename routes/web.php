@@ -47,6 +47,10 @@ Route::get('norma35gr2', function () {
     return view('empleados.nom35gII');
 });
 
+Route::get('norma35gr3', function () {
+    return view('empleados.nom35gIII');
+});
+
 Route::get('menu',[MenuCatalogoController::class, 'index']);
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {

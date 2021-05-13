@@ -231,15 +231,15 @@
                             </table>
                         </div>
                         <br>
-                        <p><span class="text-info">b)    Para obtener la calificación se deberá considerar la Tabla 3 que agrupa los ítems por categoría, dominio y dimensión, y proceder de la manera siguiente:</span>
+                        <p><span class="text-info">b) Para obtener la calificación se deberá considerar la Tabla 3 que agrupa los ítems por categoría, dominio y dimensión, y proceder de la manera siguiente:</span>
                         </p>
-                        <p>1) Calificación del dominio (Cdom). Se obtiene sumando el puntaje de cada uno de los ítems
+                        <p>1) Calificación del dominio <a href="#Calificación del dominio">(Cdom)</a>. Se obtiene sumando el puntaje de cada uno de los ítems
                             que integran el
                             dominio;</p>
-                        <p>2) Calificación de la categoría (Ccat). Se obtiene sumando el puntaje de cada uno de los
+                        <p>2) Calificación de la categoría <a href="#Calificación de la categoría">(Ccat)</a>. Se obtiene sumando el puntaje de cada uno de los
                             ítems que integran la
                             categoría, y</p>
-                        <p>3) Calificación final del cuestionario (Cfinal). Se obtiene sumando el puntaje de todos y
+                        <p>3) Calificación final del cuestionario <a href="#Calificación final del cuestionario">(Cfinal)</a>. Se obtiene sumando el puntaje de todos y
                             cada uno de los ítems
                             que integran el cuestionario;</p>
                         <p>Tabla 3. Grupos de ítems por dimensión, dominio y categoría</p>
@@ -706,21 +706,21 @@
 
                         <p>1) Para la calificación final:</p>
                         <div class="text-center">
-                            <img alt="" style="border: solid 0;  " width="850" height="150"
+                            <img id = "Calificación final del cuestionario" alt="Calificación final"  style="border: solid 0;  " width="850" height="150"
                                  class="img-fluid img-thumbnail"
                                  src="{{asset('/img/gr2c1.png')}}">
                         </div>
 
                         <p>2) Para la calificación de la categoría:</p>
                         <div class="text-center">
-                            <img alt="" style="border: solid 0;  " width="850" height="250"
+                            <img id = "Calificación de la categoría" alt="Calificación de la categoría" style="border: solid 0;  " width="850" height="250"
                                  class="img-fluid img-thumbnail"
                                  src="{{asset('/img/gr2c2.png')}}">
                         </div>
 
                         <p>3) Para la calificación del dominio:</p>
                         <div class="text-center">
-                            <img alt="" style="border: solid 0;  " width="850" height="350"
+                            <img id="Calificación del dominio" alt="Calificación del dominio" style="border: solid 0;  " width="850" height="350"
                                  class="img-fluid img-thumbnail"
                                  src="{{asset('/img/gr2c3.png')}}">
                         </div>
