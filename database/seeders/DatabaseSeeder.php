@@ -36,5 +36,6 @@ class DatabaseSeeder extends Seeder
         $this->call(SubMenuCatalogoSeeder::class);
         $this->call(SubItemMenuCatalogoSeeder::class);
         $this->call(GuiaCatalogoSeeder::class);
+        $this->call(GuiaSeccionCatalogoSeeder::class);
     }
 }
