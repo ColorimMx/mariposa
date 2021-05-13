@@ -80,7 +80,7 @@ class AppServiceProvider extends ServiceProvider
                 foreach ($menu->submenus as $s => $submenus) {
                     $return[$m]['submenu'][$s] = ['text' => $submenus['descripcion'], 'url' => '','icon' =>  $submenus['icon'],'icon_color' => $submenus['icon_color'] ];
                     foreach ($submenus->subitems as $i => $subitems) {
-                        $return[$m]['submenu'][$s]['submenu'][$i] = ['text' => $subitems['descripcion'], 'url' => '','icon' =>  $subitems['icon'],'icon_color' => $subitems['icon_color'] ];
+                        $return[$m]['submenu'][$s]['submenu'][$i] = ['text' => $subitems['descripcion'], 'route' => $subitems['route'],'icon' =>  $subitems['icon'],'icon_color' => $subitems['icon_color'] ];
                     }
                 }
             }

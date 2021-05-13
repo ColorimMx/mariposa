@@ -169,7 +169,7 @@ class SubItemMenuCatalogoSeeder extends Seeder
         SubItemMenuCatalogo::create([
             'id_sub_menu' => '2',
             'descripcion' => 'Domentación',
-            'route' => 'home',
+            'route' => 'norma35',
             'icon' => 'fas fa-angle-double-right',
             'icon_color' => 'orange',
             'classes' => '',
@@ -178,7 +178,7 @@ class SubItemMenuCatalogoSeeder extends Seeder
         SubItemMenuCatalogo::create([
             'id_sub_menu' => '2',
             'descripcion' => 'Guia de Referencia I',
-            'route' => 'home',
+            'route' => 'norma35gr1',
             'icon' => 'fas fa-angle-double-right',
             'icon_color' => 'orange',
             'classes' => '',
@@ -187,7 +187,7 @@ class SubItemMenuCatalogoSeeder extends Seeder
         SubItemMenuCatalogo::create([
             'id_sub_menu' => '2',
             'descripcion' => 'Guia de Referencia II',
-            'route' => 'home',
+            'route' => 'norma35gr2',
             'icon' => 'fas fa-angle-double-right',
             'icon_color' => 'orange',
             'classes' => '',
@@ -196,7 +196,7 @@ class SubItemMenuCatalogoSeeder extends Seeder
         SubItemMenuCatalogo::create([
             'id_sub_menu' => '2',
             'descripcion' => 'Guia de Referencia III',
-            'route' => 'home',
+            'route' => 'norma35gr3',
             'icon' => 'fas fa-angle-double-right',
             'icon_color' => 'orange',
             'classes' => '',
@@ -205,7 +205,7 @@ class SubItemMenuCatalogoSeeder extends Seeder
         SubItemMenuCatalogo::create([
             'id_sub_menu' => '2',
             'descripcion' => 'Guia de Referencia IV',
-            'route' => 'home',
+            'route' => 'norma35gr4',
             'icon' => 'fas fa-angle-double-right',
             'icon_color' => 'orange',
             'classes' => '',
@@ -214,7 +214,7 @@ class SubItemMenuCatalogoSeeder extends Seeder
         SubItemMenuCatalogo::create([
             'id_sub_menu' => '2',
             'descripcion' => 'Guia de Referencia V',
-            'route' => 'home',
+            'route' => 'norma35gr5',
             'icon' => 'fas fa-angle-double-right',
             'icon_color' => 'orange',
             'classes' => '',
