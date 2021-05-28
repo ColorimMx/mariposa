@@ -20,6 +20,7 @@ use App\Http\Controllers\SatMunicipioCatalogoController;
 use App\Http\Controllers\SatLocalidadCatalogoController;
 use App\Http\Controllers\EmpleadoCatalogoController;
 use App\Http\Controllers\MenuCatalogoController;
+use App\Http\Controllers\GuiaReferenciaI;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -58,6 +59,8 @@ Route::get('norma35gr4', function () {
 Route::get('norma35gr5', function () {
     return view('empleados.nom35gV');
 })->name('norma35gr5');
+
+Route::resource('cuestionarioGI',GuiaReferenciaI::class);
 
 Route::get('menu',[MenuCatalogoController::class, 'index']);
 
