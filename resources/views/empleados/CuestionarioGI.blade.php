@@ -25,7 +25,7 @@
                             <div class="card-body">
                                 <div class="form-group">
                                     <fieldset id = "empleados">
-                                        <select id="empleado" name="empleado"  class="custom-select" required>
+                                        <select id="empleado" name="empleado"  class="custom-select" >
                                             <option value="">Seleccione un empleado</option>
                                             <?php
                                             $i = 1;
@@ -49,7 +49,7 @@
                                     @foreach($custionarioI as $cuestionario)
                                         @if ($cuestionario->id_seccion == 1)
                                             <label>{{$cuestionario->numero_pregunta}}.- {{$cuestionario->pregunta}}</label>
-                                            <select id="{{$cuestionario->id}}" name="{{$cuestionario->id}}"  class="custom-select" required>
+                                            <select id="{{$cuestionario->id}}" name="{{$cuestionario->id}}"  class="custom-select" >
                                                 <option value="">Seleccione una respuesta</option>
                                                 <option value="0">No</option>
                                                 <option value="1">Si</option>
@@ -70,7 +70,7 @@
                                             @foreach($custionarioI as $cuestionario)
                                                 @if ($cuestionario->id_seccion == 22)
                                                     <label>{{$cuestionario->numero_pregunta}}.- {{$cuestionario->pregunta}}</label>
-                                                    <select id="{{$cuestionario->id}}" name="{{$cuestionario->id}}"  class="custom-select" required>
+                                                    <select id="{{$cuestionario->id}}" name="{{$cuestionario->id}}"  class="custom-select" >
                                                         <option value="">Seleccione una respuesta</option>
                                                         <option value="0">No</option>
                                                         <option value="1">Si</option>
@@ -91,7 +91,7 @@
                                             @foreach($custionarioI as $cuestionario)
                                                 @if ($cuestionario->id_seccion == 16)
                                                     <label>{{$cuestionario->numero_pregunta}}.- {{$cuestionario->pregunta}}</label>
-                                                    <select id="{{$cuestionario->id}}" name="{{$cuestionario->id}}"  class="custom-select" required>
+                                                    <select id="{{$cuestionario->id}}" name="{{$cuestionario->id}}"  class="custom-select" >
                                                         <option value="">Seleccione una respuesta</option>
                                                         <option value="0">No</option>
                                                         <option value="1">Si</option>
@@ -112,7 +112,7 @@
                                             @foreach($custionarioI as $cuestionario)
                                                 @if ($cuestionario->id_seccion == 4)
                                                     <label>{{$cuestionario->numero_pregunta}}.- {{$cuestionario->pregunta}}</label>
-                                                    <select id="{{$cuestionario->id}}" name="{{$cuestionario->id}}"  class="custom-select" required>
+                                                    <select id="{{$cuestionario->id}}" name="{{$cuestionario->id}}"  class="custom-select" >
                                                         <option value="">Seleccione una respuesta</option>
                                                         <option value="0">No</option>
                                                         <option value="1">Si</option>

@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\GuiaIReceived;
 use Illuminate\Http\Request;
 use App\Models\EmpleadoCatalogo;
 Use App\Models\GuiaItemCatalogo;
+use Illuminate\Support\Facades\Mail;
 
 class GuiaReferenciaI extends Controller
 {
@@ -15,12 +17,7 @@ class GuiaReferenciaI extends Controller
      */
     public function index()
     {
-        //$empleados = Empleado::all()->sortBy('A_PATERNO');
-        $empleados = EmpleadoCatalogo::all()->sortBy('a_paterno');
-        //$sec1 = Preguntas_Guia::where('ID_SECCION_GUIA','=','GRIS1')->orderBy('NUMERO_PREGUNTA')->get();
-        $custionarioI = GuiaItemCatalogo::where('id_guia', '=', '1')->orderBy('numero_pregunta')->get();
 
-        return view('empleados.CuestionarioGI',compact('empleados','custionarioI'));
     }
 
     /**
@@ -30,7 +27,12 @@ class GuiaReferenciaI extends Controller
      */
     public function create()
     {
-        //
+        //$empleados = Empleado::all()->sortBy('A_PATERNO');
+        $empleados = EmpleadoCatalogo::all()->sortBy('a_paterno');
+        //$sec1 = Preguntas_Guia::where('ID_SECCION_GUIA','=','GRIS1')->orderBy('NUMERO_PREGUNTA')->get();
+        $custionarioI = GuiaItemCatalogo::where('id_guia', '=', '1')->orderBy('numero_pregunta')->get();
+
+        return view('empleados.CuestionarioGI',compact('empleados','custionarioI'));
     }
 
     /**
@@ -41,7 +43,43 @@ class GuiaReferenciaI extends Controller
      */
     public function store(Request $request)
     {
-        //
+/*
+        request()->validate([
+            'empleado' => 'required'
+        ]);
+
+        Mail :: to('pablo.amador@colorim.com.mx')->send(new GuiaIReceived());
+        return 'Procesar el formulario';
+
+*/
+        $msg = request([
+            'empleado',
+            '1',
+            '2',
+            '3',
+            '4',
+            '5',
+            '6',
+            '7',
+            '8',
+            '9',
+            '10',
+            '11',
+            '12',
+            '13',
+            '14',
+            '15',
+            '16',
+            '17',
+            '18',
+            '19',
+            '20',
+        ]);
+
+        //Mail :: to('pablo.amador@colorim.com.mx')->send(new GuiaIReceived($msg));
+
+        return new GuiaIReceived($msg);
+        //return $msg;
     }
 
     /**

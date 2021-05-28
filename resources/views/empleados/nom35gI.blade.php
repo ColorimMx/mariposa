@@ -30,7 +30,7 @@
                         <p>2) Cuando responda "Sí", en tres o más de las preguntas de la Sección III Esfuerzo por evitar circunstancias
                             parecidas o asociadas al acontecimiento, o</p>
                         <p>3) Cuando responda "Sí", en dos o más de las preguntas de la Sección IV Afectación.</p>
-                        <p><a href="cuestionarioGI" class="btn btn-success"> &oplus; Aplicar Guia de Referencia I</a>
+                        <p><a href="cuestionarioGI/create" class="btn btn-success"> &oplus; Aplicar Guia de Referencia I</a>
                             <a href="#" class="btn btn-info"> &checkmark; Consultar Guia de Referencia I</a></p>
                     </div>
                 </div>
