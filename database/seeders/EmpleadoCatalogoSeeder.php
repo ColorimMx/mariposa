@@ -41,6 +41,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I52',
             'a_paterno' =>	'Silverio ',
@@ -69,6 +72,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I136',
             'a_paterno' =>	'Sanchez',
@@ -97,6 +103,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I275',
             'a_paterno' =>	'Agüero ',
@@ -125,6 +134,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I309',
             'a_paterno' =>	'Camacho',
@@ -153,6 +165,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I398',
             'a_paterno' =>	'Mendoza',
@@ -181,6 +196,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I498',
             'a_paterno' =>	'Miranda',
@@ -209,6 +227,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I660',
             'a_paterno' =>	'Flores',
@@ -237,6 +258,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I669',
             'a_paterno' =>	'Sarabia',
@@ -265,6 +289,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I744',
             'a_paterno' =>	'Ávila',
@@ -293,6 +320,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I750',
             'a_paterno' =>	'Gómez',
@@ -321,6 +351,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I886',
             'a_paterno' =>	'Estrada',
@@ -349,6 +382,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I999',
             'a_paterno' =>	'Miranda',
@@ -377,6 +413,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I1068',
             'a_paterno' =>	'Rodriguez',
@@ -405,6 +444,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I1091',
             'a_paterno' =>	'Fernandez',
@@ -433,6 +475,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I1192',
             'a_paterno' =>	'Sanchez',
@@ -461,6 +506,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I1202',
             'a_paterno' =>	'Hernandez',
@@ -489,6 +537,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I1270',
             'a_paterno' =>	'Cholula',
@@ -517,6 +568,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I1320',
             'a_paterno' =>	'Castro',
@@ -545,6 +599,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I1364',
             'a_paterno' =>	'Bahena',
@@ -573,6 +630,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I1474',
             'a_paterno' =>	'Salazar',
@@ -601,6 +661,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I1484',
             'a_paterno' =>	'Bahena',
@@ -629,6 +692,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I1488',
             'a_paterno' =>	'Cayetano',
@@ -657,6 +723,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I1497',
             'a_paterno' =>	'Solano',
@@ -685,6 +754,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I1510',
             'a_paterno' =>	'Batalla',
@@ -713,6 +785,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I1533',
             'a_paterno' =>	'Sedeceño',
@@ -741,6 +816,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I1559',
             'a_paterno' =>	'Ramirez',
@@ -769,6 +847,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I1568',
             'a_paterno' =>	'Pavón',
@@ -797,6 +878,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I1657',
             'a_paterno' =>	'Marquez',
@@ -825,6 +909,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I1671',
             'a_paterno' =>	'Pascual',
@@ -853,6 +940,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I1676',
             'a_paterno' =>	'Contreras',
@@ -881,6 +971,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I1696',
             'a_paterno' =>	'Palacios',
@@ -909,6 +1002,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I1702',
             'a_paterno' =>	'Ramirez',
@@ -937,6 +1033,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I1709',
             'a_paterno' =>	'Arroyo',
@@ -965,6 +1064,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I1727',
             'a_paterno' =>	'Ramirez',
@@ -993,6 +1095,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I1748',
             'a_paterno' =>	'Hernandez',
@@ -1021,6 +1126,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I1756',
             'a_paterno' =>	'Diego',
@@ -1049,6 +1157,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I1786',
             'a_paterno' =>	'Sanchez',
@@ -1077,6 +1188,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I1799',
             'a_paterno' =>	'Mateos',
@@ -1105,6 +1219,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I1815',
             'a_paterno' =>	'Bello',
@@ -1133,6 +1250,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I1819',
             'a_paterno' =>	'Gomez',
@@ -1161,6 +1281,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I1828',
             'a_paterno' =>	'Velez ',
@@ -1189,6 +1312,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I1847',
             'a_paterno' =>	'Santos',
@@ -1217,6 +1343,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I1854',
             'a_paterno' =>	'Enriquez',
@@ -1245,6 +1374,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I1855',
             'a_paterno' =>	'Hernandez',
@@ -1273,6 +1405,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I1867',
             'a_paterno' =>	'Quevedo',
@@ -1301,6 +1436,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I1873',
             'a_paterno' =>	'Bruno',
@@ -1329,6 +1467,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I1878',
             'a_paterno' =>	'Torres',
@@ -1357,6 +1498,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I1895',
             'a_paterno' =>	'Cervantes',
@@ -1385,6 +1529,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I1897',
             'a_paterno' =>	'Romero',
@@ -1413,6 +1560,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I1899',
             'a_paterno' =>	'Villalobos',
@@ -1441,6 +1591,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I1900',
             'a_paterno' =>	'Benitez',
@@ -1469,6 +1622,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I1909',
             'a_paterno' =>	'De La Cruz',
@@ -1497,6 +1653,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I1922',
             'a_paterno' =>	'Hipolito',
@@ -1525,6 +1684,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I1933',
             'a_paterno' =>	'Lagunas',
@@ -1553,6 +1715,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I1966',
             'a_paterno' =>	'Zetina',
@@ -1581,6 +1746,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I1972',
             'a_paterno' =>	'Cuevas',
@@ -1609,6 +1777,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I2028',
             'a_paterno' =>	'Silva',
@@ -1637,6 +1808,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I2038',
             'a_paterno' =>	'Jaramillo',
@@ -1665,6 +1839,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I2041',
             'a_paterno' =>	'Briseño',
@@ -1693,6 +1870,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I2042',
             'a_paterno' =>	'Balderas',
@@ -1721,6 +1901,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I2048',
             'a_paterno' =>	'Torres',
@@ -1749,6 +1932,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I2061',
             'a_paterno' =>	'Galeana',
@@ -1777,6 +1963,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I2063',
             'a_paterno' =>	'Benitez',
@@ -1805,6 +1994,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I2066',
             'a_paterno' =>	'Najera',
@@ -1833,6 +2025,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I2072',
             'a_paterno' =>	'Vargas',
@@ -1861,6 +2056,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I2074',
             'a_paterno' =>	'Ayala',
@@ -1889,6 +2087,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I2075',
             'a_paterno' =>	'Cornejo',
@@ -1917,6 +2118,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I2078',
             'a_paterno' =>	'Ibarra',
@@ -1945,6 +2149,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I2079',
             'a_paterno' =>	'Moctezuma',
@@ -1973,6 +2180,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I2080',
             'a_paterno' =>	'Jeronimo',
@@ -2001,6 +2211,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I2085',
             'a_paterno' =>	'Hernandez',
@@ -2029,6 +2242,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I2088',
             'a_paterno' =>	'Gonzalez',
@@ -2057,6 +2273,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I2089',
             'a_paterno' =>	'Andrade',
@@ -2085,6 +2304,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I2095',
             'a_paterno' =>	'Valencia',
@@ -2113,6 +2335,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I2096',
             'a_paterno' =>	'Ramirez',
@@ -2141,6 +2366,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I2097',
             'a_paterno' =>	'Mejia',
@@ -2169,6 +2397,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I2106',
             'a_paterno' =>	'Horcasitas',
@@ -2197,6 +2428,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I2111',
             'a_paterno' =>	'Gonzalez',
@@ -2225,6 +2459,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I5001',
             'a_paterno' =>	'Zarco',
@@ -2253,6 +2490,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I5006',
             'a_paterno' =>	'Sotelo',
@@ -2281,6 +2521,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I5014',
             'a_paterno' =>	'López',
@@ -2309,6 +2552,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I5050',
             'a_paterno' =>	'Sánchez',
@@ -2337,6 +2583,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I5052',
             'a_paterno' =>	'Ramirez',
@@ -2365,6 +2614,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I5055',
             'a_paterno' =>	'Romero',
@@ -2393,6 +2645,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I5057',
             'a_paterno' =>	'Catalán',
@@ -2421,6 +2676,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I5061',
             'a_paterno' =>	'García',
@@ -2449,6 +2707,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I5064',
             'a_paterno' =>	'Ortiz',
@@ -2477,6 +2738,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I5065',
             'a_paterno' =>	'Garcia',
@@ -2505,6 +2769,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I5076',
             'a_paterno' =>	'Hernandez',
@@ -2533,6 +2800,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I5077',
             'a_paterno' =>	'Garduño',
@@ -2561,6 +2831,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I5085',
             'a_paterno' =>	'Labra',
@@ -2589,6 +2862,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I5092',
             'a_paterno' =>	'De Cáceres',
@@ -2617,6 +2893,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I5096',
             'a_paterno' =>	'Zarco',
@@ -2645,6 +2924,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I5103',
             'a_paterno' =>	'Castañeda',
@@ -2673,6 +2955,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I5113',
             'a_paterno' =>	'Vargas',
@@ -2701,6 +2986,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I5114',
             'a_paterno' =>	'Campos',
@@ -2729,6 +3017,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I5116',
             'a_paterno' =>	'Padilla',
@@ -2757,6 +3048,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I5119',
             'a_paterno' =>	'Brito',
@@ -2785,6 +3079,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I5122',
             'a_paterno' =>	'Bahena',
@@ -2813,6 +3110,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I5123',
             'a_paterno' =>	'Galeana',
@@ -2841,6 +3141,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I5128',
             'a_paterno' =>	'Rodriguez',
@@ -2869,6 +3172,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I5129',
             'a_paterno' =>	'Miranda',
@@ -2897,6 +3203,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I5130',
             'a_paterno' =>	'Lara',
@@ -2925,6 +3234,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I5131',
             'a_paterno' =>	'López',
@@ -2953,6 +3265,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I5132',
             'a_paterno' =>	'Valerio ',
@@ -2981,6 +3296,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I5495',
             'a_paterno' =>	'Pineda',
@@ -3009,6 +3327,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I7003',
             'a_paterno' =>	'Meza',
@@ -3037,6 +3358,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I7007',
             'a_paterno' =>	'Gutierrez',
@@ -3065,6 +3389,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I7010',
             'a_paterno' =>	'Perez ',
@@ -3093,6 +3420,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I7011',
             'a_paterno' =>	'Gutierrez',
@@ -3121,6 +3451,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'CIVAC',
             'id_empresa' =>	'IARSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C28',
             'a_paterno' =>	'Grande',
@@ -3149,6 +3482,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C31',
             'a_paterno' =>	'Mondragón',
@@ -3177,6 +3513,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C37',
             'a_paterno' =>	'Hernandez',
@@ -3205,6 +3544,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C49',
             'a_paterno' =>	'Gutierrez',
@@ -3233,6 +3575,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C56',
             'a_paterno' =>	'López ',
@@ -3261,6 +3606,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C59',
             'a_paterno' =>	'Vargas',
@@ -3289,6 +3637,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C63',
             'a_paterno' =>	'Urbano',
@@ -3317,6 +3668,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C69',
             'a_paterno' =>	'Romero',
@@ -3345,6 +3699,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C70',
             'a_paterno' =>	'Martinez',
@@ -3373,6 +3730,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C73',
             'a_paterno' =>	'Gonzalez',
@@ -3401,6 +3761,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C74',
             'a_paterno' =>	'Albarrán',
@@ -3429,6 +3792,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C75',
             'a_paterno' =>	'Ruiz',
@@ -3457,6 +3823,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C76',
             'a_paterno' =>	'Gonzalez',
@@ -3485,6 +3854,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5004',
             'a_paterno' =>	'Arreola',
@@ -3513,6 +3885,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5007',
             'a_paterno' =>	'Ayala',
@@ -3541,6 +3916,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5011',
             'a_paterno' =>	'Camacho',
@@ -3569,6 +3947,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5015',
             'a_paterno' =>	'Cituk',
@@ -3597,6 +3978,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5040',
             'a_paterno' =>	'Romo',
@@ -3625,6 +4009,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5041',
             'a_paterno' =>	'Saldivar',
@@ -3653,6 +4040,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5047',
             'a_paterno' =>	'Valencia',
@@ -3681,6 +4071,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5050',
             'a_paterno' =>	'Zavala',
@@ -3709,6 +4102,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5091',
             'a_paterno' =>	'Gutierrez',
@@ -3737,6 +4133,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5092',
             'a_paterno' =>	'Villalba',
@@ -3765,6 +4164,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5093',
             'a_paterno' =>	'Ramos',
@@ -3793,6 +4195,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5101',
             'a_paterno' =>	'Hernandez',
@@ -3821,6 +4226,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5105',
             'a_paterno' =>	'Ramirez',
@@ -3849,6 +4257,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5113',
             'a_paterno' =>	'Jimenez',
@@ -3877,6 +4288,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5115',
             'a_paterno' =>	'Rodriguez',
@@ -3905,6 +4319,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5147',
             'a_paterno' =>	'Ortiz',
@@ -3933,6 +4350,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5170',
             'a_paterno' =>	'Flores',
@@ -3961,6 +4381,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5175',
             'a_paterno' =>	'Gutierrez',
@@ -3989,6 +4412,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5179',
             'a_paterno' =>	'Solis',
@@ -4017,6 +4443,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5196',
             'a_paterno' =>	'Campos',
@@ -4045,6 +4474,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5197',
             'a_paterno' =>	'Jaramillo',
@@ -4073,6 +4505,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5200',
             'a_paterno' =>	'Trejo',
@@ -4101,6 +4536,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5204',
             'a_paterno' =>	'Anguiano',
@@ -4129,6 +4567,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5245',
             'a_paterno' =>	'Ovando',
@@ -4157,6 +4598,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5247',
             'a_paterno' =>	'Martinez',
@@ -4185,6 +4629,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5262',
             'a_paterno' =>	'Aguirre',
@@ -4213,6 +4660,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5270',
             'a_paterno' =>	'Ordaz',
@@ -4241,6 +4691,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5277',
             'a_paterno' =>	'Amador',
@@ -4269,6 +4722,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5287',
             'a_paterno' =>	'Montoya',
@@ -4297,6 +4753,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5310',
             'a_paterno' =>	'Llanas',
@@ -4325,6 +4784,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5317',
             'a_paterno' =>	'Santos',
@@ -4353,6 +4815,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5332',
             'a_paterno' =>	'Castro',
@@ -4381,6 +4846,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5360',
             'a_paterno' =>	'Chaparro',
@@ -4409,6 +4877,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5379',
             'a_paterno' =>	'Marin',
@@ -4437,6 +4908,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5383',
             'a_paterno' =>	'Martinez',
@@ -4465,6 +4939,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5416',
             'a_paterno' =>	'Ramirez',
@@ -4493,6 +4970,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5430',
             'a_paterno' =>	'Gonzalez',
@@ -4521,6 +5001,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5437',
             'a_paterno' =>	'Jimenez',
@@ -4549,6 +5032,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5439',
             'a_paterno' =>	'Gonzalez',
@@ -4577,6 +5063,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5440',
             'a_paterno' =>	'Gervacio',
@@ -4605,6 +5094,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5441',
             'a_paterno' =>	'Montes',
@@ -4633,6 +5125,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5442',
             'a_paterno' =>	'Sanchez',
@@ -4661,6 +5156,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5443',
             'a_paterno' =>	'Cortes',
@@ -4689,6 +5187,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5445',
             'a_paterno' =>	'Cervantes',
@@ -4717,6 +5218,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5447',
             'a_paterno' =>	'Carrillo',
@@ -4745,6 +5249,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5448',
             'a_paterno' =>	'Salazar',
@@ -4773,6 +5280,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5449',
             'a_paterno' =>	'Sánchez',
@@ -4801,6 +5311,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5451',
             'a_paterno' =>	'Montenegro',
@@ -4829,6 +5342,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5455',
             'a_paterno' =>	'Gutierrez',
@@ -4857,6 +5373,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5467',
             'a_paterno' =>	'Guzmán',
@@ -4885,6 +5404,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5477',
             'a_paterno' =>	'Jimenez',
@@ -4913,6 +5435,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5480',
             'a_paterno' =>	'Vallejo',
@@ -4941,6 +5466,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5483',
             'a_paterno' =>	'Betancourt',
@@ -4969,6 +5497,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5484',
             'a_paterno' =>	'Rendón',
@@ -4997,6 +5528,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5509',
             'a_paterno' =>	'Vázquez',
@@ -5025,6 +5559,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5510',
             'a_paterno' =>	'Castillo',
@@ -5053,6 +5590,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5516',
             'a_paterno' =>	'Álvarez',
@@ -5081,6 +5621,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5517',
             'a_paterno' =>	'Chavez',
@@ -5109,6 +5652,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5518',
             'a_paterno' =>	'Herrera',
@@ -5137,6 +5683,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5519',
             'a_paterno' =>	'Colin',
@@ -5165,6 +5714,9 @@ class EmpleadoCatalogoSeeder extends Seeder
             'id_localidad_empresa' =>	'PINOS',
             'id_empresa' =>	'CIMSA',
             'activo' =>	'1',
+            'guia_I' =>	'0',
+            'guia_II' =>	'0',
+            'guia_III' =>	'0',
         ]);
     }
 }

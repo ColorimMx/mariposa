@@ -70,6 +70,9 @@ class CreateEmpleadoCatalogosTable extends Migration
             $table->string('telefono_1',6)->nullable();
             $table->string('telefono_2',6)->nullable();
             $table->boolean('activo');
+            $table->boolean('guia_I');
+            $table->boolean('guia_II');
+            $table->boolean('guia_III');
             $table->timestamps();
         });
     }

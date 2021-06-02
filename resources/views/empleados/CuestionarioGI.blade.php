@@ -8,6 +8,15 @@
     </h1>
 @stop
 @section('content')
+    @if ($errors->any())
+        <div class="alert alert-danger">
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
     <section class="content">
         <div class="container-fluid">
             <div class="row">
@@ -22,6 +31,7 @@
                         <!-- form start -->
                         <form class="was-validated" action="{{route('cuestionarioGI.store')}}" method="POST">
                             @csrf
+
                             <div class="card-body">
                                 <div class="form-group">
                                     <fieldset id = "empleados">
@@ -49,7 +59,7 @@
                                     @foreach($custionarioI as $cuestionario)
                                         @if ($cuestionario->id_seccion == 1)
                                             <label>{{$cuestionario->numero_pregunta}}.- {{$cuestionario->pregunta}}</label>
-                                            <select id="{{$cuestionario->id}}" name="{{$cuestionario->id}}"  class="custom-select" >
+                                            <select id="{{$cuestionario->id}}" name="pregunta{{$cuestionario->id}}"  class="custom-select" >
                                                 <option value="">Seleccione una respuesta</option>
                                                 <option value="0">No</option>
                                                 <option value="1">Si</option>
@@ -70,7 +80,7 @@
                                             @foreach($custionarioI as $cuestionario)
                                                 @if ($cuestionario->id_seccion == 22)
                                                     <label>{{$cuestionario->numero_pregunta}}.- {{$cuestionario->pregunta}}</label>
-                                                    <select id="{{$cuestionario->id}}" name="{{$cuestionario->id}}"  class="custom-select" >
+                                                    <select id="{{$cuestionario->id}}" name="pregunta{{$cuestionario->id}}"  class="custom-select" >
                                                         <option value="">Seleccione una respuesta</option>
                                                         <option value="0">No</option>
                                                         <option value="1">Si</option>
@@ -91,7 +101,7 @@
                                             @foreach($custionarioI as $cuestionario)
                                                 @if ($cuestionario->id_seccion == 16)
                                                     <label>{{$cuestionario->numero_pregunta}}.- {{$cuestionario->pregunta}}</label>
-                                                    <select id="{{$cuestionario->id}}" name="{{$cuestionario->id}}"  class="custom-select" >
+                                                    <select id="{{$cuestionario->id}}" name="pregunta{{$cuestionario->id}}"  class="custom-select" >
                                                         <option value="">Seleccione una respuesta</option>
                                                         <option value="0">No</option>
                                                         <option value="1">Si</option>
@@ -112,7 +122,7 @@
                                             @foreach($custionarioI as $cuestionario)
                                                 @if ($cuestionario->id_seccion == 4)
                                                     <label>{{$cuestionario->numero_pregunta}}.- {{$cuestionario->pregunta}}</label>
-                                                    <select id="{{$cuestionario->id}}" name="{{$cuestionario->id}}"  class="custom-select" >
+                                                    <select id="{{$cuestionario->id}}" name="pregunta{{$cuestionario->id}}"  class="custom-select" >
                                                         <option value="">Seleccione una respuesta</option>
                                                         <option value="0">No</option>
                                                         <option value="1">Si</option>
@@ -120,6 +130,21 @@
                                                 @endif
                                             @endforeach
                                         </section>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card card-warning">
+                                <div class="card-header">
+                                    <h3 class="card-title">Correo electronico:</h3>
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                                            </div>
+                                            <input type="email" class="form-control" name="email" placeholder="Email" >
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -138,9 +163,6 @@
     </section>
 @stop
 @section('css')
-
 @stop
-
 @section('js')
-
 @stop
