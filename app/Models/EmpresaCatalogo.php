@@ -12,4 +12,7 @@ class EmpresaCatalogo extends Model
     public $incrementing = false;
     protected $table = "empresa_catalogos";
     protected $dateFormat = 'Y-m-d\TH:i:s.v';
+    public function empresas(){
+        return $this->hasOne(EmpleadoCatalogo::class,'id_empresa','id');
+    }
 }

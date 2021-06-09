@@ -6,6 +6,7 @@ use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
+use PDF;
 
 
 class GuiaIReceived extends Mailable
@@ -30,13 +31,17 @@ class GuiaIReceived extends Mailable
      */
     public function build()
     {
+
         $datos = $this->msg ;
         $subject = 'Guia de Referencia I - '. $datos['empleado'].' '.$datos['nombres'] .' '. $datos['a_paterno'].' '. $datos['a_materno'];
         $from = 'mariposa@colorim.com.mx';
         $fromname = 'GuiaReferenciaI@Mariposa';
         $reply = $datos['email'];
         $replyname = $datos['nombres'];
+        $pdf = PDF::loadView('pdf.guiaReferenciaI',$datos);
+
         return $this->view('emails.guiaIReceived')->subject($subject)->from($from, $fromname)->replyTo($reply, $replyname)
+            ->attachData($pdf->output(), $subject.'.pdf')
             ;
     }
 }

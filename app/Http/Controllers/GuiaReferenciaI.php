@@ -3,7 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Mail\GuiaIReceived;
+use App\Models\EmpresaCatalogo;
 use App\Models\GuiaRegistro;
+//use Barryvdh\DomPDF\PDF;
+//use Barryvdh\DomPDF\Facade as PDF;
+use PDF;
 use Illuminate\Http\Request;
 use App\Models\EmpleadoCatalogo;
 Use App\Models\GuiaItemCatalogo;
@@ -45,15 +49,7 @@ class GuiaReferenciaI extends Controller
      */
     public function store(Request $request)
     {
-/*
-        request()->validate([
-            'empleado' => 'required'
-        ]);
-
-        Mail :: to('pablo.amador@colorim.com.mx')->send(new GuiaIReceived());
-        return 'Procesar el formulario';
-
-*/$msg = request()->validate([
+        $msg = request()->validate([
         'empleado' => 'required',
         'pregunta1' => 'required|boolean',
         'pregunta2' => 'required|boolean',
@@ -80,11 +76,15 @@ class GuiaReferenciaI extends Controller
     ]);
 
         $id = $request->empleado;
+        $empleado = (EmpleadoCatalogo::find($id));
 
-        $msg['nombres'] = (EmpleadoCatalogo::find($id))->nombres;
-        $msg['a_paterno'] = (EmpleadoCatalogo::find($id))->a_paterno;
-        $msg['a_materno'] = (EmpleadoCatalogo::find($id))->a_materno;
-        $msg['subject '] = 'Guia de referencia I - ' . $msg['a_paterno'] . $msg['a_paterno'] . $msg['a_materno'] . $msg['nombres'];
+        $msg['nombres'] = $empleado->nombres;
+        $msg['a_paterno'] = $empleado->a_paterno;
+        $msg['a_materno'] = $empleado->a_materno;
+        $msg['id_empresa'] = $empleado->id_empresa;
+        $msg['nom_empresa'] = $empleado->empresa->nombre;
+        $msg['rfc'] = $empleado->empresa->RFC;
+        $msg['subject'] = 'Guia de referencia I - ' . $msg['a_paterno'] .' '. $msg['a_materno'] .' '. $msg['nombres'];
 
         for ($x = 1; $x <= 20 ; $x++) {
             $guiaRIP = new GuiaRegistro();
@@ -110,7 +110,8 @@ class GuiaReferenciaI extends Controller
        $cc = array('pablo.amador@colorim.com','pablo.amador88@gmail.com');
         Mail :: to($to)->cc($cc)->send(new GuiaIReceived($msg));
 
-
+        //$pdf = PDF::loadView('emails.guiaIReceived',$msg);
+        //return $pdf->stream();
         //return new GuiaIReceived($msg);
         return $msg;
         //return redirect('cuestionarioGI/create');

@@ -11,4 +11,9 @@ class GuiaItemCatalogo extends Model
     protected $guarded= [];
     protected $table = "guia_item_catalogos";
     protected $dateFormat = 'Y-m-d\TH:i:s.v';
+
+    public function guia(){
+
+        return$this->hasOne(GuiaCatalogo::class,'id','id_guia');
+    }
 }

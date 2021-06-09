@@ -25,49 +25,49 @@
                                     <label>
                                         @if ($msg['pregunta1']==0)
                                             NO
-                                            @else
+                                        @else
                                             SI
-                                            @endif
+                                        @endif
                                     </label></P>
                                 <p>	2	¿Asaltos?
                                     <label>
                                         @if ($msg['pregunta2']==0)
                                             NO
-                                            @else
+                                        @else
                                             SI
-                                            @endif
+                                        @endif
                                     </label></P>
                                 <p>	3	¿Actos Violentos Que Derivaron En Lesiones Graves?
                                     <label>
                                         @if ($msg['pregunta3']==0)
                                             NO
-                                            @else
+                                        @else
                                             SI
-                                            @endif
+                                        @endif
                                     </label></P>
                                 <p>	4	¿Secuestro?
                                     <label>
                                         @if ($msg['pregunta4']==0)
                                             NO
-                                            @else
+                                        @else
                                             SI
-                                            @endif
+                                        @endif
                                     </label></P>
                                 <p>	5	¿Amenazas? O
                                     <label>
                                         @if ($msg['pregunta5']==0)
                                             NO
-                                            @else
+                                        @else
                                             SI
-                                            @endif
+                                        @endif
                                     </label></P>
                                 <p>	6	Cualquier Otro Que Ponga En Riesgo Su Vida O Salud Y/O La De Otras Personas?
                                     <label>
                                         @if ($msg['pregunta6']==0)
                                             NO
-                                            @else
+                                        @else
                                             SI
-                                            @endif
+                                        @endif
                                     </label></P>
                             </div>
                         </div>
