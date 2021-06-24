@@ -891,7 +891,7 @@
                             identificación del síndrome
                             de estar quemado por el trabajo (burnout) o acoso psicológico (mobbing), entre otros.</p>
                         <div class="btn-group">
-                            <p><a href="cues2" class="btn btn-success"> &oplus; Aplicar Guia de Referencia II</a>
+                            <p><a href="cuestionarioGII/create" class="btn btn-success"> &oplus; Aplicar Guia de Referencia II</a>
                                 <a href="#" class="btn btn-info"> &checkmark; Consultar Guia de Referencia II</a></p>
                         </div>
                     </div>

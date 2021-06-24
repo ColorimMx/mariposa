@@ -21,6 +21,7 @@ use App\Http\Controllers\SatLocalidadCatalogoController;
 use App\Http\Controllers\EmpleadoCatalogoController;
 use App\Http\Controllers\MenuCatalogoController;
 use App\Http\Controllers\GuiaReferenciaI;
+use App\Http\Controllers\GuiaReferenciaII;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -61,6 +62,7 @@ Route::get('norma35gr5', function () {
 })->name('norma35gr5');
 
 Route::resource('cuestionarioGI',GuiaReferenciaI::class);
+Route::resource('cuestionarioGII',GuiaReferenciaII::class);
 
 Route::get('menu',[MenuCatalogoController::class, 'index']);
 

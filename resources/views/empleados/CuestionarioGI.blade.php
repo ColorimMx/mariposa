@@ -35,7 +35,7 @@
                             <div class="card-body">
                                 <div class="form-group">
                                     <fieldset id = "empleados">
-                                        <select id="empleado" name="empleado"  class="custom-select" >
+                                        <select id="empleado" name="empleado"  class="custom-select" required>
                                             <option value="">Seleccione un empleado</option>
                                             <?php
                                             $i = 1;
@@ -59,7 +59,7 @@
                                     @foreach($custionarioI as $cuestionario)
                                         @if ($cuestionario->id_seccion == 1)
                                             <label>{{$cuestionario->numero_pregunta}}.- {{$cuestionario->pregunta}}</label>
-                                            <select id="{{$cuestionario->id}}" name="pregunta{{$cuestionario->id}}"  class="custom-select" >
+                                            <select id="{{$cuestionario->id}}" name="pregunta{{$cuestionario->id}}"  class="custom-select" required>
                                                 <option value="">Seleccione una respuesta</option>
                                                 <option value="0">No</option>
                                                 <option value="1">Si</option>
@@ -80,7 +80,7 @@
                                             @foreach($custionarioI as $cuestionario)
                                                 @if ($cuestionario->id_seccion == 22)
                                                     <label>{{$cuestionario->numero_pregunta}}.- {{$cuestionario->pregunta}}</label>
-                                                    <select id="{{$cuestionario->id}}" name="pregunta{{$cuestionario->id}}"  class="custom-select" >
+                                                    <select id="{{$cuestionario->id}}" name="pregunta{{$cuestionario->id}}"  class="custom-select" required>
                                                         <option value="">Seleccione una respuesta</option>
                                                         <option value="0">No</option>
                                                         <option value="1">Si</option>
@@ -101,7 +101,7 @@
                                             @foreach($custionarioI as $cuestionario)
                                                 @if ($cuestionario->id_seccion == 16)
                                                     <label>{{$cuestionario->numero_pregunta}}.- {{$cuestionario->pregunta}}</label>
-                                                    <select id="{{$cuestionario->id}}" name="pregunta{{$cuestionario->id}}"  class="custom-select" >
+                                                    <select id="{{$cuestionario->id}}" name="pregunta{{$cuestionario->id}}"  class="custom-select" required>
                                                         <option value="">Seleccione una respuesta</option>
                                                         <option value="0">No</option>
                                                         <option value="1">Si</option>
@@ -122,7 +122,7 @@
                                             @foreach($custionarioI as $cuestionario)
                                                 @if ($cuestionario->id_seccion == 4)
                                                     <label>{{$cuestionario->numero_pregunta}}.- {{$cuestionario->pregunta}}</label>
-                                                    <select id="{{$cuestionario->id}}" name="pregunta{{$cuestionario->id}}"  class="custom-select" >
+                                                    <select id="{{$cuestionario->id}}" name="pregunta{{$cuestionario->id}}"  class="custom-select" required>
                                                         <option value="">Seleccione una respuesta</option>
                                                         <option value="0">No</option>
                                                         <option value="1">Si</option>
@@ -143,7 +143,7 @@
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text"><i class="fas fa-envelope"></i></span>
                                             </div>
-                                            <input type="email" class="form-control" name="email" placeholder="Email" >
+                                            <input type="email" class="form-control" name="email" placeholder="Email" required>
                                         </div>
                                     </div>
                                 </div>
