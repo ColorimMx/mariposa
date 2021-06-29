@@ -37,6 +37,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('credencial', function () {
+    return view('pdf.credencialCIMSA');
+});
+
 Route::get('norma35', function () {
     return view('empleados.norma35');
 })->name('norma35');

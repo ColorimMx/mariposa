@@ -11,79 +11,81 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
-
-    <title>Tarjetas</title>
     <style type="text/css">
+
+        #front{
+            position:absolute;
+            top: 5px;
+            z-index:0;
+            width:502px;
+            height:325px;
+        }
+        #back{
+            position:absolute;
+            top: 5px;
+            left: 50px;
+            z-index:0;
+            width:502px;
+            height:296px;
+        }
         #razon1{ position:absolute;
             z-index:1;
-            top:50px;
+            top:10px;
             left:205px;
-            width:300px;
-            height:12px;
             font-family: 'Roboto Slab', serif;
             color: #FFFFFF;
             font-size: 18px;
         }
-
+        #razon3{ position:absolute;
+            z-index:1;
+            top:225px;
+            left:350px;
+            font-family: 'Roboto Slab', serif;
+            color: #FFFFFF;
+            font-size: 7px;
+        }
         #nombres{ position:absolute;
             z-index: 1;
-            top:225px;
+            top:200px;
             left:90px;
-            width:auto;
-            height:auto;
             font-size: 15px;
             color: #FFFFFF;
         }
         #apellidos{ position:absolute;
             z-index: 1;
-            top:240px;
-            left:86px;
-            width:auto;
-            height:auto;
+            top:220px;
+            left:80px;
             font-size: 16px;
             font-family: 'Roboto Slab', serif;
             color: #FFFFFF;
         }
-        #front{
-            position:absolute;
-            z-index:0;
-            width:502px;
-            height:325px;
-        }
         #foto{ position:absolute;
             z-index: 1;
-            top:75px;
+            top:50px;
             left:75px;
-            width:295px;
-            height:354px;
         }
-        #back{
-            position:absolute;
-            top: 25px;
-            left: 95px;
-            z-index:0;
-            width:502px;
-            height:325px;
-        }
-
         #razon2{
             position:absolute;
-            top: 50px;
-            left: 205px;
+            top: 5px;
+            left: 155px;
             z-index:0;
-            width:auto;
-            height:auto;
             font-family: 'Roboto';
-            font-size: 16px;
+            font-size: 19px;
             color: #008a57;
+        }
+        #razon4{ position:absolute;
+            z-index:0;
+            top:222px;
+            left:355px;
+            font-family: 'Roboto Slab', serif;
+            color: #008a57;
+            font-size: 7px;
         }
         #calle{
             position:absolute;
-            top: 80px;
-            left: 120px;
+            top: 50px;
+            left: 80px;
             z-index:0;
-            width:auto;
-            height:auto;
             font-family: 'Roboto';
             font-size: 12px;
             color: #e30043;
@@ -91,109 +93,32 @@
     </style>
 </head>
 <body>
-<h1>Tarjetas</h1>
 <div class="container">
-    <div class="row row-cols-2">
+    <div class="row">
         <div class="col">
             <div id="razon1"><span>Colorantes Importados SA de CV</span></div>
-            <div id="front"><img  src="img\TarjetaFront.png" /></div>
+            <div id="front"><img  src="data:image/png;base64,{{ base64_encode(file_get_contents(public_path('img/cFront.png'))) }}" alt="Frontal"></div>
             <div id="nombres"><span>Luis Manuel</span></div>
             <div id="apellidos"><span>Rivera Garcia</span></div>
             <div id="foto"> <img src="img\Foto.png" /> </div>
+            <div id="razon3"><span>Colorantes Importados SA de CV</span></div>
         </div>
         <div class="col">
-            <div id="capa1"></div>
-            <div id="back"><img src="img\TarjetaBackup.png" /></div>
-            <div id="capa3">Nivel 1</div>
+            <div id="back"><img src="data:image/png;base64,{{ base64_encode(file_get_contents(public_path('img/cBack.png'))) }}" alt="logo"></div>
             <div id="razon2"><span>Colorantes Importados SA de CV</span></div>
             <div id="calle"><span>Calle 10 #20, Col. San Pedro de los Pinos,
                 <br>C.P. 01180, México, CDMX.
-                <br>Tel.  55 9149 5500          Lada sin costo: 80000 20000
-                <br>Número colaborador:
-                <br>NSS:
-                <br>Área:
-                <br>Vigencia: diciembre 2021
+                <br>Tel.  55 9149 5500                  Lada sin costo: 80000 20000
+                <br><br>Número colaborador:
+                <br><br>NSS:
+                <br><br>Área:
+                <br><br>Vigencia: diciembre 2021
                 </span></div>
-        </div>
-    </div>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <div class="row row-cols-2">
-        <div class="col">
-            <div id="razon1"><span>Colorantes Importados SA de CV</span></div>
-            <div id="front"><img  src="img\TarjetaFront.png" /></div>
-            <div id="nombres"><span>Luis Manuel</span></div>
-            <div id="apellidos"><span>Rivera Garcia</span></div>
-            <div id="foto"> <img src="img\Foto.png" /> </div>
-        </div>
-        <div class="col">
-            <div id="capa1"></div>
-            <div id="back"><img src="img\TarjetaBackup.png" /></div>
-            <div id="capa3">NIvel 2</div>
-        </div>
-    </div>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <div class="row row-cols-2">
-        <div class="col">
-            <div id="razon1"><span>Colorantes Importados SA de CV</span></div>
-            <div id="front"><img  src="img\TarjetaFront.png" /></div>
-            <div id="nombres"><span>Luis Manuel</span></div>
-            <div id="apellidos"><span>Rivera Garcia</span></div>
-            <div id="foto"> <img src="img\Foto.png" /> </div>
-        </div>
-        <div class="col">
-            <div id="capa1"></div>
-            <div id="back"><img src="img\TarjetaBackup.png" /></div>
-            <div id="capa3">NIvel 3</div>
-        </div>
-    </div>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <div class="row row-cols-2">
-        <div class="col">
-            <div id="razon1"><span>Colorantes Importados SA de CV</span></div>
-            <div id="front"><img  src="img\TarjetaFront.png" /></div>
-            <div id="nombres"><span>Luis Manuel</span></div>
-            <div id="apellidos"><span>Rivera Garcia</span></div>
-            <div id="foto"> <img src="img\Foto.png" /> </div>
-        </div>
-        <div class="col">
-            <div id="capa1"></div>
-            <div id="back"><img src="img\TarjetaBackup.png" /></div>
-            <div id="capa3">NIvel 4</div>
-        </div>
-    </div>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <div class="row row-cols-2">
-        <div class="col">
-            <div id="razon1"><span>Colorantes Importados SA de CV</span></div>
-            <div id="front"><img  src="img\TarjetaFront.png" /></div>
-            <div id="nombres"><span>Luis Manuel</span></div>
-            <div id="apellidos"><span>Rivera Garcia</span></div>
-            <div id="foto"> <img src="img\Foto.png" /> </div>
-        </div>
-        <div class="col">
-            <div id="capa1"></div>
-            <div id="back"><img src="img\TarjetaBackup.png" /></div>
-            <div id="capa3">NIvel 5</div>
-        </div>
-    </div>
-    <br><br><br><br><br><br><br>
-    <!--hr style="border: 1px dashed black; top: 600px;" /-->
-    <br><br><br><br><br><br><br><br>
-    <div class="row row-cols-2">
-        <div class="col">
-            <div id="razon1"><span>Colorantes Importados SA de CV</span></div>
-            <div id="front"><img  src="img\TarjetaFront.png" /></div>
-            <div id="nombres"><span>Luis Manuel</span></div>
-            <div id="apellidos"><span>Rivera Garcia</span></div>
-            <div id="foto"> <img src="img\Foto.png" /> </div>
-        </div>
-        <div class="col">
-            <div id="capa1"></div>
-            <div id="back"><img src="img\TarjetaBackup.png" /></div>
-            <div id="capa3">NIvel 6</div>
+            <div id="razon4"><span>Colorantes Importados SA de CV</span></div>
         </div>
     </div>
 </div>
+
 
 
 <!-- Optional JavaScript; choose one of the two! -->
