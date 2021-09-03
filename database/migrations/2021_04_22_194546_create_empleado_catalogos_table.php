@@ -73,6 +73,8 @@ class CreateEmpleadoCatalogosTable extends Migration
             $table->boolean('guia_I');
             $table->boolean('guia_II');
             $table->boolean('guia_III');
+            $table->boolean('imp_credencial');
+            $table->boolean('fotografia');
             $table->timestamps();
         });
     }

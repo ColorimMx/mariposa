@@ -69,6 +69,11 @@ class PuestoCatalogoSeeder extends Seeder
 
         ]);
         PuestoCatalogo::create([
+            'id' => 	'COMGR',
+            'nombre' =>	'Community Manager',
+
+        ]);
+        PuestoCatalogo::create([
             'id' => 	'CONTA',
             'nombre' =>	'Contador',
 
