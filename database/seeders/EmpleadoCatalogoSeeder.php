@@ -45,7 +45,7 @@ class EmpleadoCatalogoSeeder extends Seeder
             'guia_II' =>	'0',
             'guia_III' =>	'0',
             'imp_credencial' =>	'1',
-            'fotografia' =>	'0',
+            'fotografia' =>	'1',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C31',
             'a_paterno' =>	'Mondragón',
@@ -78,7 +78,7 @@ class EmpleadoCatalogoSeeder extends Seeder
             'guia_II' =>	'0',
             'guia_III' =>	'0',
             'imp_credencial' =>	'1',
-            'fotografia' =>	'0',
+            'fotografia' =>	'1',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C37',
             'a_paterno' =>	'Hernandez',
@@ -111,7 +111,7 @@ class EmpleadoCatalogoSeeder extends Seeder
             'guia_II' =>	'0',
             'guia_III' =>	'0',
             'imp_credencial' =>	'1',
-            'fotografia' =>	'0',
+            'fotografia' =>	'1',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C49',
             'a_paterno' =>	'Gutierrez',
@@ -176,7 +176,7 @@ class EmpleadoCatalogoSeeder extends Seeder
             'guia_I' =>	'0',
             'guia_II' =>	'0',
             'guia_III' =>	'0',
-            'imp_credencial' =>	'1',
+            'imp_credencial' =>	'0',
             'fotografia' =>	'1',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5007',
@@ -209,7 +209,7 @@ class EmpleadoCatalogoSeeder extends Seeder
             'guia_I' =>	'0',
             'guia_II' =>	'0',
             'guia_III' =>	'0',
-            'imp_credencial' =>	'0',
+            'imp_credencial' =>	'1',
             'fotografia' =>	'1',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5011',
@@ -341,7 +341,7 @@ class EmpleadoCatalogoSeeder extends Seeder
             'guia_I' =>	'0',
             'guia_II' =>	'0',
             'guia_III' =>	'0',
-            'imp_credencial' =>	'1',
+            'imp_credencial' =>	'0',
             'fotografia' =>	'1',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5047',
@@ -374,7 +374,7 @@ class EmpleadoCatalogoSeeder extends Seeder
             'guia_I' =>	'0',
             'guia_II' =>	'0',
             'guia_III' =>	'0',
-            'imp_credencial' =>	'1',
+            'imp_credencial' =>	'0',
             'fotografia' =>	'1',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5050',
@@ -407,7 +407,7 @@ class EmpleadoCatalogoSeeder extends Seeder
             'guia_I' =>	'0',
             'guia_II' =>	'0',
             'guia_III' =>	'0',
-            'imp_credencial' =>	'1',
+            'imp_credencial' =>	'0',
             'fotografia' =>	'1',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5091',
@@ -506,7 +506,7 @@ class EmpleadoCatalogoSeeder extends Seeder
             'guia_I' =>	'0',
             'guia_II' =>	'0',
             'guia_III' =>	'0',
-            'imp_credencial' =>	'1',
+            'imp_credencial' =>	'0',
             'fotografia' =>	'1',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5101',
@@ -572,7 +572,7 @@ class EmpleadoCatalogoSeeder extends Seeder
             'guia_I' =>	'0',
             'guia_II' =>	'0',
             'guia_III' =>	'0',
-            'imp_credencial' =>	'1',
+            'imp_credencial' =>	'0',
             'fotografia' =>	'1',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5113',
@@ -605,7 +605,7 @@ class EmpleadoCatalogoSeeder extends Seeder
             'guia_I' =>	'0',
             'guia_II' =>	'0',
             'guia_III' =>	'0',
-            'imp_credencial' =>	'1',
+            'imp_credencial' =>	'0',
             'fotografia' =>	'1',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5115',
@@ -638,7 +638,7 @@ class EmpleadoCatalogoSeeder extends Seeder
             'guia_I' =>	'0',
             'guia_II' =>	'0',
             'guia_III' =>	'0',
-            'imp_credencial' =>	'1',
+            'imp_credencial' =>	'0',
             'fotografia' =>	'1',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5147',
@@ -704,7 +704,7 @@ class EmpleadoCatalogoSeeder extends Seeder
             'guia_I' =>	'0',
             'guia_II' =>	'0',
             'guia_III' =>	'0',
-            'imp_credencial' =>	'1',
+            'imp_credencial' =>	'0',
             'fotografia' =>	'1',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5175',
@@ -1034,7 +1034,7 @@ class EmpleadoCatalogoSeeder extends Seeder
             'guia_I' =>	'0',
             'guia_II' =>	'0',
             'guia_III' =>	'0',
-            'imp_credencial' =>	'1',
+            'imp_credencial' =>	'0',
             'fotografia' =>	'1',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5277',
@@ -1068,7 +1068,7 @@ class EmpleadoCatalogoSeeder extends Seeder
             'guia_II' =>	'0',
             'guia_III' =>	'0',
             'imp_credencial' =>	'1',
-            'fotografia' =>	'0',
+            'fotografia' =>	'1',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5287',
             'a_paterno' =>	'Montoya',
@@ -1100,7 +1100,7 @@ class EmpleadoCatalogoSeeder extends Seeder
             'guia_I' =>	'0',
             'guia_II' =>	'0',
             'guia_III' =>	'0',
-            'imp_credencial' =>	'1',
+            'imp_credencial' =>	'0',
             'fotografia' =>	'1',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5310',
@@ -1167,7 +1167,7 @@ class EmpleadoCatalogoSeeder extends Seeder
             'guia_II' =>	'0',
             'guia_III' =>	'0',
             'imp_credencial' =>	'1',
-            'fotografia' =>	'0',
+            'fotografia' =>	'1',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5332',
             'a_paterno' =>	'Castro',
@@ -1200,7 +1200,7 @@ class EmpleadoCatalogoSeeder extends Seeder
             'guia_II' =>	'0',
             'guia_III' =>	'0',
             'imp_credencial' =>	'1',
-            'fotografia' =>	'0',
+            'fotografia' =>	'1',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5360',
             'a_paterno' =>	'Chaparro',
@@ -1397,7 +1397,7 @@ class EmpleadoCatalogoSeeder extends Seeder
             'guia_I' =>	'0',
             'guia_II' =>	'0',
             'guia_III' =>	'0',
-            'imp_credencial' =>	'1',
+            'imp_credencial' =>	'0',
             'fotografia' =>	'1',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5439',
@@ -1463,7 +1463,7 @@ class EmpleadoCatalogoSeeder extends Seeder
             'guia_I' =>	'0',
             'guia_II' =>	'0',
             'guia_III' =>	'0',
-            'imp_credencial' =>	'1',
+            'imp_credencial' =>	'0',
             'fotografia' =>	'1',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5441',
@@ -1530,7 +1530,7 @@ class EmpleadoCatalogoSeeder extends Seeder
             'guia_II' =>	'0',
             'guia_III' =>	'0',
             'imp_credencial' =>	'1',
-            'fotografia' =>	'0',
+            'fotografia' =>	'1',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5443',
             'a_paterno' =>	'Cortes',
@@ -1760,7 +1760,7 @@ class EmpleadoCatalogoSeeder extends Seeder
             'guia_I' =>	'0',
             'guia_II' =>	'0',
             'guia_III' =>	'0',
-            'imp_credencial' =>	'1',
+            'imp_credencial' =>	'0',
             'fotografia' =>	'1',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5467',
@@ -1826,7 +1826,7 @@ class EmpleadoCatalogoSeeder extends Seeder
             'guia_I' =>	'0',
             'guia_II' =>	'0',
             'guia_III' =>	'0',
-            'imp_credencial' =>	'1',
+            'imp_credencial' =>	'0',
             'fotografia' =>	'1',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5480',
@@ -1991,7 +1991,7 @@ class EmpleadoCatalogoSeeder extends Seeder
             'guia_I' =>	'0',
             'guia_II' =>	'0',
             'guia_III' =>	'0',
-            'imp_credencial' =>	'1',
+            'imp_credencial' =>	'0',
             'fotografia' =>	'1',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5516',
@@ -2223,7 +2223,7 @@ class EmpleadoCatalogoSeeder extends Seeder
             'guia_II' =>	'0',
             'guia_III' =>	'0',
             'imp_credencial' =>	'1',
-            'fotografia' =>	'0',
+            'fotografia' =>	'1',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C69',
             'a_paterno' =>	'Romero',
@@ -2289,7 +2289,7 @@ class EmpleadoCatalogoSeeder extends Seeder
             'guia_II' =>	'0',
             'guia_III' =>	'0',
             'imp_credencial' =>	'1',
-            'fotografia' =>	'0',
+            'fotografia' =>	'1',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C73',
             'a_paterno' =>	'Gonzalez',
@@ -2322,7 +2322,7 @@ class EmpleadoCatalogoSeeder extends Seeder
             'guia_II' =>	'0',
             'guia_III' =>	'0',
             'imp_credencial' =>	'1',
-            'fotografia' =>	'0',
+            'fotografia' =>	'1',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C74',
             'a_paterno' =>	'Albarrán',
@@ -2420,7 +2420,7 @@ class EmpleadoCatalogoSeeder extends Seeder
             'guia_I' =>	'0',
             'guia_II' =>	'0',
             'guia_III' =>	'0',
-            'imp_credencial' =>	'1',
+            'imp_credencial' =>	'0',
             'fotografia' =>	'1',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I1068',
@@ -5002,8 +5002,8 @@ class EmpleadoCatalogoSeeder extends Seeder
             'a_materno' =>	'Nicolas',
             'nombres' =>	'Cristal',
             'f_nacimiento' =>	'1981-12-11',
-            'id_area' =>	'OPERA',
-            'id_departamento' =>	'CALID',
+            'id_area' =>	'FINAN',
+            'id_departamento' =>	'TESOR',
             'id_puesto' =>	'AUXIL',
             'id_puesto_tipo' =>	'OPERA',
             'f_ingreso' =>	'2012-06-01',
@@ -5366,7 +5366,7 @@ class EmpleadoCatalogoSeeder extends Seeder
             'nombres' =>	'Mirna Fernanda',
             'f_nacimiento' =>	'1989-02-21',
             'id_area' =>	'FINAN',
-            'id_departamento' =>	'CRCXP',
+            'id_departamento' =>	'CRCXC',
             'id_puesto' =>	'ANALI',
             'id_puesto_tipo' =>	'PROTE',
             'f_ingreso' =>	'2016-12-06',
@@ -5465,7 +5465,7 @@ class EmpleadoCatalogoSeeder extends Seeder
             'nombres' =>	'Yolanda',
             'f_nacimiento' =>	'1987-01-30',
             'id_area' =>	'FINAN',
-            'id_departamento' =>	'CRCXP',
+            'id_departamento' =>	'CRCXC',
             'id_puesto' =>	'ASIST',
             'id_puesto_tipo' =>	'PROTE',
             'f_ingreso' =>	'2017-05-29',
@@ -5531,7 +5531,7 @@ class EmpleadoCatalogoSeeder extends Seeder
             'nombres' =>	'Paulina',
             'f_nacimiento' =>	'1977-04-09',
             'id_area' =>	'FINAN',
-            'id_departamento' =>	'CRCXP',
+            'id_departamento' =>	'CRCXC',
             'id_puesto' =>	'COORD',
             'id_puesto_tipo' =>	'PROTE',
             'f_ingreso' =>	'2014-11-24',
@@ -5596,8 +5596,8 @@ class EmpleadoCatalogoSeeder extends Seeder
             'a_materno' =>	'Jaimes',
             'nombres' =>	'Adriana',
             'f_nacimiento' =>	'1986-03-03',
-            'id_area' =>	'OPERA',
-            'id_departamento' =>	'PROD',
+            'id_area' =>	'FINAN',
+            'id_departamento' =>	'CRCXP',
             'id_puesto' =>	'AUXIL',
             'id_puesto_tipo' =>	'PROTE',
             'f_ingreso' =>	'2018-11-20',
@@ -5630,7 +5630,7 @@ class EmpleadoCatalogoSeeder extends Seeder
             'nombres' =>	'Marcela Janet',
             'f_nacimiento' =>	'1990-06-29',
             'id_area' =>	'FINAN',
-            'id_departamento' =>	'CRCXP',
+            'id_departamento' =>	'CRCXC',
             'id_puesto' =>	'ANALI',
             'id_puesto_tipo' =>	'PROTE',
             'f_ingreso' =>	'2019-04-09',
@@ -6546,7 +6546,7 @@ class EmpleadoCatalogoSeeder extends Seeder
             'guia_II' =>	'0',
             'guia_III' =>	'0',
             'imp_credencial' =>	'0',
-            'fotografia' =>	'0',
+            'fotografia' =>	'1',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C7',
             'a_paterno' =>	'Porter',
@@ -6579,7 +6579,7 @@ class EmpleadoCatalogoSeeder extends Seeder
             'guia_II' =>	'0',
             'guia_III' =>	'0',
             'imp_credencial' =>	'0',
-            'fotografia' =>	'0',
+            'fotografia' =>	'1',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C8',
             'a_paterno' =>	'Reyes',
@@ -6612,7 +6612,7 @@ class EmpleadoCatalogoSeeder extends Seeder
             'guia_II' =>	'0',
             'guia_III' =>	'0',
             'imp_credencial' =>	'0',
-            'fotografia' =>	'0',
+            'fotografia' =>	'1',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C9',
             'a_paterno' =>	'Iñiguez',
@@ -6645,7 +6645,7 @@ class EmpleadoCatalogoSeeder extends Seeder
             'guia_II' =>	'0',
             'guia_III' =>	'0',
             'imp_credencial' =>	'0',
-            'fotografia' =>	'0',
+            'fotografia' =>	'1',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I2148',
             'a_paterno' =>	'Alvarez',
@@ -7346,7 +7346,7 @@ class EmpleadoCatalogoSeeder extends Seeder
             'nombres' =>	'Estefany',
             'f_nacimiento' =>	'1999-09-01',
             'id_area' =>	'FINAN',
-            'id_departamento' =>	'CRCXP',
+            'id_departamento' =>	'CRCXC',
             'id_puesto' =>	'ASIST',
             'id_puesto_tipo' =>	'PROTE',
             'f_ingreso' =>	'2021-07-19',
@@ -7370,7 +7370,7 @@ class EmpleadoCatalogoSeeder extends Seeder
             'guia_I' =>	'0',
             'guia_II' =>	'0',
             'guia_III' =>	'0',
-            'imp_credencial' =>	'0',
+            'imp_credencial' =>	'1',
             'fotografia' =>	'0',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'I5137',
@@ -7436,7 +7436,7 @@ class EmpleadoCatalogoSeeder extends Seeder
             'guia_I' =>	'0',
             'guia_II' =>	'0',
             'guia_III' =>	'0',
-            'imp_credencial' =>	'1',
+            'imp_credencial' =>	'0',
             'fotografia' =>	'1',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C6014',
@@ -7469,7 +7469,7 @@ class EmpleadoCatalogoSeeder extends Seeder
             'guia_I' =>	'0',
             'guia_II' =>	'0',
             'guia_III' =>	'0',
-            'imp_credencial' =>	'1',
+            'imp_credencial' =>	'0',
             'fotografia' =>	'1',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C6015',
@@ -7502,7 +7502,7 @@ class EmpleadoCatalogoSeeder extends Seeder
             'guia_I' =>	'0',
             'guia_II' =>	'0',
             'guia_III' =>	'0',
-            'imp_credencial' =>	'1',
+            'imp_credencial' =>	'0',
             'fotografia' =>	'1',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5526',
@@ -7535,7 +7535,7 @@ class EmpleadoCatalogoSeeder extends Seeder
             'guia_I' =>	'0',
             'guia_II' =>	'0',
             'guia_III' =>	'0',
-            'imp_credencial' =>	'1',
+            'imp_credencial' =>	'0',
             'fotografia' =>	'1',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5528',
@@ -7568,7 +7568,7 @@ class EmpleadoCatalogoSeeder extends Seeder
             'guia_I' =>	'0',
             'guia_II' =>	'0',
             'guia_III' =>	'0',
-            'imp_credencial' =>	'1',
+            'imp_credencial' =>	'0',
             'fotografia' =>	'1',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5529',
@@ -7734,7 +7734,7 @@ class EmpleadoCatalogoSeeder extends Seeder
             'guia_II' =>	'0',
             'guia_III' =>	'0',
             'imp_credencial' =>	'1',
-            'fotografia' =>	'0',
+            'fotografia' =>	'1',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5534',
             'a_paterno' =>	'Hurtado',
@@ -7766,7 +7766,7 @@ class EmpleadoCatalogoSeeder extends Seeder
             'guia_I' =>	'0',
             'guia_II' =>	'0',
             'guia_III' =>	'0',
-            'imp_credencial' =>	'1',
+            'imp_credencial' =>	'0',
             'fotografia' =>	'1',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C5535',
@@ -7799,7 +7799,7 @@ class EmpleadoCatalogoSeeder extends Seeder
             'guia_I' =>	'0',
             'guia_II' =>	'0',
             'guia_III' =>	'0',
-            'imp_credencial' =>	'1',
+            'imp_credencial' =>	'0',
             'fotografia' =>	'1',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C40',
@@ -7832,7 +7832,7 @@ class EmpleadoCatalogoSeeder extends Seeder
             'guia_I' =>	'0',
             'guia_II' =>	'0',
             'guia_III' =>	'0',
-            'imp_credencial' =>	'1',
+            'imp_credencial' =>	'0',
             'fotografia' =>	'1',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C18',
@@ -7866,7 +7866,7 @@ class EmpleadoCatalogoSeeder extends Seeder
             'guia_II' =>	'0',
             'guia_III' =>	'0',
             'imp_credencial' =>	'1',
-            'fotografia' =>	'0',
+            'fotografia' =>	'1',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C2',
             'a_paterno' =>	'Gonzalez',
@@ -7898,7 +7898,7 @@ class EmpleadoCatalogoSeeder extends Seeder
             'guia_I' =>	'0',
             'guia_II' =>	'0',
             'guia_III' =>	'0',
-            'imp_credencial' =>	'1',
+            'imp_credencial' =>	'0',
             'fotografia' =>	'1',
         ]);
         EmpleadoCatalogo::create([	'id' =>	'C43',
@@ -7967,5 +7967,6 @@ class EmpleadoCatalogoSeeder extends Seeder
             'imp_credencial' =>	'1',
             'fotografia' =>	'0',
         ]);
+
     }
 }
