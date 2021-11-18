@@ -345,29 +345,29 @@ return [
 
     'plugins' => [
         'Bootstrap' => [
-            'active' => true,
+            'active' => false,
             'files' => [
                 [
                     'type' => 'js',
-                    'asset' => true,
+                    'asset' => false,
                     'location' => 'vendor/bootstrap-switch/js/bootstrap-switch.min.js',
 
                 ],
             ],
         ],
         'BootstrapSwitch' => [
-            'active' => true,
+            'active' => false,
             'files' => [
                 [
                     'type' => 'js',
-                    'asset' => true,
+                    'asset' => false,
                     'location' => 'vendor/bootstrap-switch/js/bootstrap-switch.min.js',
 
                 ],
             ],
         ],
         'Datatables' => [
-            'active' => true,
+            'active' => false,
             'files' => [
                 [
                     'type' => 'js',

@@ -19,6 +19,11 @@ use App\Http\Controllers\SatEstadoCatalogoController;
 use App\Http\Controllers\SatMunicipioCatalogoController;
 use App\Http\Controllers\SatLocalidadCatalogoController;
 use App\Http\Controllers\EmpleadoCatalogoController;
+use App\Http\Controllers\ClienteCatalogoController;
+use \App\Http\Controllers\Mba3ClienteCatalogoController;
+use App\Http\Controllers\Mba3FacturaPrincipalController;
+use App\Http\Controllers\Mba3FacturaDetalleController;
+use \App\Http\Controllers\DatatableController;
 use App\Http\Controllers\MenuCatalogoController;
 use App\Http\Controllers\GuiaReferenciaI;
 use App\Http\Controllers\GuiaReferenciaII;
@@ -129,3 +134,14 @@ Route::get('satlocalidades',[SatLocalidadCatalogoController::class,'index'])->na
 
 //Empleados
 Route::get('empleados',[EmpleadoCatalogoController::class,'index'])->name('empleados');
+
+//Clientes MBA3
+Route::get('mbaclientes',[Mba3ClienteCatalogoController::class,'index'])->name('clientes');
+
+//Clientes MBA 3 DataTable
+
+Route::get('datatable/clientesmba3',[DatatableController::class,'cliente'])->name('datatable.clientemba3');
+
+//Facturas MBA3
+Route::get('mbafacturas',[Mba3FacturaPrincipalController::class,'index'])->name('facturas');
+Route::get('datatable/mbafacturas',[Mba3FacturaPrincipalController::class,'facturas'])->name('datatable.facturasmba3');

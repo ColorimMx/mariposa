@@ -228,5 +228,14 @@ class SubItemMenuCatalogoSeeder extends Seeder
             'icon_color' => 'orange',
             'classes' => '',
         ]);
+
+        SubItemMenuCatalogo::create([
+            'id_sub_menu' => '4',
+            'descripcion' => 'Ver Clientes',
+            'route' => 'MbaClientes',
+            'icon' => 'fas fa-angle-double-right',
+            'icon_color' => 'primary',
+            'classes' => '',
+        ]);
     }
 }

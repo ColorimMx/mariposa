@@ -37,5 +37,13 @@ class SubMenuCatalogoSeeder extends Seeder
             'icon_color' => 'orange',
             'classes' => '',
         ]);
+
+        SubMenuCatalogo::create([
+            'id_menu' => '4',
+            'descripcion' => 'Catalogo',
+            'icon' => 'fas fa-angle-right',
+            'icon_color' => 'primary',
+            'classes' => '',
+        ]);
     }
 }
