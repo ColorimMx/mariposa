@@ -232,7 +232,7 @@ class SubItemMenuCatalogoSeeder extends Seeder
         SubItemMenuCatalogo::create([
             'id_sub_menu' => '4',
             'descripcion' => 'Ver Clientes',
-            'route' => 'MbaClientes',
+            'route' => 'mbaclientes',
             'icon' => 'fas fa-angle-double-right',
             'icon_color' => 'primary',
             'classes' => '',

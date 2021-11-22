@@ -136,7 +136,7 @@ Route::get('satlocalidades',[SatLocalidadCatalogoController::class,'index'])->na
 Route::get('empleados',[EmpleadoCatalogoController::class,'index'])->name('empleados');
 
 //Clientes MBA3
-Route::get('mbaclientes',[Mba3ClienteCatalogoController::class,'index'])->name('clientes');
+Route::get('mbaclientes',[Mba3ClienteCatalogoController::class,'index'])->name('mbaclientes');
 
 //Clientes MBA 3 DataTable
 
