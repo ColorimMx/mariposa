@@ -15,8 +15,8 @@ class CreateDepartamentoCatalogosTable extends Migration
     {
         Schema::create('departamento_catalogos', function (Blueprint $table) {
             $table->string('id',6)->primary();
-            $table->string('id_area',6);
-            $table->foreign('id_area')->references('id')->on('area_catalogos');
+            $table->string('area_id',6);
+            $table->foreign('area_id')->references('id')->on('area_catalogos');
             $table->string('nombre');
             $table->timestamps();
         });

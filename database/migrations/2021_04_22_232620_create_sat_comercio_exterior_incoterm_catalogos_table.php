@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateSatEstadoCatalogosTable extends Migration
+class CreateSatComercioExteriorIncotermCatalogosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,8 @@ class CreateSatEstadoCatalogosTable extends Migration
      */
     public function up()
     {
-        Schema::create('sat_estado_catalogos', function (Blueprint $table) {
-            $table->string('id',6)->primary();
-            $table->string('pais_id',6);
-            $table->foreign('pais_id')->references('id')->on('sat_pais_catalogos');
+        Schema::create('sat_comercio_exterior_incoterm_catalogos', function (Blueprint $table) {
+            $table->char('id',3)->primary();
             $table->string('nombre');
             $table->timestamps();
         });
@@ -29,6 +27,6 @@ class CreateSatEstadoCatalogosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('sat_estado_catalogos');
+        Schema::dropIfExists('sat_comercio_exterior_incoterm_catalogos');
     }
 }

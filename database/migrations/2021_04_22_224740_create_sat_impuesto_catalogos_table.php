@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateEmpresaCatalogosTable extends Migration
+class CreateSatImpuestoCatalogosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,9 @@ class CreateEmpresaCatalogosTable extends Migration
      */
     public function up()
     {
-        Schema::create('empresa_catalogos', function (Blueprint $table) {
-            $table->string('id',6)->primary();
+        Schema::create('sat_impuesto_catalogos', function (Blueprint $table) {
+            $table->char('id',3)->primary();
             $table->string('nombre');
-            $table->string('RFC');
             $table->timestamps();
         });
     }
@@ -28,6 +27,6 @@ class CreateEmpresaCatalogosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('empresa_catalogos');
+        Schema::dropIfExists('sat_impuesto_catalogos');
     }
 }

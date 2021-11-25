@@ -15,8 +15,8 @@ class CreateSatMunicipioCatalogosTable extends Migration
     {
         Schema::create('sat_municipio_catalogos', function (Blueprint $table) {
             $table->string('id',6)->primary();
-            $table->string('id_estado',6);
-            $table->foreign('id_estado')->references('id')->on('sat_estado_catalogos');
+            $table->string('estado_id',6);
+            $table->foreign('estado_id')->references('id')->on('sat_estado_catalogos');
             $table->string('nombre');
             $table->timestamps();
         });

@@ -18,14 +18,22 @@ class CreateProductoCatalogosTable extends Migration
             $table->string('nombre');
             $table->string('descripcion')->nullable();
             $table->float('codigo_barras',14,0)->nullable();
-            $table->char('id_grupo',5)->nullable();
-            $table->foreign('id_grupo')->references('id')->on('producto_grupo_catalogos');
-            $table->char('id_subgrupo',5)->nullable();
-            $table->foreign('id_subgrupo')->references('id')->on('producto_subgrupo_catalogos');
+            $table->char('grupo_id',5)->nullable();
+            $table->foreign('grupo_id')->references('id')->on('producto_grupo_catalogos');
+            $table->char('subgrupo_id',5)->nullable();
+            $table->foreign('subgrupo_id')->references('id')->on('producto_subgrupo_catalogos');
+            $table->char('marca_id',5)->nullable()->nullable();
+            $table->foreign('marca_id')->references('id')->on('producto_marca_catalogos');
+            $table->char('modelo_id',3)->nullable()->nullable();
+            $table->foreign('modelo_id')->references('id')->on('producto_modelo_catalogos');
+            $table->char('submodelo_id',3)->nullable()->nullable();
+            $table->foreign('submodelo_id')->references('id')->on('producto_submodelo_catalogos');
             $table->decimal('existencias',10,5)->nullable();
             $table->decimal('disponible',10,5)->nullable();
             $table->decimal('asignado',10,5)->nullable();
             $table->char('um',2);
+            $table->decimal('peso_neto',10,5)->nullable();
+            $table->decimal('peso_bruto',10,5)->nullable();
             $table->decimal('largo',10,5)->nullable();
             $table->decimal('ancho',10,5)->nullable();
             $table->decimal('altura',10,5)->nullable();
@@ -34,11 +42,15 @@ class CreateProductoCatalogosTable extends Migration
             $table->decimal('total_costo_inventario',10,5)->nullable();
             $table->date('fecha_ultimo_costo_promedio')->nullable();
             $table->date('fecha_ultima_produccion')->nullable();
-            $table->char('id_cuenta_invtentario',8)->nullable();
-            $table->foreign('id_cuenta_invtentario')->references('id')->on('contabilidad_plan_cuentas');
-            $table->char('id_cuenta_costo',8)->nullable();
-            $table->char('id_cuenta_ingreso_nacional',8)->nullable();
-            $table->char('id_cuenta_ingreso_extrangero',8)->nullable();
+            $table->char('cuenta_invtentario_id',8)->nullable();
+            $table->foreign('cuenta_invtentario_id')->references('id')->on('contabilidad_plan_cuentas');
+            $table->char('cuenta_costo_id',8)->nullable();
+            $table->char('cuenta_ingreso_nacional_id',8)->nullable();
+            $table->char('cuenta_ingreso_extrangero_id',8)->nullable();
+            $table->char('fraccion_arancelaria_id',8)->nullable();
+            $table->foreign('fraccion_arancelaria_id')->references('id')->on('sat_comercio_exterior_fraccion_arancelaria_catalogos');
+            $table->char('unidad_aduana_id',2)->nullable();
+            $table->foreign('unidad_aduana_id')->references('id')->on('sat_comercio_exterior_unidad_aduana_catalogos');
             });
     }
 
