@@ -19,6 +19,7 @@ class CreateMenuCatalogosTable extends Migration
             $table->string('icon');
             $table->string('icon_color');
             $table->string('classes');
+            $table->boolean('activo');
             $table->timestamps();
         });
     }

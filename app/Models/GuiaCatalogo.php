@@ -12,6 +12,6 @@ class GuiaCatalogo extends Model
     protected $dateFormat = 'Y-m-d\TH:i:s.v';
 
     public function guiaitems(){
-        return $this->hasMany(GuiaItemCatalogo::class, 'id_guia');
+        return $this->hasMany(GuiaItemCatalogo::class, 'guia_id');
     }
 }

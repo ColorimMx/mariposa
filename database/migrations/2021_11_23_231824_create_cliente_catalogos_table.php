@@ -18,7 +18,6 @@ class CreateClienteCatalogosTable extends Migration
             $table->string('nombre');
             $table->string('rfc');
             $table->string('razon_social');
-            $table->boolean('inactivo');
             $table->date('fecha_ingreso');
             $table->string('direccion_principal_1')->nullable();
             $table->string('direccion_principal_2')->nullable();
@@ -31,7 +30,7 @@ class CreateClienteCatalogosTable extends Migration
             $table->char('ciudad_id',5)->nullable();
             $table->foreign('ciudad_id')->references('id')->on('demografia_ciudad_catalogos');
             $table->char('estado_id',5)->nullable();
-            $table->foreign('id_estado')->references('id')->on('demografia_estado_catalogos');
+            $table->foreign('estado_id')->references('id')->on('demografia_estado_catalogos');
             $table->char('pais_id',3)->nullable();
             $table->foreign('pais_id')->references('id')->on('demografia_pais_catalogos');
             $table->string('cp');
@@ -61,6 +60,9 @@ class CreateClienteCatalogosTable extends Migration
             $table->foreign('localizacion_id')->references('id')->on('cliente_localizacion_catalogos');
             $table->char('vendedor_id',5)->nullable();
             $table->foreign('vendedor_id')->references('id')->on('cliente_vendedor_catalogos');
+            $table->char('sat_regimen_fiscal_id',3)->nullable();
+            $table->foreign('sat_regimen_fiscal_id')->references('id')->on('sat_regimen_fiscal_catalogos');
+            $table->boolean('activo');
             $table->timestamps();
         });
     }

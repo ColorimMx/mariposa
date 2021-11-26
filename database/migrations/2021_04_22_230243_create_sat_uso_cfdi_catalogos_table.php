@@ -16,6 +16,7 @@ class CreateSatUsoCfdiCatalogosTable extends Migration
         Schema::create('sat_uso_cfdi_catalogos', function (Blueprint $table) {
             $table->char('id',3)->primary();
             $table->string('nombre');
+            $table->boolean('activo');
             $table->timestamps();
         });
     }

@@ -14,6 +14,6 @@ class GuiaItemCatalogo extends Model
 
     public function guia(){
 
-        return$this->hasOne(GuiaCatalogo::class,'id','id_guia');
+        return$this->hasOne(GuiaCatalogo::class,'id','guia_id');
     }
 }

@@ -16,478 +16,573 @@ class SatEstadoCatalogoSeeder extends Seeder
     {
         SatEstadoCatalogo::create([
             'id' => 	'AGU',
-            'id_pais' => 	'MEX',
+            'pais_id' => 	'MEX',
             'nombre' => 	'Aguascalientes',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'BCN',
-            'id_pais' => 	'MEX',
+            'pais_id' => 	'MEX',
             'nombre' => 	'Baja California',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'BCS',
-            'id_pais' => 	'MEX',
+            'pais_id' => 	'MEX',
             'nombre' => 	'Baja California Sur',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'CAM',
-            'id_pais' => 	'MEX',
+            'pais_id' => 	'MEX',
             'nombre' => 	'Campeche',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'CHP',
-            'id_pais' => 	'MEX',
+            'pais_id' => 	'MEX',
             'nombre' => 	'Chiapas',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'CHH',
-            'id_pais' => 	'MEX',
+            'pais_id' => 	'MEX',
             'nombre' => 	'Chihuahua',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'COA',
-            'id_pais' => 	'MEX',
+            'pais_id' => 	'MEX',
             'nombre' => 	'Coahuila',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'COL',
-            'id_pais' => 	'MEX',
+            'pais_id' => 	'MEX',
             'nombre' => 	'Colima',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'DIF',
-            'id_pais' => 	'MEX',
+            'pais_id' => 	'MEX',
             'nombre' => 	'Ciudad de México',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'DUR',
-            'id_pais' => 	'MEX',
+            'pais_id' => 	'MEX',
             'nombre' => 	'Durango',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'GUA',
-            'id_pais' => 	'MEX',
+            'pais_id' => 	'MEX',
             'nombre' => 	'Guanajuato',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'GRO',
-            'id_pais' => 	'MEX',
+            'pais_id' => 	'MEX',
             'nombre' => 	'Guerrero',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'HID',
-            'id_pais' => 	'MEX',
+            'pais_id' => 	'MEX',
             'nombre' => 	'Hidalgo',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'JAL',
-            'id_pais' => 	'MEX',
+            'pais_id' => 	'MEX',
             'nombre' => 	'Jalisco',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'MEX',
-            'id_pais' => 	'MEX',
+            'pais_id' => 	'MEX',
             'nombre' => 	'Estado de México',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'MIC',
-            'id_pais' => 	'MEX',
+            'pais_id' => 	'MEX',
             'nombre' => 	'Michoacán',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'MOR',
-            'id_pais' => 	'MEX',
+            'pais_id' => 	'MEX',
             'nombre' => 	'Morelos',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'NAY',
-            'id_pais' => 	'MEX',
+            'pais_id' => 	'MEX',
             'nombre' => 	'Nayarit',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'NLE',
-            'id_pais' => 	'MEX',
+            'pais_id' => 	'MEX',
             'nombre' => 	'Nuevo León',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'OAX',
-            'id_pais' => 	'MEX',
+            'pais_id' => 	'MEX',
             'nombre' => 	'Oaxaca',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'PUE',
-            'id_pais' => 	'MEX',
+            'pais_id' => 	'MEX',
             'nombre' => 	'Puebla',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'QUE',
-            'id_pais' => 	'MEX',
+            'pais_id' => 	'MEX',
             'nombre' => 	'Querétaro',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'ROO',
-            'id_pais' => 	'MEX',
+            'pais_id' => 	'MEX',
             'nombre' => 	'Quintana Roo',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'SLP',
-            'id_pais' => 	'MEX',
+            'pais_id' => 	'MEX',
             'nombre' => 	'San Luis Potosí',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'SIN',
-            'id_pais' => 	'MEX',
+            'pais_id' => 	'MEX',
             'nombre' => 	'Sinaloa',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'SON',
-            'id_pais' => 	'MEX',
+            'pais_id' => 	'MEX',
             'nombre' => 	'Sonora',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'TAB',
-            'id_pais' => 	'MEX',
+            'pais_id' => 	'MEX',
             'nombre' => 	'Tabasco',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'TAM',
-            'id_pais' => 	'MEX',
+            'pais_id' => 	'MEX',
             'nombre' => 	'Tamaulipas',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'TLA',
-            'id_pais' => 	'MEX',
+            'pais_id' => 	'MEX',
             'nombre' => 	'Tlaxcala',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'VER',
-            'id_pais' => 	'MEX',
+            'pais_id' => 	'MEX',
             'nombre' => 	'Veracruz',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'YUC',
-            'id_pais' => 	'MEX',
+            'pais_id' => 	'MEX',
             'nombre' => 	'Yucatán',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'ZAC',
-            'id_pais' => 	'MEX',
+            'pais_id' => 	'MEX',
             'nombre' => 	'Zacatecas',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'AL',
-            'id_pais' => 	'USA',
+            'pais_id' => 	'USA',
             'nombre' => 	'Alabama',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'AK',
-            'id_pais' => 	'USA',
+            'pais_id' => 	'USA',
             'nombre' => 	'Alaska',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'AZ',
-            'id_pais' => 	'USA',
+            'pais_id' => 	'USA',
             'nombre' => 	'Arizona',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'AR',
-            'id_pais' => 	'USA',
+            'pais_id' => 	'USA',
             'nombre' => 	'Arkansas',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'CA',
-            'id_pais' => 	'USA',
+            'pais_id' => 	'USA',
             'nombre' => 	'California',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'NC',
-            'id_pais' => 	'USA',
+            'pais_id' => 	'USA',
             'nombre' => 	'Carolina del Norte',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'SC',
-            'id_pais' => 	'USA',
+            'pais_id' => 	'USA',
             'nombre' => 	'Carolina del Sur',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'CO',
-            'id_pais' => 	'USA',
+            'pais_id' => 	'USA',
             'nombre' => 	'Colorado',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'CT',
-            'id_pais' => 	'USA',
+            'pais_id' => 	'USA',
             'nombre' => 	'Connecticut',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'ND',
-            'id_pais' => 	'USA',
+            'pais_id' => 	'USA',
             'nombre' => 	'Dakota del Norte',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'SD',
-            'id_pais' => 	'USA',
+            'pais_id' => 	'USA',
             'nombre' => 	'Dakota del Sur',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'DE',
-            'id_pais' => 	'USA',
+            'pais_id' => 	'USA',
             'nombre' => 	'Delaware',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'FL',
-            'id_pais' => 	'USA',
+            'pais_id' => 	'USA',
             'nombre' => 	'Florida',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'GA',
-            'id_pais' => 	'USA',
+            'pais_id' => 	'USA',
             'nombre' => 	'Georgia',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'HI',
-            'id_pais' => 	'USA',
+            'pais_id' => 	'USA',
             'nombre' => 	'Hawái',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'ID',
-            'id_pais' => 	'USA',
+            'pais_id' => 	'USA',
             'nombre' => 	'Idaho',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'IL',
-            'id_pais' => 	'USA',
+            'pais_id' => 	'USA',
             'nombre' => 	'Illinois',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'IN',
-            'id_pais' => 	'USA',
+            'pais_id' => 	'USA',
             'nombre' => 	'Indiana',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'IA',
-            'id_pais' => 	'USA',
+            'pais_id' => 	'USA',
             'nombre' => 	'Iowa',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'KS',
-            'id_pais' => 	'USA',
+            'pais_id' => 	'USA',
             'nombre' => 	'Kansas',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'KY',
-            'id_pais' => 	'USA',
+            'pais_id' => 	'USA',
             'nombre' => 	'Kentucky',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'LA',
-            'id_pais' => 	'USA',
+            'pais_id' => 	'USA',
             'nombre' => 	'Luisiana',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'ME',
-            'id_pais' => 	'USA',
+            'pais_id' => 	'USA',
             'nombre' => 	'Maine',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'MD',
-            'id_pais' => 	'USA',
+            'pais_id' => 	'USA',
             'nombre' => 	'Maryland',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'MA',
-            'id_pais' => 	'USA',
+            'pais_id' => 	'USA',
             'nombre' => 	'Massachusetts',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'MI',
-            'id_pais' => 	'USA',
+            'pais_id' => 	'USA',
             'nombre' => 	'Míchigan',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'MN',
-            'id_pais' => 	'USA',
+            'pais_id' => 	'USA',
             'nombre' => 	'Minnesota',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'MS',
-            'id_pais' => 	'USA',
+            'pais_id' => 	'USA',
             'nombre' => 	'Misisipi',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'MO',
-            'id_pais' => 	'USA',
+            'pais_id' => 	'USA',
             'nombre' => 	'Misuri',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'MT',
-            'id_pais' => 	'USA',
+            'pais_id' => 	'USA',
             'nombre' => 	'Montana',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'NE',
-            'id_pais' => 	'USA',
+            'pais_id' => 	'USA',
             'nombre' => 	'Nebraska',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'NV',
-            'id_pais' => 	'USA',
+            'pais_id' => 	'USA',
             'nombre' => 	'Nevada',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'NJ',
-            'id_pais' => 	'USA',
+            'pais_id' => 	'USA',
             'nombre' => 	'Nueva Jersey',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'NY',
-            'id_pais' => 	'USA',
+            'pais_id' => 	'USA',
             'nombre' => 	'Nueva York',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'NH',
-            'id_pais' => 	'USA',
+            'pais_id' => 	'USA',
             'nombre' => 	'Nuevo Hampshire',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'NM',
-            'id_pais' => 	'USA',
+            'pais_id' => 	'USA',
             'nombre' => 	'Nuevo México',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'OH',
-            'id_pais' => 	'USA',
+            'pais_id' => 	'USA',
             'nombre' => 	'Ohio',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'OK',
-            'id_pais' => 	'USA',
+            'pais_id' => 	'USA',
             'nombre' => 	'Oklahoma',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'OR',
-            'id_pais' => 	'USA',
+            'pais_id' => 	'USA',
             'nombre' => 	'Oregón',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'PA',
-            'id_pais' => 	'USA',
+            'pais_id' => 	'USA',
             'nombre' => 	'Pensilvania',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'RI',
-            'id_pais' => 	'USA',
+            'pais_id' => 	'USA',
             'nombre' => 	'Rhode Island',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'TN',
-            'id_pais' => 	'USA',
+            'pais_id' => 	'USA',
             'nombre' => 	'Tennessee',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'TX',
-            'id_pais' => 	'USA',
+            'pais_id' => 	'USA',
             'nombre' => 	'Texas',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'UT',
-            'id_pais' => 	'USA',
+            'pais_id' => 	'USA',
             'nombre' => 	'Utah',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'VT',
-            'id_pais' => 	'USA',
+            'pais_id' => 	'USA',
             'nombre' => 	'Vermont',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'VA',
-            'id_pais' => 	'USA',
+            'pais_id' => 	'USA',
             'nombre' => 	'Virginia',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'WV',
-            'id_pais' => 	'USA',
+            'pais_id' => 	'USA',
             'nombre' => 	'Virginia Occidental',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'WA',
-            'id_pais' => 	'USA',
+            'pais_id' => 	'USA',
             'nombre' => 	'Washington',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'WI',
-            'id_pais' => 	'USA',
+            'pais_id' => 	'USA',
             'nombre' => 	'Wisconsin',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'WY',
-            'id_pais' => 	'USA',
+            'pais_id' => 	'USA',
             'nombre' => 	'Wyoming',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'ON',
-            'id_pais' => 	'CAN',
+            'pais_id' => 	'CAN',
             'nombre' => 	'Ontario',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'QC',
-            'id_pais' => 	'CAN',
+            'pais_id' => 	'CAN',
             'nombre' => 	'Quebec',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'NS',
-            'id_pais' => 	'CAN',
+            'pais_id' => 	'CAN',
             'nombre' => 	'Nueva Escocia',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'NB',
-            'id_pais' => 	'CAN',
+            'pais_id' => 	'CAN',
             'nombre' => 	'Nuevo Brunswick',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'MB',
-            'id_pais' => 	'CAN',
+            'pais_id' => 	'CAN',
             'nombre' => 	'Manitoba',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'BC',
-            'id_pais' => 	'CAN',
+            'pais_id' => 	'CAN',
             'nombre' => 	'Columbia Británica',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'PE',
-            'id_pais' => 	'CAN',
+            'pais_id' => 	'CAN',
             'nombre' => 	'Isla del Príncipe Eduardo',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'SK',
-            'id_pais' => 	'CAN',
+            'pais_id' => 	'CAN',
             'nombre' => 	'Saskatchewan',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'AB',
-            'id_pais' => 	'CAN',
+            'pais_id' => 	'CAN',
             'nombre' => 	'Alberta',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'NL',
-            'id_pais' => 	'CAN',
+            'pais_id' => 	'CAN',
             'nombre' => 	'Terranova y Labrador',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'NT',
-            'id_pais' => 	'CAN',
+            'pais_id' => 	'CAN',
             'nombre' => 	'Territorios del Noroeste',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'YT',
-            'id_pais' => 	'CAN',
+            'pais_id' => 	'CAN',
             'nombre' => 	'Yukón',
+            'activo' => '1'
         ]);
         SatEstadoCatalogo::create([
             'id' => 	'UN',
-            'id_pais' => 	'CAN',
+            'pais_id' => 	'CAN',
             'nombre' => 	'Nunavut',
+            'activo' => '1'
         ]);
     }
 }

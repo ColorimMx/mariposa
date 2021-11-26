@@ -15,18 +15,19 @@ class CreateGuiaItemCatalogosTable extends Migration
     {
         Schema::create('guia_item_catalogos', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('id_guia');
-            $table->foreign('id_guia')->references('id')->on('guia_catalogos');
+            $table->unsignedBigInteger('guia_id');
+            $table->foreign('guia_id')->references('id')->on('guia_catalogos');
             $table->integer('numero_pregunta');
             $table->string('pregunta');
-            $table->unsignedBigInteger('id_seccion');
-            $table->foreign('id_seccion')->references('id')->on('guia_seccion_catalogos');
-            $table->unsignedBigInteger('id_categoria');
-            $table->foreign('id_categoria')->references('id')->on('guia_categoria_catalogos');
-            $table->unsignedBigInteger('id_dominio');
-            $table->foreign('id_dominio')->references('id')->on('guia_dominio_catalogos');
-            $table->unsignedBigInteger('id_dimension');
-            $table->foreign('id_dimension')->references('id')->on('guia_dimension_catalogos');
+            $table->unsignedBigInteger('seccion_id');
+            $table->foreign('seccion_id')->references('id')->on('guia_seccion_catalogos');
+            $table->unsignedBigInteger('categoria_id');
+            $table->foreign('categoria_id')->references('id')->on('guia_categoria_catalogos');
+            $table->unsignedBigInteger('dominio_id');
+            $table->foreign('dominio_id')->references('id')->on('guia_dominio_catalogos');
+            $table->unsignedBigInteger('dimension_id');
+            $table->foreign('dimension_id')->references('id')->on('guia_dimension_catalogos');
+            $table->boolean('activo');
             $table->timestamps();
         });
     }

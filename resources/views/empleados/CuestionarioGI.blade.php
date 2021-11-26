@@ -57,7 +57,7 @@
                                     <section id="acontecimiento" class="custom-control custom-checkbox mb-3 ">
                                         <label>¿Ha presenciado o sufrido alguna vez, durante o con motivo del trabajo un acontecimiento como los siguientes:</label>
                                     @foreach($custionarioI as $cuestionario)
-                                        @if ($cuestionario->id_seccion == 1)
+                                        @if ($cuestionario->seccion_id == 1)
                                             <label>{{$cuestionario->numero_pregunta}}.- {{$cuestionario->pregunta}}</label>
                                             <select id="{{$cuestionario->id}}" name="pregunta{{$cuestionario->id}}"  class="custom-select" required>
                                                 <option value="">Seleccione una respuesta</option>
@@ -78,7 +78,7 @@
                                     <div class="form-group">
                                         <section id="recuerdo" class="custom-control custom-checkbox mb-3 ">
                                             @foreach($custionarioI as $cuestionario)
-                                                @if ($cuestionario->id_seccion == 22)
+                                                @if ($cuestionario->seccion_id == 22)
                                                     <label>{{$cuestionario->numero_pregunta}}.- {{$cuestionario->pregunta}}</label>
                                                     <select id="{{$cuestionario->id}}" name="pregunta{{$cuestionario->id}}"  class="custom-select" required>
                                                         <option value="">Seleccione una respuesta</option>
@@ -99,7 +99,7 @@
                                     <div class="form-group">
                                         <section id="esfuerzo" class="custom-control custom-checkbox mb-3 ">
                                             @foreach($custionarioI as $cuestionario)
-                                                @if ($cuestionario->id_seccion == 16)
+                                                @if ($cuestionario->seccion_id == 16)
                                                     <label>{{$cuestionario->numero_pregunta}}.- {{$cuestionario->pregunta}}</label>
                                                     <select id="{{$cuestionario->id}}" name="pregunta{{$cuestionario->id}}"  class="custom-select" required>
                                                         <option value="">Seleccione una respuesta</option>
@@ -120,7 +120,7 @@
                                     <div class="form-group">
                                         <section id="afectacion" class="custom-control custom-checkbox mb-3 ">
                                             @foreach($custionarioI as $cuestionario)
-                                                @if ($cuestionario->id_seccion == 4)
+                                                @if ($cuestionario->seccion_id == 4)
                                                     <label>{{$cuestionario->numero_pregunta}}.- {{$cuestionario->pregunta}}</label>
                                                     <select id="{{$cuestionario->id}}" name="pregunta{{$cuestionario->id}}"  class="custom-select" required>
                                                         <option value="">Seleccione una respuesta</option>

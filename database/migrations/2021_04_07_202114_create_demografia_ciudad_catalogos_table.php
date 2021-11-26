@@ -16,6 +16,7 @@ class CreateDemografiaCiudadCatalogosTable extends Migration
         Schema::create('demografia_ciudad_catalogos', function (Blueprint $table) {
             $table->char('id',5)->primary();
             $table->string('nombre');
+            $table->boolean('activo');
             $table->timestamps();
         });
     }

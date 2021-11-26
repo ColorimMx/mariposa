@@ -15,35 +15,39 @@ class SubMenuCatalogoSeeder extends Seeder
     public function run()
     {
         SubMenuCatalogo::create([
-            'id_menu' => '8',
+            'menu_id' => '8',
             'descripcion' => 'Catalogos',
             'icon' => 'fas fa-angle-right',
             'icon_color' => 'danger',
             'classes' => '',
+            'activo' => '1'
         ]);
 
         SubMenuCatalogo::create([
-            'id_menu' => '7',
+            'menu_id' => '7',
             'descripcion' => 'Norma 35 STPS',
             'icon' => 'fas fa-angle-right',
             'icon_color' => 'orange',
             'classes' => '',
+            'activo' => '1'
         ]);
 
         SubMenuCatalogo::create([
-            'id_menu' => '7',
+            'menu_id' => '7',
             'descripcion' => 'Catalogos',
             'icon' => 'fas fa-angle-right',
             'icon_color' => 'orange',
             'classes' => '',
+            'activo' => '1'
         ]);
 
         SubMenuCatalogo::create([
-            'id_menu' => '4',
+            'menu_id' => '4',
             'descripcion' => 'Catalogo',
             'icon' => 'fas fa-angle-right',
             'icon_color' => 'primary',
             'classes' => '',
+            'activo' => '1'
         ]);
     }
 }

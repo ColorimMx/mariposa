@@ -27,11 +27,11 @@ class GuiaReferenciaII extends Controller
     {
         //
         //$empleados = Empleado::all()->sortBy('A_PATERNO');
-        $empleados = EmpleadoCatalogo::where('guia_II','=',false)->where('id_empresa', '=', 'CIMSA')->where('activo', '=', true)->orderBy('a_paterno')->get();
+        $empleados = EmpleadoCatalogo::where('guia_II','=',false)->where('empresa_id', '=', 'CIMSA')->where('activo', '=', true)->orderBy('a_paterno')->get();
         //$sec1 = Preguntas_Guia::where('ID_SECCION_GUIA','=','GRIS1')->orderBy('NUMERO_PREGUNTA')->get();
-        $custionarioII = GuiaItemCatalogo::where('id_guia', '=', '2')->orderBy('numero_pregunta')->get();
+        $custionarioII = GuiaItemCatalogo::where('guia_id', '=', '2')->orderBy('numero_pregunta')->get();
 
-        return view('empleados.CuestionarioGII',compact('empleados','custionarioII'));
+        return view('empleados.cuestionarioGII',compact('empleados','custionarioII'));
     }
 
     /**

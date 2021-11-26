@@ -15,10 +15,10 @@ class CreateGuiaRegistrosTable extends Migration
     {
         Schema::create('guia_registros', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('id_guia_item');
-            $table->foreign('id_guia_item')->references('id')->on('guia_item_catalogos');
-            $table->string('id_empleado',5);
-            $table->foreign('id_empleado')->references('id')->on('empleado_catalogos');
+            $table->unsignedBigInteger('guia_item_id');
+            $table->foreign('guia_item_id')->references('id')->on('guia_item_catalogos');
+            $table->char('empleado_id',5);
+            $table->foreign('empleado_id')->references('id')->on('empleado_catalogos');
             $table->string('respuesta');
             $table->timestamps();
         });

@@ -14,10 +14,11 @@ class CreateDepartamentoCatalogosTable extends Migration
     public function up()
     {
         Schema::create('departamento_catalogos', function (Blueprint $table) {
-            $table->string('id',6)->primary();
-            $table->string('area_id',6);
+            $table->char('id',6)->primary();
+            $table->char('area_id',6);
             $table->foreign('area_id')->references('id')->on('area_catalogos');
             $table->string('nombre');
+            $table->boolean('activo');
             $table->timestamps();
         });
     }

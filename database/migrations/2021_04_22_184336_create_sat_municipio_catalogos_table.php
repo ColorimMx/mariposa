@@ -14,10 +14,11 @@ class CreateSatMunicipioCatalogosTable extends Migration
     public function up()
     {
         Schema::create('sat_municipio_catalogos', function (Blueprint $table) {
-            $table->string('id',6)->primary();
-            $table->string('estado_id',6);
+            $table->char('id',6)->primary();
+            $table->char('estado_id',6);
             $table->foreign('estado_id')->references('id')->on('sat_estado_catalogos');
             $table->string('nombre');
+            $table->boolean('activo');
             $table->timestamps();
         });
     }

@@ -16,6 +16,7 @@ class CreateClienteGiroCatalogosTable extends Migration
         Schema::create('cliente_giro_catalogos', function (Blueprint $table) {
             $table->char('id',5)->primary();
             $table->string('nombre');
+            $table->boolean('activo');
             $table->timestamps();
         });
     }

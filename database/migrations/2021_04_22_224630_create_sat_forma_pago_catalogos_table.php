@@ -16,6 +16,7 @@ class CreateSatFormaPagoCatalogosTable extends Migration
         Schema::create('sat_forma_pago_catalogos', function (Blueprint $table) {
             $table->char('id',2)->primary();
             $table->string('nombre');
+            $table->boolean('activo');
             $table->timestamps();
         });
     }

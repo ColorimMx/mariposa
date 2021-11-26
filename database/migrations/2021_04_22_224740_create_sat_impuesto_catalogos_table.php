@@ -16,6 +16,7 @@ class CreateSatImpuestoCatalogosTable extends Migration
         Schema::create('sat_impuesto_catalogos', function (Blueprint $table) {
             $table->char('id',3)->primary();
             $table->string('nombre');
+            $table->boolean('activo');
             $table->timestamps();
         });
     }

@@ -13,10 +13,10 @@ class SubMenuCatalogo extends Model
     protected $dateFormat = 'Y-m-d\TH:i:s.v';
 
     public function subitems(){
-        return $this->hasMany('App\Models\SubItemMenuCatalogo', 'id_sub_menu');
+        return $this->hasMany('App\Models\SubItemMenuCatalogo', 'sub_menu_id');
     }
 
     public function menu(){
-        return $this->belongsTo('App\Models\MenuCatalogo','id','id_menu');
+        return $this->belongsTo('App\Models\MenuCatalogo','id','menu_id');
     }
 }

@@ -16,6 +16,7 @@ class CreateClienteZonaCatalogosTable extends Migration
         Schema::create('cliente_zona_catalogos', function (Blueprint $table) {
             $table->char('id',2)->primary();
             $table->string('nombre');
+            $table->boolean('activo');
             $table->timestamps();
         });
     }

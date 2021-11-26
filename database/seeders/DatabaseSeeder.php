@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\DemografiaPaisCatalogo;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -14,6 +15,14 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // \App\Models\User::factory(10)->create();
+        $this->call(MenuCatalogoSeeder::class);
+        $this->call(SubMenuCatalogoSeeder::class);
+        $this->call(SubItemMenuCatalogoSeeder::class);
+        $this->call(DemografiaPaisCatalogoSeeder::class);
+        $this->call(DemografiaEstadoCatalogoSeeder::class);
+        $this->call(DemografiaCiudadCatalogoSeeder::class);
+        $this->call(EmpresaCatalogoSeeder::class);
+        $this->call(EmpresaSucursalCatalogoSeeder::class);
         $this->call(AreaCatalogoSeeder::class);
         $this->call(DepartamentoCatalogoSeeder::class);
         $this->call(PuestoCatalogoSeeder::class);
@@ -25,16 +34,12 @@ class DatabaseSeeder extends Seeder
         $this->call(JornadaTipoCatalogoSeeder::class);
         $this->call(NominaTipoCatalogoSeeder::class);
         $this->call(LocalidadCatalogoSeeder::class);
-        $this->call(EmpresaCatalogoSeeder::class);
         $this->call(EstatusEstudioCatalogoSeeder::class);
         $this->call(SatPaisCatalogoSeeder::class);
         $this->call(SatEstadoCatalogoSeeder::class);
         $this->call(SatMunicipioCatalogoSeeder::class);
         $this->call(SatLocalidadCatalogoSeeder::class);
         $this->call(EmpleadoCatalogoSeeder::class);
-        $this->call(MenuCatalogoSeeder::class);
-        $this->call(SubMenuCatalogoSeeder::class);
-        $this->call(SubItemMenuCatalogoSeeder::class);
         $this->call(GuiaCatalogoSeeder::class);
         $this->call(GuiaSeccionCatalogoSeeder::class);
         $this->call(GuiaCategoriaCatalogoSeeder::class);

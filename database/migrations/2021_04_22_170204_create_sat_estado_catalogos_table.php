@@ -14,10 +14,11 @@ class CreateSatEstadoCatalogosTable extends Migration
     public function up()
     {
         Schema::create('sat_estado_catalogos', function (Blueprint $table) {
-            $table->string('id',6)->primary();
-            $table->string('pais_id',6);
+            $table->char('id',6)->primary();
+            $table->char('pais_id',6);
             $table->foreign('pais_id')->references('id')->on('sat_pais_catalogos');
             $table->string('nombre');
+            $table->boolean('activo');
             $table->timestamps();
         });
     }

@@ -13,11 +13,11 @@ class GuiaRegistro extends Model
 
     public function empleado(){
 
-        return$this->belongsTo(EmpleadoCatalogo::class,'id','id_empleado');
+        return$this->belongsTo(EmpleadoCatalogo::class,'id','empleado_id');
     }
 
     public function guiaItem(){
 
-        return$this->hasOne(GuiaItemCatalogo::class,'id','id_guia_item');
+        return$this->hasOne(GuiaItemCatalogo::class,'id','guia_item_id');
     }
 }

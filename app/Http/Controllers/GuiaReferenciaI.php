@@ -36,7 +36,7 @@ class GuiaReferenciaI extends Controller
         //$empleados = Empleado::all()->sortBy('A_PATERNO');
         $empleados = EmpleadoCatalogo::where('guia_I','=',false)->orderBy('a_paterno')->get();
         //$sec1 = Preguntas_Guia::where('ID_SECCION_GUIA','=','GRIS1')->orderBy('NUMERO_PREGUNTA')->get();
-        $custionarioI = GuiaItemCatalogo::where('id_guia', '=', '1')->orderBy('numero_pregunta')->get();
+        $custionarioI = GuiaItemCatalogo::where('guia_id', '=', 1)->orderBy('numero_pregunta')->get();
 
         return view('empleados.CuestionarioGI',compact('empleados','custionarioI'));
     }
@@ -81,15 +81,15 @@ class GuiaReferenciaI extends Controller
         $msg['nombres'] = $empleado->nombres;
         $msg['a_paterno'] = $empleado->a_paterno;
         $msg['a_materno'] = $empleado->a_materno;
-        $msg['id_empresa'] = $empleado->id_empresa;
+        $msg['empresa_id'] = $empleado->id_empresa;
         $msg['nom_empresa'] = $empleado->empresa->nombre;
         $msg['rfc'] = $empleado->empresa->RFC;
         $msg['subject'] = 'Guia de referencia I - ' . $msg['a_paterno'] .' '. $msg['a_materno'] .' '. $msg['nombres'];
 
         for ($x = 1; $x <= 20 ; $x++) {
             $guiaRIP = new GuiaRegistro();
-            $guiaRIP->id_guia_item =$x;
-            $guiaRIP->id_empleado = $msg['empleado'];
+            $guiaRIP->guia_item_id =$x;
+            $guiaRIP->empleado_id = $msg['empleado'];
             $guiaRIP->respuesta = $msg['pregunta'.$x];
             $guiaRIP->save();
         }

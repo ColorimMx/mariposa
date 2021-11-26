@@ -16,6 +16,7 @@ class CreateProductoSubgrupoCatalogosTable extends Migration
         Schema::create('producto_subgrupo_catalogos', function (Blueprint $table) {
             $table->char('id',5)->primary();
             $table->string('nombre');
+            $table->boolean('activo');
             $table->timestamps();
         });
     }

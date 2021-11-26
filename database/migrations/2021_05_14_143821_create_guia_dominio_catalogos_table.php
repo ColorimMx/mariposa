@@ -16,6 +16,7 @@ class CreateGuiaDominioCatalogosTable extends Migration
         Schema::create('guia_dominio_catalogos', function (Blueprint $table) {
             $table->id();
             $table->string('nombre');
+            $table->boolean('activo');
             $table->timestamps();
         });
     }

@@ -16,20 +16,27 @@ class GuiaCategoriaCatalogoSeeder extends Seeder
     {
         GuiaCategoriaCatalogo::create([
             'nombre' =>	'Ambiente De Trabajo',
+            'activo' => '1'
             ]);
         GuiaCategoriaCatalogo::create([
             'nombre' =>	'Entorno Organizacional',
+            'activo' => '1'
             ]);
         GuiaCategoriaCatalogo::create([
             'nombre' =>	'Factores Propios De La Actividad',
+            'activo' => '1'
             ]);
         GuiaCategoriaCatalogo::create([
-            'nombre' =>	'General',	]);
+            'nombre' =>	'General',
+            'activo' => '1'
+            ]);
         GuiaCategoriaCatalogo::create([
             'nombre' =>	'Liderazgo Y Relaciones En El Trabajo',
+            'activo' => '1'
             ]);
         GuiaCategoriaCatalogo::create([
             'nombre' =>	'Organización Del Tiempo De Trabajo',
+            'activo' => '1'
             ]);
     }
 }

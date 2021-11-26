@@ -16,6 +16,7 @@ class CreateClienteLocalizacionCatalogosTable extends Migration
         Schema::create('cliente_localizacion_catalogos', function (Blueprint $table) {
             $table->char('id',1)->primary();
             $table->string('nombre');
+            $table->boolean('activo');
             $table->timestamps();
         });
     }

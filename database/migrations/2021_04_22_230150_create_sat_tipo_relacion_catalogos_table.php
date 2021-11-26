@@ -16,6 +16,7 @@ class CreateSatTipoRelacionCatalogosTable extends Migration
         Schema::create('sat_tipo_relacion_catalogos', function (Blueprint $table) {
             $table->char('id',2)->primary();
             $table->string('nombre');
+            $table->boolean('activo');
             $table->timestamps();
         });
     }

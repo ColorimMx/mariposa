@@ -16,6 +16,7 @@ class CreateSatRegimenFiscalCatalogosTable extends Migration
         Schema::create('sat_regimen_fiscal_catalogos', function (Blueprint $table) {
             $table->char('id',3)->primary();
             $table->string('nombre');
+            $table->boolean('activo');
             $table->timestamps();
         });
     }

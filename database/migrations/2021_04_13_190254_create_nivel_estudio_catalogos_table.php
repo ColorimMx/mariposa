@@ -14,8 +14,9 @@ class CreateNivelEstudioCatalogosTable extends Migration
     public function up()
     {
         Schema::create('nivel_estudio_catalogos', function (Blueprint $table) {
-            $table->string('id',6)->primary();
+            $table->char('id',6)->primary();
             $table->string('nombre');
+            $table->boolean('activo');
             $table->timestamps();
         });
     }

@@ -15,78 +15,104 @@ class GuiaDimensionCatalogoSeeder extends Seeder
     public function run()
     {
         GuiaDimensionCatalogo::create([
-            'nombre' => 	'Características Del Liderazgo',
+            'nombre' =>	'Características Del Liderazgo',
+            'activo' => '1'
             ]);
         GuiaDimensionCatalogo::create([
-            'nombre' => 	'Carga Mental',
+            'nombre' =>	'Carga Mental',
+            'activo' => '1'
             ]);
         GuiaDimensionCatalogo::create([
-            'nombre' => 	'Cargas Contradictorias O Inconsistentes',
+            'nombre' =>	'Cargas Contradictorias O Inconsistentes',
+            'activo' => '1'
             ]);
         GuiaDimensionCatalogo::create([
-            'nombre' => 	'Cargas Cuantitativas',
+            'nombre' =>	'Cargas Cuantitativas',
+            'activo' => '1'
             ]);
         GuiaDimensionCatalogo::create([
-            'nombre' => 	'Cargas De Alta Responsabilidad',
+            'nombre' =>	'Cargas De Alta Responsabilidad',
+            'activo' => '1'
             ]);
         GuiaDimensionCatalogo::create([
-            'nombre' => 	'Cargas Psicológicas Emocionales',
+            'nombre' =>	'Cargas Psicológicas Emocionales',
+            'activo' => '1'
             ]);
         GuiaDimensionCatalogo::create([
-            'nombre' => 	'Condiciones Deficientes E Insalubres',
+            'nombre' =>	'Condiciones Deficientes E Insalubres',
+            'activo' => '1'
             ]);
         GuiaDimensionCatalogo::create([
-            'nombre' => 	'Condiciones Peligrosas E Inseguras',
+            'nombre' =>	'Condiciones Peligrosas E Inseguras',
+            'activo' => '1'
             ]);
         GuiaDimensionCatalogo::create([
-            'nombre' => 	'Deficiente Relación Con Los Colaboradores Que Supervisa',
+            'nombre' =>	'Deficiente Relación Con Los Colaboradores Que Supervisa',
+            'activo' => '1'
             ]);
         GuiaDimensionCatalogo::create([
-            'nombre' => 	'Escasa Claridad De Funciones',
+            'nombre' =>	'Escasa Claridad De Funciones',
+            'activo' => '1'
             ]);
         GuiaDimensionCatalogo::create([
-            'nombre' => 	'Escasa O Nula Retroalimentación Del Desempeño',
+            'nombre' =>	'Escasa O Nula Retroalimentación Del Desempeño',
+            'activo' => '1'
             ]);
         GuiaDimensionCatalogo::create([
-            'nombre' => 	'Escaso O Nulo Reconocimiento Y Compensación',
+            'nombre' =>	'Escaso O Nulo Reconocimiento Y Compensación',
+            'activo' => '1'
             ]);
         GuiaDimensionCatalogo::create([
-            'nombre' => 	'Falta De Control Y Autonomía Sobre El Trabajo',
+            'nombre' =>	'Falta De Control Y Autonomía Sobre El Trabajo',
+            'activo' => '1'
             ]);
         GuiaDimensionCatalogo::create([
-            'nombre' => 	'General',	]);
-        GuiaDimensionCatalogo::create([
-            'nombre' => 	'Influencia De Las Responsabilidades Familiares',
+            'nombre' =>	'General',
+            'activo' => '1'
             ]);
         GuiaDimensionCatalogo::create([
-            'nombre' => 	'Influencia Del Trabajo Fuera Del Centro Laboral',
+            'nombre' =>	'Influencia De Las Responsabilidades Familiares',
+            'activo' => '1'
             ]);
         GuiaDimensionCatalogo::create([
-            'nombre' => 	'Insuficiente Participacion Y Manejo Del Cambio',
+            'nombre' =>	'Influencia Del Trabajo Fuera Del Centro Laboral',
+            'activo' => '1'
             ]);
         GuiaDimensionCatalogo::create([
-            'nombre' => 	'Jornadas De Trabajo Extensas',
+            'nombre' =>	'Insuficiente Participacion Y Manejo Del Cambio',
+            'activo' => '1'
             ]);
         GuiaDimensionCatalogo::create([
-            'nombre' => 	'Limitada O Inexistente Capacitación',
+            'nombre' =>	'Jornadas De Trabajo Extensas',
+            'activo' => '1'
             ]);
         GuiaDimensionCatalogo::create([
-            'nombre' => 	'Limitada O Nula Posibilidad De Desarrollo',
+            'nombre' =>	'Limitada O Inexistente Capacitación',
+            'activo' => '1'
             ]);
         GuiaDimensionCatalogo::create([
-            'nombre' => 	'Limitado Sentido De Pertenencia',
+            'nombre' =>	'Limitada O Nula Posibilidad De Desarrollo',
+            'activo' => '1'
             ]);
         GuiaDimensionCatalogo::create([
-            'nombre' => 	'Relaciones Sociales En El Trabajo',
+            'nombre' =>	'Limitado Sentido De Pertenencia',
+            'activo' => '1'
             ]);
         GuiaDimensionCatalogo::create([
-            'nombre' => 	'Ritmos De Trabajo Acelerado',
+            'nombre' =>	'Relaciones Sociales En El Trabajo',
+            'activo' => '1'
             ]);
         GuiaDimensionCatalogo::create([
-            'nombre' => 	'Trabajos Peligrosos',
+            'nombre' =>	'Ritmos De Trabajo Acelerado',
+            'activo' => '1'
             ]);
         GuiaDimensionCatalogo::create([
-            'nombre' => 	'Violencia Laboral',
+            'nombre' =>	'Trabajos Peligrosos',
+            'activo' => '1'
+            ]);
+        GuiaDimensionCatalogo::create([
+            'nombre' =>	'Violencia Laboral',
+            'activo' => '1'
             ]);
     }
 }

@@ -16,6 +16,7 @@ class CreateSatTipoComprobanteCatalogosTable extends Migration
         Schema::create('sat_tipo_comprobante_catalogos', function (Blueprint $table) {
             $table->char('id',1)->primary();
             $table->string('nombre');
+            $table->boolean('activo');
             $table->timestamps();
         });
     }

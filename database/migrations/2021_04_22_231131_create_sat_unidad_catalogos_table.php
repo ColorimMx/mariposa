@@ -16,6 +16,7 @@ class CreateSatUnidadCatalogosTable extends Migration
         Schema::create('sat_unidad_catalogos', function (Blueprint $table) {
             $table->char('id',3)->primary();
             $table->string('nombre');
+            $table->boolean('activo');
             $table->timestamps();
         });
     }

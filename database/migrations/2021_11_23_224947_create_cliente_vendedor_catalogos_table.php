@@ -16,7 +16,7 @@ class CreateClienteVendedorCatalogosTable extends Migration
         Schema::create('cliente_vendedor_catalogos', function (Blueprint $table) {
             $table->char('id',5)->primary();
             $table->string('nombre');
-            $table->boolean('inactivo');
+            $table->boolean('activo');
             $table->timestamps();
         });
     }

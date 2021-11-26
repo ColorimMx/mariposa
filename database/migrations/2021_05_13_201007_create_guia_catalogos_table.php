@@ -17,6 +17,7 @@ class CreateGuiaCatalogosTable extends Migration
             $table->id();
             $table->string('nombre');
             $table->string('Descripcion');
+            $table->boolean('activo');
             $table->timestamps();
         });
     }

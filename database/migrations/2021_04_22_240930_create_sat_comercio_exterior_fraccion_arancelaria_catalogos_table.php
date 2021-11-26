@@ -16,6 +16,7 @@ class CreateSatComercioExteriorFraccionArancelariaCatalogosTable extends Migrati
         Schema::create('sat_comercio_exterior_fraccion_arancelaria_catalogos', function (Blueprint $table) {
             $table->char('id',10)->primary();
             $table->string('nombre');
+            $table->boolean('activo');
             $table->timestamps();
         });
     }

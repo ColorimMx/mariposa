@@ -16,11 +16,12 @@ class CreateSubMenuCatalogosTable extends Migration
         Schema::create('sub_menu_catalogos', function (Blueprint $table) {
             $table->id();
             $table->string('descripcion');
-            $table->unsignedBigInteger('id_menu');
-            $table->foreign('id_menu')->references('id')->on('menu_catalogos');
+            $table->unsignedBigInteger('menu_id');
+            $table->foreign('menu_id')->references('id')->on('menu_catalogos');
             $table->string('icon');
             $table->string('icon_color');
             $table->string('classes');
+            $table->boolean('activo');
             $table->timestamps();
         });
     }

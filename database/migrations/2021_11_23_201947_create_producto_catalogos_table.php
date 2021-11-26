@@ -47,10 +47,15 @@ class CreateProductoCatalogosTable extends Migration
             $table->char('cuenta_costo_id',8)->nullable();
             $table->char('cuenta_ingreso_nacional_id',8)->nullable();
             $table->char('cuenta_ingreso_extrangero_id',8)->nullable();
-            $table->char('fraccion_arancelaria_id',8)->nullable();
-            $table->foreign('fraccion_arancelaria_id')->references('id')->on('sat_comercio_exterior_fraccion_arancelaria_catalogos');
-            $table->char('unidad_aduana_id',2)->nullable();
-            $table->foreign('unidad_aduana_id')->references('id')->on('sat_comercio_exterior_unidad_aduana_catalogos');
+            $table->char('sat_unidad_id',3)->nullable();
+            $table->foreign('sat_unidad_id')->references('id')->on('sat_unidad_catalogos');
+            $table->char('sat_producto_servicio_id',8)->nullable();
+            $table->foreign('sat_producto_servicio_id')->references('id')->on('sat_producto_servicio_catalogos');
+            $table->char('sat_fraccion_arancelaria_id',10)->nullable();
+            $table->foreign('sat_fraccion_arancelaria_id')->references('id')->on('sat_comercio_exterior_fraccion_arancelaria_catalogos');
+            $table->char('sat_unidad_aduana_id',2)->nullable();
+            $table->foreign('sat_unidad_aduana_id')->references('id')->on('sat_comercio_exterior_unidad_aduana_catalogos');
+            $table->boolean('activo');
             });
     }
 

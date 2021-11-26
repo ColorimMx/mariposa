@@ -16,8 +16,27 @@ class CreateEmpresaSucursalCatalogosTable extends Migration
         Schema::create('empresa_sucursal_catalogos', function (Blueprint $table) {
             $table->char('id',3)->primary();
             $table->string('nombre');
-            $table->char('empresa_id',6);
+            $table->char('empresa_id',5);
             $table->foreign('empresa_id')->references('id')->on('empresa_catalogos');
+            $table->string('direccion_principal_1')->nullable();
+            $table->string('direccion_principal_2')->nullable();
+            $table->string('direccion_principal_3')->nullable();
+            $table->string('num_exterior')->nullable();
+            $table->string('num_interior')->nullable();
+            $table->string('colonia')->nullable();
+            $table->string('municipio')->nullable();
+            $table->string('localidad')->nullable();
+            $table->char('ciudad_id',5)->nullable();
+            $table->foreign('ciudad_id')->references('id')->on('demografia_ciudad_catalogos');
+            $table->char('estado_id',5)->nullable();
+            $table->foreign('estado_id')->references('id')->on('demografia_estado_catalogos');
+            $table->char('pais_id',3)->nullable();
+            $table->foreign('pais_id')->references('id')->on('demografia_pais_catalogos');
+            $table->string('cp')->nullable();
+            $table->string('telefono')->nullable();
+            $table->string('telefono_2')->nullable();
+            $table->string('fax')->nullable();
+            $table->boolean('activo');
             $table->timestamps();
         });
     }

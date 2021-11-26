@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateDemografiaEstadoCatalogosTable extends Migration
+class CreateDemografiaPaisCatalogosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,10 @@ class CreateDemografiaEstadoCatalogosTable extends Migration
      */
     public function up()
     {
-        Schema::create('demografia_estado_catalogos', function (Blueprint $table) {
-            $table->char('id',5)->primary();
+        Schema::create('demografia_pais_catalogos', function (Blueprint $table) {
+            $table->char('id',3)->primary();
             $table->string('nombre');
+            $table->boolean('activo');
             $table->timestamps();
         });
     }
@@ -27,6 +28,6 @@ class CreateDemografiaEstadoCatalogosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('demografia_estado_catalogos');
+        Schema::dropIfExists('demografia_pais_catalogos');
     }
 }

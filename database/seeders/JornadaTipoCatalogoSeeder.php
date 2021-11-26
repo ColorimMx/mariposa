@@ -17,16 +17,19 @@ class JornadaTipoCatalogoSeeder extends Seeder
         JornadaTipoCatalogo::create([
             'id' => 'FIDIU',
             'nombre' => 'Fijo Diurno',
+            'activo' => '1'
         ]);
 
         JornadaTipoCatalogo::create([
             'id' => 'FIMIX',
             'nombre' => 'Fijo Mixto',
+            'activo' => '1'
         ]);
 
         JornadaTipoCatalogo::create([
             'id' => 'FINOC',
             'nombre' => 'Fijo Nocturno',
+            'activo' => '1'
         ]);
     }
 }

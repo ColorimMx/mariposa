@@ -16,6 +16,7 @@ class CreateSatComercioExteriorPedimentoCatalogosTable extends Migration
         Schema::create('sat_comercio_exterior_pedimento_catalogos', function (Blueprint $table) {
             $table->char('id',2)->primary();
             $table->string('nombre');
+            $table->boolean('activo');
             $table->timestamps();
         });
     }

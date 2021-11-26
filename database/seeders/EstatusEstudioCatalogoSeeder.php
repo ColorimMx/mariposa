@@ -17,11 +17,13 @@ class EstatusEstudioCatalogoSeeder extends Seeder
         EstatusEstudioCatalogo::create([
             'id' => 'INCOM',
             'nombre' => 'Incompleta',
+            'activo' => '1'
         ]);
 
         EstatusEstudioCatalogo::create([
             'id' => 'TERMI',
             'nombre' => 'Terminada',
+            'activo' => '1'
         ]);
     }
 }

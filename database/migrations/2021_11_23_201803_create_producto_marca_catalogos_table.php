@@ -16,6 +16,7 @@ class CreateProductoMarcaCatalogosTable extends Migration
         Schema::create('producto_marca_catalogos', function (Blueprint $table) {
             $table->char('id',5)->primary();
             $table->string('nombre');
+            $table->boolean('activo');
             $table->timestamps();
         });
     }

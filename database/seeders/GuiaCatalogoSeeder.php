@@ -17,22 +17,27 @@ class GuiaCatalogoSeeder extends Seeder
         GuiaCatalogo::create([
             'nombre' => 'Guia de Referencia I',
             'Descripcion' => 'Identificar A Los Trabajadores Que Fueron Sujetos A Acontecimientos Traumáticos Severos',
+            'activo' => '1'
         ]);
         GuiaCatalogo::create([
             'nombre' => 'Guia de Referencia II',
             'Descripcion' => 'Identificación Y Análisis De Los Factores De Riesgo Psicosocial',
+            'activo' => '1'
         ]);
         GuiaCatalogo::create([
             'nombre' => 'Guia de Referencia III',
             'Descripcion' => 'Identificación Y Análisis De Los Factores De Riesgo Psicosocial',
+            'activo' => '1'
         ]);
         GuiaCatalogo::create([
             'nombre' => 'Guia de Referencia IV',
             'Descripcion' => 'Política De Prevención De Riesgos Psicosociales',
+            'activo' => '1'
         ]);
         GuiaCatalogo::create([
             'nombre' => 'Guia de Referencia V',
             'Descripcion' => 'Datos Del Trabajador',
+            'activo' => '1'
         ]);
 
     }

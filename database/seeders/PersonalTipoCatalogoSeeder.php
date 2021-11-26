@@ -17,16 +17,19 @@ class PersonalTipoCatalogoSeeder extends Seeder
         PersonalTipoCatalogo::create([
             'id' => 'CONFI',
             'nombre' => 'Confianza',
+            'activo' => '1'
         ]);
 
         PersonalTipoCatalogo::create([
             'id' => 'NINGU',
             'nombre' => 'Ninguno',
+            'activo' => '1'
         ]);
 
         PersonalTipoCatalogo::create([
             'id' => 'SINDI',
             'nombre' => 'Sindicalizado',
+            'activo' => '1'
         ]);
     }
 }

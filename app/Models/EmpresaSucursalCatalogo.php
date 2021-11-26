@@ -5,20 +5,15 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class EmpleadoCatalogo extends Model
+class EmpresaSucursalCatalogo extends Model
 {
     use HasFactory;
 
     public $incrementing = false;
-    protected $fillable = ['guia_I','guia_II','guia_III'];
-    protected $table = "empleado_catalogos";
+    protected $table = "empresa_sucursal_catalogos";
     protected $dateFormat = 'Y-m-d\TH:i:s.v';
 
     public function empresa(){
         return $this->hasOne(EmpresaCatalogo::class,'id','empresa_id');
-    }
-    public function guiaregistro(){
-
-        return$this->hasOne(GuiaRegistro::class,'empleado_id','id');
     }
 }

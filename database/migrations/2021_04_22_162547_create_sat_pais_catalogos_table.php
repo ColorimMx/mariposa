@@ -14,8 +14,9 @@ class CreateSatPaisCatalogosTable extends Migration
     public function up()
     {
         Schema::create('sat_pais_catalogos', function (Blueprint $table) {
-            $table->string('id',6)->primary();
+            $table->char('id',6)->primary();
             $table->string('nombre');
+            $table->boolean('activo');
             $table->timestamps();
         });
     }

@@ -15,154 +15,154 @@ class DepartamentoCatalogoSeeder extends Seeder
     public function run()
     {
         DepartamentoCatalogo::create([
-            'id' => 	'ALMAC',
-            'id_area' => 	'OPERA',
+            'id' => 'ALMAC',
+            'area_id' => 'OPERA',
             'nombre' =>	'Almacén',
-
+            'activo' => '1'
         ]);
         DepartamentoCatalogo::create([
-            'id' => 	'CALID',
-            'id_area' => 	'OPERA',
+            'id' => 'CALID',
+            'area_id' => 'OPERA',
             'nombre' =>	'Calidad',
-
+            'activo' => '1'
         ]);
         DepartamentoCatalogo::create([
-            'id' => 	'COMPR',
-            'id_area' => 	'OPERA',
+            'id' => 'COMPR',
+            'area_id' => 'OPERA',
             'nombre' =>	'Compras',
-
+            'activo' => '1'
         ]);
         DepartamentoCatalogo::create([
-            'id' => 	'CONTA',
-            'id_area' => 	'FINAN',
+            'id' => 'CONTA',
+            'area_id' => 'FINAN',
             'nombre' =>	'Contabilidad',
-
+            'activo' => '1'
         ]);
         DepartamentoCatalogo::create([
-            'id' => 	'COSTO',
-            'id_area' => 	'FINAN',
+            'id' => 'COSTO',
+            'area_id' => 'FINAN',
             'nombre' =>	'Costos',
-
+            'activo' => '1'
         ]);
         DepartamentoCatalogo::create([
-            'id' => 	'CRCXC',
-            'id_area' => 	'FINAN',
+            'id' => 'CRCXC',
+            'area_id' => 'FINAN',
             'nombre' =>	'Cuentas por pagar',
-
+            'activo' => '1'
         ]);
         DepartamentoCatalogo::create([
-            'id' => 	'CRCXP',
-            'id_area' => 	'FINAN',
+            'id' => 'CRCXP',
+            'area_id' => 'FINAN',
             'nombre' =>	'Crédito y cobranza',
-
+            'activo' => '1'
         ]);
         DepartamentoCatalogo::create([
-            'id' => 	'DIRGR',
-            'id_area' => 	'DIRGR',
+            'id' => 'DIRGR',
+            'area_id' => 'DIRGR',
             'nombre' =>	'Dirección general',
-
+            'activo' => '1'
         ]);
         DepartamentoCatalogo::create([
-            'id' => 	'DISEN',
-            'id_area' => 	'ADMIN',
+            'id' => 'DISEN',
+            'area_id' => 'ADMIN',
             'nombre' =>	'Diseño',
-
+            'activo' => '1'
         ]);
         DepartamentoCatalogo::create([
-            'id' => 	'EMBAR',
-            'id_area' => 	'COMER',
+            'id' => 'EMBAR',
+            'area_id' => 'COMER',
             'nombre' =>	'Embarques',
-
+            'activo' => '1'
         ]);
         DepartamentoCatalogo::create([
-            'id' => 	'FACTU',
-            'id_area' => 	'COMER',
+            'id' => 'FACTU',
+            'area_id' => 'COMER',
             'nombre' =>	'Facturación',
-
+            'activo' => '1'
         ]);
         DepartamentoCatalogo::create([
-            'id' => 	'FISCA',
-            'id_area' => 	'FINAN',
+            'id' => 'FISCA',
+            'area_id' => 'FINAN',
             'nombre' =>	'Fiscal',
-
+            'activo' => '1'
         ]);
         DepartamentoCatalogo::create([
-            'id' => 	'LIMPI',
-            'id_area' => 	'ADMIN',
+            'id' => 'LIMPI',
+            'area_id' => 'ADMIN',
             'nombre' =>	'Limpieza',
-
+            'activo' => '1'
         ]);
         DepartamentoCatalogo::create([
-            'id' => 	'PDVXX',
-            'id_area' => 	'COMER',
+            'id' => 'PDVXX',
+            'area_id' => 'COMER',
             'nombre' =>	'Punto de Venta',
-
+            'activo' => '1'
         ]);
         DepartamentoCatalogo::create([
-            'id' => 	'PEDID',
-            'id_area' => 	'COMER',
+            'id' => 'PEDID',
+            'area_id' => 'COMER',
             'nombre' =>	'Pedidos',
-
+            'activo' => '1'
         ]);
         DepartamentoCatalogo::create([
-            'id' => 	'PLANE',
-            'id_area' => 	'COMER',
+            'id' => 'PLANE',
+            'area_id' => 'COMER',
             'nombre' =>	'Planeación',
-
+            'activo' => '1'
         ]);
         DepartamentoCatalogo::create([
-            'id' => 	'PROD',
-            'id_area' => 	'OPERA',
+            'id' => 'PROD',
+            'area_id' => 'OPERA',
             'nombre' =>	'Producción',
-
+            'activo' => '1'
         ]);
         DepartamentoCatalogo::create([
-            'id' => 	'PROMO',
-            'id_area' => 	'COMER',
+            'id' => 'PROMO',
+            'area_id' => 'COMER',
             'nombre' =>	'Promotoría',
-
+            'activo' => '1'
         ]);
         DepartamentoCatalogo::create([
-            'id' => 	'RECEP',
-            'id_area' => 	'COMER',
+            'id' => 'RECEP',
+            'area_id' => 'COMER',
             'nombre' =>	'Recepción',
-
+            'activo' => '1'
         ]);
         DepartamentoCatalogo::create([
-            'id' => 	'RHUMA',
-            'id_area' => 	'ADMIN',
+            'id' => 'RHUMA',
+            'area_id' => 'ADMIN',
             'nombre' =>	'Recursos Humanos',
-
+            'activo' => '1'
         ]);
         DepartamentoCatalogo::create([
-            'id' => 	'SEGHI',
-            'id_area' => 	'ADMIN',
+            'id' => 'SEGHI',
+            'area_id' => 'ADMIN',
             'nombre' =>	'Seguridad e Higiene',
-
+            'activo' => '1'
         ]);
         DepartamentoCatalogo::create([
-            'id' => 	'SISTE',
-            'id_area' => 	'ADMIN',
+            'id' => 'SISTE',
+            'area_id' => 'ADMIN',
             'nombre' =>	'Sistemas',
-
+            'activo' => '1'
         ]);
         DepartamentoCatalogo::create([
-            'id' => 	'TELEM',
-            'id_area' => 	'COMER',
+            'id' => 'TELEM',
+            'area_id' => 'COMER',
             'nombre' =>	'Telemarketing',
-
+            'activo' => '1'
         ]);
         DepartamentoCatalogo::create([
-            'id' => 	'TESOR',
-            'id_area' => 	'FINAN',
+            'id' => 'TESOR',
+            'area_id' => 'FINAN',
             'nombre' =>	'Tesorería',
-
+            'activo' => '1'
         ]);
         DepartamentoCatalogo::create([
-            'id' => 	'VENTA',
-            'id_area' => 	'COMER',
+            'id' => 'VENTA',
+            'area_id' => 'COMER',
             'nombre' =>	'Ventas',
-
+            'activo' => '1'
         ]);
     }
 }

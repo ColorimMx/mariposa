@@ -15,23 +15,27 @@ class PuestoTipoCatalogoSeeder extends Seeder
     public function run()
     {
         PuestoTipoCatalogo::create([
-            'id' => 	'GEREN',
+            'id' => 'GEREN',
             'nombre' =>	'Gerente',
+            'activo' => '1'
         ]);
 
         PuestoTipoCatalogo::create([
-            'id' => 	'OPERA',
+            'id' => 'OPERA',
             'nombre' =>	'Operativo',
+            'activo' => '1'
         ]);
 
         PuestoTipoCatalogo::create([
-            'id' => 	'PROTE',
+            'id' => 'PROTE',
             'nombre' =>	'Profesional o Técnico',
+            'activo' => '1'
         ]);
 
         PuestoTipoCatalogo::create([
-            'id' => 	'SUPER',
+            'id' => 'SUPER',
             'nombre' =>	'Supervisor',
+            'activo' => '1'
         ]);
     }
 }

@@ -15,138 +15,140 @@ class PuestoCatalogoSeeder extends Seeder
     public function run()
     {
         PuestoCatalogo::create([
-            'id' => 	'ANALI',
+            'id' => 'ANALI',
             'nombre' =>	'Analista',
+            'activo' => '1'
         ]);
         PuestoCatalogo::create([
-                'id' => 	'ASCOM',
-                'nombre' =>	'Asesor Comercial',
+            'id' => 'ASCOM',
+            'nombre' =>	'Asesor Comercial',
 
+            'activo' => '1'
             ]);
         PuestoCatalogo::create([
-            'id' => 	'ASIST',
+            'id' => 'ASIST',
             'nombre' =>	'Asistente',
-
+            'activo' => '1'
         ]);
         PuestoCatalogo::create([
-            'id' => 	'AUXIL',
+            'id' => 'AUXIL',
             'nombre' =>	'Auxiliar',
-
+            'activo' => '1'
         ]);
         PuestoCatalogo::create([
-            'id' => 	'AYUGR',
+            'id' => 'AYUGR',
             'nombre' =>	'Ayudante General',
-
+            'activo' => '1'
         ]);
         PuestoCatalogo::create([
-            'id' => 	'AYURE',
+            'id' => 'AYURE',
             'nombre' =>	'Ayudante Reparto',
-
+            'activo' => '1'
         ]);
         PuestoCatalogo::create([
-            'id' => 	'AYUXA',
+            'id' => 'AYUXA',
             'nombre' =>	'Ayudante General A',
-
+            'activo' => '1'
         ]);
         PuestoCatalogo::create([
-            'id' => 	'AYUXB',
+            'id' => 'AYUXB',
             'nombre' =>	'Ayudante General B',
-
+            'activo' => '1'
         ]);
         PuestoCatalogo::create([
-            'id' => 	'AYUXC',
+            'id' => 'AYUXC',
             'nombre' =>	'Ayudante General C',
-
+            'activo' => '1'
         ]);
         PuestoCatalogo::create([
-            'id' => 	'CAPTU',
+            'id' => 'CAPTU',
             'nombre' =>	'Capturista',
-
+            'activo' => '1'
         ]);
         PuestoCatalogo::create([
-            'id' => 	'CHOFE',
+            'id' => 'CHOFE',
             'nombre' =>	'Chofer',
-
+            'activo' => '1'
         ]);
         PuestoCatalogo::create([
-            'id' => 	'COMGR',
+            'id' => 'COMGR',
             'nombre' =>	'Community Manager',
-
+            'activo' => '1'
         ]);
         PuestoCatalogo::create([
-            'id' => 	'CONTA',
+            'id' => 'CONTA',
             'nombre' =>	'Contador',
-
+            'activo' => '1'
         ]);
         PuestoCatalogo::create([
-            'id' => 	'COORD',
+            'id' => 'COORD',
             'nombre' =>	'Coordinador',
-
+            'activo' => '1'
         ]);
         PuestoCatalogo::create([
-            'id' => 	'DIREC',
+            'id' => 'DIREC',
             'nombre' =>	'Director',
-
+            'activo' => '1'
         ]);
         PuestoCatalogo::create([
-            'id' => 	'GEREN',
+            'id' => 'GEREN',
             'nombre' =>	'Gerente',
-
+            'activo' => '1'
         ]);
         PuestoCatalogo::create([
-            'id' => 	'JEFEX',
+            'id' => 'JEFEX',
             'nombre' =>	'Jefe',
-
+            'activo' => '1'
         ]);
         PuestoCatalogo::create([
-            'id' => 	'OPESA',
+            'id' => 'OPESA',
             'nombre' =>	'Operador Especial A',
-
+            'activo' => '1'
         ]);
         PuestoCatalogo::create([
-            'id' => 	'OPESB',
+            'id' => 'OPESB',
             'nombre' =>	'Operador Especial B',
-
+            'activo' => '1'
         ]);
         PuestoCatalogo::create([
-            'id' => 	'OPESC',
+            'id' => 'OPESC',
             'nombre' =>	'Operador Especial C',
-
+            'activo' => '1'
         ]);
         PuestoCatalogo::create([
-            'id' => 	'OPEXA',
+            'id' => 'OPEXA',
             'nombre' =>	'Operador A',
-
+            'activo' => '1'
         ]);
         PuestoCatalogo::create([
-            'id' => 	'OPEXB',
+            'id' => 'OPEXB',
             'nombre' =>	'Operador B',
-
+            'activo' => '1'
         ]);
         PuestoCatalogo::create([
-            'id' => 	'OPEXC',
+            'id' => 'OPEXC',
             'nombre' =>	'Operador C',
-
+            'activo' => '1'
         ]);
         PuestoCatalogo::create([
-            'id' => 	'PLANE',
+            'id' => 'PLANE',
             'nombre' =>	'Planeador',
-
+            'activo' => '1'
         ]);
         PuestoCatalogo::create([
-            'id' => 	'RECEP',
+            'id' => 'RECEP',
             'nombre' =>	'Recepcion',
-
+            'activo' => '1'
         ]);
         PuestoCatalogo::create([
-            'id' => 	'SUPER',
+            'id' => 'SUPER',
             'nombre' =>	'Supervisor',
-
+            'activo' => '1'
         ]);
         PuestoCatalogo::create([
-            'id' => 	'VENDE',
+            'id' => 'VENDE',
             'nombre' =>	'Vendedor',
-
+            'activo' => '1'
         ]);
     }
 }

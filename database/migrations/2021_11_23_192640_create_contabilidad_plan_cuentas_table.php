@@ -21,7 +21,7 @@ class CreateContabilidadPlanCuentasTable extends Migration
             $table->string('tipo_configuracion')->nullable();
             $table->decimal('id_agrupacion',5,2);
             $table->char('id_clasificacion',3)->nullable();
-            $table->boolean('inactivo');
+            $table->boolean('activo');
             $table->timestamps();
         });
     }

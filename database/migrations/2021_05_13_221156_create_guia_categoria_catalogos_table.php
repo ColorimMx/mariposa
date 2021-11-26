@@ -16,6 +16,7 @@ class CreateGuiaCategoriaCatalogosTable extends Migration
         Schema::create('guia_categoria_catalogos', function (Blueprint $table) {
             $table->id();
             $table->string('nombre');
+            $table->boolean('activo');
             $table->timestamps();
         });
     }

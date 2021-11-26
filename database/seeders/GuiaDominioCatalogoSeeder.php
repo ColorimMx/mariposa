@@ -16,36 +16,47 @@ class GuiaDominioCatalogoSeeder extends Seeder
     {
         GuiaDominioCatalogo::create([
             'nombre' => 	'Carga De Trabajo',
+            'activo' => '1'
             ]);
         GuiaDominioCatalogo::create([
             'nombre' => 	'Condiciones En El Ambiente De Trabajo',
+            'activo' => '1'
             ]);
         GuiaDominioCatalogo::create([
             'nombre' => 	'Falta De Control Sobre El Trabajo',
+            'activo' => '1'
             ]);
         GuiaDominioCatalogo::create([
             'nombre' => 	'General',
+            'activo' => '1'
             ]);
         GuiaDominioCatalogo::create([
             'nombre' => 	'Insuficiente Sentido De Pertenencia E Inestabilidad',
+            'activo' => '1'
             ]);
         GuiaDominioCatalogo::create([
             'nombre' => 	'Interferencia En La Relación Trabajofamilia',
+            'activo' => '1'
             ]);
         GuiaDominioCatalogo::create([
             'nombre' => 	'Jornada De Trabajo',
+            'activo' => '1'
             ]);
         GuiaDominioCatalogo::create([
             'nombre' => 	'Liderazgo',
+            'activo' => '1'
             ]);
         GuiaDominioCatalogo::create([
             'nombre' => 	'Reconocimiento Del Desempeño',
+            'activo' => '1'
             ]);
         GuiaDominioCatalogo::create([
             'nombre' => 	'Relaciones En El Trabajo',
+            'activo' => '1'
             ]);
         GuiaDominioCatalogo::create([
             'nombre' => 	'Violencia',
+            'activo' => '1'
             ]);
     }
 }

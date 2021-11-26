@@ -16,6 +16,7 @@ class CreateSatComercioExteriorTipoOperacionCatalogosTable extends Migration
         Schema::create('sat_comercio_exterior_tipo_operacion_catalogos', function (Blueprint $table) {
             $table->char('id',1)->primary();
             $table->string('nombre');
+            $table->boolean('activo');
             $table->timestamps();
         });
     }

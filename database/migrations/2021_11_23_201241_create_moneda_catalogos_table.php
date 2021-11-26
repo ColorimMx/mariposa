@@ -16,6 +16,7 @@ class CreateMonedaCatalogosTable extends Migration
         Schema::create('moneda_catalogos', function (Blueprint $table) {
             $table->char('id',2)->primary();
             $table->string('nombre');
+            $table->boolean('activo');
             $table->timestamps();
         });
     }

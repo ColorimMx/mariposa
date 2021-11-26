@@ -67,7 +67,7 @@
                                                 </thead>
                                                 <tbody>
                                                 @foreach($custionarioII as $custionario)
-                                                    @if ($custionario->id_seccion == 10)
+                                                    @if ($custionario->seccion_id == 10)
                                                         <tr>
                                                             <th scope="row">{{$custionario->numero_pregunta}}</th>
                                                             <td>{{$custionario->pregunta}}</td>

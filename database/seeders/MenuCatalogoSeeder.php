@@ -19,48 +19,56 @@ class MenuCatalogoSeeder extends Seeder
             'icon' => 'fas fa-dolly',
             'icon_color' => 'light',
             'classes' => '',
+            'activo' => '1'
         ]);
         MenuCatalogo::create([
             'descripcion' => 'Inventario',
             'icon' => 'fas fa-box-open',
             'icon_color' => 'indigo',
             'classes' => '',
+            'activo' => '1'
         ]);
         MenuCatalogo::create([
             'descripcion' => 'Bancos',
             'icon' => 'fas fa-donate',
             'icon_color' => 'lightblue',
             'classes' => '',
+            'activo' => '1'
         ]);
         MenuCatalogo::create([
             'descripcion' => 'Clientes',
             'icon' => 'fas fa-people-carry',
             'icon_color' => 'primary',
             'classes' => '',
+            'activo' => '1'
         ]);
         MenuCatalogo::create([
             'descripcion' => 'Activo Fijo',
             'icon' => 'fas fa-hand-holding-usd',
             'icon_color' => 'success',
             'classes' => '',
+            'activo' => '1'
         ]);
         MenuCatalogo::create([
             'descripcion' => 'Contabilidad',
             'icon' => 'fas fa-wallet',
             'icon_color' => 'warning',
             'classes' => '',
+            'activo' => '1'
         ]);
         MenuCatalogo::create([
             'descripcion' => 'Empleados',
             'icon' => 'fas fa-id-badge',
             'icon_color' => 'orange',
             'classes' => '',
+            'activo' => '1'
         ]);
         MenuCatalogo::create([
             'descripcion' => 'Administración',
             'icon' => 'fas fa-user-secret',
             'icon_color' => 'danger',
             'classes' => '',
+            'activo' => '1'
         ]);
     }
 }

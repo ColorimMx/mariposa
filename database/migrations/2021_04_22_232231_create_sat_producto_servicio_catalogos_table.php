@@ -16,6 +16,7 @@ class CreateSatProductoServicioCatalogosTable extends Migration
         Schema::create('sat_producto_servicio_catalogos', function (Blueprint $table) {
             $table->char('id',8)->primary();
             $table->string('nombre');
+            $table->boolean('activo');
             $table->timestamps();
         });
     }
