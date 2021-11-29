@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use App\Models\DemografiaPaisCatalogo;
+
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -39,6 +39,15 @@ class DatabaseSeeder extends Seeder
         $this->call(SatEstadoCatalogoSeeder::class);
         $this->call(SatMunicipioCatalogoSeeder::class);
         $this->call(SatLocalidadCatalogoSeeder::class);
+        $this->call(SatFormaPagoCatalogoSeeder::class);
+        $this->call(SatImpuestoCatalogoSeeder::class);
+        $this->call(SatMetodoPagoCatalogoSeeder::class);
+        $this->call(SatRegimenFiscalCatalogoSeeder::class);
+        $this->call(SatTipoComprobanteCatalogoSeeder::class);
+        $this->call(SatTipoRelacionCatalogoSeeder::class);
+        $this->call(SatUsoCfdiCatalogoSeeder::class);
+        $this->call(SatUnidadCatalogoSeeder::class);
+        $this->call(SatProductoServicioCatalogoSeeder::class);
         $this->call(EmpleadoCatalogoSeeder::class);
         $this->call(GuiaCatalogoSeeder::class);
         $this->call(GuiaSeccionCatalogoSeeder::class);
