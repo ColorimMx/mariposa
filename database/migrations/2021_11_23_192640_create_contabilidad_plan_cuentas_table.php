@@ -16,11 +16,11 @@ class CreateContabilidadPlanCuentasTable extends Migration
         Schema::create('contabilidad_plan_cuentas', function (Blueprint $table) {
             $table->char('id',8)->primary();
             $table->string('nombre');
-            $table->char('id_cuenta_tipo',1);
+            $table->char('cuenta_tipo_id',1);
             $table->boolean('cuenta_de_agrupacion');
             $table->string('tipo_configuracion')->nullable();
-            $table->decimal('id_agrupacion',5,2);
-            $table->char('id_clasificacion',3)->nullable();
+            $table->decimal('agrupacion_id',5,2);
+            $table->char('clasificacion_id',3)->nullable();
             $table->boolean('activo');
             $table->timestamps();
         });

@@ -27,6 +27,10 @@ use \App\Http\Controllers\DatatableController;
 use App\Http\Controllers\MenuCatalogoController;
 use App\Http\Controllers\GuiaReferenciaI;
 use App\Http\Controllers\GuiaReferenciaII;
+use App\Models\Mba3ContabilidadCuentasCatalogo;
+use App\Models\Mba3ProductoGrupoCatalogo;
+use App\Models\Mba3ProductoCatalogo;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -135,6 +139,14 @@ Route::get('satlocalidades',[SatLocalidadCatalogoController::class,'index'])->na
 //Empleados
 Route::get('empleados',[EmpleadoCatalogoController::class,'index'])->name('empleados');
 
+//Productos MBA3
+Route::get('mbagrupos',[\App\Models\Mba3ProductoGrupoCatalogo::class,'get_grupos'])->name('mbagrupos');
+Route::get('mbasubgrupos',[\App\Models\Mba3ProductoSubgrupoCatalogo::class,'get_subgrupos'])->name('mbasubgrupos');
+Route::get('mbamarcas',[\App\Models\Mba3ProductoMarcaCatalogo::class,'get_marcas'])->name('mbamarcas');
+Route::get('mbamodelos',[\App\Models\Mba3ProductoModeloCatalogo::class,'get_modelos'])->name('mbamodelos');
+Route::get('mbasubmodelos',[\App\Models\Mba3ProductoSubmodeloCatalogo::class,'get_submodelos'])->name('mbasubmodelos');
+Route::get('mbaproductos',[\App\Models\Mba3ProductoCatalogo::class,'get_productos'])->name('mbaproductos');
+
 //Clientes MBA3
 Route::get('mbaclientes',[Mba3ClienteCatalogoController::class,'index'])->name('mbaclientes');
 
@@ -145,3 +157,6 @@ Route::get('datatable/clientesmba3',[DatatableController::class,'cliente'])->nam
 //Facturas MBA3
 Route::get('mbafacturas',[Mba3FacturaPrincipalController::class,'index'])->name('facturas');
 Route::get('datatable/mbafacturas',[Mba3FacturaPrincipalController::class,'facturas'])->name('datatable.facturasmba3');
+
+//Cuentas MBA3
+Route::get('mbacuentas',[\App\Models\Mba3ContabilidadCuentasCatalogo::class,'get_cuentas'])->name('mbacuentas');

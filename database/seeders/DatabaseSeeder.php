@@ -53,6 +53,7 @@ class DatabaseSeeder extends Seeder
         $this->call(SatComercioExteriorTipoOperacionCatalogoSeeder::class);
         $this->call(SatComercioExteriorFraccionArancelariaCatalogoSeeder::class);
         $this->call(SatComercioExteriorUnidadAduanaCatalogoSeeder::class);
+        $this->call(MonedaCatalogoSeeder::class);
         $this->call(EmpleadoCatalogoSeeder::class);
         $this->call(GuiaCatalogoSeeder::class);
         $this->call(GuiaSeccionCatalogoSeeder::class);
