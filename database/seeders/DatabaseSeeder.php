@@ -48,6 +48,11 @@ class DatabaseSeeder extends Seeder
         $this->call(SatUsoCfdiCatalogoSeeder::class);
         $this->call(SatUnidadCatalogoSeeder::class);
         $this->call(SatProductoServicioCatalogoSeeder::class);
+        $this->call(SatComercioExteriorPedimentoCatalogoSeeder::class);
+        $this->call(SatComercioExteriorIncotermCatalogoSeeder::class);
+        $this->call(SatComercioExteriorTipoOperacionCatalogoSeeder::class);
+        $this->call(SatComercioExteriorFraccionArancelariaCatalogoSeeder::class);
+        $this->call(SatComercioExteriorUnidadAduanaCatalogoSeeder::class);
         $this->call(EmpleadoCatalogoSeeder::class);
         $this->call(GuiaCatalogoSeeder::class);
         $this->call(GuiaSeccionCatalogoSeeder::class);
