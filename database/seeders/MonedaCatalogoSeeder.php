@@ -15,13 +15,15 @@ class MonedaCatalogoSeeder extends Seeder
     public function run()
     {
         MonedaCatalogo::create([
-           'id' => 'MXN',
+           'id' => 'MN',
+            'sat_moneda_id' => 'MXN',
            'nombre' => 'Peso Mexicano',
            'activo' => '1'
         ]);
 
         MonedaCatalogo::create([
-            'id' => 'USD',
+            'id' => 'US',
+            'sat_moneda_id' => 'USD',
             'nombre' => 'Dolar americano',
             'activo' => '1'
         ]);

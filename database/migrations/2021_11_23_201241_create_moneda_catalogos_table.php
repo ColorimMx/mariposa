@@ -15,6 +15,7 @@ class CreateMonedaCatalogosTable extends Migration
     {
         Schema::create('moneda_catalogos', function (Blueprint $table) {
             $table->char('id',2)->primary();
+            $table->char('sat_moneda_id',3);
             $table->string('nombre');
             $table->boolean('activo');
             $table->timestamps();
