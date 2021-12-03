@@ -7,14 +7,14 @@ use App\Models\Mba3ClienteCatalogo;
 
 class Mba3ClienteCatalogoController extends Controller
 {
-    public function index(){
+    public function get_cliente(){
 
-        //$mbaclientes = new Mba3ClienteCatalogo();
-        //$clientes = $mbaclientes->get_clientes();
+        $mbaclientes = new Mba3ClienteCatalogo();
+        $clientes = $mbaclientes->get_clientes();
 
-        return view('MbaClientes.ver');
+        //return view('MbaClientes.ver');
 
-        //dd($clientes);
+        dd($clientes);
         //return view ($clientes);
     }
 }

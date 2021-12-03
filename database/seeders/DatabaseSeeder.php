@@ -61,5 +61,6 @@ class DatabaseSeeder extends Seeder
         $this->call(GuiaDominioCatalogoSeeder::class);
         $this->call(GuiaDimensionCatalogoSeeder::class);
         $this->call(GuiaItemCatalogoSeeder::class);
+        $this->call(ClienteLocalizacionCatalogoSeeder::class);
     }
 }

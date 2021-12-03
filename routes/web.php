@@ -20,6 +20,10 @@ use App\Http\Controllers\SatMunicipioCatalogoController;
 use App\Http\Controllers\SatLocalidadCatalogoController;
 use App\Http\Controllers\EmpleadoCatalogoController;
 use App\Http\Controllers\ClienteCatalogoController;
+use App\Models\Mba3ClienteZonaCatalogo;
+Use App\Models\Mba3ClienteTipoCatalogo;
+Use App\Models\Mba3ClienteGiroCatalogo;
+Use App\Models\Mba3ClienteVendedorCatalogo;
 use \App\Http\Controllers\Mba3ClienteCatalogoController;
 use App\Http\Controllers\Mba3FacturaPrincipalController;
 use App\Http\Controllers\Mba3FacturaDetalleController;
@@ -148,7 +152,11 @@ Route::get('mbasubmodelos',[\App\Models\Mba3ProductoSubmodeloCatalogo::class,'ge
 Route::get('mbaproductos',[\App\Models\Mba3ProductoCatalogo::class,'get_productos'])->name('mbaproductos');
 
 //Clientes MBA3
-Route::get('mbaclientes',[Mba3ClienteCatalogoController::class,'index'])->name('mbaclientes');
+Route::get('mbazonas',[Mba3ClienteZonaCatalogo::class,'get_zonas'])->name('mbazonas');
+Route::get('mbaclientetipos',[Mba3ClienteTipoCatalogo::class,'get_cliente_tipo'])->name('mbaclientetipos');
+Route::get('mbagiros',[Mba3ClienteGiroCatalogo::class,'get_giro'])->name('mbagiros');
+Route::get('mbavendedores',[Mba3ClienteVendedorCatalogo::class,'get_vendedor'])->name('mbavendedores');
+Route::get('mbaclientes',[Mba3ClienteCatalogoController::class,'get_cliente'])->name('mbaclientes');
 
 //Clientes MBA 3 DataTable
 
