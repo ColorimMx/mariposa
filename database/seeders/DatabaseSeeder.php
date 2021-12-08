@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 
+use App\Models\EmpresaAlmacenCatalogo;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -23,6 +24,7 @@ class DatabaseSeeder extends Seeder
         $this->call(DemografiaCiudadCatalogoSeeder::class);
         $this->call(EmpresaCatalogoSeeder::class);
         $this->call(EmpresaSucursalCatalogoSeeder::class);
+        $this->call(EmpresaAlmacenCatalogoSeeder::class);
         $this->call(AreaCatalogoSeeder::class);
         $this->call(DepartamentoCatalogoSeeder::class);
         $this->call(PuestoCatalogoSeeder::class);
