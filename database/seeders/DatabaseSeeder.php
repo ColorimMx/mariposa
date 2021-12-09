@@ -3,7 +3,7 @@
 namespace Database\Seeders;
 
 
-use App\Models\EmpresaAlmacenCatalogo;
+use App\Models\SatCartaPorteTipoPermisoCatalogo;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -55,6 +55,9 @@ class DatabaseSeeder extends Seeder
         $this->call(SatComercioExteriorTipoOperacionCatalogoSeeder::class);
         $this->call(SatComercioExteriorFraccionArancelariaCatalogoSeeder::class);
         $this->call(SatComercioExteriorUnidadAduanaCatalogoSeeder::class);
+        $this->call(SatCartaPorteTipoPermisoCatalogoSeeder::class);
+        $this->call(SatCartaPorteConfigVehicularCatalogoSeeder::class);
+        $this->call(SatCartaPorteSubTipoRemCatalogoSeeder::class);
         $this->call(MonedaCatalogoSeeder::class);
         $this->call(EmpleadoCatalogoSeeder::class);
         $this->call(GuiaCatalogoSeeder::class);
