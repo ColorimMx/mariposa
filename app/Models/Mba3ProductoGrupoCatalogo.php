@@ -20,9 +20,9 @@ class Mba3ProductoGrupoCatalogo
 
             $sql->execute();
 
-            $productos=$sql->fetchAll(PDO::FETCH_CLASS);
+            $grupos=$sql->fetchAll(PDO::FETCH_CLASS);
 
-            return $productos;
+            return $grupos;
 
         }
         catch (PDOException $e)

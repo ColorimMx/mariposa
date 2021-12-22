@@ -34,7 +34,10 @@ use App\Http\Controllers\GuiaReferenciaII;
 use App\Models\Mba3ContabilidadCuentasCatalogo;
 use App\Models\Mba3ProductoGrupoCatalogo;
 use App\Models\Mba3ProductoCatalogo;
-
+use \App\Http\Controllers\ProductoGrupoCatalogoController;
+use App\Http\Controllers\Mba3CartaPortePrincipalController;
+use App\Http\Controllers\Mba3CartaPorteDetalleController;
+use App\Http\Controllers\CartaPorteController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -168,3 +171,10 @@ Route::get('datatable/mbafacturas',[Mba3FacturaPrincipalController::class,'factu
 
 //Cuentas MBA3
 Route::get('mbacuentas',[\App\Models\Mba3ContabilidadCuentasCatalogo::class,'get_cuentas'])->name('mbacuentas');
+
+//Carta Porte MBA3
+
+Route::get('mbacartaporte', [Mba3CartaPortePrincipalController::class,'index'])->name('mbacartaporte');
+Route::get('mbacartaportedetalle',[Mba3CartaPorteDetalleController::class,'index'])->name('mbacartaportedetalle');
+
+Route::get('cartaporte', [CartaPorteController::class,'index'])->name('cartas');

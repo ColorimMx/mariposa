@@ -16,7 +16,7 @@ class Mba3ProductoSubgrupoCatalogo
             $database = new Mba3();
             $db = $database->openMba3();
 
-            $sql = $db->prepare("SELECT `GROUP CODE` AS id,DESCRIPTION AS nombre, '1' AS activo"
+            $sql = $db->prepare("SELECT `SUB GROUP CODE` AS id,DESCRIPTION AS nombre, '1' AS activo"
                 ." FROM INVT_Grupo_Subgrupo_Lista WHERE CORP = 'CIMSA' AND `SUB GROUP` = TRUE AND TYPE = 'PRODU'");
 
             $sql->execute();

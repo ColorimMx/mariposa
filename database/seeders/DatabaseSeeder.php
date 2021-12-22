@@ -59,6 +59,7 @@ class DatabaseSeeder extends Seeder
         $this->call(SatCartaPorteConfigVehicularCatalogoSeeder::class);
         $this->call(SatCartaPorteSubTipoRemCatalogoSeeder::class);
         $this->call(MonedaCatalogoSeeder::class);
+        $this->call(UnidadMedidaCatalogoSeeder::class);
         $this->call(EmpleadoCatalogoSeeder::class);
         $this->call(GuiaCatalogoSeeder::class);
         $this->call(GuiaSeccionCatalogoSeeder::class);
@@ -67,5 +68,14 @@ class DatabaseSeeder extends Seeder
         $this->call(GuiaDimensionCatalogoSeeder::class);
         $this->call(GuiaItemCatalogoSeeder::class);
         $this->call(ClienteLocalizacionCatalogoSeeder::class);
+        $this->call(ContabilidadPlanCuentaSeeder::class);
+        $this->call(ProductoGrupoCatalogoSeeder::class);
+        //$this->call(ProductoSubgrupoCatalogoSeeder::class);
+        $this->call(ProductoMarcaCatalogoSeeder::class);
+        $this->call(ProductoModeloCatalogoSeeder::class);
+        $this->call(ProductoSubmodeloCatalogoSeeder::class);
+        $this->call(ProductoCatalogoSeeder::class);
+        $this->call(CartaPortePrincipalSeeder::class);
+        $this->call(CartaPorteDetalleSeeder::class);
     }
 }
