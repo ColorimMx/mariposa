@@ -38,6 +38,10 @@ use \App\Http\Controllers\ProductoGrupoCatalogoController;
 use App\Http\Controllers\Mba3CartaPortePrincipalController;
 use App\Http\Controllers\Mba3CartaPorteDetalleController;
 use App\Http\Controllers\CartaPorteController;
+use App\Http\Controllers\SeguroAutotransporteController;
+use App\Http\Controllers\PermisoAutotransporteController;
+use App\Http\Controllers\AutotransporteController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -178,3 +182,7 @@ Route::get('mbacartaporte', [Mba3CartaPortePrincipalController::class,'index'])-
 Route::get('mbacartaportedetalle',[Mba3CartaPorteDetalleController::class,'index'])->name('mbacartaportedetalle');
 
 Route::get('cartaporte', [CartaPorteController::class,'index'])->name('cartas');
+
+Route::resource('seguroautotransporte',SeguroAutotransporteController::class);
+Route::resource('permisoautotransporte', PermisoAutotransporteController::class);
+Route::resource('autotransporte',AutotransporteController::class);

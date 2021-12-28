@@ -15,7 +15,7 @@ class SubMenuCatalogoSeeder extends Seeder
     public function run()
     {
         SubMenuCatalogo::create([
-            'menu_id' => '8',
+            'menu_id' => '9',
             'descripcion' => 'Catalogos',
             'icon' => 'fas fa-angle-right',
             'icon_color' => 'danger',
@@ -46,6 +46,42 @@ class SubMenuCatalogoSeeder extends Seeder
             'descripcion' => 'Catalogo',
             'icon' => 'fas fa-angle-right',
             'icon_color' => 'primary',
+            'classes' => '',
+            'activo' => '1'
+        ]);
+
+        SubMenuCatalogo::create([
+            'menu_id' => '8',
+            'descripcion' => 'Carta Porte 2.0',
+            'icon' => 'fas fa-angle-right',
+            'icon_color' => 'pink',
+            'classes' => '',
+            'activo' => '1'
+        ]);
+
+        SubMenuCatalogo::create([
+            'menu_id' => '8',
+            'descripcion' => 'Complemento Carta Porte 2.0',
+            'icon' => 'fas fa-angle-right',
+            'icon_color' => 'pink',
+            'classes' => '',
+            'activo' => '1'
+        ]);
+
+        SubMenuCatalogo::create([
+            'menu_id' => '8',
+            'descripcion' => 'Ver Catalogos',
+            'icon' => 'fas fa-angle-right',
+            'icon_color' => 'pink',
+            'classes' => '',
+            'activo' => '1'
+        ]);
+
+        SubMenuCatalogo::create([
+            'menu_id' => '8',
+            'descripcion' => 'Alta Catalogos',
+            'icon' => 'fas fa-angle-right',
+            'icon_color' => 'pink',
             'classes' => '',
             'activo' => '1'
         ]);

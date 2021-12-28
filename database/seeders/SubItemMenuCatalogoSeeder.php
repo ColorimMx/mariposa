@@ -262,5 +262,35 @@ class SubItemMenuCatalogoSeeder extends Seeder
             'classes' => '',
             'activo' => '1'
         ]);
+
+        SubItemMenuCatalogo::create([
+            'sub_menu_id' => '8',
+            'descripcion' => 'Seguro Autotransporte',
+            'route' => 'seguroautotransporte.create',
+            'icon' => 'fas fa-angle-double-right',
+            'icon_color' => 'pink',
+            'classes' => '',
+            'activo' => '1'
+        ]);
+
+        SubItemMenuCatalogo::create([
+            'sub_menu_id' => '8',
+            'descripcion' => 'Permiso Autotransporte',
+            'route' => 'permisouautotransporte.create',
+            'icon' => 'fas fa-angle-double-right',
+            'icon_color' => 'pink',
+            'classes' => '',
+            'activo' => '1'
+        ]);
+
+        SubItemMenuCatalogo::create([
+            'sub_menu_id' => '8',
+            'descripcion' => 'Autotransporte',
+            'route' => 'autotransporte.create',
+            'icon' => 'fas fa-angle-double-right',
+            'icon_color' => 'pink',
+            'classes' => '',
+            'activo' => '1'
+        ]);
     }
 }

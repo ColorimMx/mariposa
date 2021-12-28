@@ -64,6 +64,13 @@ class MenuCatalogoSeeder extends Seeder
             'activo' => '1'
         ]);
         MenuCatalogo::create([
+            'descripcion' => 'SAT',
+            'icon' => 'fas fa-stamp',
+            'icon_color' => 'pink',
+            'classes' => '',
+            'activo' => '1'
+        ]);
+        MenuCatalogo::create([
             'descripcion' => 'Administración',
             'icon' => 'fas fa-user-secret',
             'icon_color' => 'danger',
