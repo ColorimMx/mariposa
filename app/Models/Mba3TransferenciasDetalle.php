@@ -8,10 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 use config\Mba3;
 use PDO;
 
-class Mba3CartaPorteDetalle extends Model
+class Mba3TransferenciasDetalle extends Model
 {
     use HasFactory;
-    public function get_cartaportedetalleall(){
+
+    public function get_trasladodetalle_all(){
         try {
 
             $database = new Mba3();
@@ -34,7 +35,7 @@ class Mba3CartaPorteDetalle extends Model
         }
     }
 
-    public function get_cartaportedetalle($id){
+    public function get_trasladodetalle($id){
         try {
 
             $database = new Mba3();

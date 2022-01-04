@@ -7,13 +7,13 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use PDO;
 
-class Mba3CartaPortePrincipal extends Model
+class Mba3TransferenciasPrincipal extends Model
 {
     use HasFactory;
 
     protected $dateFormat = 'Y-m-d\TH:i:s.v';
 
-    public function get_cartaporte_all(){
+    public function get_trasladoprincipal_all(){
         try {
 
             $database = new Mba3();
@@ -37,7 +37,7 @@ class Mba3CartaPortePrincipal extends Model
         }
     }
 
-    public function get_cartaporte($id){
+    public function get_trasladoprincipal($id){
         try {
 
             $database = new Mba3();
@@ -61,14 +61,14 @@ class Mba3CartaPortePrincipal extends Model
         }
     }
 
-    public function update_cartaporte($id){
+    public function update_traslado($id){
         try {
 
             $database = new Mba3();
             $db = $database->openMba3();
 
             $sql = $db->prepare("UPDATE INVT_Ajustes_Principal "
-            ." SET MEMO = 'EXPORTADO' WHERE DOC_ID_CORP = '".$id."' ");
+                ." SET MEMO = 'EXPORTADO' WHERE DOC_ID_CORP = '".$id."' ");
 
             $sql->execute();
 

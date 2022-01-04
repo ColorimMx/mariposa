@@ -16,7 +16,7 @@ class CartaPorteDetalleSeeder extends Seeder
     public function run()
     {
         $mbacartaportedetalle = new Mba3CartaPorteDetalle();
-        $cartaportedetalles = $mbacartaportedetalle->get_cartaportedetalle();
+        $cartaportedetalles = $mbacartaportedetalle->get_cartaportedetalleall();
 
         foreach($cartaportedetalles as $cartaportedetalle){
             CartaPorteDetalle::create([

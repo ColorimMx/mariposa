@@ -34,6 +34,8 @@ class SeguroAutotransporteController extends Controller
 
         $SeguroAutotransporte->id = $validated['poliza'];
         $SeguroAutotransporte->asegura_resp_civil = $validated['aseguradora'];
+        $SeguroAutotransporte->asignado = false;
+        $SeguroAutotransporte->activo = true;
         $SeguroAutotransporte->vigencia = $validated['vigencia'];
 
         $SeguroAutotransporte->save();

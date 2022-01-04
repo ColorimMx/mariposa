@@ -41,6 +41,11 @@ use App\Http\Controllers\CartaPorteController;
 use App\Http\Controllers\SeguroAutotransporteController;
 use App\Http\Controllers\PermisoAutotransporteController;
 use App\Http\Controllers\AutotransporteController;
+use App\Http\Controllers\TrasladoController;
+use App\Http\Controllers\TrasladoComplementoController;
+use App\Http\Controllers\TrasladoClienteController;
+use App\Http\Controllers\TrasladoComplementoClienteController;
+use App\Http\Controllers\CfdiTrasladoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -54,7 +59,7 @@ use App\Http\Controllers\AutotransporteController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('inicio');
 });
 
 Route::get('credencial', function () {
@@ -186,3 +191,9 @@ Route::get('cartaporte', [CartaPorteController::class,'index'])->name('cartas');
 Route::resource('seguroautotransporte',SeguroAutotransporteController::class);
 Route::resource('permisoautotransporte', PermisoAutotransporteController::class);
 Route::resource('autotransporte',AutotransporteController::class);
+
+Route::resource('trasladotransfer',TrasladoController::class);
+Route::resource('trasladotrasnfercomp', TrasladoComplementoClienteController::class);
+Route::resource('trasladocliente', TrasladoClienteController::class);
+Route::resource('trasladoclientecomp', TrasladoComplementoClienteController::class);
+Route::resource('cfditraslado',CfdiTrasladoController::class);

@@ -79,7 +79,7 @@
                                                 <div class="input-group-prepend">
                                                     <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
                                                 </div>
-                                                <input id="vigencia" name ="vigencia" type="text" class="form-control" name="datetime" placeholder="dd/mm/yyyy"  im-insert="false" required>
+                                                <input id="vigencia" name ="vigencia" type="text" class="form-control" placeholder="dd/mm/yyyy"  required>
                                             </div>
                                             <!-- /.input group -->
                                         </div>

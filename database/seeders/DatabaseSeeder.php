@@ -75,7 +75,7 @@ class DatabaseSeeder extends Seeder
         $this->call(ProductoModeloCatalogoSeeder::class);
         $this->call(ProductoSubmodeloCatalogoSeeder::class);
         $this->call(ProductoCatalogoSeeder::class);
-        $this->call(CartaPortePrincipalSeeder::class);
-        $this->call(CartaPorteDetalleSeeder::class);
+        //$this->call(CartaPortePrincipalSeeder::class);
+        //$this->call(CartaPorteDetalleSeeder::class);
     }
 }

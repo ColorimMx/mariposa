@@ -52,16 +52,7 @@ class SubMenuCatalogoSeeder extends Seeder
 
         SubMenuCatalogo::create([
             'menu_id' => '8',
-            'descripcion' => 'Carta Porte 2.0',
-            'icon' => 'fas fa-angle-right',
-            'icon_color' => 'pink',
-            'classes' => '',
-            'activo' => '1'
-        ]);
-
-        SubMenuCatalogo::create([
-            'menu_id' => '8',
-            'descripcion' => 'Complemento Carta Porte 2.0',
+            'descripcion' => 'CFDI',
             'icon' => 'fas fa-angle-right',
             'icon_color' => 'pink',
             'classes' => '',

@@ -27,9 +27,9 @@ class AutotransporteController extends Controller
      */
     public function create()
     {
-        $permisos = PermisoAutotransporteCatalogo::all();
+        $permisos = PermisoAutotransporteCatalogo::where('asignado','=',false)->orderBy('id')->get();
         $congiguracions = SatCartaPorteConfigVehicularCatalogo::all();
-        $aseguradoras = SeguroAutotransporteCatalogo::all();
+        $aseguradoras = SeguroAutotransporteCatalogo::where('asignado','=',false)->orderBy('id')->get();
 
         return view('transportes.autotransporte', compact('permisos','congiguracions','aseguradoras'));
     }
@@ -63,6 +63,16 @@ class AutotransporteController extends Controller
         $autotransporte->asegura_resp_civil_id = $validated['asegura_resp_civil_id'];
 
         $autotransporte->save();
+
+        $id_seguro = $request->asegura_resp_civil_id;
+        $seguro = SeguroAutotransporteCatalogo::find($id_seguro);
+        $seguro->update(['asignado' => true]);
+        $seguro->save();
+
+        $id_permiso = $request->permiso_autotransporte_id;
+        $permiso = PermisoAutotransporteCatalogo::find($id_permiso);
+        $permiso->update(['asignado' => true]);
+        $permiso->save();
 
         return $request->all();
     }

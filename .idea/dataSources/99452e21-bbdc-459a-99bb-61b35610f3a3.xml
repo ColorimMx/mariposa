@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="Dell">
-  <database-model serializer="dbm" dbms="MSSQL" family-id="MSSQL" format-version="4.31">
+  <database-model serializer="dbm" dbms="MSSQL" family-id="MSSQL" format-version="4.32">
     <root id="1"/>
     <database id="2" parent="1" name="4D_COLORANT">
       <Collation>Modern_Spanish_CI_AS</Collation>

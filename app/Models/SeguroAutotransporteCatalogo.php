@@ -10,6 +10,7 @@ class SeguroAutotransporteCatalogo extends Model
     use HasFactory;
 
     public $incrementing = false;
+    protected $fillable = ['asignado'];
     protected $table = "seguro_autotransporte_catalogos";
     protected $dateFormat = 'Y-m-d\TH:i:s.v';
 }

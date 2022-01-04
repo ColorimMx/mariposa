@@ -17,6 +17,8 @@ class CreateSeguroAutotransporteCatalogosTable extends Migration
             $table->char('id',16)->primary();
             $table->string('asegura_resp_civil');
             $table->dateTime('vigencia');
+            $table->boolean('asignado');
+            $table->boolean('activo');
             $table->timestamps();
         });
     }

@@ -2,11 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\SatCartaPorteTipoPermisoCatalogo;
 use Illuminate\Http\Request;
-use App\Models\PermisoAutotransporteCatalogo;
 
-class PermisoAutotransporteController extends Controller
+class TrasladoClienteController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -25,8 +23,7 @@ class PermisoAutotransporteController extends Controller
      */
     public function create()
     {
-        $permisos = SatCartaPorteTipoPermisoCatalogo::all();
-        return view('transportes.premisocreate',compact('permisos'));
+        //
     }
 
     /**
@@ -37,23 +34,7 @@ class PermisoAutotransporteController extends Controller
      */
     public function store(Request $request)
     {
-        $validated = $request->validate([
-            'permiso' => 'bail|required',
-            'folio' => 'bail|required',
-            'vigencia' => 'required|date_format:d/m/Y'
-        ]);
-
-        $PermisoAutotransporte = new PermisoAutotransporteCatalogo();
-
-        $PermisoAutotransporte->id = $validated['folio'];
-        $PermisoAutotransporte->sat_carta_porte_tipo_permiso_catalogos_id = $validated['permiso'];
-        $PermisoAutotransporte->asignado = false;
-        $PermisoAutotransporte->activo = true;
-        $PermisoAutotransporte->vigencia = $validated['vigencia'];
-
-        $PermisoAutotransporte->save();
-
-        return $request->all();
+        //
     }
 
     /**

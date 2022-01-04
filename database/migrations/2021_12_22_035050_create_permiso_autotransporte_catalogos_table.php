@@ -18,6 +18,8 @@ class CreatePermisoAutotransporteCatalogosTable extends Migration
             $table->char('sat_carta_porte_tipo_permiso_catalogos_id',6);
             $table->foreign('sat_carta_porte_tipo_permiso_catalogos_id')->references('id')->on('sat_carta_porte_tipo_permiso_catalogos');
             $table->dateTime('vigencia');
+            $table->boolean('asignado');
+            $table->boolean('activo');
             $table->timestamps();
         });
     }

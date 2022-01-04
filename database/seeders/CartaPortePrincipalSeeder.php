@@ -16,7 +16,7 @@ class CartaPortePrincipalSeeder extends Seeder
     public function run()
     {
         $mbacartaporte = new Mba3CartaPortePrincipal();
-        $cartaporte = $mbacartaporte->get_cartaporte();
+        $cartaporte = $mbacartaporte->get_cartaporte_all();
 
         foreach ($cartaporte as $carta){
             CartaPortePrincipal::create([
