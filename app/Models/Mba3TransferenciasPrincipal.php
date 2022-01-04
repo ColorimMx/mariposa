@@ -22,7 +22,7 @@ class Mba3TransferenciasPrincipal extends Model
             $sql = $db->prepare("SELECT Doc_Control_Numero as id, Hora_t as hora,DOC_ID_CORP AS trasnferencia_empresa_id, DATE_I AS fecha, "
                 ."DOC_ID AS transferencia_id, `CURRENCY CODE` as moneda_id, WARE_CODE as bodega_id, WAR_CODE_DEST as destino_bodega_id "
                 ."FROM INVT_Ajustes_Principal WHERE Tipo_OP_Trf = '2.0'AND TRANSFERS = TRUE AND ADJUSTMENT_TYPE = 'TE' AND CONFIRMED = TRUE AND MEMO = '' "
-                ."AND VOID = FALSE AND CORP = 'CIMSA' ");
+                ."AND VOID = FALSE AND CORP = 'CIMSA' ORDER BY Doc_Control_Numero");
 
             $sql->execute();
 
