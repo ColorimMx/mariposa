@@ -8,7 +8,7 @@ use App\Models\Mba3TransferenciasPrincipal;
 use App\Models\Mba3TransferenciasDetalle;
 use App\Models\TrasladoPrincipal;
 use App\Models\TrasladoDetalle;
-
+use Carbon\Carbon;
 
 class TrasladoController extends Controller
 {
@@ -58,10 +58,10 @@ class TrasladoController extends Controller
             $traslado = new TrasladoPrincipal();
 
             $folio = $transferencia->id;
-
             $traslado->id = $transferencia->id;
             $traslado->trasnferencia_empresa_id = $transferencia->trasnferencia_empresa_id;
-            $traslado->fecha = \Carbon\Carbon::parse($transferencia->fecha)->format('Y-m-d\TH:i:s.v');
+            $dataTimeFecha_i = Carbon::createFromFormat('d/m/Y', $transferencia->fecha);
+            $traslado->fecha = $dataTimeFecha_i;
             $traslado->moneda_id = $transferencia->moneda_id;
             $traslado->almacen_id = $transferencia->bodega_id;
             $traslado->destino_almacen_id = $transferencia->destino_bodega_id;
@@ -91,7 +91,13 @@ class TrasladoController extends Controller
 
 
 
-        return redirect('cfditraslado');
+        //return redirect('cfditraslado', [$id]);
+
+        //return redirect()->route('cfditraslado', [$id]);
+
+        return redirect()->action(
+            [CfdiTrasladoController::class, 'show'], [$id]
+        );
     }
 
     /**

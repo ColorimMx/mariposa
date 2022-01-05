@@ -10,7 +10,7 @@ class TrasladoPrincipal extends Model
     use HasFactory;
     public $incrementing = false;
     protected $table = "traslado_principals";
-    protected $dateFormat = 'Y-m-d\TH:i:s.v';
+    protected $dateFormat = 'd-m-y';
 
     public function trasladodetalles(){
         return $this->hasOne(CartaPorteDetalle::class,'cartaporte_id','id');

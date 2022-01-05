@@ -16,4 +16,8 @@ class ProductoCatalogo extends Model
     public function satproducto(){
         return $this->hasOne(SatProductoServicioCatalogo::class,'id','sat_producto_servicio_id');
     }
+
+    public function unidad(){
+        return $this->hasOne(UnidadMedidaCatalogo::class,'id','um');
+    }
 }

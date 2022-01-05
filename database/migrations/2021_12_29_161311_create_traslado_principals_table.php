@@ -16,7 +16,7 @@ class CreateTrasladoPrincipalsTable extends Migration
         Schema::create('traslado_principals', function (Blueprint $table) {
             $table->char('id',10)->primary();
             $table->string('trasnferencia_empresa_id',25);
-            $table->dateTime('fecha');
+            $table->date('fecha');
             $table->char('moneda_id',2);
             $table->foreign('moneda_id')->references('id')->on('moneda_catalogos');
             $table->char('almacen_id',3);
