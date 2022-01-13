@@ -2,6 +2,7 @@
 use DHF\Sifei\Ws\Soap\utils\CFDIUtils;
 use Illuminate\Support\Facades\Storage;
 
+
 /**
  * Ejemplo para la generacion de sello.
  *

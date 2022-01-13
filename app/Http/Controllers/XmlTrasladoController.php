@@ -2,25 +2,22 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-use DOMDocument;
-use App\Models\TrasladoPrincipal;
 use App\Models\TrasladoDetalle;
+use App\Models\TrasladoPrincipal;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
+use DOMDocument;
 
-class CfdiTrasladoController extends Controller
+class XmlTrasladoController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-
-
-
     public function index()
     {
-
+        //
     }
 
     /**
@@ -30,7 +27,7 @@ class CfdiTrasladoController extends Controller
      */
     public function create()
     {
-
+        //
     }
 
     /**
@@ -41,7 +38,7 @@ class CfdiTrasladoController extends Controller
      */
     public function store(Request $request)
     {
-
+        //
     }
 
     /**
@@ -103,11 +100,11 @@ class CfdiTrasladoController extends Controller
             $conceptos = $comprobante->appendChild($conceptos);
             $detalles = TrasladoDetalle::where('traslado_id','=',$principal->id)->get();
             foreach ($detalles as $detalle) {
-            $concepto = $xml->createElement('cfdi:Concepto');
+                $concepto = $xml->createElement('cfdi:Concepto');
 
-            $concepto = $conceptos->appendChild($concepto);
+                $concepto = $conceptos->appendChild($concepto);
 
-            $importe = $detalle->cantidad * $detalle->producto->precio_minimo;
+                $importe = $detalle->cantidad * $detalle->producto->precio_minimo;
                 $concepto->setAttribute('ClaveProdServ', $detalle->producto->sat_producto_servicio_id);
                 $concepto->setAttribute('NoIdentificacion', $detalle->producto_id);
                 $concepto->setAttribute('Cantidad', $detalle->cantidad);
@@ -120,17 +117,20 @@ class CfdiTrasladoController extends Controller
 
 
             $xml->formatOutput = true;
-            $el_xml = $xml->saveXML();
+            //$el_xml = $xml->saveXML();
             //$xml->save('traslado.xml');
             $xml_string =$xml->saveXML();
-//Y se guarda en el nombre del archivo 'achivo.xml', y el obejto nstanciado
+
+            //Y se guarda en el nombre del archivo 'achivo.xml', y el obejto nstanciado
             //Storage::disk('local')->put($principal->id.'.xml', $xml_string);
             //Storage::disk('local')->put('TRASLADO.xml', $xml_string);
-            Storage::disk('local')->put($principal->trasnferencia_empresa_id.'.xml', $xml_string);
-            //Mostramos el XML puro
+            Storage::disk('local')->put('xml/'.$principal->trasnferencia_empresa_id.'.xml', $xml_string);
 
+            //Mostramos el XML puro
+            return Storage::download('xml/'.$principal->trasnferencia_empresa_id.'.xml');
             echo "<p><b>El XML ha sido creado.... Mostrando en texto plano:</b></p>".
-                htmlentities($el_xml)."
+                htmlentities($xml_string)."
+
 <hr>";
         }
     }

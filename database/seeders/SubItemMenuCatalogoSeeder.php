@@ -264,41 +264,41 @@ class SubItemMenuCatalogoSeeder extends Seeder
         ]);
 
         SubItemMenuCatalogo::create([
-            'sub_menu_id' => '7',
+            'sub_menu_id' => '9',
             'descripcion' => 'Seguro Autotransporte',
             'route' => 'seguroautotransporte.create',
             'icon' => 'fas fa-angle-double-right',
-            'icon_color' => 'pink',
+            'icon_color' => 'indigo',
             'classes' => '',
             'activo' => '1'
         ]);
 
         SubItemMenuCatalogo::create([
-            'sub_menu_id' => '7',
+            'sub_menu_id' => '9',
             'descripcion' => 'Permiso Autotransporte',
             'route' => 'permisoautotransporte.create',
             'icon' => 'fas fa-angle-double-right',
-            'icon_color' => 'pink',
+            'icon_color' => 'indigo',
             'classes' => '',
             'activo' => '1'
         ]);
 
         SubItemMenuCatalogo::create([
-            'sub_menu_id' => '7',
+            'sub_menu_id' => '9',
             'descripcion' => 'Autotransporte',
             'route' => 'autotransporte.create',
             'icon' => 'fas fa-angle-double-right',
-            'icon_color' => 'pink',
+            'icon_color' => 'indigo',
             'classes' => '',
             'activo' => '1'
         ]);
 
         SubItemMenuCatalogo::create([
-            'sub_menu_id' => '5',
-            'descripcion' => 'Traslado Transferencia',
+            'sub_menu_id' => '8',
+            'descripcion' => 'Impotar Traslados 4D',
             'route' => 'trasladotransfer.create',
             'icon' => 'fas fa-angle-double-right',
-            'icon_color' => 'pink',
+            'icon_color' => 'indigo',
             'classes' => '',
             'activo' => '1'
         ]);

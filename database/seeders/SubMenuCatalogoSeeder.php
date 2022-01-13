@@ -31,7 +31,6 @@ class SubMenuCatalogoSeeder extends Seeder
             'classes' => '',
             'activo' => '1'
         ]);
-
         SubMenuCatalogo::create([
             'menu_id' => '7',
             'descripcion' => 'Catalogos',
@@ -76,5 +75,24 @@ class SubMenuCatalogoSeeder extends Seeder
             'classes' => '',
             'activo' => '1'
         ]);
+
+        SubMenuCatalogo::create([
+            'menu_id' => '2',
+            'descripcion' => 'Transferencias / Traslados',
+            'icon' => 'fas fa-angle-right',
+            'icon_color' => 'indigo',
+            'classes' => '',
+            'activo' => '1'
+        ]);
+
+        SubMenuCatalogo::create([
+            'menu_id' => '2',
+            'descripcion' => 'Transportes',
+            'icon' => 'fas fa-angle-right',
+            'icon_color' => 'indigo',
+            'classes' => '',
+            'activo' => '1'
+        ]);
     }
+
 }

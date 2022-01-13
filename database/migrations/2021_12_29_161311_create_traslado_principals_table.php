@@ -23,6 +23,9 @@ class CreateTrasladoPrincipalsTable extends Migration
             $table->foreign('almacen_id')->references('id')->on('empresa_almacen_catalogos');
             $table->char('destino_almacen_id',3);
             $table->foreign('destino_almacen_id')->references('id')->on('empresa_almacen_catalogos');
+            $table->text('xml')->nullable();
+            $table->text('xml_sellado')->nullable();
+            $table->text('xml_timbrado')->nullable();
             $table->timestamps();
         });
     }

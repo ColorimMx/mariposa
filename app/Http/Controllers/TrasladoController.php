@@ -97,7 +97,7 @@ class TrasladoController extends Controller
         //return redirect()->route('cfditraslado', [$id]);
 
         return redirect()->action(
-            [CfdiTrasladoController::class, 'show'], [$id]
+            [XmlTrasladoController::class, 'show'], [$id]
         );
     }
 
