@@ -258,7 +258,7 @@ class CfdiTrasladoController extends Controller
                 $concepto->setAttribute('ClaveUnidad', $detalle->producto->unidad->sat_unidad_id);
                 $concepto->setAttribute('Unidad', $detalle->producto->unidad->nombre);
                 $concepto->setAttribute('Descripcion', $detalle->producto->descripcion);
-                $concepto->setAttribute('ValorUnitario', $detalle->producto->precio_minimo);
+                $concepto->setAttribute('ValorUnitario', number_format( $detalle->producto->precio_minimo,6));
                 $concepto->setAttribute('Importe', $importe);
             }
 
@@ -268,8 +268,9 @@ class CfdiTrasladoController extends Controller
             //$xml->save('traslado.xml');
             $xml_string =$xml->saveXML();
 //Y se guarda en el nombre del archivo 'achivo.xml', y el obejto nstanciado
-            Storage::disk('local')->put($principal->id.'.xml', $xml_string);
-
+            //Storage::disk('local')->put($principal->id.'.xml', $xml_string);
+            //Storage::disk('local')->put('TRASLADO.xml', $xml_string);
+            Storage::disk('local')->put($principal->trasnferencia_empresa_id.'.xml', $xml_string);
             //Mostramos el XML puro
 
             echo "<p><b>El XML ha sido creado.... Mostrando en texto plano:</b></p>".

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+  <S:Body>
+    <S:Fault xmlns:ns4="http://www.w3.org/2003/05/soap-envelope">
+      <faultcode>S:Server</faultcode>
+      <faultstring>La fecha de generacion es mayor a 72 horas de la emision del timbre</faultstring>
+      <detail>
+        <ns2:SifeiException xmlns:ns2="http://MApeados/">
+          <codigo>401</codigo>
+          <error>Han pasado más de 72 horas desde la generacion del sello</error>
+          <message>La fecha de generacion es mayor a 72 horas de la emision del timbre</message>
+        </ns2:SifeiException>
+      </detail>
+    </S:Fault>
+  </S:Body>
+</S:Envelope>

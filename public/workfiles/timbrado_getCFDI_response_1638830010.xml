@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+  <S:Body>
+    <S:Fault xmlns:ns4="http://www.w3.org/2003/05/soap-envelope">
+      <faultcode>S:Server</faultcode>
+      <faultstring>El Comprobante no cumple con el estandar XML (Conforme al W3C) o con la estructura XML (XSD y complementos aplicables)</faultstring>
+      <detail>
+        <ns2:SifeiException xmlns:ns2="http://MApeados/">
+          <codigo>301</codigo>
+          <error>org.xml.sax.SAXParseException; lineNumber: 22; columnNumber: 58; cvc-complex-type.2.4.a: Invalid content was found starting with element 'cartaporte20:FiguraTransporte'. One of '{"http://www.sat.gob.mx/CartaPorte20":TiposFigura}' is expected.</error>
+          <message>El Comprobante no cumple con el estandar XML (Conforme al W3C) o con la estructura XML (XSD y complementos aplicables)</message>
+        </ns2:SifeiException>
+      </detail>
+    </S:Fault>
+  </S:Body>
+</S:Envelope>

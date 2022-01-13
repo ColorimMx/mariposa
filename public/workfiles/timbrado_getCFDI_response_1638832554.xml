@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+  <S:Body>
+    <S:Fault xmlns:ns4="http://www.w3.org/2003/05/soap-envelope">
+      <faultcode>S:Server</faultcode>
+      <faultstring>El resultado de la digestión debe ser igual al resultado de la desencripción del sello.</faultstring>
+      <detail>
+        <ns2:SifeiException xmlns:ns2="http://MApeados/">
+          <codigo>CFDI33102</codigo>
+          <error>El resultado de la digestión debe ser igual al resultado de la desencripción del sello.</error>
+          <message>El resultado de la digestión debe ser igual al resultado de la desencripción del sello.</message>
+        </ns2:SifeiException>
+      </detail>
+    </S:Fault>
+  </S:Body>
+</S:Envelope>

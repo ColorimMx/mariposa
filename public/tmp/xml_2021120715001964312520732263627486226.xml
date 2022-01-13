@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cartaporte20="http://www.sat.gob.mx/CartaPorte20" xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv33.xsd http://www.sat.gob.mx/CartaPorte20 http://www.sat.gob.mx/sitio_internet/cfd/CartaPorte/CartaPorte20.xsd" Version="3.3" Serie="TP" Folio="10000000001" Fecha="2021-12-06T11:38:44" Sello="QdMjhn98PJ9nTDBEEarphTS3bRcwbwl+D1CdRdOxNVEN8/29ky1EiZzsjjUGZEwgzjwyIdE7BMcV6dzCYeP+F0ntMBKAvfj5OqLzPOLF1/F/3iK6h5hJILi3vvJZhR812Ites7CZw3hlWrVV6xNN44QgFYhF+mp1kBW06GFkVj1iKMQw0gFrhThlT49idFXi8zHFXd7h17FvYFs8xj+iRoPHJDbeKpNAB/mX3qqJVq5oqbIWLrH8MGEwtCLM7ed0njg1nhh9adiIvwShIHPnUN5/iKP2IVVl53M5ow5JpQ3gbBaiykTMl+hYzi/3HzR2Xl1oKwT6p4nei8aGdIsiSA==" NoCertificado="00001000000409491341" Certificado="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" SubTotal="0" Moneda="XXX" Total="0" TipoDeComprobante="T" LugarExpedicion="01180">
+  <cfdi:Emisor Rfc="CIM581206CI9" Nombre="COLORANTES IMPORTADOS SA DE CV" RegimenFiscal="601" />
+  <cfdi:Receptor Rfc="CIM581206CI9" Nombre="COLORANTES IMPORTADOS SA DE CV" UsoCFDI="P01" />
+  <cfdi:Conceptos>
+    <cfdi:Concepto ClaveProdServ="60121804" NoIdentificacion="2020010043" Cantidad="1.00000" ClaveUnidad="H87" Unidad="PIEZAS" Descripcion="CITOCOL PASTILLA AZUL BLUE 43" ValorUnitario="38.7000" Importe="38.70" />
+  </cfdi:Conceptos>
+  <cfdi:Complemento><tfd:TimbreFiscalDigital xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd" Version="1.1" UUID="0772DF33-43FD-4050-9479-A56EE49FA775" FechaTimbrado="2021-12-07T15:00:19" RfcProvCertif="SPR190613I52" SelloCFD="QdMjhn98PJ9nTDBEEarphTS3bRcwbwl+D1CdRdOxNVEN8/29ky1EiZzsjjUGZEwgzjwyIdE7BMcV6dzCYeP+F0ntMBKAvfj5OqLzPOLF1/F/3iK6h5hJILi3vvJZhR812Ites7CZw3hlWrVV6xNN44QgFYhF+mp1kBW06GFkVj1iKMQw0gFrhThlT49idFXi8zHFXd7h17FvYFs8xj+iRoPHJDbeKpNAB/mX3qqJVq5oqbIWLrH8MGEwtCLM7ed0njg1nhh9adiIvwShIHPnUN5/iKP2IVVl53M5ow5JpQ3gbBaiykTMl+hYzi/3HzR2Xl1oKwT6p4nei8aGdIsiSA==" NoCertificadoSAT="30001000000400002495" SelloSAT="kc1MCGkR5+fwe4Mptr0VY4Ny6FKtcnjB9SqU+6SzgVzZ4GOF/GHSFvDYw90ESG2ZKutiQe2Nh35aifloY50eUaCJ7ytDKaGHi855YpnVzTl4JaumscdI4EDvnDkGgrt+5Bj+mtoUK3B2ZEOVG3rMQoCj/bIE9/Q8+GhKrctm8czs0GmHDLMCcvE4hLmXDXO1w+UdAxkFy0BwP5Jivg0DKz7nvWr5nz+rJHTUsgKgcImCX3/FwBymdZrVtm07HlU4Q1xU7qOSfFt7t5RDPMZR9CeYaSaQ69xg5KHh7fGm8UAeqqTjU5GAdUjJuGdFgCUHR5yinbdu7QVTRbZOQgltOQ==" />
+    <cartaporte20:CartaPorte Version="2.0" TranspInternac="No">
+      <cartaporte20:Ubicaciones>
+        <cartaporte20:Ubicacion TipoUbicacion="Origen" RFCRemitenteDestinatario="CIM581206CI9" FechaHoraSalidaLlegada="2021-12-07T12:30:00">
+          <cartaporte20:Domicilio Estado="DIF" Pais="MEX" CodigoPostal="01180" />
+        </cartaporte20:Ubicacion>
+        <cartaporte20:Ubicacion TipoUbicacion="Destino" RFCRemitenteDestinatario="CIM581206CI9" FechaHoraSalidaLlegada="2021-12-07T16:30:00">
+          <cartaporte20:Domicilio Estado="MOR" Pais="MEX" CodigoPostal="62578" />
+        </cartaporte20:Ubicacion>
+      </cartaporte20:Ubicaciones>
+      <cartaporte20:Mercancias PesoBrutoTotal=".32" UnidadPeso="KGM" NumTotalMercancias="1">
+        <cartaporte20:Mercancia BienesTransp="60121804" Descripcion="CITOCOL PASTILLA AZUL BLUE 43" Cantidad="1.00000" ClaveUnidad="H87" PesoEnKg=".32" />
+        <cartaporte20:Autotransporte PermSCT="TPAF02" NumPermisoSCT="ABCDEFG4525648">
+          <cartaporte20:IdentificacionVehicular ConfigVehicular="VL" PlacaVM="IRKFOAZ" AnioModeloVM="2021" />
+          <cartaporte20:Seguros AseguraRespCivil="PFG Seguros S.A. de C.V." PolizaRespCivil="101010" />
+          <cartaporte20:Remolques>
+            <cartaporte20:Remolque SubTipoRem="CTR002" Placa="IRKFOAZ" />
+          </cartaporte20:Remolques>
+        </cartaporte20:Autotransporte>
+      </cartaporte20:Mercancias>
+      <cartaporte20:FiguraTransporte>
+        <cartaporte20:TiposFigura TipoFigura="01" />
+      </cartaporte20:FiguraTransporte>
+    </cartaporte20:CartaPorte>
+  </cfdi:Complemento>
+</cfdi:Comprobante>

@@ -5,7 +5,7 @@ class Mba3
 {
 
 
-    private $dsn = "4D:host=100.48.0.7";
+    private $dsn = "4D:host=192.168.0.13";
     //private $dsn = "odbc:64MBA3PRUEBAS";
     private $usr = "ODBC";
     private $pass = "ODBC";
