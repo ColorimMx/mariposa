@@ -17,7 +17,7 @@ class XmlTrasladoController extends Controller
      */
     public function index()
     {
-        //
+
     }
 
     /**
@@ -27,7 +27,7 @@ class XmlTrasladoController extends Controller
      */
     public function create()
     {
-        //
+        return view('');
     }
 
     /**

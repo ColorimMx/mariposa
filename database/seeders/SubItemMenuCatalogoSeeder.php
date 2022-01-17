@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+
 use App\Models\SubItemMenuCatalogo;
 use Illuminate\Database\Seeder;
 
@@ -16,252 +17,25 @@ class SubItemMenuCatalogoSeeder extends Seeder
     {
         SubItemMenuCatalogo::create([
             'sub_menu_id' => '1',
-            'descripcion' => 'Empresas',
+            'descripcion' => 'Impotar Catalogo Proveedores MBA3',
             'route' => 'empresas',
             'icon' => 'fas fa-angle-double-right',
-            'icon_color' => 'danger',
-            'classes' => '',
-            'activo' => '1'
-        ]);
-
-        SubItemMenuCatalogo::create([
-            'sub_menu_id' => '1',
-            'descripcion' => 'Areas',
-            'route' => 'areas',
-            'icon' => 'fas fa-angle-double-right',
-            'icon_color' => 'danger',
-            'classes' => '',
-            'activo' => '1'
-        ]);
-
-        SubItemMenuCatalogo::create([
-            'sub_menu_id' => '1',
-            'descripcion' => 'Departamentos',
-            'route' => 'departamentos',
-            'icon' => 'fas fa-angle-double-right',
-            'icon_color' => 'danger',
-            'classes' => '',
-            'activo' => '1'
-        ]);
-
-        SubItemMenuCatalogo::create([
-            'sub_menu_id' => '1',
-            'descripcion' => 'Puestos',
-            'route' => 'puestos',
-            'icon' => 'fas fa-angle-double-right',
-            'icon_color' => 'danger',
-            'classes' => '',
-            'activo' => '1'
-        ]);
-        SubItemMenuCatalogo::create([
-            'sub_menu_id' => '1',
-            'descripcion' => 'Puestos Tipos',
-            'route' => 'puestostipos',
-            'icon' => 'fas fa-angle-double-right',
-            'icon_color' => 'danger',
-            'classes' => '',
-            'activo' => '1'
-        ]);
-
-        SubItemMenuCatalogo::create([
-            'sub_menu_id' => '1',
-            'descripcion' => 'Estados Civiles',
-            'route' => 'estadosciviles',
-            'icon' => 'fas fa-angle-double-right',
-            'icon_color' => 'danger',
-            'classes' => '',
-            'activo' => '1'
-        ]);
-
-        SubItemMenuCatalogo::create([
-            'sub_menu_id' => '1',
-            'descripcion' => 'Niveles de Estudios',
-            'route' => 'nivelesestudios',
-            'icon' => 'fas fa-angle-double-right',
-            'icon_color' => 'danger',
-            'classes' => '',
-            'activo' => '1'
-        ]);
-
-        SubItemMenuCatalogo::create([
-            'sub_menu_id' => '1',
-            'descripcion' => 'Estatus de Estudios',
-            'route' => 'estatusestudios',
-            'icon' => 'fas fa-angle-double-right',
-            'icon_color' => 'danger',
-            'classes' => '',
-            'activo' => '1'
-        ]);
-
-        SubItemMenuCatalogo::create([
-            'sub_menu_id' => '1',
-            'descripcion' => 'Contratos Tipos',
-            'route' => 'contratostipos',
-            'icon' => 'fas fa-angle-double-right',
-            'icon_color' => 'danger',
-            'classes' => '',
-            'activo' => '1'
-        ]);
-
-        SubItemMenuCatalogo::create([
-            'sub_menu_id' => '1',
-            'descripcion' => 'Personal Tipos',
-            'route' => 'personaltipos',
-            'icon' => 'fas fa-angle-double-right',
-            'icon_color' => 'danger',
-            'classes' => '',
-            'activo' => '1'
-        ]);
-
-        SubItemMenuCatalogo::create([
-            'sub_menu_id' => '1',
-            'descripcion' => 'Jornadas Tipos',
-            'route' => 'jornadastipos',
-            'icon' => 'fas fa-angle-double-right',
-            'icon_color' => 'danger',
-            'classes' => '',
-            'activo' => '1'
-        ]);
-
-        SubItemMenuCatalogo::create([
-            'sub_menu_id' => '1',
-            'descripcion' => 'Nominas Tipos',
-            'route' => 'nominastipos',
-            'icon' => 'fas fa-angle-double-right',
-            'icon_color' => 'danger',
-            'classes' => '',
-            'activo' => '1'
-        ]);
-
-        SubItemMenuCatalogo::create([
-            'sub_menu_id' => '1',
-            'descripcion' => 'Localidades Empresas',
-            'route' => 'localidades',
-            'icon' => 'fas fa-angle-double-right',
-            'icon_color' => 'danger',
-            'classes' => '',
-            'activo' => '1'
-        ]);
-
-        SubItemMenuCatalogo::create([
-            'sub_menu_id' => '1',
-            'descripcion' => 'Localidades SAT',
-            'route' => 'satlocalidades',
-            'icon' => 'fas fa-angle-double-right',
-            'icon_color' => 'danger',
-            'classes' => '',
-            'activo' => '1'
-        ]);
-
-        SubItemMenuCatalogo::create([
-            'sub_menu_id' => '1',
-            'descripcion' => 'Municipios SAT',
-            'route' => 'satmunicipios',
-            'icon' => 'fas fa-angle-double-right',
-            'icon_color' => 'danger',
-            'classes' => '',
-            'activo' => '1'
-        ]);
-
-        SubItemMenuCatalogo::create([
-            'sub_menu_id' => '1',
-            'descripcion' => 'Estados SAT',
-            'route' => 'satestados',
-            'icon' => 'fas fa-angle-double-right',
-            'icon_color' => 'danger',
-            'classes' => '',
-            'activo' => '1'
-        ]);
-
-        SubItemMenuCatalogo::create([
-            'sub_menu_id' => '1',
-            'descripcion' => 'Paises SAT',
-            'route' => 'satpaises',
-            'icon' => 'fas fa-angle-double-right',
-            'icon_color' => 'danger',
+            'icon_color' => 'light',
             'classes' => '',
             'activo' => '1'
         ]);
 
         SubItemMenuCatalogo::create([
             'sub_menu_id' => '2',
-            'descripcion' => 'Domentación',
-            'route' => 'norma35',
+            'descripcion' => 'Impotar Catalogo Productos MBA3',
+            'route' => 'empresas',
             'icon' => 'fas fa-angle-double-right',
-            'icon_color' => 'orange',
+            'icon_color' => 'indigo',
             'classes' => '',
             'activo' => '1'
         ]);
 
-        SubItemMenuCatalogo::create([
-            'sub_menu_id' => '2',
-            'descripcion' => 'Guia de Referencia I',
-            'route' => 'norma35gr1',
-            'icon' => 'fas fa-angle-double-right',
-            'icon_color' => 'orange',
-            'classes' => '',
-            'activo' => '1'
-        ]);
 
-        SubItemMenuCatalogo::create([
-            'sub_menu_id' => '2',
-            'descripcion' => 'Guia de Referencia II',
-            'route' => 'norma35gr2',
-            'icon' => 'fas fa-angle-double-right',
-            'icon_color' => 'orange',
-            'classes' => '',
-            'activo' => '1'
-        ]);
-
-        SubItemMenuCatalogo::create([
-            'sub_menu_id' => '2',
-            'descripcion' => 'Guia de Referencia III',
-            'route' => 'norma35gr3',
-            'icon' => 'fas fa-angle-double-right',
-            'icon_color' => 'orange',
-            'classes' => '',
-            'activo' => '1'
-        ]);
-
-        SubItemMenuCatalogo::create([
-            'sub_menu_id' => '2',
-            'descripcion' => 'Guia de Referencia IV',
-            'route' => 'norma35gr4',
-            'icon' => 'fas fa-angle-double-right',
-            'icon_color' => 'orange',
-            'classes' => '',
-            'activo' => '1'
-        ]);
-
-        SubItemMenuCatalogo::create([
-            'sub_menu_id' => '2',
-            'descripcion' => 'Guia de Referencia V',
-            'route' => 'norma35gr5',
-            'icon' => 'fas fa-angle-double-right',
-            'icon_color' => 'orange',
-            'classes' => '',
-            'activo' => '1'
-        ]);
-
-        SubItemMenuCatalogo::create([
-            'sub_menu_id' => '3',
-            'descripcion' => 'Empleados',
-            'route' => 'empleados',
-            'icon' => 'fas fa-angle-double-right',
-            'icon_color' => 'orange',
-            'classes' => '',
-            'activo' => '1'
-        ]);
-
-        SubItemMenuCatalogo::create([
-            'sub_menu_id' => '4',
-            'descripcion' => 'Ver Clientes',
-            'route' => 'mbaclientes',
-            'icon' => 'fas fa-angle-double-right',
-            'icon_color' => 'primary',
-            'classes' => '',
-            'activo' => '1'
-        ]);
 
         SubItemMenuCatalogo::create([
             'sub_menu_id' => '9',
@@ -295,7 +69,7 @@ class SubItemMenuCatalogoSeeder extends Seeder
 
         SubItemMenuCatalogo::create([
             'sub_menu_id' => '8',
-            'descripcion' => 'Impotar Traslados 4D',
+            'descripcion' => 'Impotar Traslados MBA3',
             'route' => 'trasladotransfer.create',
             'icon' => 'fas fa-angle-double-right',
             'icon_color' => 'indigo',
@@ -304,29 +78,28 @@ class SubItemMenuCatalogoSeeder extends Seeder
         ]);
 
         SubItemMenuCatalogo::create([
-            'sub_menu_id' => '5',
-            'descripcion' => 'Traslado Complemento Transferencia',
-            'route' => 'trasladotrasnfercomp.create',
+            'sub_menu_id' => '8',
+            'descripcion' => 'Generar XML Traslado',
+            'route' => 'xmltraslado.create',
             'icon' => 'fas fa-angle-double-right',
-            'icon_color' => 'pink',
+            'icon_color' => 'indigo',
             'classes' => '',
             'activo' => '1'
         ]);
 
         SubItemMenuCatalogo::create([
-            'sub_menu_id' => '5',
-            'descripcion' => 'Traslado Cliente',
+            'sub_menu_id' => '10',
+            'descripcion' => 'Importar Traslados MBA3',
             'route' => 'trasladocliente.create',
             'icon' => 'fas fa-angle-double-right',
             'icon_color' => 'pink',
             'classes' => '',
             'activo' => '1'
         ]);
-
         SubItemMenuCatalogo::create([
-            'sub_menu_id' => '5',
-            'descripcion' => 'Traslado Complemento Cliente',
-            'route' => 'trasladoclientecomp.create',
+            'sub_menu_id' => '10',
+            'descripcion' => 'Generar XML Traslado',
+            'route' => 'xmltrasladocliente.create',
             'icon' => 'fas fa-angle-double-right',
             'icon_color' => 'pink',
             'classes' => '',

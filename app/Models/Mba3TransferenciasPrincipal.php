@@ -61,7 +61,7 @@ class Mba3TransferenciasPrincipal extends Model
         }
     }
 
-    public function update_traslado($id){
+    public function update_traslado_exportado($id){
         try {
 
             $database = new Mba3();

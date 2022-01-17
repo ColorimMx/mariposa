@@ -15,63 +15,19 @@ class SubMenuCatalogoSeeder extends Seeder
     public function run()
     {
         SubMenuCatalogo::create([
-            'menu_id' => '9',
-            'descripcion' => 'Catalogos',
+            'menu_id' => '1',
+            'descripcion' => 'Catalago Proveedores',
             'icon' => 'fas fa-angle-right',
-            'icon_color' => 'danger',
+            'icon_color' => 'light',
             'classes' => '',
             'activo' => '1'
         ]);
 
         SubMenuCatalogo::create([
-            'menu_id' => '7',
-            'descripcion' => 'Norma 35 STPS',
+            'menu_id' => '2',
+            'descripcion' => 'Catalogo Productos',
             'icon' => 'fas fa-angle-right',
-            'icon_color' => 'orange',
-            'classes' => '',
-            'activo' => '1'
-        ]);
-        SubMenuCatalogo::create([
-            'menu_id' => '7',
-            'descripcion' => 'Catalogos',
-            'icon' => 'fas fa-angle-right',
-            'icon_color' => 'orange',
-            'classes' => '',
-            'activo' => '1'
-        ]);
-
-        SubMenuCatalogo::create([
-            'menu_id' => '4',
-            'descripcion' => 'Catalogo',
-            'icon' => 'fas fa-angle-right',
-            'icon_color' => 'primary',
-            'classes' => '',
-            'activo' => '1'
-        ]);
-
-        SubMenuCatalogo::create([
-            'menu_id' => '8',
-            'descripcion' => 'CFDI',
-            'icon' => 'fas fa-angle-right',
-            'icon_color' => 'pink',
-            'classes' => '',
-            'activo' => '1'
-        ]);
-
-        SubMenuCatalogo::create([
-            'menu_id' => '8',
-            'descripcion' => 'Ver Catalogos',
-            'icon' => 'fas fa-angle-right',
-            'icon_color' => 'pink',
-            'classes' => '',
-            'activo' => '1'
-        ]);
-
-        SubMenuCatalogo::create([
-            'menu_id' => '8',
-            'descripcion' => 'Alta Catalogos',
-            'icon' => 'fas fa-angle-right',
-            'icon_color' => 'pink',
+            'icon_color' => 'indigo',
             'classes' => '',
             'activo' => '1'
         ]);
@@ -90,6 +46,15 @@ class SubMenuCatalogoSeeder extends Seeder
             'descripcion' => 'Transportes',
             'icon' => 'fas fa-angle-right',
             'icon_color' => 'indigo',
+            'classes' => '',
+            'activo' => '1'
+        ]);
+
+        SubMenuCatalogo::create([
+            'menu_id' => '4',
+            'descripcion' => 'Traslados',
+            'icon' => 'fas fa-angle-right',
+            'icon_color' => 'primary',
             'classes' => '',
             'activo' => '1'
         ]);

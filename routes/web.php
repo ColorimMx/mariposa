@@ -43,9 +43,10 @@ use App\Http\Controllers\PermisoAutotransporteController;
 use App\Http\Controllers\AutotransporteController;
 use App\Http\Controllers\TrasladoController;
 use App\Http\Controllers\TrasladoComplementoController;
+use App\Http\Controllers\XmlTrasladoController;
 use App\Http\Controllers\TrasladoClienteController;
 use App\Http\Controllers\TrasladoComplementoClienteController;
-use App\Http\Controllers\XmlTrasladoController;
+Use App\Http\Controllers\XmlTrasladoClienteController;
 use App\Http\Controllers\CfdiTrasladoController;
 
 /*
@@ -195,6 +196,7 @@ Route::resource('autotransporte',AutotransporteController::class);
 
 Route::resource('trasladotransfer',TrasladoController::class);
 Route::resource('trasladotrasnfercomp', TrasladoComplementoClienteController::class);
+Route::resource('xmltraslado',XmlTrasladoController::class);
 Route::resource('trasladocliente', TrasladoClienteController::class);
 Route::resource('trasladoclientecomp', TrasladoComplementoClienteController::class);
-Route::resource('xmltraslado',XmlTrasladoController::class);
+Route::resource('xmltrasladocliente',XmlTrasladoClienteController::class);

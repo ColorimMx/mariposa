@@ -34,7 +34,7 @@ class TrasladoController extends Controller
 
         $autotransportes = AutotransporteCatalogo::all();
 
-        return view('sat.trasladoimport',compact('traslados','autotransportes'));
+        return view('Inventario.Traslados.importar',compact('traslados','autotransportes'));
 
     }
 
@@ -50,8 +50,6 @@ class TrasladoController extends Controller
 
         $mbatransferencia = new Mba3TransferenciasPrincipal();
         $transferencias = $mbatransferencia->get_trasladoprincipal($id);
-
-        $trasladoporteupdate = $mbatransferencia->update_traslado($id);
 
         foreach ($transferencias as $transferencia){
 
@@ -88,17 +86,19 @@ class TrasladoController extends Controller
 
         }
 
+        $trasladoporteupdate = $mbatransferencia->update_traslado_exportado($id);
+
         //return $traslado;
-
-
-
         //return redirect('cfditraslado', [$id]);
-
         //return redirect()->route('cfditraslado', [$id]);
+        /*return redirect()->action(
+            [XmlTrasladoController::class, 'show'], [$id]
+        );*/
 
         return redirect()->action(
-            [XmlTrasladoController::class, 'show'], [$id]
+            [XmlTrasladoController::class, 'create'], [$id]
         );
+
     }
 
     /**
