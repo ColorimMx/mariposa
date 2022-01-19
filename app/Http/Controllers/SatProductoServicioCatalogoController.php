@@ -3,10 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\EstatusEstudioCatalogo;
 
-
-class EstatusEstudioCatalogoController extends Controller
+class SatProductoServicioCatalogoController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,9 +13,7 @@ class EstatusEstudioCatalogoController extends Controller
      */
     public function index()
     {
-        $EstatusEstudios = EstatusEstudioCatalogo::all();
-
-        return view('administracion.estatusestudio',compact('EstatusEstudios'));
+        //
     }
 
     /**

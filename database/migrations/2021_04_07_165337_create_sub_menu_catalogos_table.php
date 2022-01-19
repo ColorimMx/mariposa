@@ -14,7 +14,7 @@ class CreateSubMenuCatalogosTable extends Migration
     public function up()
     {
         Schema::create('sub_menu_catalogos', function (Blueprint $table) {
-            $table->id();
+            $table->char('id',10)->primary();
             $table->string('descripcion');
             $table->unsignedBigInteger('menu_id');
             $table->foreign('menu_id')->references('id')->on('menu_catalogos');
