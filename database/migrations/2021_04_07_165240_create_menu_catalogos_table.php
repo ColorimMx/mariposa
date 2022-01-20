@@ -14,7 +14,7 @@ class CreateMenuCatalogosTable extends Migration
     public function up()
     {
         Schema::create('menu_catalogos', function (Blueprint $table) {
-            $table->char('id',10)->primary();
+            $table->id();
             $table->string('descripcion');
             $table->string('icon');
             $table->string('icon_color');
