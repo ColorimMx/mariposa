@@ -1,0 +1,25 @@
+<?php
+
+use Illuminate\Support\Facades\Route;
+
+use App\Http\Controllers\SatRegimenFiscalCatalogoController;
+use App\Http\Controllers\SatPaisCatalogoController;
+use App\Http\Controllers\SatEstadoCatalogoController;
+use App\Http\Controllers\SatMunicipioCatalogoController;
+use App\Http\Controllers\SatLocalidadCatalogoController;
+use App\Http\Controllers\SatImpuestoCatalogoController;
+use App\Http\Controllers\SatTipoComprobanteCatalogoController;
+use App\Http\Controllers\SatTipoRelacionCatalogoController;
+use App\Http\Controllers\SatUsoCfdiCatalogoController;
+use App\Http\Controllers\SatMetodoPagoCatalogoController;
+use App\Http\Controllers\SatFormaPagoCatalogoController;
+use App\Http\Controllers\SatUnidadCatalogoController;
+use App\Http\Controllers\SatProductoServicioCatalogoController;
+use App\Http\Controllers\SatComercioExteriorUnidadAduanaCatalogoController;
+use App\Http\Controllers\SatComercioExteriorFraccionArancelariaCatalogoController;
+use App\Http\Controllers\SatComercioExteriorIncotermCatalogoController;
+use App\Http\Controllers\SatComercioExteriorTipoOperacionCatalogoController;
+use App\Http\Controllers\SatComercioExteriorPedimentoCatalogoController;
+use App\Http\Controllers\SatCartaPorteTipoPermisoCatalogoController;
+use App\Http\Controllers\SatCartaPorteConfigVehicularCatalogoController;
+use App\Http\Controllers\SatCartaPorteSubTipoRemCatalogoController;

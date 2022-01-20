@@ -1,8 +1,9 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Proveedores;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class ProveedorCatalogoController extends Controller
 {
@@ -13,7 +14,7 @@ class ProveedorCatalogoController extends Controller
      */
     public function index()
     {
-        //
+       echo 'Proveedores';
     }
 
     /**

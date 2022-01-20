@@ -1,6 +1,7 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Bancos;
+use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 
@@ -13,7 +14,7 @@ class BancoCatalogoController extends Controller
      */
     public function index()
     {
-        //
+        echo 'Bancos';
     }
 
     /**

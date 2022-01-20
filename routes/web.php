@@ -200,3 +200,7 @@ Route::resource('xmltraslado',XmlTrasladoController::class);
 Route::resource('trasladocliente', TrasladoClienteController::class);
 Route::resource('trasladoclientecomp', TrasladoComplementoClienteController::class);
 Route::resource('xmltrasladocliente',XmlTrasladoClienteController::class);
+
+use App\Http\Controllers\Proveedores\ProveedorCatalogoController;
+
+Route::resource('impProveedores',ProveedorCatalogoController::class);

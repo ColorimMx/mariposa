@@ -1,8 +1,9 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Inventario;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 use App\Models\ProductoGrupoCatalogo;
 
 class ProductoGrupoCatalogoController extends Controller
@@ -14,7 +15,7 @@ class ProductoGrupoCatalogoController extends Controller
      */
     public function index()
     {
-        //
+        echo 'Producto Grupos';
     }
 
     /**

@@ -17,7 +17,7 @@ class SubItemMenuCatalogoSeeder extends Seeder
     {
         SubItemMenuCatalogo::create([
             'descripcion' =>	'Importar Proveedores Catálogo',
-            'sub_menu_id' =>	'1.',
+            'sub_menu_id' =>	'1',
             'route' =>	'impProveedores',
             'icon' =>	'fas fa-angle-double-right',
             'icon_color' =>	'light',
@@ -26,7 +26,7 @@ class SubItemMenuCatalogoSeeder extends Seeder
 
         SubItemMenuCatalogo::create([
             'descripcion' =>	'Importar Grupos Catálogo',
-            'sub_menu_id' =>	'2.',
+            'sub_menu_id' =>	'2',
             'route' =>	'impGrupos',
             'icon' =>	'fas fa-angle-double-right',
             'icon_color' =>	'indigo',
@@ -35,7 +35,7 @@ class SubItemMenuCatalogoSeeder extends Seeder
 
         SubItemMenuCatalogo::create([
             'descripcion' =>	'Importar Subgrupos Catálogo',
-            'sub_menu_id' =>	'2.',
+            'sub_menu_id' =>	'2',
             'route' =>	'impSubgrupos',
             'icon' =>	'fas fa-angle-double-right',
             'icon_color' =>	'indigo',
@@ -44,7 +44,7 @@ class SubItemMenuCatalogoSeeder extends Seeder
 
         SubItemMenuCatalogo::create([
             'descripcion' =>	'Importar Marcas Catálogo',
-            'sub_menu_id' =>	'2.',
+            'sub_menu_id' =>	'2',
             'route' =>	'impMarcas',
             'icon' =>	'fas fa-angle-double-right',
             'icon_color' =>	'indigo',
@@ -53,7 +53,7 @@ class SubItemMenuCatalogoSeeder extends Seeder
 
         SubItemMenuCatalogo::create([
             'descripcion' =>	'Importar Modelos Catálogo',
-            'sub_menu_id' =>	'2.',
+            'sub_menu_id' =>	'2',
             'route' =>	'impModelos',
             'icon' =>	'fas fa-angle-double-right',
             'icon_color' =>	'indigo',
@@ -62,7 +62,7 @@ class SubItemMenuCatalogoSeeder extends Seeder
 
         SubItemMenuCatalogo::create([
             'descripcion' =>	'Importar Submodelos Catálogo',
-            'sub_menu_id' =>	'2.',
+            'sub_menu_id' =>	'2',
             'route' =>	'impSubmodelos',
             'icon' =>	'fas fa-angle-double-right',
             'icon_color' =>	'indigo',
@@ -71,7 +71,7 @@ class SubItemMenuCatalogoSeeder extends Seeder
 
         SubItemMenuCatalogo::create([
             'descripcion' =>	'Importar Productos Catálogo',
-            'sub_menu_id' =>	'2.',
+            'sub_menu_id' =>	'2',
             'route' =>	'impProductos',
             'icon' =>	'fas fa-angle-double-right',
             'icon_color' =>	'indigo',
@@ -80,7 +80,7 @@ class SubItemMenuCatalogoSeeder extends Seeder
 
         SubItemMenuCatalogo::create([
             'descripcion' =>	'Importar Bancos Catálogo',
-            'sub_menu_id' =>	'3.',
+            'sub_menu_id' =>	'3',
             'route' =>	'impBancos',
             'icon' =>	'fas fa-angle-double-right',
             'icon_color' =>	'lightblue',
@@ -89,7 +89,7 @@ class SubItemMenuCatalogoSeeder extends Seeder
 
         SubItemMenuCatalogo::create([
             'descripcion' =>	'Importar Clientes Catálogo',
-            'sub_menu_id' =>	'4.',
+            'sub_menu_id' =>	'4',
             'route' =>	'impClientes',
             'icon' =>	'fas fa-angle-double-right',
             'icon_color' =>	'primary',
@@ -98,7 +98,7 @@ class SubItemMenuCatalogoSeeder extends Seeder
 
         SubItemMenuCatalogo::create([
             'descripcion' =>	'Importar Activo Fijo Catálogo',
-            'sub_menu_id' =>	'5.',
+            'sub_menu_id' =>	'5',
             'route' =>	'impActivoFijo',
             'icon' =>	'fas fa-angle-double-right',
             'icon_color' =>	'success',
@@ -107,7 +107,7 @@ class SubItemMenuCatalogoSeeder extends Seeder
 
         SubItemMenuCatalogo::create([
             'descripcion' =>	'Importar Cuentas Catálogo',
-            'sub_menu_id' =>	'6.',
+            'sub_menu_id' =>	'6',
             'route' =>	'impCuentas',
             'icon' =>	'fas fa-angle-double-right',
             'icon_color' =>	'warning',
@@ -116,7 +116,7 @@ class SubItemMenuCatalogoSeeder extends Seeder
 
         SubItemMenuCatalogo::create([
             'descripcion' =>	'Areas Catálogo',
-            'sub_menu_id' =>	'7.',
+            'sub_menu_id' =>	'7',
             'route' =>	'areas',
             'icon' =>	'fas fa-angle-double-right',
             'icon_color' =>	'orange',
@@ -125,7 +125,7 @@ class SubItemMenuCatalogoSeeder extends Seeder
 
         SubItemMenuCatalogo::create([
             'descripcion' =>	'Departamentos Catálogo',
-            'sub_menu_id' =>	'7.',
+            'sub_menu_id' =>	'7',
             'route' =>	'departamentos',
             'icon' =>	'fas fa-angle-double-right',
             'icon_color' =>	'orange',
@@ -134,7 +134,7 @@ class SubItemMenuCatalogoSeeder extends Seeder
 
         SubItemMenuCatalogo::create([
             'descripcion' =>	'Puesto Tipos Catálogo',
-            'sub_menu_id' =>	'7.',
+            'sub_menu_id' =>	'7',
             'route' =>	'puestosTipo',
             'icon' =>	'fas fa-angle-double-right',
             'icon_color' =>	'orange',
@@ -143,7 +143,7 @@ class SubItemMenuCatalogoSeeder extends Seeder
 
         SubItemMenuCatalogo::create([
             'descripcion' =>	'Puestos Catálogo',
-            'sub_menu_id' =>	'7.',
+            'sub_menu_id' =>	'7',
             'route' =>	'puestos',
             'icon' =>	'fas fa-angle-double-right',
             'icon_color' =>	'orange',
@@ -152,7 +152,7 @@ class SubItemMenuCatalogoSeeder extends Seeder
 
         SubItemMenuCatalogo::create([
             'descripcion' =>	'Estado Civil Catálogo',
-            'sub_menu_id' =>	'7.',
+            'sub_menu_id' =>	'7',
             'route' =>	'estadoCivil',
             'icon' =>	'fas fa-angle-double-right',
             'icon_color' =>	'orange',
@@ -161,7 +161,7 @@ class SubItemMenuCatalogoSeeder extends Seeder
 
         SubItemMenuCatalogo::create([
             'descripcion' =>	'Nivel Estudios Catálogo',
-            'sub_menu_id' =>	'7.',
+            'sub_menu_id' =>	'7',
             'route' =>	'nivelEstudios',
             'icon' =>	'fas fa-angle-double-right',
             'icon_color' =>	'orange',
@@ -170,7 +170,7 @@ class SubItemMenuCatalogoSeeder extends Seeder
 
         SubItemMenuCatalogo::create([
             'descripcion' =>	'Contrato Tipos Catálogo',
-            'sub_menu_id' =>	'7.',
+            'sub_menu_id' =>	'7',
             'route' =>	'contratosTipo',
             'icon' =>	'fas fa-angle-double-right',
             'icon_color' =>	'orange',
@@ -179,7 +179,7 @@ class SubItemMenuCatalogoSeeder extends Seeder
 
         SubItemMenuCatalogo::create([
             'descripcion' =>	'Personal Tipos Catálogo',
-            'sub_menu_id' =>	'7.',
+            'sub_menu_id' =>	'7',
             'route' =>	'personalTipo',
             'icon' =>	'fas fa-angle-double-right',
             'icon_color' =>	'orange',
@@ -188,7 +188,7 @@ class SubItemMenuCatalogoSeeder extends Seeder
 
         SubItemMenuCatalogo::create([
             'descripcion' =>	'Jordana Tipos Catálogo',
-            'sub_menu_id' =>	'7.',
+            'sub_menu_id' =>	'7',
             'route' =>	'jornadasTipo',
     	'icon' =>	'fas fa-angle-double-right',
     	'icon_color' =>	'orange',
@@ -197,7 +197,7 @@ class SubItemMenuCatalogoSeeder extends Seeder
 
 SubItemMenuCatalogo::create([
     'descripcion' =>	'Nomina Tipos Catálogo',
-    	'sub_menu_id' =>	'7.',
+    	'sub_menu_id' =>	'7',
     	'route' =>	'nominasTipos',
     	'icon' =>	'fas fa-angle-double-right',
     	'icon_color' =>	'orange',
@@ -206,7 +206,7 @@ SubItemMenuCatalogo::create([
 
 SubItemMenuCatalogo::create([
     'descripcion' =>	'Localidades Catálogo',
-    	'sub_menu_id' =>	'7.',
+    	'sub_menu_id' =>	'7',
     	'route' =>	'localidades',
     	'icon' =>	'fas fa-angle-double-right',
     	'icon_color' =>	'orange',
@@ -215,7 +215,7 @@ SubItemMenuCatalogo::create([
 
 SubItemMenuCatalogo::create([
     'descripcion' =>	'Estatus Estudios Catálogo',
-    	'sub_menu_id' =>	'7.',
+    	'sub_menu_id' =>	'7',
     	'route' =>	'estatusEstudios',
     	'icon' =>	'fas fa-angle-double-right',
     	'icon_color' =>	'orange',
@@ -224,7 +224,7 @@ SubItemMenuCatalogo::create([
 
 SubItemMenuCatalogo::create([
     'descripcion' =>	'Empleados Catálogo',
-    	'sub_menu_id' =>	'7.',
+    	'sub_menu_id' =>	'7',
     	'route' =>	'empleados',
     	'icon' =>	'fas fa-angle-double-right',
     	'icon_color' =>	'orange',
@@ -233,15 +233,16 @@ SubItemMenuCatalogo::create([
 
 SubItemMenuCatalogo::create([
     'descripcion' =>	'Regimen Fiscal Catálogo',
-    	'sub_menu_id' =>	'8',
-    	'route' =>	'regimenFiscalSat',
-    	'icon' =>	'fas fa-angle-double-right',
+    'sub_menu_id' =>	'8',
+    'route' =>	'regimenFiscalSat',
+    'icon' =>	'fas fa-angle-double-right',
     'icon_color' =>	'pink',
-     'activo' => '1']);
+    'classes' => '',
+    'activo' => '1']);
 
 SubItemMenuCatalogo::create([
     'descripcion' =>	'País Catálogo',
-    	'sub_menu_id' =>	'8.',
+    	'sub_menu_id' =>	'8',
     	'route' =>	'paisesSat',
     	'icon' =>	'fas fa-angle-double-right',
     	'icon_color' =>	'pink',
@@ -250,7 +251,7 @@ SubItemMenuCatalogo::create([
 
 SubItemMenuCatalogo::create([
     'descripcion' =>	'Estado Catálogo',
-    	'sub_menu_id' =>	'8.',
+    	'sub_menu_id' =>	'8',
     	'route' =>	'estadosSat',
     	'icon' =>	'fas fa-angle-double-right',
     	'icon_color' =>	'pink',
@@ -259,7 +260,7 @@ SubItemMenuCatalogo::create([
 
 SubItemMenuCatalogo::create([
     'descripcion' =>	'Municipio Catálogo',
-    	'sub_menu_id' =>	'8.',
+    	'sub_menu_id' =>	'8',
     	'route' =>	'municipiosSat',
     	'icon' =>	'fas fa-angle-double-right',
     	'icon_color' =>	'pink',
@@ -268,7 +269,7 @@ SubItemMenuCatalogo::create([
 
 SubItemMenuCatalogo::create([
     'descripcion' =>	'Localidad Catálogo',
-    	'sub_menu_id' =>	'8.',
+    	'sub_menu_id' =>	'8',
     	'route' =>	'localidadesSat',
     	'icon' =>	'fas fa-angle-double-right',
     	'icon_color' =>	'pink',
@@ -277,7 +278,7 @@ SubItemMenuCatalogo::create([
 
 SubItemMenuCatalogo::create([
     'descripcion' =>	'Impuesto Catálogo',
-    	'sub_menu_id' =>	'8.',
+    	'sub_menu_id' =>	'8',
     	'route' =>	'impuestosSat',
     	'icon' =>	'fas fa-angle-double-right',
     	'icon_color' =>	'pink',
@@ -286,7 +287,7 @@ SubItemMenuCatalogo::create([
 
 SubItemMenuCatalogo::create([
     'descripcion' =>	'Comprobante Tipo Catálogo',
-    	'sub_menu_id' =>	'8.',
+    	'sub_menu_id' =>	'8',
     	'route' =>	'comprobantesSat',
     	'icon' =>	'fas fa-angle-double-right',
     	'icon_color' =>	'pink',
@@ -295,7 +296,7 @@ SubItemMenuCatalogo::create([
 
 SubItemMenuCatalogo::create([
     'descripcion' =>	'Relación Tipo Catálogo',
-    	'sub_menu_id' =>	'8.',
+    	'sub_menu_id' =>	'8',
     	'route' =>	'relacionSat',
     	'icon' =>	'fas fa-angle-double-right',
     	'icon_color' =>	'pink',
@@ -304,7 +305,7 @@ SubItemMenuCatalogo::create([
 
 SubItemMenuCatalogo::create([
     'descripcion' =>	'Uso CFDI Catálogo',
-    	'sub_menu_id' =>	'8.',
+    	'sub_menu_id' =>	'8',
     	'route' =>	'usosCfdiSat',
     	'icon' =>	'fas fa-angle-double-right',
     	'icon_color' =>	'pink',
@@ -313,7 +314,7 @@ SubItemMenuCatalogo::create([
 
 SubItemMenuCatalogo::create([
     'descripcion' =>	'Método Pago Catálogo',
-    	'sub_menu_id' =>	'8.',
+    	'sub_menu_id' =>	'8',
     	'route' =>	'metodosPagoSat',
     	'icon' =>	'fas fa-angle-double-right',
     	'icon_color' =>	'pink',
@@ -322,7 +323,7 @@ SubItemMenuCatalogo::create([
 
 SubItemMenuCatalogo::create([
     'descripcion' =>	'Forma Pago Catálogo',
-    	'sub_menu_id' =>	'8.',
+    	'sub_menu_id' =>	'8',
     	'route' =>	'formasPagoSat',
     	'icon' =>	'fas fa-angle-double-right',
     	'icon_color' =>	'pink',
@@ -331,7 +332,7 @@ SubItemMenuCatalogo::create([
 
 SubItemMenuCatalogo::create([
     'descripcion' =>	'Unidad Catálogo',
-    	'sub_menu_id' =>	'8.',
+    	'sub_menu_id' =>	'8',
     	'route' =>	'unidadesSat',
     	'icon' =>	'fas fa-angle-double-right',
     	'icon_color' =>	'pink',
@@ -340,7 +341,7 @@ SubItemMenuCatalogo::create([
 
 SubItemMenuCatalogo::create([
     'descripcion' =>	'Producto / Servicio Catálogo',
-    	'sub_menu_id' =>	'8.',
+    	'sub_menu_id' =>	'8',
     	'route' =>	'productosSat',
     	'icon' =>	'fas fa-angle-double-right',
     	'icon_color' =>	'pink',
@@ -349,7 +350,7 @@ SubItemMenuCatalogo::create([
 
 SubItemMenuCatalogo::create([
     'descripcion' =>	'Unidad Aduana Catálogo',
-    	'sub_menu_id' =>	'9.',
+    	'sub_menu_id' =>	'9',
     	'route' =>	'unidadesAduanaSat',
     	'icon' =>	'fas fa-angle-double-right',
     	'icon_color' =>	'pink',
@@ -358,7 +359,7 @@ SubItemMenuCatalogo::create([
 
 SubItemMenuCatalogo::create([
     'descripcion' =>	'Fracción Arancelaria Catálogo',
-    	'sub_menu_id' =>	'9.',
+    	'sub_menu_id' =>	'9',
     	'route' =>	'fraccionesSat',
     	'icon' =>	'fas fa-angle-double-right',
     	'icon_color' =>	'pink',
@@ -367,7 +368,7 @@ SubItemMenuCatalogo::create([
 
 SubItemMenuCatalogo::create([
     'descripcion' =>	'Incoterm Catálogo',
-    	'sub_menu_id' =>	'9.',
+    	'sub_menu_id' =>	'9',
     	'route' =>	'incotermSat',
     	'icon' =>	'fas fa-angle-double-right',
     	'icon_color' =>	'pink',
@@ -376,7 +377,7 @@ SubItemMenuCatalogo::create([
 
 SubItemMenuCatalogo::create([
     'descripcion' =>	'Operación Tipo Catálogo',
-    	'sub_menu_id' =>	'9.',
+    	'sub_menu_id' =>	'9',
     	'route' =>	'operacionesSat',
     	'icon' =>	'fas fa-angle-double-right',
     	'icon_color' =>	'pink',
@@ -385,7 +386,7 @@ SubItemMenuCatalogo::create([
 
 SubItemMenuCatalogo::create([
     'descripcion' =>	'Pedimento Catálogo',
-    	'sub_menu_id' =>	'9.',
+    	'sub_menu_id' =>	'9',
     	'route' =>	'pedimentosSat',
     	'icon' =>	'fas fa-angle-double-right',
     	'icon_color' =>	'pink',
@@ -394,7 +395,7 @@ SubItemMenuCatalogo::create([
 
 SubItemMenuCatalogo::create([
     'descripcion' =>	'Permiso Tipo Catálogo',
-    	'sub_menu_id' =>	'10.',
+    	'sub_menu_id' =>	'10',
     	'route' =>	'permisosSat',
     	'icon' =>	'fas fa-angle-double-right',
     	'icon_color' =>	'pink',
@@ -403,7 +404,7 @@ SubItemMenuCatalogo::create([
 
 SubItemMenuCatalogo::create([
     'descripcion' =>	'Configuración Vehicular Catálogo',
-    	'sub_menu_id' =>	'10.',
+    	'sub_menu_id' =>	'10',
     	'route' =>	'configVehicularSat',
     	'icon' =>	'fas fa-angle-double-right',
     	'icon_color' =>	'pink',
@@ -412,7 +413,7 @@ SubItemMenuCatalogo::create([
 
 SubItemMenuCatalogo::create([
     'descripcion' =>	'Remolque Subtipo Catálogo',
-    	'sub_menu_id' =>	'10.',
+    	'sub_menu_id' =>	'10',
     	'route' =>	'remolqueSat',
     	'icon' =>	'fas fa-angle-double-right',
     	'icon_color' =>	'pink',
@@ -421,7 +422,7 @@ SubItemMenuCatalogo::create([
 
 SubItemMenuCatalogo::create([
     'descripcion' =>	'Sellado',
-    	'sub_menu_id' =>	'11.',
+    	'sub_menu_id' =>	'11',
     	'route' =>	'selladoSifei',
     	'icon' =>	'fas fa-angle-double-right',
     	'icon_color' =>	'pink',
@@ -430,7 +431,7 @@ SubItemMenuCatalogo::create([
 
 SubItemMenuCatalogo::create([
     'descripcion' =>	'Timbrado',
-    	'sub_menu_id' =>	'11.',
+    	'sub_menu_id' =>	'11',
     	'route' =>	'timbradoSifei',
     	'icon' =>	'fas fa-angle-double-right',
     	'icon_color' =>	'pink',
@@ -439,7 +440,7 @@ SubItemMenuCatalogo::create([
 
 SubItemMenuCatalogo::create([
     'descripcion' =>	'Menu Principal',
-    	'sub_menu_id' =>	'12.',
+    	'sub_menu_id' =>	'12',
     	'route' =>	'menuPrincipal',
     	'icon' =>	'fas fa-angle-double-right',
     	'icon_color' =>	'danger',
@@ -448,7 +449,7 @@ SubItemMenuCatalogo::create([
 
 SubItemMenuCatalogo::create([
     'descripcion' =>	'Submenu',
-    	'sub_menu_id' =>	'12.',
+    	'sub_menu_id' =>	'12',
     	'route' =>	'subMenu',
     	'icon' =>	'fas fa-angle-double-right',
     	'icon_color' =>	'danger',
@@ -457,7 +458,7 @@ SubItemMenuCatalogo::create([
 
 SubItemMenuCatalogo::create([
     'descripcion' =>	'Items Submenu',
-    	'sub_menu_id' =>	'12.',
+    	'sub_menu_id' =>	'12',
     	'route' =>	'itemSubmenu',
     	'icon' =>	'fas fa-angle-double-right',
     	'icon_color' =>	'danger',
@@ -466,7 +467,7 @@ SubItemMenuCatalogo::create([
 
 SubItemMenuCatalogo::create([
     'descripcion' =>	'Empresa Catálogo',
-    	'sub_menu_id' =>	'13.',
+    	'sub_menu_id' =>	'13',
     	'route' =>	'empresas',
     	'icon' =>	'fas fa-angle-double-right',
     	'icon_color' =>	'danger',
@@ -475,7 +476,7 @@ SubItemMenuCatalogo::create([
 
 SubItemMenuCatalogo::create([
     'descripcion' =>	'Sucursal Catálogo',
-    	'sub_menu_id' =>	'13.',
+    	'sub_menu_id' =>	'13',
     	'route' =>	'sucursales',
     	'icon' =>	'fas fa-angle-double-right',
     	'icon_color' =>	'danger',
@@ -484,7 +485,7 @@ SubItemMenuCatalogo::create([
 
 SubItemMenuCatalogo::create([
     'descripcion' =>	'Almacén Catálogo',
-    	'sub_menu_id' =>	'13.',
+    	'sub_menu_id' =>	'13',
     	'route' =>	'almacenes',
     	'icon' =>	'fas fa-angle-double-right',
     	'icon_color' =>	'danger',
@@ -493,7 +494,7 @@ SubItemMenuCatalogo::create([
 
 SubItemMenuCatalogo::create([
     'descripcion' =>	'Moneda Catálogo',
-    	'sub_menu_id' =>	'14.',
+    	'sub_menu_id' =>	'14',
     	'route' =>	'monedas',
     	'icon' =>	'fas fa-angle-double-right',
     	'icon_color' =>	'danger',
@@ -502,7 +503,7 @@ SubItemMenuCatalogo::create([
 
 SubItemMenuCatalogo::create([
     'descripcion' =>	'País Demografía Catálogo',
-    	'sub_menu_id' =>	'14.',
+    	'sub_menu_id' =>	'14',
     	'route' =>	'paises',
     	'icon' =>	'fas fa-angle-double-right',
     	'icon_color' =>	'danger',
@@ -511,7 +512,7 @@ SubItemMenuCatalogo::create([
 
 SubItemMenuCatalogo::create([
     'descripcion' =>	'Estado Demografía Catálogo',
-    	'sub_menu_id' =>	'14.',
+    	'sub_menu_id' =>	'14',
     	'route' =>	'estados',
     	'icon' =>	'fas fa-angle-double-right',
     	'icon_color' =>	'danger',
@@ -520,7 +521,7 @@ SubItemMenuCatalogo::create([
 
 SubItemMenuCatalogo::create([
     'descripcion' =>	'Ciudad Demografía Catálogo',
-    	'sub_menu_id' =>	'14.',
+    	'sub_menu_id' =>	'14',
     	'route' =>	'ciudades',
     	'icon' =>	'fas fa-angle-double-right',
     	'icon_color' =>	'danger',
