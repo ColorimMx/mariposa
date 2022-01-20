@@ -1,8 +1,9 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\ActivoFijo;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class ActivoFijoCatalogoController extends Controller
 {
@@ -13,7 +14,7 @@ class ActivoFijoCatalogoController extends Controller
      */
     public function index()
     {
-        //
+        echo 'Activo Fijo';
     }
 
     /**

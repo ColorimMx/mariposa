@@ -63,7 +63,7 @@ use App\Http\Controllers\CfdiTrasladoController;
 Route::get('/', function () {
     return view('inicio');
 });
-
+/*
 Route::get('credencial', function () {
     return view('pdf.credencialCIMSA');
 });
@@ -204,3 +204,4 @@ Route::resource('xmltrasladocliente',XmlTrasladoClienteController::class);
 use App\Http\Controllers\Proveedores\ProveedorCatalogoController;
 
 Route::resource('impProveedores',ProveedorCatalogoController::class);
+*/

@@ -1,8 +1,9 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Contabilidad;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class ContabilidadPlanCuentaController extends Controller
 {
@@ -13,7 +14,7 @@ class ContabilidadPlanCuentaController extends Controller
      */
     public function index()
     {
-        //
+        echo 'Contabilidad';
     }
 
     /**

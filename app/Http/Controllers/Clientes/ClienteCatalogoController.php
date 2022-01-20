@@ -1,8 +1,9 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Clientes;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class ClienteCatalogoController extends Controller
 {
@@ -13,7 +14,7 @@ class ClienteCatalogoController extends Controller
      */
     public function index()
     {
-        //
+        echo 'Clientes';
     }
 
     /**
