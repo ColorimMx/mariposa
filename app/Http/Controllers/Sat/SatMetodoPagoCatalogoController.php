@@ -1,10 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Sat;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
-class SatCartaPorteTipoPermisoCatalogoController extends Controller
+class SatMetodoPagoCatalogoController extends Controller
 {
     /**
      * Display a listing of the resource.

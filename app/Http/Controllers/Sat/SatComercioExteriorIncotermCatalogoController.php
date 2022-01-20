@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Sat;
 
 use Illuminate\Http\Request;
-use App\Models\SatEstadoCatalogo;
+use App\Http\Controllers\Controller;
 
-class SatEstadoCatalogoController extends Controller
+class SatComercioExteriorIncotermCatalogoController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +14,7 @@ class SatEstadoCatalogoController extends Controller
      */
     public function index()
     {
-        $SatEstados = SatEstadoCatalogo::all();
-        return view('administracion.satestados',compact('SatEstados'));
+        //
     }
 
     /**

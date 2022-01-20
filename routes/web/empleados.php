@@ -2,16 +2,30 @@
 
 use Illuminate\Support\Facades\Route;
 
-use App\Http\Controllers\AreaCatalogoController;
-use App\Http\Controllers\DepartamentoCatalogoController;
-use App\Http\Controllers\PuestoTipoCatalogoController;
-use App\Http\Controllers\PuestoCatalogoController;
-use App\Http\Controllers\EstadoCivilCatalogoController;
-use App\Http\Controllers\NivelEstudioCatalogoController;
-use App\Http\Controllers\ContratoTipoCatalogoController;
-use App\Http\Controllers\PersonalTipoCatalogoController;
-use App\Http\Controllers\JornadaTipoCatalogoController;
-use App\Http\Controllers\NominaTipoCatalogoController;
-use App\Http\Controllers\LocalidadCatalogoController;
-use App\Http\Controllers\EstatusEstudioCatalogoController;
-use App\Http\Controllers\EmpleadoCatalogoController;
+use App\Http\Controllers\Empleados\AreaCatalogoController;
+use App\Http\Controllers\Empleados\DepartamentoCatalogoController;
+use App\Http\Controllers\Empleados\PuestoTipoCatalogoController;
+use App\Http\Controllers\Empleados\PuestoCatalogoController;
+use App\Http\Controllers\Empleados\EstadoCivilCatalogoController;
+use App\Http\Controllers\Empleados\NivelEstudioCatalogoController;
+use App\Http\Controllers\Empleados\ContratoTipoCatalogoController;
+use App\Http\Controllers\Empleados\PersonalTipoCatalogoController;
+use App\Http\Controllers\Empleados\JornadaTipoCatalogoController;
+use App\Http\Controllers\Empleados\NominaTipoCatalogoController;
+use App\Http\Controllers\Empleados\LocalidadCatalogoController;
+use App\Http\Controllers\Empleados\EstatusEstudioCatalogoController;
+use App\Http\Controllers\Empleados\EmpleadoCatalogoController;
+
+Route::resource('areas',AreaCatalogoController::class);
+Route::resource('departamentos',DepartamentoCatalogoController::class);
+Route::resource('puestosTipo',PuestoTipoCatalogoController::class);
+Route::resource('puestos',PuestoCatalogoController::class);
+Route::resource('estadoCivil',EstadoCivilCatalogoController::class);
+Route::resource('nivelEstudios',NivelEstudioCatalogoController::class);
+Route::resource('contratosTipo',ContratoTipoCatalogoController::class);
+Route::resource('personalTipo',PersonalTipoCatalogoController::class);
+Route::resource('jornadasTipo',JornadaTipoCatalogoController::class);
+Route::resource('nominasTipos',NominaTipoCatalogoController::class);
+Route::resource('localidades',LocalidadCatalogoController::class);
+Route::resource('estatusEstudios',EstatusEstudioCatalogoController::class);
+Route::resource('empleados',EmpleadoCatalogoController::class);

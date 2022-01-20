@@ -9,7 +9,7 @@ use App\Http\Controllers\Inventario\ProductoModeloCatalogoController;
 use App\Http\Controllers\Inventario\ProductoSubmodeloCatalogoController;
 use App\Http\Controllers\Inventario\ProductoCatalogoController;
 
-route::resource('impGrupos',ProductoGrupoCatalogoController::class);
+route::resource('impGrupos',ProductoGrupoCatalogoController::class,array('except'  => 'show'));
 route::resource('impSubgrupos',ProductoSubgrupoCatalogoController::class);
 route::resource('impMarcas',ProductoMarcaCatalogoController::class);
 route::resource('impModelos',ProductoModeloCatalogoController::class);

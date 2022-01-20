@@ -1,8 +1,9 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Administracion;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 use App\Models\EmpresaCatalogo;
 
 class EmpresaCatalogoController extends Controller

@@ -1,8 +1,9 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Empleados;
 
 use App\Models\EmpleadoCatalogo;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 class EmpleadoCatalogoController extends Controller
