@@ -14,7 +14,7 @@ class SatComercioExteriorFraccionArancelariaCatalogoController extends Controlle
      */
     public function index()
     {
-        //
+        return view('sat.comercioext.fraccion');
     }
 
     /**

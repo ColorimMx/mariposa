@@ -22,7 +22,7 @@ class MenuCatalogoSeeder extends Seeder
             'activo' => '1'
         ]);
         MenuCatalogo::create([
-            'descripcion' => 'Inventario',
+            'descripcion' => 'inventario',
             'icon' => 'fas fa-box-open',
             'icon_color' => 'indigo',
             'classes' => '',

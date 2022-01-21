@@ -11,6 +11,6 @@ class EmpleadoCatalogoController extends Controller
 
     public function index(){
         $Empleados = EmpleadoCatalogo::all();
-        return view('administracion.empleados',compact('Empleados'));
+        return view('empleados.empleados',compact('Empleados'));
     }
 }

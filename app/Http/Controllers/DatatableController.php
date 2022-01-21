@@ -12,9 +12,9 @@ class DatatableController extends Controller
         $mbaclientes = new Mba3ClienteCatalogo();
         $clientes = $mbaclientes->get_clientes();
 
-        return datatables()->of($clientes)->toJson();
+        //return datatables()->of($clientes)->toJson();
 
         //dd($clientes);
-        //return view ($clientes);
+        return view ($clientes);
     }
 }

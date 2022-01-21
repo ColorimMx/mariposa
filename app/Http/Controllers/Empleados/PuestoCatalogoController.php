@@ -17,7 +17,7 @@ class PuestoCatalogoController extends Controller
     public function index()
     {
         $puestos = PuestoCatalogo::all();
-        return view('administracion.puestos', compact('puestos'));
+        return view('empleados.puestos', compact('puestos'));
     }
 
     /**

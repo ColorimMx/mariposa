@@ -14,7 +14,7 @@ class SatCartaPorteSubTipoRemCatalogoController extends Controller
      */
     public function index()
     {
-        //
+        return view ('sat.cartaporte.remolque');
     }
 
     /**

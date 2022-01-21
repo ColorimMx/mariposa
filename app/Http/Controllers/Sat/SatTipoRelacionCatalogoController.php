@@ -14,7 +14,7 @@ class SatTipoRelacionCatalogoController extends Controller
      */
     public function index()
     {
-        //
+        return view('sat.cfdi.relacion');
     }
 
     /**

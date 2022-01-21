@@ -14,7 +14,7 @@ class SatUsoCfdiCatalogoController extends Controller
      */
     public function index()
     {
-        //
+        return view('sat.cfdi.usos');
     }
 
     /**

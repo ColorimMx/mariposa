@@ -34,7 +34,7 @@ class TrasladoController extends Controller
 
         $autotransportes = AutotransporteCatalogo::all();
 
-        return view('Inventario.Traslados.importar',compact('traslados','autotransportes'));
+        return view('inventario.ttraslados.importar',compact('traslados','autotransportes'));
 
     }
 

@@ -16,7 +16,7 @@ class SatLocalidadCatalogoController extends Controller
     public function index()
     {
         $SatLocalidades = SatLocalidadCatalogo::all();
-        return view('administracion.satlocalidades',compact('SatLocalidades'));
+        return view('sat.cfdi.localidades',compact('SatLocalidades'));
     }
 
     /**

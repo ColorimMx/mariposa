@@ -16,7 +16,7 @@ class NivelEstudioCatalogoController extends Controller
     public function index()
     {
         $NivelesEstudios = NivelEstudioCatalogo::all();
-        return view ('administracion.nivelesestudios',compact('NivelesEstudios'));
+        return view ('empleados.nivelestudios',compact('NivelesEstudios'));
     }
 
     /**

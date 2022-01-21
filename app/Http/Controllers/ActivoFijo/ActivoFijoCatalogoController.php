@@ -14,7 +14,7 @@ class ActivoFijoCatalogoController extends Controller
      */
     public function index()
     {
-        echo 'Activo Fijo';
+        return view('activofijo.impactivifijo');
     }
 
     /**

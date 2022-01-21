@@ -14,7 +14,7 @@ class ContabilidadPlanCuentaController extends Controller
      */
     public function index()
     {
-        echo 'Contabilidad';
+        return view('contabilidad.impcuentas');
     }
 
     /**

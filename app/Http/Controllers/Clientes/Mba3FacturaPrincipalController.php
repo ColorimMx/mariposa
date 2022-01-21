@@ -1,8 +1,9 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Clientes;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 use App\Models\Mba3FacturaPrincipal;
 
 class Mba3FacturaPrincipalController extends Controller

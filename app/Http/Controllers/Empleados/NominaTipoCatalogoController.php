@@ -16,7 +16,7 @@ class NominaTipoCatalogoController extends Controller
     public function index()
     {
         $NominasTipos = NominaTipoCatalogo::all();
-        Return view('administracion.nominastipos',compact('NominasTipos'));
+        Return view('empleados.nominastipos',compact('NominasTipos'));
     }
 
     /**

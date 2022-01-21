@@ -17,7 +17,7 @@ class PersonalTipoCatalogoController extends Controller
     public function index()
     {
         $PersonalTipos = PersonalTipoCatalogo::all();
-        return view('administracion.personaltipos',compact('PersonalTipos'));
+        return view('empleados.personaltipos',compact('PersonalTipos'));
     }
 
     /**

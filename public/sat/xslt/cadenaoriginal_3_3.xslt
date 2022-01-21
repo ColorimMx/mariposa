@@ -7,13 +7,13 @@
 		En esta sección se define la inclusión de las plantillas de utilerías para colapsar espacios
 	-->
   <xsl:include href="utilerias.xslt"/>
-  <!-- 
+  <!--
         Modificado el 2018-11-01 con este comentario para alterar la fecha de moficacion y actualizar cadenaoriginal_3_3.xslt
 		con la inclusion de ecc12.xslt y consumodeCombustibles11.xslt
-		En esta sección se define la inclusión de las demás plantillas de transformación para 
-		la generación de las cadenas originales de los complementos fiscales 
+		En esta sección se define la inclusión de las demás plantillas de transformación para
+		la generación de las cadenas originales de los complementos fiscales
 	-->
-  <xsl:include href="ecc11.xslt"/> 
+  <xsl:include href="ecc11.xslt"/>
   <xsl:include href="donat11.xslt"/>
   <xsl:include href="divisas.xslt"/>
   <xsl:include href="implocal.xslt"/>
@@ -44,7 +44,7 @@
   <xsl:include href="CartaPorte.xslt"/>
   <xsl:include href="CartaPorte20.xslt"/>
 
-	
+
   <!-- Aquí iniciamos el procesamiento de la cadena original con su | inicial y el terminador || -->
   <xsl:template match="/">|<xsl:apply-templates select="/cfdi:Comprobante"/>||</xsl:template>
   <!--  Aquí iniciamos el procesamiento de los datos incluidos en el comprobante -->
@@ -198,7 +198,7 @@
       <xsl:with-param name="valor" select="./@Descuento"/>
     </xsl:call-template>
 
-    <!-- Manejo de sub nodos de información Traslado de Conceptos:Concepto:Impuestos:Traslados-->
+    <!-- Manejo de sub nodos de información Traslado de Conceptos:Concepto:Impuestos:traslados-->
     <xsl:for-each select="./cfdi:Impuestos/cfdi:Traslados/cfdi:Traslado">
       <xsl:call-template name="Requerido">
         <xsl:with-param name="valor" select="./@Base"/>
@@ -332,7 +332,7 @@
     <xsl:call-template name="Opcional">
       <xsl:with-param name="valor" select="./@TotalImpuestosRetenidos"/>
     </xsl:call-template>
-    <!-- Manejo de sub nodos de información Traslado de Impuestos:Traslados-->
+    <!-- Manejo de sub nodos de información Traslado de Impuestos:traslados-->
     <xsl:for-each select="./cfdi:Traslados/cfdi:Traslado">
       <xsl:call-template name="Requerido">
         <xsl:with-param name="valor" select="./@Impuesto"/>

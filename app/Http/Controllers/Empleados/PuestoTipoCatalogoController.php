@@ -16,7 +16,7 @@ class PuestoTipoCatalogoController extends Controller
     public function index()
     {
         $puestostipos = PuestoTipoCatalogo::all();
-        return view('administracion.puestostipos', compact('puestostipos'));
+        return view('empleados.puestostipos', compact('puestostipos'));
     }
 
     /**

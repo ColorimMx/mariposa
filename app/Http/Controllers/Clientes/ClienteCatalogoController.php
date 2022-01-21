@@ -14,7 +14,7 @@ class ClienteCatalogoController extends Controller
      */
     public function index()
     {
-        echo 'Clientes';
+        return view('clientes.impclientes');
     }
 
     /**

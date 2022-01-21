@@ -14,7 +14,7 @@ class BancoCatalogoController extends Controller
      */
     public function index()
     {
-        echo 'Bancos';
+        return view('bancos.impbancos');
     }
 
     /**

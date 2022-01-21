@@ -16,7 +16,7 @@ class SatMunicipioCatalogoController extends Controller
     public function index()
     {
         $SatMunicipios = SatMunicipioCatalogo::all();
-        return view('administracion.satmunicipios',compact('SatMunicipios'));
+        return view('sat.cfdi.municipios',compact('SatMunicipios'));
     }
 
     /**

@@ -14,7 +14,7 @@ class SatUnidadCatalogoController extends Controller
      */
     public function index()
     {
-        //
+        return view('sat.cfdi.unidades');
     }
 
     /**

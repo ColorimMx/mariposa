@@ -36,7 +36,7 @@ class SatTipoRelacionCatalogoSeeder extends Seeder
         ]);
         SatTipoRelacionCatalogo::create([
             'id' => '05',
-            'nombre' => 'Traslados de mercancias facturados previamente',
+            'nombre' => 'traslados de mercancias facturados previamente',
             'activo' => '1',
         ]);
         SatTipoRelacionCatalogo::create([

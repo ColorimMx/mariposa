@@ -16,7 +16,7 @@ class EstadoCivilCatalogoController extends Controller
     public function index()
     {
         $EstadosCiviles = EstadoCivilCatalogo::all();
-        return view('administracion.estadosciviles', compact('EstadosCiviles'));
+        return view('empleados.estadocivil', compact('EstadosCiviles'));
     }
 
     /**

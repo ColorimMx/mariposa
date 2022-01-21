@@ -14,7 +14,7 @@ class SatComercioExteriorUnidadAduanaCatalogoController extends Controller
      */
     public function index()
     {
-        //
+        return view('sat.comercioext.unidadaduana');
     }
 
     /**

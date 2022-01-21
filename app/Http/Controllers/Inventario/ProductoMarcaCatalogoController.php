@@ -14,7 +14,7 @@ class ProductoMarcaCatalogoController extends Controller
      */
     public function index()
     {
-        echo 'Producto Marcas';
+        return view('inventario.productos.impmarcas');
     }
 
     /**

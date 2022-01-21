@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Sat;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use voku\helper\ASCII;
 
 class SatProductoServicioCatalogoController extends Controller
 {
@@ -14,7 +15,7 @@ class SatProductoServicioCatalogoController extends Controller
      */
     public function index()
     {
-        //
+        return view('sat.cfdi.productos');
     }
 
     /**

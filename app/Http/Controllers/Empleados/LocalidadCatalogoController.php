@@ -16,7 +16,7 @@ class LocalidadCatalogoController extends Controller
     public function index()
     {
         $Localidades = LocalidadCatalogo::all();
-        Return view('administracion.localidades',compact('Localidades'));
+        Return view('empleados.localidades',compact('Localidades'));
     }
 
     /**

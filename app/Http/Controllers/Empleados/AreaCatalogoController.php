@@ -16,7 +16,7 @@ class AreaCatalogoController extends Controller
     public function index()
     {
         $areas = AreaCatalogo::all();
-        return view('administracion.areas', compact('areas'));
+        return view('empleados.areas', compact('areas'));
     }
 
     /**

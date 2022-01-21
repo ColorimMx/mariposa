@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Sat;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\SatRegimenFiscalCatalogo;
 
 class SatRegimenFiscalCatalogoController extends Controller
 {
@@ -12,9 +13,18 @@ class SatRegimenFiscalCatalogoController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function regimenes(){
+
+        $regimen = SatRegimenFiscalCatalogo::select('id','nombre');
+
+        return datatables()->of($regimen)->toJson();
+
+        //return view ($regimen);
+    }
+
     public function index()
     {
-        //
+        return view('sat.cfdi.regimen');
     }
 
     /**

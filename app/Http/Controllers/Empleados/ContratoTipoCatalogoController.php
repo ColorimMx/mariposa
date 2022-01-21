@@ -16,7 +16,7 @@ class ContratoTipoCatalogoController extends Controller
     public function index()
     {
         $ContratosTipos = ContratoTipoCatalogo::all();
-        return view('administracion.contratostipos',compact('ContratosTipos'));
+        return view('empleados.contratostipos',compact('ContratosTipos'));
     }
 
     /**

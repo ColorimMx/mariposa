@@ -25,7 +25,12 @@ use App\Http\Controllers\Sat\SatCartaPorteConfigVehicularCatalogoController;
 use App\Http\Controllers\Sat\SatCartaPorteSubTipoRemCatalogoController;
 use App\Http\Controllers\Sat\SifeiController;
 
+use App\Http\Controllers\Clientes\DatatableController;
+use App\Http\Controllers\Clientes\Mba3FacturaPrincipalController;
+
+
 Route::resource('regimenFiscalSat',SatRegimenFiscalCatalogoController::class);
+Route::get('datatable/regimenFiscalSat',[SatRegimenFiscalCatalogoController::class,'regimenes'])->name('datatable.SatRegimenFiscalCatalogoController');
 Route::resource('paisesSat',SatPaisCatalogoController::class);
 Route::resource('estadosSat',SatEstadoCatalogoController::class);
 Route::resource('municipiosSat',SatMunicipioCatalogoController::class);
@@ -48,3 +53,7 @@ Route::resource('configVehicularSat',SatCartaPorteConfigVehicularCatalogoControl
 Route::resource('remolqueSat',SatCartaPorteSubTipoRemCatalogoController::class);
 Route::get('selladoSifei', [SifeiController::class,'sellado'])->name('selladoSifei');
 Route::get('timbradoSifei', [SifeiController::class,'timbrado'])->name('timbradoSifei');
+
+Route::get('mbafacturas',[Mba3FacturaPrincipalController::class,'index'])->name('facturas');
+Route::get('datatable/mbafacturas',[Mba3FacturaPrincipalController::class,'facturas'])->name('datatable.facturasmba3');
+Route::get('datatable/clientesmba3',[DatatableController::class,'cliente'])->name('datatable.clientemba3');

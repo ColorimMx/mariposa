@@ -14,7 +14,7 @@ class ProveedorCatalogoController extends Controller
      */
     public function index()
     {
-       echo 'Proveedores';
+       return view('proveedores.impproveedores');
     }
 
     /**

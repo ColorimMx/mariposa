@@ -14,7 +14,7 @@ class SatComercioExteriorTipoOperacionCatalogoController extends Controller
      */
     public function index()
     {
-        //
+        return view('sat.comercioext.operacion');
     }
 
     /**

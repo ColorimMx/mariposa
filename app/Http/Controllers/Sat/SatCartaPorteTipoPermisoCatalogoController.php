@@ -14,7 +14,7 @@ class SatCartaPorteTipoPermisoCatalogoController extends Controller
      */
     public function index()
     {
-        //
+        return view('sat.cartaporte.permisos');
     }
 
     /**

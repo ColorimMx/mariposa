@@ -18,7 +18,7 @@ class EstatusEstudioCatalogoController extends Controller
     {
         $EstatusEstudios = EstatusEstudioCatalogo::all();
 
-        return view('administracion.estatusestudio',compact('EstatusEstudios'));
+        return view('empleados.estatusestudios',compact('EstatusEstudios'));
     }
 
     /**

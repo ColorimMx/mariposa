@@ -17,7 +17,7 @@ class SatPaisCatalogoController extends Controller
     public function index()
     {
         $Satpaises = SatPaisCatalogo::all();
-        return view('administracion.satpaises',compact('Satpaises'));
+        return view('sat.cfdi.paises',compact('Satpaises'));
     }
 
     /**

@@ -16,7 +16,7 @@ class SatEstadoCatalogoController extends Controller
     public function index()
     {
         $SatEstados = SatEstadoCatalogo::all();
-        return view('administracion.satestados',compact('SatEstados'));
+        return view('sat.cfdi.estados',compact('SatEstados'));
     }
 
     /**

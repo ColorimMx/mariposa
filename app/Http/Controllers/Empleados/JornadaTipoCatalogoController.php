@@ -16,7 +16,7 @@ class JornadaTipoCatalogoController extends Controller
     public function index()
     {
         $JornadasTipos = JornadaTipoCatalogo::all();
-        Return view ('administracion.jornadastipos',compact('JornadasTipos'));
+        Return view ('empleados.jornadastipos',compact('JornadasTipos'));
     }
 
     /**

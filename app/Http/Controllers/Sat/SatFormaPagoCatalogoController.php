@@ -14,7 +14,7 @@ class SatFormaPagoCatalogoController extends Controller
      */
     public function index()
     {
-        //
+        return view('sat.cfdi.formaspago');
     }
 
     /**

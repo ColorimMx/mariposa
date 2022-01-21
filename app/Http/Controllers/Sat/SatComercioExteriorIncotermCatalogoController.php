@@ -14,7 +14,7 @@ class SatComercioExteriorIncotermCatalogoController extends Controller
      */
     public function index()
     {
-        //
+        return view('sat.comercioext.incoterm');
     }
 
     /**

@@ -14,7 +14,7 @@ class SatTipoComprobanteCatalogoController extends Controller
      */
     public function index()
     {
-        //
+        return view('sat.cfdi.comprobantes');
     }
 
     /**

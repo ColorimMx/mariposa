@@ -14,7 +14,7 @@ class ProductoSubmodeloCatalogoController extends Controller
      */
     public function index()
     {
-        echo 'Producto Submodelos';
+        return view('inventario.productos.impsubmodelos');
     }
 
     /**
