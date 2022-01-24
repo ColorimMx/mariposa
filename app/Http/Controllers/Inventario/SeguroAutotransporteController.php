@@ -1,9 +1,10 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Inventario;
 
-use App\Models\SeguroAutotransporteCatalogo;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use App\Models\SeguroAutotransporteCatalogo;
 
 class SeguroAutotransporteController extends Controller
 {

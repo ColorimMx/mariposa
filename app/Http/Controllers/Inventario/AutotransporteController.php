@@ -1,8 +1,9 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Inventario;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 Use App\Models\AutotransporteCatalogo;
 Use App\Models\PermisoAutotransporteCatalogo;
 Use App\Models\SatCartaPorteConfigVehicularCatalogo;

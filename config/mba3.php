@@ -5,8 +5,8 @@ class Mba3
 {
 
 
-    //private $dsn = "4D:host=100.48.0.7";
-    private $dsn = "odbc:64MBA3PRUEBAS";
+    private $dsn = "4D:host=100.48.0.80";
+    //private $dsn = "odbc:64MBA3PRUEBAS";
     private $usr = "ODBC";
     private $pass = "ODBC";
     //private $options  = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC);

@@ -8,10 +8,20 @@ use App\Http\Controllers\Inventario\ProductoMarcaCatalogoController;
 use App\Http\Controllers\Inventario\ProductoModeloCatalogoController;
 use App\Http\Controllers\Inventario\ProductoSubmodeloCatalogoController;
 use App\Http\Controllers\Inventario\ProductoCatalogoController;
+use App\Http\Controllers\Inventario\PermisoAutotransporteController;
+use App\Http\Controllers\Inventario\SeguroAutotransporteController;
+use App\Http\Controllers\Inventario\AutotransporteController;
+use App\Http\Controllers\Inventario\TrasladoController;
 
-route::resource('impGrupos',ProductoGrupoCatalogoController::class,array('except'  => 'show'));
-route::resource('impSubgrupos',ProductoSubgrupoCatalogoController::class);
-route::resource('impMarcas',ProductoMarcaCatalogoController::class);
-route::resource('impModelos',ProductoModeloCatalogoController::class);
-route::resource('impSubmodelos',ProductoSubmodeloCatalogoController::class);
-route::resource('impProductos',ProductoCatalogoController::class);
+Route::resource('impGrupos',ProductoGrupoCatalogoController::class,array('except'  => 'show'));
+Route::resource('impSubgrupos',ProductoSubgrupoCatalogoController::class);
+Route::resource('impMarcas',ProductoMarcaCatalogoController::class);
+Route::resource('impModelos',ProductoModeloCatalogoController::class);
+Route::resource('impSubmodelos',ProductoSubmodeloCatalogoController::class);
+Route::resource('impProductos',ProductoCatalogoController::class);
+
+Route::resource('permisoAutotrasnporte',PermisoAutotransporteController::class);
+Route::resource('seguroAutotrasnporte',SeguroAutotransporteController::class);
+Route::resource('autotrasnporte',AutotransporteController::class);
+
+Route::resource('traslados', TrasladoController::class);

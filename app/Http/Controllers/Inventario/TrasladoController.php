@@ -1,14 +1,16 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Inventario;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use Carbon\Carbon;
 use App\Models\AutotransporteCatalogo;
 use App\Models\Mba3TransferenciasPrincipal;
 use App\Models\Mba3TransferenciasDetalle;
 use App\Models\TrasladoPrincipal;
 use App\Models\TrasladoDetalle;
-use Carbon\Carbon;
+
 
 class TrasladoController extends Controller
 {

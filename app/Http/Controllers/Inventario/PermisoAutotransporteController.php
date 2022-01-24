@@ -1,10 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Inventario;
 
-use App\Models\SatCartaPorteTipoPermisoCatalogo;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 use App\Models\PermisoAutotransporteCatalogo;
+use App\Models\SatCartaPorteTipoPermisoCatalogo;
 
 class PermisoAutotransporteController extends Controller
 {

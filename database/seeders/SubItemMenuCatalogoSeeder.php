@@ -584,5 +584,45 @@ class SubItemMenuCatalogoSeeder extends Seeder
             'classes' => '',
             'activo' => '1'
         ]);
+
+        SubItemMenuCatalogo::create([
+            'descripcion' =>	'Permisos Autotransporte',
+            'sub_menu_id' =>	'15',
+            'route' =>	'permisoAutotrasnporte.index',
+            'icon' =>	'fas fa-angle-double-right',
+            'icon_color' =>	'indigo',
+            'classes' => '',
+            'activo' => '1'
+        ]);
+
+        SubItemMenuCatalogo::create([
+            'descripcion' =>	'Polizas De Seguros Autotransporte',
+            'sub_menu_id' =>	'15',
+            'route' =>	'seguroAutotrasnporte.index',
+            'icon' =>	'fas fa-angle-double-right',
+            'icon_color' =>	'indigo',
+            'classes' => '',
+            'activo' => '1'
+        ]);
+
+        SubItemMenuCatalogo::create([
+            'descripcion' =>	'Flotilla Autotransporte',
+            'sub_menu_id' =>	'15',
+            'route' =>	'autotrasnporte.index',
+            'icon' =>	'fas fa-angle-double-right',
+            'icon_color' =>	'indigo',
+            'classes' => '',
+            'activo' => '1'
+        ]);
+
+        SubItemMenuCatalogo::create([
+            'descripcion' =>	'Traslados',
+            'sub_menu_id' =>	'16',
+            'route' =>	'traslados.index',
+            'icon' =>	'fas fa-angle-double-right',
+            'icon_color' =>	'indigo',
+            'classes' => '',
+            'activo' => '1'
+        ]);
     }
 }

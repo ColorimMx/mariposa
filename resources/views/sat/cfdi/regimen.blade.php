@@ -5,7 +5,6 @@
 @section('content_header')
 @stop
 @section('content')
-
     <div class="container">
         <div class="row">
             <div class="col-12" >
@@ -30,6 +29,38 @@
             </div>
         </div>
     </div>
+    <!-- modal -->
+    <div class="modal fade" id="modal-create-regimen">
+        <div class="modal-dialog">
+            <div class="modal-content bg-default">
+                <div class="modal-header">
+                    <h4 class="modal-title">Crear Registro Régimen Fiscal SAT</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <p class="statusMsg"></p>
+                    <form role="form">
+                        <div class="form-group">
+                            <label for="inputID">ID</label>
+                            <input type="text" class="form-control" id="inputID" placeholder="Ingrese el ID"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputNombre">Régimen Fiscal</label>
+                            <input type="text" class="form-control" id="inputNombre" placeholder="Ingrese el Régimen Fiscal"/>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer justify-content-between">
+                    <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-outline-success submitBtn" onclick="submitRegimenForm()">Guardar</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
 @endsection
 @section('js')
     <script>
@@ -89,7 +120,7 @@
                 "responsive": true,
                 "autoWidth": true,
                 "language": idioma,
-                "lengthMenu": [[5,10,50, -1],[5,10,50,"Mostrar Todo"]],
+                "lengthMenu": [[50,100,500, -1],[50,100,500,"Mostrar Todo"]],
                 dom: 'Bfrt<"col-md-6 inline"i> <"col-md-6 inline"p>',
                 buttons: {
                     dom: {
@@ -102,6 +133,15 @@
                         }
                     },
                     buttons: [
+                        {
+                            text:      '<i class="far fa-plus-square"></i>Nuevo',
+                            className: 'btn btn-app  nuevo',
+                            titleAttr: 'Nuevo',
+                            attr:  {
+                                "data-toggle": "modal",
+                                "data-target": "#modal-create-regimen"
+                            },
+                        },
                         {
                             extend:    'copyHtml5',
                             text:      '<i class="fa fa-clipboard"></i>Copiar',
@@ -119,7 +159,7 @@
                             text:      '<i class="fa fa-file-pdf-o"></i>PDF',
                             title:'Catálogo Régimen Fiscal SAT',
                             titleAttr: 'PDF',
-                            className: 'btn btn-app export pdf',
+                            className: 'btn btn-app pdf',
                             exportOptions: {
                                 columns: [ 0, 1 ]
                             },
@@ -190,5 +230,59 @@
                 }
             });
         } );
+    </script>
+    <script>
+        function submitRegimenForm(){
+            var id = $('#inputID').val();
+            var nombre = $('#inputNombre').val();
+            var token = '{{csrf_token()}}';
+            var data={id:id,nombre:nombre,_token:token};
+            if(id.trim() == '' )
+            {
+                Swal.fire({
+                    title: 'Error!',
+                    text: 'Por Favor Ingrese El "ID".',
+                    icon: 'error',
+                    confirmButtonText: 'Ok'
+                });
+                $('#inputID').focus();
+                return false;
+            }else if(nombre.trim() == '' ){
+                Swal.fire({
+                    title: 'Error!',
+                    text: 'Por Favor Ingrese El "Régimen Fiscal".',
+                    icon: 'error',
+                    confirmButtonText: 'Ok'
+                });
+                $('#inputNombre').focus();
+                return false;
+            }else{
+                $.ajax({
+                    type:'POST',
+                    url:"{{route('regimenFiscalSat.store')}}",
+                    data: data,
+                    beforeSend: function () {
+                        $('.submitBtn').attr("disabled","disabled");
+                        $('.modal-body').css('opacity', '.5');
+                    },
+                    success:function(msg){
+                        if(msg == 'ok'){
+                            $('#inputID').val('');
+                            $('#inputNombre').val('');
+                            $('.statusMsg').html('<span style="color:green;">Los Datos Se Registraron Correctamente.</p>');
+                        }else{
+                            Swal.fire({
+                                title: 'Ocurrió algún problema!',
+                                text: 'Por Favor, inténtalo de nuevo.',
+                                icon: 'error',
+                                confirmButtonText: 'Ok'
+                            });
+                        }
+                        $('.submitBtn').removeAttr("disabled");
+                        $('.modal-body').css('opacity', '');
+                    }
+                });
+            }
+        }
     </script>
 @endsection

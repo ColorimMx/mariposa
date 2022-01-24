@@ -125,6 +125,22 @@ class SubMenuCatalogoSeeder extends Seeder
             'icon_color' => 	'danger',
             'classes' => '',
             'activo' => '1']);
+
+        SubMenuCatalogo::create([
+            'descripcion' => 	'# Opciones De Inventario',
+            'menu_id' =>	'2',
+            'icon' =>	'fas fa-angle-right',
+            'icon_color' => 	'indigo',
+            'classes' => '',
+            'activo' => '1']);
+
+        SubMenuCatalogo::create([
+            'descripcion' => 	'Transferencias',
+            'menu_id' =>	'2',
+            'icon' =>	'fas fa-angle-right',
+            'icon_color' => 	'indigo',
+            'classes' => '',
+            'activo' => '1']);
     }
 
 }
