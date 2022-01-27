@@ -11,4 +11,8 @@ class SatRegimenFiscalCatalogo extends Model
     public $incrementing = false;
     protected $table = "sat_regimen_fiscal_catalogos";
     protected $dateFormat = 'Y-m-d\TH:i:s.v';
+
+    protected $fillable = [
+        'id', 'nombre', 'activo'
+    ];
 }

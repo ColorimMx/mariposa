@@ -104,7 +104,7 @@
 
     {{-- Custom Scripts --}}
     @yield('adminlte_js')
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>

@@ -1,9 +1,10 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Clientes;
 
+use App\Http\Controllers\Controller;
 use App\Models\Mba3ClienteCatalogo;
-use Illuminate\Http\Request;
+use function view;
 
 class DatatableController extends Controller
 {

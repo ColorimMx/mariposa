@@ -3,12 +3,16 @@
 @section('title', 'País SAT')
 
 @section('content_header')
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/r/bs-3.3.5/jqc-1.11.3,dt-1.10.8/datatables.min.js"></script>
     <h1>
         Datos Catálogo País SAT.
     </h1>
-    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal-create-pais">
-        Crear
-    </button>
+    <div class="row">
+        <div class="col-12 text-right">
+            <a href="javascript:void(0)" class="btn btn-success mb-3" id="create-new-post" onclick="addPost()">Add Post</a>
+        </div>
 @stop
 @section('content')
     <div class="container-fluid">
@@ -47,79 +51,91 @@
         </div>
     </div>
     <!-- modal -->
-    <div class="modal fade" id="modal-create-pais">
+    <div class="modal fade" id="post-modal" aria-hidden="true">
         <div class="modal-dialog">
-            <div class="modal-content bg-default">
+            <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Crear País</h4>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title"></h4>
                 </div>
                 <div class="modal-body">
-                    <p class="statusMsg"></p>
-                    <form role="form">
+                    <form name="userForm" class="form-horizontal">
+                        <input type="hidden" name="post_id" id="post_id">
                         <div class="form-group">
-                            <label for="inputID">ID</label>
-                            <input type="text" class="form-control" id="inputID" placeholder="Ingrese el ID"/>
+                            <label for="name" class="col-sm-2">title</label>
+                            <div class="col-sm-12">
+                                <input type="text" class="form-control" id="title" name="title" placeholder="Enter title">
+                                <span id="titleError" class="alert-message"></span>
+                            </div>
                         </div>
+
                         <div class="form-group">
-                            <label for="inputNombre">Email</label>
-                            <input type="text" class="form-control" id="inputNombre" placeholder="Ingrese el Nombre"/>
+                            <label class="col-sm-2">Description</label>
+                            <div class="col-sm-12">
+                        <textarea class="form-control" id="description" name="description" placeholder="Enter description" rows="4" cols="50">
+                        </textarea>
+                                <span id="descriptionError" class="alert-message"></span>
+                            </div>
                         </div>
                     </form>
                 </div>
-                <div class="modal-footer justify-content-between">
-                    <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Cancelar</button>
-                    <button type="button" class="btn btn-outline-success submitBtn" onclick="submitPaisForm()">Guardar</button>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" onclick="createPost()">Save</button>
                 </div>
             </div>
-            <!-- /.modal-content -->
         </div>
-        <!-- /.modal-dialog -->
     </div>
     <!-- /.modal -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
 @stop
 @section('js')
 
-    <script>
+            <script>
+                $('#tablePaises').DataTable();
 
-        function submitPaisForm(){
-            var id = $('#inputID').val();
-            var nombre = $('#inputNombre').val();
-            var token = '{{csrf_token()}}';
-            var data={id:id,nombre:nombre,_token:token};
-            if(id.trim() == '' ){
-                alert('Por Favor Ingrese El "ID".');
-                $('#inputID').focus();
-                return false;
-            }else if(nombre.trim() == '' ){
-                alert('Por Favor Ingrese El "Nombre".');
-                $('#inputNombre').focus();
-                return false;
-            }else{
-                $.ajax({
-                    type:'POST',
-                    url:"{{route('paisesSat.store')}}",
-                    data: data,
-                    beforeSend: function () {
-                        $('.submitBtn').attr("disabled","disabled");
-                        $('.modal-body').css('opacity', '.5');
-                    },
-                    success:function(msg){
-                        if(msg == 'ok'){
-                            $('#inputID').val('');
-                            $('#inputNombre').val('');
-                            $('.statusMsg').html('<span style="color:green;">Los Datos Se Registraron Correctamente.</p>');
-                        }else{
-                            $('.statusMsg').html('<span style="color:red;">Ocurrió algún problema, inténtalo de nuevo.</span>');
+                function addPost() {
+                    $("#post_id").val('');
+                    $('#post-modal').modal('show');
+                }
+
+                function createPost() {
+                    var title = $('#title').val();
+                    var description = $('#description').val();
+                    var id = $('#post_id').val();
+
+                    let _url     = `/posts`;
+                    let _token   = $('meta[name="csrf-token"]').attr('content');
+
+                    $.ajax({
+                        url: _url,
+                        type: "POST",
+                        data: {
+                            id: id,
+                            title: title,
+                            description: description,
+                            _token: _token
+                        },
+                        success: function(response) {
+                            if(response.code == 200) {
+                                if(id != ""){
+                                    $("#row_"+id+" td:nth-child(2)").html(response.data.title);
+                                    $("#row_"+id+" td:nth-child(3)").html(response.data.description);
+                                } else {
+                                    $('table tbody').prepend('<tr id="row_'+response.data.id+'"><td>'+response.data.id+'</td><td>'+response.data.title+'</td><td>'+response.data.description+'</td><td><a href="javascript:void(0)" data-id="'+response.data.id+'" onclick="editPost(event.target)" class="btn btn-info">Edit</a></td><td><a href="javascript:void(0)" data-id="'+response.data.id+'" class="btn btn-danger" onclick="deletePost(event.target)">Delete</a></td></tr>');
+                                }
+                                $('#title').val('');
+                                $('#description').val('');
+
+                                $('#post-modal').modal('hide');
+                            }
+                        },
+                        error: function(response) {
+                            $('#titleError').text(response.responseJSON.errors.title);
+                            $('#descriptionError').text(response.responseJSON.errors.description);
                         }
-                        $('.submitBtn').removeAttr("disabled");
-                        $('.modal-body').css('opacity', '');
-                    }
-                });
-            }
-        }
-    </script>
+                    });
+                }
+
+            </script>
 @stop
 

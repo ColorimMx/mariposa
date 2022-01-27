@@ -45,7 +45,17 @@ class SatRegimenFiscalCatalogoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //dd($request->all());
+        $book   =   SatRegimenFiscalCatalogo::UpdateOrCreate(
+            [
+                'id' => $request->id
+            ],
+            [
+                'nombre' => $request->nombre,
+                'activo' => $request->activo,
+            ]);
+
+        return response()->json(['success' => true]);
     }
 
     /**
@@ -68,6 +78,8 @@ class SatRegimenFiscalCatalogoController extends Controller
     public function edit($id)
     {
         //
+        $regimen = SatRegimenFiscalCatalogo::find($id);
+        return response()->json($regimen);
     }
 
     /**
@@ -91,5 +103,7 @@ class SatRegimenFiscalCatalogoController extends Controller
     public function destroy($id)
     {
         //
+        $reg = SatRegimenFiscalCatalogo::where('id', '=', $id)->first();
+        $reg->delete();
     }
 }
