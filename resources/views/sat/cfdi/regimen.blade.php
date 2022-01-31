@@ -155,7 +155,7 @@
                         'data': null,
                         orderable: false,
                         'render': function (data, type, row) {
-                            return '<button data-id="' + row.id +'" id="' + row.id +'"  class="editButton btn-sm btn-primary dt-center "><i class="fa fa-pencil"/></button>'
+                            return '<button data-id="' + row.id +'"   class="editButton btn-sm btn-primary dt-center "><i class="fa fa-pencil"/></button>'
                         }
                     },
                     {
@@ -299,7 +299,7 @@
                     //$('#saveBtn').val("edit-user");
                     $('#modal-create-regimen').modal('show');
                     $('#id').val(data.id);
-                    $('#nombe').val(data.name);
+                    $('#nombre').val(data.nombre);
                 })
             });
             $('#ejemplo').on('click', 'button.deleteButton', function () {
