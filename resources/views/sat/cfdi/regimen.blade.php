@@ -63,40 +63,6 @@
         <!-- /.modal-dialog -->
     </div>
     <!-- /.modal -->
-    <!-- Edit Article Modal -->
-    <div class="modal" id="EditArticleModal">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <!-- Modal Header -->
-                <div class="modal-header">
-                    <h4 class="modal-title">Article Edit</h4>
-                    <button type="button" class="close modelClose" data-dismiss="modal">&times;</button>
-                </div>
-                <!-- Modal body -->
-                <div class="modal-body">
-                    <div class="alert alert-danger alert-dismissible fade show" role="alert" style="display: none;">
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="alert alert-success alert-dismissible fade show" role="alert" style="display: none;">
-                        <strong>Success!</strong>Article was added successfully.
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div id="EditArticleModalBody">
-
-                    </div>
-                </div>
-                <!-- Modal footer -->
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-success" id="SubmitEditArticleForm">Update</button>
-                    <button type="button" class="btn btn-danger modelClose" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
 @endsection
 @section('js')
     <script>
@@ -139,6 +105,8 @@
                 }
             };
         $(document).ready(function() {
+            var titulo = 'Catalogo Régimen Fiscal SAT ';
+
             $.ajaxSetup({
                 headers: {
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
@@ -146,7 +114,6 @@
             });
 
             var table = $('#ejemplo').DataTable( {
-                //"ajax": "reload( null, false )",
                 "ajax": "{{route('datatable.SatRegimenFiscalCatalogoController')}}",
                 "columns":[
                     {data : 'id'},
@@ -198,13 +165,14 @@
                             action: function () {
                                 $('#addEditBookForm').trigger("reset");
                                 $('#ajaxBookModel').html("Crear Registro Régimen Fiscal SAT");
-                                //$('#modal-create-regimen').modal('show');
-                                $(window).load(function() {
+                                $("#btn-save"). attr("id", "btn-save");
+                                $('#id').attr("disabled", false);
+                                $(window).on('load', function()
+                                {
                                     $('#modal-create-regimen').modal('show');
                                 });
                             }
                         },
-
                         {
                             extend:    'copyHtml5',
                             text:      '<i class="fa fa-clipboard"></i>Copiar',
@@ -289,30 +257,29 @@
                     ]
                 }
             });
+
             $('body').on('click', 'button.editButton', function () {
-                //var id = $(this).attr('id');
                 var id = $(this).data('id');
                 var nombre = $(this).data('nombre');
-                //console.log(id);
                 $.get("{{ route('regimenFiscalSat.index') }}" +'/' + id +'/edit', function (data) {
-                    //$('#modelHeading').html("Edit Product");
-                    //$('#saveBtn').val("edit-user");
                     $('#modal-create-regimen').modal('show');
+                    $("#btn-save"). attr("id", "btn-edit");
+                    $('#ajaxBookModel').html("Editando ID: "+id+ " "+titulo);
                     $('#id').val(data.id);
                     $('#nombre').val(data.nombre);
+                    $('#id').attr("disabled", true);
                 })
             });
             $('#ejemplo').on('click', 'button.deleteButton', function () {
                 var id = $(this).attr('id');
                 Swal.fire({
-                    title: 'Deseas eliminar el registro',
-                    text: + id,
+                    title: 'Eliminar ID: ' + id+ ' '+titulo,
                     icon: 'warning',
                     showCancelButton: true,
-                    confirmButtonColor: '#3085d6',
+                    confirmButtonColor: '#239B56',
                     cancelButtonColor: '#d33',
-                    confirmButtonText: 'Si, Borrar!',
-                    cancelButtonText: 'Cencelar'
+                    confirmButtonText: 'Confirmar',
+                    cancelButtonText: 'Cancelar'
                 }).then((result) => {
                     if (result.isConfirmed) {
                         $.ajax({
@@ -329,7 +296,6 @@
                                         icon: 'error',
                                         confirmButtonText: 'Ok'
                                     });
-
                                 }else{
                                     Swal.fire({
                                         position: 'top-end',
@@ -355,12 +321,33 @@
                     }
                 })
             });
-            $('body').on('click', '#btn-save', function (event) {
+
+            function validateRegimen(){
+                var id = $("#id").val();
+                var bool = false;
+                $.ajax({
+                    url: "regimenFiscalSat/" + id,
+                    type: 'GET',
+                    async:false,
+                    dataType: 'json',
+                    data:{
+                        id:id
+                    },
+                    success: function (data){
+                        if(data.status == '200'){
+                            bool = true;
+                        }else if (data.status == '400'){
+                            bool = false;
+                        }
+                    },
+                    });
+                return  bool;
+            }
+
+            $('body').on('click', '#btn-edit', function () {
                 var id = $("#id").val();
                 var nombre = $("#nombre").val();
                 var activo = 1;
-                //$("#btn-save").html('Please Wait...');
-                //$("#btn-save"). attr("disabled", true);
 
                 if(id.trim() == '' )
                 {
@@ -392,11 +379,6 @@
                             activo:activo,
                         },
                         dataType: 'json',
-                        /*success: function(res){
-
-
-                            console.log(res);
-                        },*/
                         success:function(res){
                             if(res.status=='error'){
                                 Swal.fire({
@@ -405,12 +387,11 @@
                                     icon: 'error',
                                     confirmButtonText: 'Ok'
                                 });
-
                             }else{
                                 Swal.fire({
                                     position: 'top-end',
                                     icon: 'success',
-                                    title: 'Los Datos Se Registraron Correctamente.',
+                                    title: 'Datos Actualizados ID: ' +id+ ' ' +titulo,
                                     showConfirmButton: true,
                                     timer: 3000,
                                     didOpen: () => {
@@ -434,6 +415,110 @@
                             $('.modal-body').css('opacity', '');
                         }
                     });
+                }
+            });
+
+            $('body').on('click', '#btn-save', function () {
+                var id = $("#id").val();
+                var nombre = $("#nombre").val();
+                var activo = 1;
+                var regimen =  validateRegimen();
+
+                if(id.trim() == '' )
+                {
+                    Swal.fire({
+                        title: 'Error!',
+                        text: 'Por Favor Ingrese El "ID".',
+                        icon: 'error',
+                        confirmButtonText: 'Ok'
+                    });
+                    $('#inputID').focus();
+                    return false;
+                }else if(nombre.trim() == '' ){
+                    Swal.fire({
+                        title: 'Error!',
+                        text: 'Por Favor Ingrese El "Régimen Fiscal".',
+                        icon: 'error',
+                        confirmButtonText: 'Ok'
+                    });
+                    $('#inputNombre').focus();
+                    return false;
+                }else{
+                    if(regimen == true){
+                        $("#btn-save").html('Please Wait...');
+                        $("#btn-save"). attr("disabled", true);
+                        Swal.fire({
+                            position: 'top-end',
+                            title: 'El Régimen '+ id + ' Ya Existe!' ,
+                            text: 'Se Sugiere Editarlo.',
+                            icon: 'error',
+                            confirmButtonText: 'Ok',
+                            timer: 3000,
+                            didOpen: () => {
+                                timerInterval = setInterval(() => {
+                                    Swal.getHtmlContainer().querySelector('strong')
+                                        .textContent = (Swal.getTimerLeft() / 1000)
+                                        .toFixed(0)
+                                }, 100)
+                            },
+                            willClose: () => {
+                                window.location.reload();
+                                clearInterval(timerInterval)
+                            }
+                        });
+                    }else {
+                        $.ajax({
+                            type:"POST",
+                            url: "{{route('regimenFiscalSat.index')}}",
+                            data: {
+                                id:id,
+                                nombre:nombre,
+                                activo:activo,
+                            },
+                            dataType: 'json',
+                            /*success: function(res){
+
+
+                                console.log(res);
+                            },*/
+                            success:function(res){
+                                if(res.status=='error'){
+                                    Swal.fire({
+                                        title: 'Ocurrió algún problema!',
+                                        text: 'Por Favor, inténtalo de nuevo.',
+                                        icon: 'error',
+                                        confirmButtonText: 'Ok'
+                                    });
+
+                                }else{
+                                    Swal.fire({
+                                        position: 'top-end',
+                                        icon: 'success',
+                                        title: 'Los Datos Se Registraron Correctamente.',
+                                        showConfirmButton: true,
+                                        timer: 3000,
+                                        didOpen: () => {
+                                            timerInterval = setInterval(() => {
+                                                Swal.getHtmlContainer().querySelector('strong')
+                                                    .textContent = (Swal.getTimerLeft() / 1000)
+                                                    .toFixed(0)
+                                            }, 100)
+                                        },
+                                        willClose: () => {
+                                            window.location.reload();
+                                            clearInterval(timerInterval)
+                                        }
+                                    })
+                                    $('#id').val('');
+                                    $('#nombre').val('');
+                                    $("#btn-save").html('Submit');
+                                    $("#btn-save"). attr("disabled", false);
+                                }
+                                $('.submitBtn').removeAttr("disabled");
+                                $('.modal-body').css('opacity', '');
+                            }
+                        });
+                    }
                 }
             });
         } );

@@ -46,16 +46,19 @@ class SatRegimenFiscalCatalogoController extends Controller
     public function store(Request $request)
     {
         //dd($request->all());
-        $book   =   SatRegimenFiscalCatalogo::UpdateOrCreate(
-            [
-                'id' => $request->id
-            ],
-            [
-                'nombre' => $request->nombre,
-                'activo' => $request->activo,
-            ]);
 
-        return response()->json(['success' => true]);
+
+            $regimen   =   SatRegimenFiscalCatalogo::UpdateOrCreate(
+                [
+                    'id' => $request->id
+                ],
+                [
+                    'nombre' => $request->nombre,
+                    'activo' => $request->activo,
+                ]);
+
+            return response()->json(['success' => 'success']);
+
     }
 
     /**
@@ -63,10 +66,26 @@ class SatRegimenFiscalCatalogoController extends Controller
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
+     * @param  \Illuminate\Http\Request  $request
+     *
      */
     public function show($id)
     {
-        //
+
+        $regimen = SatRegimenFiscalCatalogo::find($id);
+
+        if ($regimen !== null) {
+            return response()->json([
+                'status' =>  "200",
+                'id' =>  $regimen->id,
+            ]);
+        }else{
+            return response()->json([
+                'status' => '400',
+                'id' =>  $id,
+            ]);
+        }
+
     }
 
     /**
@@ -105,5 +124,8 @@ class SatRegimenFiscalCatalogoController extends Controller
         //
         $reg = SatRegimenFiscalCatalogo::where('id', '=', $id)->first();
         $reg->delete();
+
+        return response()->json(['success' => true]);
+
     }
 }
