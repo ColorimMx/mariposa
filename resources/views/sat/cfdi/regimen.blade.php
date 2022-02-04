@@ -8,8 +8,8 @@
     <div class="container">
         <div class="row">
             <div class="col-12 table-responsive" >
-                <h3 class="titulo-tabla">Datos Catálogo Régimen Fiscal SAT.</h3>
-                <table id="ejemplo" class="table table-bordered table-darkd" >
+                <h3 class="titulo-tabla">Catálogo Régimen Fiscal SAT.</h3>
+                <table id="data-table" class="table table-bordered table-darkd" >
                     <thead>
                     <tr>
                         <th>ID</th>
@@ -31,17 +31,17 @@
         </div>
     </div>
     <!-- modal -->
-    <div class="modal fade" id="modal-create-regimen">
+    <div class="modal fade" id="modal-container">
         <div class="modal-dialog">
             <div class="modal-content bg-default">
                 <div class="modal-header">
-                    <h4 class="modal-title" id="ajaxBookModel"></h4>
+                    <h4 class="modal-title" id="title-form"></h4>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span></button>
                 </div>
                 <div class="modal-body">
                     <p class="statusMsg"></p>
-                    <form action="javascript:void(0)" id="addEditBookForm" name="addEditBookForm"  method="post">
+                    <form action="javascript:void(0)" id="modal-form" name="modal-form"  method="post">
                         @csrf
                         <div class="form-group">
                             <label for="inputID">ID</label>
@@ -113,7 +113,7 @@
                 }
             });
 
-            var table = $('#ejemplo').DataTable( {
+            var table = $('#data-table').DataTable( {
                 "ajax": "{{route('datatable.SatRegimenFiscalCatalogoController')}}",
                 "columns":[
                     {data : 'id'},
@@ -160,23 +160,23 @@
                             titleAttr: 'Nuevo',
                             attr:  {
                                 "data-toggle": "modal",
-                                "data-target": "#modal-create-regimen"
+                                "data-target": "#modal-container"
                             },
                             action: function () {
-                                $('#addEditBookForm').trigger("reset");
-                                $('#ajaxBookModel').html("Crear Registro Régimen Fiscal SAT");
+                                $('#modal-form').trigger("reset");
+                                $('#title-form').html("Crear Registro " +titulo);
                                 $("#btn-save"). attr("id", "btn-save");
                                 $('#id').attr("disabled", false);
                                 $(window).on('load', function()
                                 {
-                                    $('#modal-create-regimen').modal('show');
+                                    $('#modal-container').modal('show');
                                 });
                             }
                         },
                         {
                             extend:    'copyHtml5',
                             text:      '<i class="fa fa-clipboard"></i>Copiar',
-                            title:'Catálogo Régimen Fiscal SAT',
+                            title:titulo,
                             titleAttr: 'Copiar',
                             className: 'btn btn-sm export barras',
                             exportOptions: {
@@ -186,7 +186,7 @@
                         {
                             extend:    'pdfHtml5',
                             text:      '<i class="fa fa-file-pdf-o"></i>PDF',
-                            title:'Catálogo Régimen Fiscal SAT',
+                            title:titulo,
                             titleAttr: 'PDF',
                             className: 'btn btn-sm pdf',
                             exportOptions: {
@@ -222,7 +222,7 @@
                         {
                             extend:    'excelHtml5',
                             text:      '<i class="fa fa-file-excel-o"></i>Excel',
-                            title:'Catálogo Régimen Fiscal SAT',
+                            title:titulo,
                             titleAttr: 'Excel',
                             className: 'btn btn-sm export excel',
                             exportOptions: {
@@ -232,7 +232,7 @@
                         {
                             extend:    'csvHtml5',
                             text:      '<i class="fa fa-file-text-o"></i>CSV',
-                            title:'Catálogo Régimen Fiscal SAT',
+                            title:titulo,
                             titleAttr: 'CSV',
                             className: 'btn btn-sm export csv',
                             exportOptions: {
@@ -242,7 +242,7 @@
                         {
                             extend:    'print',
                             text:      '<i class="fa fa-print"></i>Imprimir',
-                            title:'Catálogo Régimen Fiscal SAT.',
+                            title:titulo,
                             titleAttr: 'Imprimir',
                             className: 'btn btn-sm export imprimir',
                             exportOptions: {
@@ -262,15 +262,15 @@
                 var id = $(this).data('id');
                 var nombre = $(this).data('nombre');
                 $.get("{{ route('regimenFiscalSat.index') }}" +'/' + id +'/edit', function (data) {
-                    $('#modal-create-regimen').modal('show');
+                    $('#modal-container').modal('show');
                     $("#btn-save"). attr("id", "btn-edit");
-                    $('#ajaxBookModel').html("Editando ID: "+id+ " "+titulo);
+                    $('#title-form').html("Editando ID: "+id+ " "+titulo);
                     $('#id').val(data.id);
                     $('#nombre').val(data.nombre);
                     $('#id').attr("disabled", true);
                 })
             });
-            $('#ejemplo').on('click', 'button.deleteButton', function () {
+            $('#data-table').on('click', 'button.deleteButton', function () {
                 var id = $(this).attr('id');
                 Swal.fire({
                     title: 'Eliminar ID: ' + id+ ' '+titulo,
