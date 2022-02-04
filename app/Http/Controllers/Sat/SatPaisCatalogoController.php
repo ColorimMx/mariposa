@@ -9,6 +9,12 @@ use App\Models\SatPaisCatalogo;
 
 class SatPaisCatalogoController extends Controller
 {
+    public function paises()
+    {
+        $paises = SatPaisCatalogo::select('id','nombre');
+        return datatables()->of($paises)->addIndexColumn()->toJson();
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -16,8 +22,8 @@ class SatPaisCatalogoController extends Controller
      */
     public function index()
     {
-        $Satpaises = SatPaisCatalogo::all();
-        return view('sat.cfdi.paises',compact('Satpaises'));
+        //$Satpaises = SatPaisCatalogo::all();
+        return view('sat.cfdi.paises');
     }
 
     /**
@@ -39,6 +45,17 @@ class SatPaisCatalogoController extends Controller
     public function store(Request $request)
     {
         //
+
+        $pais = SatPaisCatalogo::UpdateOrCreate(
+            [
+               'id' => $request->id
+            ],
+            [
+                'nombre' => $request->nombre,
+                'activo' => $request->activo
+            ]);
+
+        return response()->json(['sucess' => 'success']);
     }
 
     /**
@@ -50,6 +67,20 @@ class SatPaisCatalogoController extends Controller
     public function show($id)
     {
         //
+
+        $pais = SatPaisCatalogo::find($id);
+
+        if($pais !== null){
+            return response()->json([
+               'status' => "200",
+               'id' => $pais->id,
+            ]);
+        }else{
+            return response()->json([
+               'status' => "400",
+               'id'  => $id,
+            ]);
+        }
     }
 
     /**
@@ -61,6 +92,9 @@ class SatPaisCatalogoController extends Controller
     public function edit($id)
     {
         //
+
+        $pais = SatPaisCatalogo::find($id);
+        return response()->json($pais);
     }
 
     /**
@@ -84,5 +118,10 @@ class SatPaisCatalogoController extends Controller
     public function destroy($id)
     {
         //
+
+        $pais = SatPaisCatalogo::find($id);
+        $pais->delete();
+
+        return response()->json(['sucess' => true]);
     }
 }

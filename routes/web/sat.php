@@ -32,6 +32,7 @@ use App\Http\Controllers\Clientes\Mba3FacturaPrincipalController;
 Route::resource('regimenFiscalSat',SatRegimenFiscalCatalogoController::class);
 Route::get('datatable/regimenFiscalSat',[SatRegimenFiscalCatalogoController::class,'regimenes'])->name('datatable.SatRegimenFiscalCatalogoController');
 Route::resource('paisesSat',SatPaisCatalogoController::class);
+Route::get('datatable/paises',[SatPaisCatalogoController::class,'paises'])->name('datatable.SatPaisCatalogoController');
 Route::resource('estadosSat',SatEstadoCatalogoController::class);
 Route::resource('municipiosSat',SatMunicipioCatalogoController::class);
 Route::resource('localidadesSat',SatLocalidadCatalogoController::class);

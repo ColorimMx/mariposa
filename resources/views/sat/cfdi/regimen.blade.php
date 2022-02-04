@@ -107,7 +107,7 @@
                 }
             };
         $(document).ready(function() {
-            var titulo = 'Catalogo Régimen Fiscal SAT ';
+            var titulo = 'Catálogo Régimen Fiscal SAT ';
 
             $.ajaxSetup({
                 headers: {
@@ -183,7 +183,7 @@
                             titleAttr: 'Copiar',
                             className: 'btn btn-sm export barras',
                             exportOptions: {
-                                columns: [ 0, 1 ]
+                                columns: [ 0, 1, 2 ]
                             }
                         },
                         {
@@ -193,7 +193,7 @@
                             titleAttr: 'PDF',
                             className: 'btn btn-sm pdf',
                             exportOptions: {
-                                columns: [ 0, 1 ]
+                                columns: [ 0, 1, 2 ]
                             },
                             customize:function(doc) {
 
@@ -229,7 +229,7 @@
                             titleAttr: 'Excel',
                             className: 'btn btn-sm export excel',
                             exportOptions: {
-                                columns: [ 0, 1 ]
+                                columns: [ 0, 1, 2]
                             },
                         },
                         {
@@ -239,7 +239,7 @@
                             titleAttr: 'CSV',
                             className: 'btn btn-sm export csv',
                             exportOptions: {
-                                columns: [ 0, 1 ]
+                                columns: [ 0, 1, 2]
                             }
                         },
                         {
@@ -249,7 +249,7 @@
                             titleAttr: 'Imprimir',
                             className: 'btn btn-sm export imprimir',
                             exportOptions: {
-                                columns: [ 0, 1 ]
+                                columns: [ 0, 1, 2]
                             }
                         },
                         {
