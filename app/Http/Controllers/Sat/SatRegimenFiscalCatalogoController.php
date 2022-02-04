@@ -17,7 +17,7 @@ class SatRegimenFiscalCatalogoController extends Controller
 
         $regimen = SatRegimenFiscalCatalogo::select('id','nombre');
 
-        return datatables()->of($regimen)->toJson();
+        return datatables()->of($regimen)->addIndexColumn()->toJson();
 
         //return view ($regimen);
     }

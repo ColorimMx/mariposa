@@ -12,6 +12,7 @@
                 <table id="data-table" class="table table-bordered table-darkd" >
                     <thead>
                     <tr>
+                        <th>#</th>
                         <th>ID</th>
                         <th>Nombre</th>
                         <th></th>
@@ -20,6 +21,7 @@
                     </thead>
                     <tfoot>
                     <tr>
+                        <th>#</th>
                         <th>ID</th>
                         <th>Nombre</th>
                         <th></th>
@@ -116,6 +118,7 @@
             var table = $('#data-table').DataTable( {
                 "ajax": "{{route('datatable.SatRegimenFiscalCatalogoController')}}",
                 "columns":[
+                    {data : 'DT_RowIndex'},
                     {data : 'id'},
                     {data : 'nombre'},
                     {
