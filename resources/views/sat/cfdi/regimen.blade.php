@@ -5,37 +5,44 @@
 @section('content_header')
 @stop
 @section('content')
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-12 table-responsive" >
-                <h3 class="titulo-tabla">Catálogo Régimen Fiscal SAT.</h3>
-                <table id="data-table" class="table table-bordered table-darkd" >
-                    <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>ID</th>
-                        <th>Nombre</th>
-                        <th></th>
-                        <th></th>
-                    </tr>
-                    </thead>
-                    <tfoot>
-                    <tr>
-                        <th>#</th>
-                        <th>ID</th>
-                        <th>Nombre</th>
-                        <th></th>
-                        <th></th>
-                    </tr>
-                    </tfoot>
-                </table>
+                <div class="card">
+                    <div class="card-header">
+                        <img class="img-fluid rounded mx-auto d-block" src="data:image/png;base64,{{ base64_encode(file_get_contents(public_path('img/LogoCimsa.png'))) }}" style="width:30%;" alt="logo">
+                        <h3 class="titulo-tabla">Catálogo Régimen Fiscal SAT.</h3>
+                    </div>
+                    <div class="card-body">
+                        <table id="data-table" class="table table-sm" >
+                            <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>ID</th>
+                                <th>Nombre</th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                            </thead>
+                            <tfoot>
+                            <tr>
+                                <th>#</th>
+                                <th>ID</th>
+                                <th>Nombre</th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <!-- modal -->
-    <div class="modal fade" id="modal-container">
-        <div class="modal-dialog">
-            <div class="modal-content bg-default">
+    <div class="modal fade show" id="modal-container">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-danger">
                 <div class="modal-header">
                     <h4 class="modal-title" id="title-form"></h4>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -47,17 +54,17 @@
                         @csrf
                         <div class="form-group">
                             <label for="inputID">ID</label>
-                            <input type="text" class="form-control" id="id" placeholder="Ingrese el ID"/>
+                            <input type="text" class="form-control" id="id" placeholder="Ingrese El ID"/>
                         </div>
                         <div class="form-group">
                             <label for="inputNombre">Régimen Fiscal</label>
-                            <input type="text" class="form-control" id="nombre" placeholder="Ingrese el Régimen Fiscal"/>
+                            <input type="text" class="form-control" id="nombre" placeholder="Ingrese El Régimen"/>
                         </div>
                     </form>
                 </div>
                 <div class="modal-footer justify-content-between">
-                    <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Cancelar</button>
-                    <button type="submit" class="btn btn-outline-success" id="btn-save" value="addNewBook">Guardar</button>
+                    <button type="button" class="btn btn-outline-light" data-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-outline-light" id="btn-save" value="addNewBook" >Guardar</button>
                 </div>
             </div>
             <!-- /.modal-content -->

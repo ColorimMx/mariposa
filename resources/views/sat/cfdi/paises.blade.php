@@ -12,7 +12,6 @@
                     <div class="card-header">
                         <img class="img-fluid rounded mx-auto d-block" src="data:image/png;base64,{{ base64_encode(file_get_contents(public_path('img/LogoCimsa.png'))) }}" style="width:30%;" alt="logo">
                         <h3 class="titulo-tabla">Catálogo Países SAT.</h3>
-
                     </div>
                     <div class="card-body">
                         <table id="data-table" class="table table-sm" >
@@ -55,11 +54,11 @@
                         @csrf
                         <div class="form-group">
                             <label for="inputID">ID</label>
-                            <input type="text" class="form-control" id="id" placeholder="Ingrese el ID"/>
+                            <input type="text" class="form-control" id="id" placeholder="Ingrese El ID"/>
                         </div>
                         <div class="form-group">
                             <label for="inputNombre">País</label>
-                            <input type="text" class="form-control" id="nombre" placeholder="Ingrese el País"/>
+                            <input type="text" class="form-control" id="nombre" placeholder="Ingrese El País"/>
                         </div>
                     </form>
                 </div>
