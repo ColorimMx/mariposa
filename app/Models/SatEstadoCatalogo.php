@@ -12,4 +12,9 @@ class SatEstadoCatalogo extends Model
     public $incrementing = false;
     protected $table = "sat_estado_catalogos";
     protected $dateFormat = 'Y-m-d\TH:i:s.v';
+
+    protected $fillable = [
+        'id', 'nombre', 'activo'
+    ];
+
 }

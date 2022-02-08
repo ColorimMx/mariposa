@@ -8,34 +8,42 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 table-responsive" >
-                <h3 class="titulo-tabla">Catálogo Países SAT.</h3>
-                <table id="data-table" class="table table-bordered table-darkd" >
-                    <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>ID</th>
-                        <th>Nombre</th>
-                        <th></th>
-                        <th></th>
-                    </tr>
-                    </thead>
-                    <tfoot>
-                    <tr>
-                        <th>#</th>
-                        <th>ID</th>
-                        <th>Nombre</th>
-                        <th></th>
-                        <th></th>
-                    </tr>
-                    </tfoot>
-                </table>
+                <div class="card">
+                    <div class="card-header">
+                        <img class="img-fluid rounded mx-auto d-block" src="data:image/png;base64,{{ base64_encode(file_get_contents(public_path('img/LogoCimsa.png'))) }}" style="width:30%;" alt="logo">
+                        <h3 class="titulo-tabla">Catálogo Países SAT.</h3>
+
+                    </div>
+                    <div class="card-body">
+                        <table id="data-table" class="table table-sm" >
+                            <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>ID</th>
+                                <th>Nombre</th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                            </thead>
+                            <tfoot>
+                            <tr>
+                                <th>#</th>
+                                <th>ID</th>
+                                <th>Nombre</th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <!-- modal -->
-    <div class="modal fade" id="modal-container">
-        <div class="modal-dialog">
-            <div class="modal-content bg-default">
+    <div class="modal fade show" id="modal-container">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-danger">
                 <div class="modal-header">
                     <h4 class="modal-title" id="title-form"></h4>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -56,8 +64,8 @@
                     </form>
                 </div>
                 <div class="modal-footer justify-content-between">
-                    <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Cancelar</button>
-                    <button type="submit" class="btn btn-outline-success" id="btn-save" value="addNewBook">Guardar</button>
+                    <button type="button" class="btn btn-outline-light" data-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-outline-light" id="btn-save" value="addNewBook" >Guardar</button>
                 </div>
             </div>
             <!-- /.modal-content -->
@@ -141,8 +149,8 @@
                 "searching": true,
                 "ordering": true,
                 "info": true,
-                "responsive": true,
-                "autoWidth": true,
+                "responsive": false,
+                "autoWidth": false,
                 "language": idioma,
                 "lengthMenu": [[50,100,500, -1],[50,100,500,"Mostrar Todo"]],
                 dom: 'Bfrt<"col-md-6 inline"i> <"col-md-6 inline"p>',

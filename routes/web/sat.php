@@ -34,6 +34,7 @@ Route::get('datatable/regimenFiscalSat',[SatRegimenFiscalCatalogoController::cla
 Route::resource('paisesSat',SatPaisCatalogoController::class);
 Route::get('datatable/paises',[SatPaisCatalogoController::class,'paises'])->name('datatable.SatPaisCatalogoController');
 Route::resource('estadosSat',SatEstadoCatalogoController::class);
+
 Route::resource('municipiosSat',SatMunicipioCatalogoController::class);
 Route::resource('localidadesSat',SatLocalidadCatalogoController::class);
 Route::resource('impuestosSat',SatImpuestoCatalogoController::class);

@@ -28,7 +28,7 @@
                                 <tbody>
                                 <tr>
                                     <td>{{$SatEstado->id}}</td>
-                                    <td>{{$SatEstado->id_pais}}</td>
+                                    <td>{{$SatEstado->pais_id}}</td>
                                     <td>{{$SatEstado->nombre}}</td>
                                 </tr>
                                 </tbody>
