@@ -14,7 +14,11 @@ class SatEstadoCatalogo extends Model
     protected $dateFormat = 'Y-m-d\TH:i:s.v';
 
     protected $fillable = [
-        'id', 'nombre', 'activo'
+        'id', 'nombre', 'pais_id', 'activo'
     ];
 
+
+    public function pais(){
+        return $this->belongsTo(SatPaisCatalogo::class);
+    }
 }

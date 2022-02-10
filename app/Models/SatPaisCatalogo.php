@@ -16,4 +16,8 @@ class SatPaisCatalogo extends Model
     protected $fillable = [
         'id', 'nombre', 'activo'
     ];
+
+    public function estados(){
+        return $this->hasMany(SatEstadoCatalogo::class);
+    }
 }
