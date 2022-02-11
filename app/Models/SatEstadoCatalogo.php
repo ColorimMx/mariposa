@@ -21,4 +21,8 @@ class SatEstadoCatalogo extends Model
     public function pais(){
         return $this->belongsTo(SatPaisCatalogo::class);
     }
+
+    public function municipio(){
+        return $this->hasMany(SatMunicipioCatalogo::class);
+    }
 }

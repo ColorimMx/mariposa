@@ -15,9 +15,9 @@ class CreateSatEstadoCatalogosTable extends Migration
     {
         Schema::create('sat_estado_catalogos', function (Blueprint $table) {
             $table->char('id',6)->primary();
+            $table->string('nombre');
             $table->char('pais_id',6);
             $table->foreign('pais_id')->references('id')->on('sat_pais_catalogos');
-            $table->string('nombre');
             $table->boolean('activo');
             $table->timestamps();
         });

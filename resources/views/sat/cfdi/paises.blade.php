@@ -80,7 +80,7 @@
                 "sProcessing":     "Procesando...",
                 "sLengthMenu":     "Mostrar _MENU_ registros",
                 "sZeroRecords":    "No se encontraron resultados",
-                "sEmptyTable":     "NingÃºn dato disponible en esta tabla",
+                "sEmptyTable":     "Ningún dato disponible en esta tabla",
                 "sInfo":           "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
                 "sInfoEmpty":      "Mostrando registros del 0 al 0 de un total de 0 registros",
                 "sInfoFiltered":   "(filtrado de un total de _MAX_ registros)",
@@ -91,7 +91,7 @@
                 "sLoadingRecords": "Cargando...",
                 "oPaginate": {
                     "sFirst":    "Primero",
-                    "sLast":     "Ãšltimo",
+                    "sLast":     "Último",
                     "sNext":     "Siguiente",
                     "sPrevious": "Anterior"
                 },
@@ -372,7 +372,7 @@
                 }else if(nombre.trim() == '' ){
                     Swal.fire({
                         title: 'Error!',
-                        text: 'Por Favor Ingrese El "Régimen Fiscal".',
+                        text: 'Por Favor Ingrese El "País".',
                         icon: 'error',
                         confirmButtonText: 'Ok'
                     });
@@ -447,7 +447,7 @@
                 }else if(nombre.trim() == '' ){
                     Swal.fire({
                         title: 'Error!',
-                        text: 'Por Favor Ingrese El "Régimen Fiscal".',
+                        text: 'Por Favor Ingrese El "País".',
                         icon: 'error',
                         confirmButtonText: 'Ok'
                     });
@@ -459,7 +459,7 @@
                         $("#btn-save"). attr("disabled", true);
                         Swal.fire({
                             position: 'top-end',
-                            title: 'El Régimen '+ id + ' Ya Existe!' ,
+                            title: 'El País '+ id + ' Ya Existe!' ,
                             text: 'Se Sugiere Editarlo.',
                             icon: 'error',
                             confirmButtonText: 'Ok',
