@@ -21,7 +21,9 @@ class DatabaseSeeder extends Seeder
         $this->call(SubItemMenuCatalogoSeeder::class);
 
         $this->call(MonedaCatalogoSeeder::class);
+        $this->call(SatPaisCatalogoSeeder::class);
         $this->call(DemografiaPaisCatalogoSeeder::class);
+        $this->call(SatEstadoCatalogoSeeder::class);
         $this->call(DemografiaEstadoCatalogoSeeder::class);
         $this->call(DemografiaCiudadCatalogoSeeder::class);
         $this->call(EmpresaCatalogoSeeder::class);
@@ -29,8 +31,8 @@ class DatabaseSeeder extends Seeder
         $this->call(EmpresaAlmacenCatalogoSeeder::class);
 
         $this->call(SatRegimenFiscalCatalogoSeeder::class);
-        $this->call(SatPaisCatalogoSeeder::class);
-        $this->call(SatEstadoCatalogoSeeder::class);
+
+
         $this->call(SatMunicipioCatalogoSeeder::class);
         $this->call(SatLocalidadCatalogoSeeder::class);
         $this->call(SatImpuestoCatalogoSeeder::class);

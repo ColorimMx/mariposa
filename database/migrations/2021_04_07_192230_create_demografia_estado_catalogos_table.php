@@ -16,6 +16,8 @@ class CreateDemografiaEstadoCatalogosTable extends Migration
         Schema::create('demografia_estado_catalogos', function (Blueprint $table) {
             $table->char('id',5)->primary();
             $table->string('nombre');
+            $table->char('estado_sat_id',6);
+            $table->foreign('estado_sat_id')->references('id')->on('sat_estado_catalogos');
             $table->boolean('activo');
             $table->timestamps();
         });

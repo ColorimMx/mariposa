@@ -16,6 +16,8 @@ class CreateDemografiaPaisCatalogosTable extends Migration
         Schema::create('demografia_pais_catalogos', function (Blueprint $table) {
             $table->char('id',3)->primary();
             $table->string('nombre');
+            $table->char('pais_sat_id',6);
+            $table->foreign('pais_sat_id')->references('id')->on('sat_pais_catalogos');
             $table->boolean('activo');
             $table->timestamps();
         });
