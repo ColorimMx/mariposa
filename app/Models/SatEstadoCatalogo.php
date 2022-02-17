@@ -25,4 +25,8 @@ class SatEstadoCatalogo extends Model
     public function municipio(){
         return $this->hasMany(SatMunicipioCatalogo::class);
     }
+
+    public function localidad(){
+        return $this->hasMany(SatLocalidadCatalogo::class);
+    }
 }

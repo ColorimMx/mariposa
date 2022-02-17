@@ -1,38 +1,38 @@
 @extends('adminlte::page')
-
 @section('title', 'Localidad SAT')
-
 @section('content_header')
-    <h1>
-        Datos Catálogo Localidad SAT.
-    </h1>
 @stop
 @section('content')
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 table-responsive" >
                 <div class="card">
                     <div class="card-header">
-                        <h3 class="card-title">Localidad SAT.</h3>
+                        <img class="img-fluid rounded mx-auto d-block" src="data:image/png;base64,{{ base64_encode(file_get_contents(public_path('img/LogoCimsa.png'))) }}" style="width:30%;" alt="logo">
+                        <h3 class="titulo-tabla">Catálogo Municipios SAT.</h3>
                     </div>
                     <div class="card-body">
-                        <table class="table">
+                        <table id="data-table" class="table table-sm" >
                             <thead>
                             <tr>
-                                <th scope="col">ID</th>
-                                <th scope="col">ID_ESTADO</th>
-                                <th scope="col">NOMBRE</th>
+                                <th>#</th>
+                                <th>ID</th>
+                                <th>Nombre</th>
+                                <th>Estado</th>
+                                <th></th>
+                                <th></th>
                             </tr>
                             </thead>
-                            @foreach($SatLocalidades as $SatLocalidad)
-                                <tbody>
-                                <tr>
-                                    <td>{{$SatLocalidad->id}}</td>
-                                    <td>{{$SatLocalidad->id_estado}}</td>
-                                    <td>{{$SatLocalidad->nombre}}</td>
-                                </tr>
-                                </tbody>
-                            @endforeach
+                            <tfoot>
+                            <tr>
+                                <th>#</th>
+                                <th>ID</th>
+                                <th>Nombre</th>
+                                <th>Estado</th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                            </tfoot>
                         </table>
                     </div>
                 </div>

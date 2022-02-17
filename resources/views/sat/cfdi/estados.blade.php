@@ -61,6 +61,7 @@
                             <input type="text" class="form-control" id="nombre" placeholder="Ingrese El Nombre Del Estado"/>
                         </div>
                         <div class="form-group">
+                            <label for="inputNombre">Seleccione El País</label>
                             <select class="custom-select" id="pais_nombre">
                                 @foreach($satPaises as $paises)
                                     <option value={{$paises->id}}>{{$paises->nombre}}</option>

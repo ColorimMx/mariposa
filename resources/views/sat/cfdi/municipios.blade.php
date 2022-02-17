@@ -57,10 +57,11 @@
                             <input type="text" class="form-control" id="id" placeholder="Ingrese El ID"/>
                         </div>
                         <div class="form-group">
-                            <label for="inputNombre">Estado</label>
+                            <label for="inputNombre">Municipio</label>
                             <input type="text" class="form-control" id="nombre" placeholder="Ingrese El Nombre Del Municipio"/>
                         </div>
                         <div class="form-group">
+                            <label for="inputNombre">Seleccione El Estado</label>
                             <select class="custom-select" id="estado_nombre">
                                 @foreach($satEstados as $estados)
                                     <option value={{$estados->id}}>{{$estados->nombre}}</option>

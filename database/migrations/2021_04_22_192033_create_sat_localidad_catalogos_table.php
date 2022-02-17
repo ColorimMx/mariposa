@@ -15,9 +15,9 @@ class CreateSatLocalidadCatalogosTable extends Migration
     {
         Schema::create('sat_localidad_catalogos', function (Blueprint $table) {
             $table->char('id',6)->primary();
+            $table->string('nombre');
             $table->char('estado_id',6);
             $table->foreign('estado_id')->references('id')->on('sat_estado_catalogos');
-            $table->string('nombre');
             $table->boolean('activo');
             $table->timestamps();
         });

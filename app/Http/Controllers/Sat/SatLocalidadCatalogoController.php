@@ -4,10 +4,21 @@ namespace App\Http\Controllers\Sat;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\DB;
 use App\Models\SatLocalidadCatalogo;
+use App\Models\SatEstadoCatalogo;
 
 class SatLocalidadCatalogoController extends Controller
 {
+    public function localidades(){
+
+        $localidades = SatLocalidadCatalogo::select('id', 'nombre', 'estado_id');
+
+        return datatables()->off($localidades)->adddColumn('estado_nombre', function (SatLocalidadCatalogo  $satLocalidadCatalogo){
+            return $satLocalidadCatalogo->estado->nombre;
+        })->addIndexColumn()->toJson();
+
+    }
     /**
      * Display a listing of the resource.
      *
@@ -15,8 +26,10 @@ class SatLocalidadCatalogoController extends Controller
      */
     public function index()
     {
-        $SatLocalidades = SatLocalidadCatalogo::all();
-        return view('sat.cfdi.localidades',compact('SatLocalidades'));
+        //$SatLocalidades = SatLocalidadCatalogo::all();
+
+        $satLocalidades = SatLocalidadCatalogo::orderBy('nombre')->get();
+        return view('sat.cfdi.localidades',compact('satLocalidades'));
     }
 
     /**
@@ -38,6 +51,15 @@ class SatLocalidadCatalogoController extends Controller
     public function store(Request $request)
     {
         //
+
+        $localidad = SatLocalidadCatalogo::UpdateOrCreate(
+          [
+              'id' => $request->id
+          ],
+          [
+
+          ]
+        );
     }
 
     /**
