@@ -14,7 +14,7 @@ class SatLocalidadCatalogoController extends Controller
 
         $localidades = SatLocalidadCatalogo::select('id', 'nombre', 'estado_id');
 
-        return datatables()->off($localidades)->adddColumn('estado_nombre', function (SatLocalidadCatalogo  $satLocalidadCatalogo){
+        return datatables()->of($localidades)->addColumn('estado_nombre', function (SatLocalidadCatalogo  $satLocalidadCatalogo){
             return $satLocalidadCatalogo->estado->nombre;
         })->addIndexColumn()->toJson();
 
@@ -28,8 +28,8 @@ class SatLocalidadCatalogoController extends Controller
     {
         //$SatLocalidades = SatLocalidadCatalogo::all();
 
-        $satLocalidades = SatLocalidadCatalogo::orderBy('nombre')->get();
-        return view('sat.cfdi.localidades',compact('satLocalidades'));
+        $satEstados = SatEstadoCatalogo::orderBy('nombre')->get();
+        return view('sat.cfdi.localidades',compact('satEstados'));
     }
 
     /**

@@ -38,6 +38,7 @@ Route::get('datatable/estados',[SatEstadoCatalogoController::class,'estados'])->
 Route::resource('municipiosSat',SatMunicipioCatalogoController::class);
 Route::get('datatable/municipios',[SatMunicipioCatalogoController::class,'municipios'])->name('datatable.SatMunicipioCatalogoController');
 Route::resource('localidadesSat',SatLocalidadCatalogoController::class);
+Route::get('datatable/localidades',[SatLocalidadCatalogoController::class,'localidades'])->name('datatable.SatLocalidadCatalogoController');
 Route::resource('impuestosSat',SatImpuestoCatalogoController::class);
 Route::resource('comprobantesSat',SatTipoComprobanteCatalogoController::class);
 Route::resource('relacionSat',SatTipoRelacionCatalogoController::class);
