@@ -57,9 +57,14 @@ class SatLocalidadCatalogoController extends Controller
               'id' => $request->id
           ],
           [
-
+              'nombre' => $request->nombre,
+              'estado_id' => $request->estado_id,
+              'activo' => $request->activo
           ]
         );
+
+        return response()->json(['success' => 'success']);
+
     }
 
     /**
@@ -71,6 +76,20 @@ class SatLocalidadCatalogoController extends Controller
     public function show($id)
     {
         //
+
+        $localidad = SatLocalidadCatalogo::find($id);
+
+        if($localidad !== null){
+            return response()->json([
+                'status' => "200",
+                'id' => $localidad->id
+            ]);
+        }else{
+            return response()->json([
+                'status' => "400",
+                'id' => $id
+            ]);
+        }
     }
 
     /**
@@ -82,6 +101,10 @@ class SatLocalidadCatalogoController extends Controller
     public function edit($id)
     {
         //
+
+        $localidad = SatLocalidadCatalogo::find($id);
+
+        return response()->json($localidad);
     }
 
     /**
@@ -105,5 +128,10 @@ class SatLocalidadCatalogoController extends Controller
     public function destroy($id)
     {
         //
+
+        $localidad = SatLocalidadCatalogo::find($id);
+        $localidad->delete();
+
+        return response()->json(['success' => 'success']);
     }
 }

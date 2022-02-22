@@ -12,4 +12,9 @@ class SatCartaPorteSubTipoRemCatalogo extends Model
     public $incrementing = false;
     protected $table = "sat_carta_porte_sub_tipo_rem_catalogos";
     protected $dateFormat = 'Y-m-d\TH:i:s.v';
+
+    protected $fillable =[
+      'id', 'nombre', 'activo'
+    ];
+
 }

@@ -12,4 +12,8 @@ class SatCartaPorteTipoPermisoCatalogo extends Model
     public $incrementing = false;
     protected $table = "sat_carta_porte_tipo_permiso_catalogos";
     protected $dateFormat = 'Y-m-d\TH:i:s.v';
+
+    protected $fillable = [
+      'id', 'nombre', 'activo'
+    ];
 }

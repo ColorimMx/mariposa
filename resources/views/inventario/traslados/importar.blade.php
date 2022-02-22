@@ -29,7 +29,7 @@
                         </div>
                         <!-- /.card-header -->
                         <!-- form start -->
-                        <form class="was-validated" action="{{route('trasladotransfer.store')}}" method="POST">
+                        <form class="was-validated" action="{{route('traslados.store')}}" method="POST">
                         @csrf
                         <!-- /.card-body -->
                             <div class="card card-olive">

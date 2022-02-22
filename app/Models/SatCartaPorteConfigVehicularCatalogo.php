@@ -12,4 +12,12 @@ class SatCartaPorteConfigVehicularCatalogo extends Model
     public $incrementing = false;
     protected $table = "sat_carta_porte_config_vehicular_catalogos";
     protected $dateFormat = 'Y-m-d\TH:i:s.v';
+
+    protected $fillable = [
+        'id', 'nombre', 'activo'
+    ];
+
+    public function autotransporte(){
+        return $this->belongsTo(AutotransporteCatalogo::class);
+    }
 }

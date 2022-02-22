@@ -11,4 +11,9 @@ class SatTipoComprobanteCatalogo extends Model
     public $incrementing = false;
     protected $table = "sat_tipo_comprobante_catalogos";
     protected $dateFormat = 'Y-m-d\TH:i:s.v';
+
+    protected $fillable = [
+      'id', 'nombre', 'activo'
+    ];
+
 }

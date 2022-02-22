@@ -21,7 +21,8 @@ Route::resource('impSubmodelos',ProductoSubmodeloCatalogoController::class);
 Route::resource('impProductos',ProductoCatalogoController::class);
 
 Route::resource('permisoAutotrasnporte',PermisoAutotransporteController::class);
+
 Route::resource('seguroAutotrasnporte',SeguroAutotransporteController::class);
 Route::resource('autotrasnporte',AutotransporteController::class);
-
+Route::get('datatable/autotransporte',[AutotransporteController::class, 'autotransportes'])->name('datatable.AutotransporteController');
 Route::resource('traslados', TrasladoController::class);

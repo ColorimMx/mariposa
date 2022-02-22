@@ -40,7 +40,9 @@ Route::get('datatable/municipios',[SatMunicipioCatalogoController::class,'munici
 Route::resource('localidadesSat',SatLocalidadCatalogoController::class);
 Route::get('datatable/localidades',[SatLocalidadCatalogoController::class,'localidades'])->name('datatable.SatLocalidadCatalogoController');
 Route::resource('impuestosSat',SatImpuestoCatalogoController::class);
+Route::get('datatable/impuestos',[SatImpuestoCatalogoController::class,'impuestos'])->name('datatable.SatImpuestoCatalogoController');
 Route::resource('comprobantesSat',SatTipoComprobanteCatalogoController::class);
+Route::get('datatable/comprobantes',[SatTipoComprobanteCatalogoController::class,'comprobantes'])->name('datatable.SatTipoComprobanteCatalogoController');
 Route::resource('relacionSat',SatTipoRelacionCatalogoController::class);
 Route::resource('usosCfdiSat',SatUsoCfdiCatalogoController::class);
 Route::resource('metodosPagoSat',SatMetodoPagoCatalogoController::class);
@@ -53,8 +55,11 @@ Route::resource('incotermSat',SatComercioExteriorIncotermCatalogoController::cla
 Route::resource('operacionesSat',SatComercioExteriorTipoOperacionCatalogoController::class);
 Route::resource('pedimentosSat',SatComercioExteriorPedimentoCatalogoController::class);
 Route::resource('permisosSat',SatCartaPorteTipoPermisoCatalogoController::class);
+Route::get('datatable/permisos',[SatCartaPorteTipoPermisoCatalogoController::class,'permisos'])->name('datatable.SatCartaPorteTipoPermisoCatalogoController');
 Route::resource('configVehicularSat',SatCartaPorteConfigVehicularCatalogoController::class);
+Route::get('datatable/configvehicular',[SatCartaPorteConfigVehicularCatalogoController::class,'configuracion'])->name('datatable.SatCartaPorteConfigVehicularCatalogoController');
 Route::resource('remolqueSat',SatCartaPorteSubTipoRemCatalogoController::class);
+Route::get('datatable/remolque',[SatCartaPorteSubTipoRemCatalogoController::class,'remolques'])->name('datatable.SatCartaPorteSubTipoRemCatalogoController');
 Route::get('selladoSifei', [SifeiController::class,'sellado'])->name('selladoSifei');
 Route::get('timbradoSifei', [SifeiController::class,'timbrado'])->name('timbradoSifei');
 

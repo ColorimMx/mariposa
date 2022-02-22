@@ -4,9 +4,16 @@ namespace App\Http\Controllers\Sat;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\SatCartaPorteConfigVehicularCatalogo;
 
 class SatCartaPorteConfigVehicularCatalogoController extends Controller
 {
+    public function configuracion(){
+
+        $configVehicularSat = SatCartaPorteConfigVehicularCatalogo::select('id', 'nombre');
+        return datatables()->of($configVehicularSat)->addIndexColumn()->toJson();
+
+    }
     /**
      * Display a listing of the resource.
      *
@@ -36,6 +43,18 @@ class SatCartaPorteConfigVehicularCatalogoController extends Controller
     public function store(Request $request)
     {
         //
+        $configVehicularSat = SatCartaPorteConfigVehicularCatalogo::UpdateOrCreate(
+          [
+              'id' => $request->id
+          ],
+          [
+              'nombre' => $request->nombre,
+              'activo' => $request->activo
+          ]
+        );
+
+        return response()->json(['success' => 'success']);
+
     }
 
     /**
@@ -47,6 +66,19 @@ class SatCartaPorteConfigVehicularCatalogoController extends Controller
     public function show($id)
     {
         //
+        $configVehicularSat = SatCartaPorteConfigVehicularCatalogo::find($id);
+
+        if($configVehicularSat !== null){
+            return response()->json([
+               'status' => "200",
+                'id' => $configVehicularSat->id
+            ]);
+        }else{
+            return response()->json([
+               'status' => "400",
+               'id' => $id
+            ]);
+        }
     }
 
     /**
@@ -58,6 +90,9 @@ class SatCartaPorteConfigVehicularCatalogoController extends Controller
     public function edit($id)
     {
         //
+        $configVehicularSat = SatCartaPorteConfigVehicularCatalogo::find($id);
+
+        return response()->json($configVehicularSat);
     }
 
     /**
@@ -81,5 +116,9 @@ class SatCartaPorteConfigVehicularCatalogoController extends Controller
     public function destroy($id)
     {
         //
+        $configVehicularSat = SatCartaPorteConfigVehicularCatalogo::find($id);
+        $configVehicularSat->delete();
+
+        return response()->json(['success' => 'success']);
     }
 }

@@ -4,9 +4,15 @@ namespace App\Http\Controllers\Sat;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\SatImpuestoCatalogo;
 
 class SatImpuestoCatalogoController extends Controller
 {
+    public function impuestos(){
+
+        $impuestos = SatImpuestoCatalogo::select('id', 'nombre');
+        return datatables()->of($impuestos)->addIndexColumn()->toJson();
+    }
     /**
      * Display a listing of the resource.
      *
@@ -14,6 +20,7 @@ class SatImpuestoCatalogoController extends Controller
      */
     public function index()
     {
+
         return view('sat.cfdi.impuestos');
     }
 
@@ -36,6 +43,17 @@ class SatImpuestoCatalogoController extends Controller
     public function store(Request $request)
     {
         //
+        $impuesto = SatImpuestoCatalogo::UpdateOrCreate(
+            [
+                'id' => $request->id
+            ],
+            [
+                'nombre' => $request->nombre,
+                'activo' => $request->activo
+            ]
+        );
+
+        return response()->json(['success' => 'success']);
     }
 
     /**
@@ -47,6 +65,19 @@ class SatImpuestoCatalogoController extends Controller
     public function show($id)
     {
         //
+        $impuesto = SatImpuestoCatalogo::find($id);
+
+        if($impuesto !== null){
+            return response()->json([
+                'status' => "200",
+                'id' => $impuesto->id
+            ]);
+        }else{
+            return response()->json([
+                'status' => "400",
+                'id' => $id
+            ]);
+        }
     }
 
     /**
@@ -58,6 +89,10 @@ class SatImpuestoCatalogoController extends Controller
     public function edit($id)
     {
         //
+
+        $impuesto = SatImpuestoCatalogo::find($id);
+
+        return response()->json($impuesto);
     }
 
     /**
@@ -81,5 +116,9 @@ class SatImpuestoCatalogoController extends Controller
     public function destroy($id)
     {
         //
+        $impuesto = SatImpuestoCatalogo::find($id);
+        $impuesto->delete();
+
+        return response()->json(['success' => 'success']);
     }
 }

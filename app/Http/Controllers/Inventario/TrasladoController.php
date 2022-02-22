@@ -14,6 +14,7 @@ use App\Models\TrasladoDetalle;
 
 class TrasladoController extends Controller
 {
+
     /**
      * Display a listing of the resource.
      *
@@ -22,6 +23,8 @@ class TrasladoController extends Controller
     public function index()
     {
         //
+
+
     }
 
     /**
@@ -36,7 +39,7 @@ class TrasladoController extends Controller
 
         $autotransportes = AutotransporteCatalogo::all();
 
-        return view('inventario.ttraslados.importar',compact('traslados','autotransportes'));
+        return view('inventario.traslados.importar',compact('traslados','autotransportes'));
 
     }
 

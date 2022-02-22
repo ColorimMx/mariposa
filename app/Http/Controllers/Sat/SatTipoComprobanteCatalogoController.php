@@ -4,9 +4,14 @@ namespace App\Http\Controllers\Sat;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\SatTipoComprobanteCatalogo;
 
 class SatTipoComprobanteCatalogoController extends Controller
 {
+    public function comprobantes(){
+        $comprobantes = SatTipoComprobanteCatalogo::select('id', 'nombre');
+        return datatables()->of($comprobantes)->addIndexColumn()->toJson();
+    }
     /**
      * Display a listing of the resource.
      *
@@ -36,6 +41,17 @@ class SatTipoComprobanteCatalogoController extends Controller
     public function store(Request $request)
     {
         //
+        $comprobante = SatTipoComprobanteCatalogo::UpdateOrCreate([
+            'id' => $request->id
+        ],
+        [
+            'nombre' => $request->nombre,
+            'activo' => $request->activo
+        ]
+        );
+
+        return response()->json(['success' => 'success']);
+
     }
 
     /**
@@ -47,6 +63,19 @@ class SatTipoComprobanteCatalogoController extends Controller
     public function show($id)
     {
         //
+        $comprobante = SatTipoComprobanteCatalogo::find($id);
+
+        if($comprobante !== null){
+            return response()->json([
+                'status' => "200",
+                'id' => $comprobante->id
+            ]);
+        }else{
+            return response()->json([
+               'status' => "400",
+               'id' => $id
+            ]);
+        }
     }
 
     /**
@@ -58,6 +87,10 @@ class SatTipoComprobanteCatalogoController extends Controller
     public function edit($id)
     {
         //
+
+        $comprobante = SatTipoComprobanteCatalogo::find($id);
+
+        return response()->json($comprobante);
     }
 
     /**
@@ -81,5 +114,10 @@ class SatTipoComprobanteCatalogoController extends Controller
     public function destroy($id)
     {
         //
+        $comprobante = SatTipoComprobanteCatalogo::find($id);
+        $comprobante->delete();
+
+        return response()->json(['success' => 'success']);
+
     }
 }

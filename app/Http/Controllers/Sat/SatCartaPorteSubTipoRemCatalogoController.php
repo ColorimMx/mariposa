@@ -2,11 +2,17 @@
 
 namespace App\Http\Controllers\Sat;
 
+use App\Models\SatCartaPorteSubTipoRemCatalogo;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
 class SatCartaPorteSubTipoRemCatalogoController extends Controller
 {
+    public function remolques(){
+
+        $remolqueSat = SatCartaPorteSubTipoRemCatalogo::select('id','nombre');
+        return datatables()->of($remolqueSat)->addIndexColumn()->toJson();
+    }
     /**
      * Display a listing of the resource.
      *
@@ -36,6 +42,18 @@ class SatCartaPorteSubTipoRemCatalogoController extends Controller
     public function store(Request $request)
     {
         //
+        $remolque = SatCartaPorteSubTipoRemCatalogo::UpdateOrCreate(
+            [
+                'id' => $request->id
+            ],
+            [
+                'nombre' => $request->nombre,
+                'activo' => $request->activo
+            ]
+        );
+
+        return response()->json(['success' => 'success']);
+
     }
 
     /**
@@ -47,6 +65,19 @@ class SatCartaPorteSubTipoRemCatalogoController extends Controller
     public function show($id)
     {
         //
+        $remolque = SatCartaPorteSubTipoRemCatalogo::find($id);
+
+        if($remolque !== null){
+            return response()->json([
+               'status' => "200",
+               'id' => $remolque->id
+            ]);
+        }else{
+            return response()->json([
+               'status' => "400",
+               'id' => $id
+            ]);
+        }
     }
 
     /**
@@ -58,6 +89,9 @@ class SatCartaPorteSubTipoRemCatalogoController extends Controller
     public function edit($id)
     {
         //
+        $remolque = SatCartaPorteSubTipoRemCatalogo::find($id);
+
+        return response()->json($remolque);
     }
 
     /**
@@ -81,5 +115,9 @@ class SatCartaPorteSubTipoRemCatalogoController extends Controller
     public function destroy($id)
     {
         //
+        $remolque = SatCartaPorteSubTipoRemCatalogo::find($id);
+        $remolque->delete();
+
+        return response()->json(['success' => 'success']);
     }
 }

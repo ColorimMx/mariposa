@@ -11,6 +11,12 @@ Use App\Models\SeguroAutotransporteCatalogo;
 
 class AutotransporteController extends Controller
 {
+    public function autotransportes(){
+
+        $autotransportes = AutotransporteCatalogo::select('id', 'marca', 'modelo', 'anio_modelo_vm', 'placa',
+            'permiso_autotransporte_id', 'config_vehicular_id', 'asegura_resp_civil_id');
+        return datatables()->of($autotransportes)->addIndexColumn()->toJson();
+    }
     /**
      * Display a listing of the resource.
      *
