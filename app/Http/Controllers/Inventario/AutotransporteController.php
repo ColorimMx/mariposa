@@ -24,7 +24,10 @@ class AutotransporteController extends Controller
      */
     public function index()
     {
-        //
+        $permisos = PermisoAutotransporteCatalogo::orderBy('id')->get();
+        $config = SatCartaPorteConfigVehicularCatalogo::orderBy('nombre')->get();
+        $seguros = SeguroAutotransporteCatalogo::orderBy('id')->get();
+        return view('inventario.opciones.autotransporte',compact('permisos','config','seguros'));
     }
 
     /**

@@ -13,6 +13,10 @@ class AutotransporteCatalogo extends Model
     protected $table = "autotransporte_catalogos";
     protected $dateFormat = 'Y-m-d\TH:i:s.v';
 
+    protected $fillable = [
+        'id', 'marca', 'modelo', 'anio_modelo_vm', 'placa', 'permiso_autotransporte_id', 'config_vehicular_id', 'asegura_resp_civil_id'
+    ];
+
     public function permiso(){
         return $this->hasOne(PermisoAutotransporteCatalogo::class);
     }

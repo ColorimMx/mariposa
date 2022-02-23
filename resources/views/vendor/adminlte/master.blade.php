@@ -133,7 +133,6 @@
     <script type="text/javascript" src="https://cdn.datatables.net/searchpanes/1.4.0/js/searchPanes.bootstrap4.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/select/1.3.3/js/dataTables.select.js"></script>
 
-
 </body>
 
 </html>

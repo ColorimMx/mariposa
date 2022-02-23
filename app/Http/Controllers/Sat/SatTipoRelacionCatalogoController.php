@@ -4,9 +4,16 @@ namespace App\Http\Controllers\Sat;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\SatTipoRelacionCatalogo;
 
 class SatTipoRelacionCatalogoController extends Controller
 {
+    public function relaciones(){
+
+        $relaciones = SatTipoRelacionCatalogo::select('id','nombre');
+        return datatables()->of($relaciones)->addIndexColumn()->toJson();
+
+    }
     /**
      * Display a listing of the resource.
      *

@@ -9,6 +9,16 @@ use App\Models\SatCartaPorteTipoPermisoCatalogo;
 
 class PermisoAutotransporteController extends Controller
 {
+    public function permisos(){
+
+        $permisoauto = PermisoAutotransporteCatalogo::select('id', 'sat_carta_porte_tipo_permiso_catalogos_id',
+            'vigencia', 'asignado');
+
+        return datatables()->of($permisoauto)->addColumn('permiso_nombre', function (PermisoAutotransporteCatalogo $permisoAutotransporte) {
+            return $permisoAutotransporte->satPermisos->nombre;
+
+        })->addIndexColumn()->toJson();
+    }
     /**
      * Display a listing of the resource.
      *
@@ -17,6 +27,9 @@ class PermisoAutotransporteController extends Controller
     public function index()
     {
         //
+        $satPermisos = SatCartaPorteTipoPermisoCatalogo::orderBy('nombre')->get();
+        return view('inventario.opciones.permisoauto',compact('satPermisos'));
+
     }
 
     /**
@@ -26,8 +39,8 @@ class PermisoAutotransporteController extends Controller
      */
     public function create()
     {
-        $permisos = SatCartaPorteTipoPermisoCatalogo::all();
-        return view('transportes.premisocreate',compact('permisos'));
+        /*$permisos = SatCartaPorteTipoPermisoCatalogo::all();
+        return view('transportes.premisocreate',compact('permisos'));*/
     }
 
     /**
@@ -38,6 +51,7 @@ class PermisoAutotransporteController extends Controller
      */
     public function store(Request $request)
     {
+        /*
         $validated = $request->validate([
             'permiso' => 'bail|required',
             'folio' => 'bail|required',
@@ -55,6 +69,21 @@ class PermisoAutotransporteController extends Controller
         $PermisoAutotransporte->save();
 
         return $request->all();
+        */
+
+        $permiso = PermisoAutotransporteCatalogo::UpdateOrCreate(
+            [
+                'id' => $request->id
+            ],
+            [
+                'sat_carta_porte_tipo_permiso_catalogos_id' => $request->sat_carta_porte_tipo_permiso_catalogos_id,
+                'vigencia' => $request->vigencia,
+                'asignado' => $request->asignado,
+                'activo' => $request->activo
+
+            ]);
+
+        return response()->json(['success' => 'success']);
     }
 
     /**
@@ -66,6 +95,19 @@ class PermisoAutotransporteController extends Controller
     public function show($id)
     {
         //
+        $permiso = PermisoAutotransporteCatalogo::find($id);
+
+        if($permiso !== null){
+            return response()->json([
+               'status' => "200",
+               'id' => $permiso->id
+            ]);
+        }else{
+            return response()->json([
+                'status' => "400",
+                'id' => $id
+            ]);
+        }
     }
 
     /**
@@ -77,6 +119,10 @@ class PermisoAutotransporteController extends Controller
     public function edit($id)
     {
         //
+        $permiso = PermisoAutotransporteCatalogo::find($id);
+
+        return response()->json($permiso);
+
     }
 
     /**
@@ -100,5 +146,10 @@ class PermisoAutotransporteController extends Controller
     public function destroy($id)
     {
         //
+        $permiso = PermisoAutotransporteCatalogo::find($id);
+        $permiso->delete();
+
+        return response()->json(['sucess' => 'success']);
+
     }
 }

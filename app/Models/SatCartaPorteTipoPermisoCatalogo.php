@@ -16,4 +16,8 @@ class SatCartaPorteTipoPermisoCatalogo extends Model
     protected $fillable = [
       'id', 'nombre', 'activo'
     ];
+
+    public function permisoautos(){
+        return $this->hasMany(PermisoAutotransporteCatalogo::class, 'id');
+    }
 }
