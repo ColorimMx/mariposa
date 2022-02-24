@@ -12,6 +12,7 @@ use App\Http\Controllers\Inventario\PermisoAutotransporteController;
 use App\Http\Controllers\Inventario\SeguroAutotransporteController;
 use App\Http\Controllers\Inventario\AutotransporteController;
 use App\Http\Controllers\Inventario\TrasladoController;
+use App\Http\Controllers\Inventario\XmlTrasladoController;
 
 Route::resource('impGrupos',ProductoGrupoCatalogoController::class,array('except'  => 'show'));
 Route::resource('impSubgrupos',ProductoSubgrupoCatalogoController::class);
@@ -27,3 +28,6 @@ Route::get('datatable/segurosauto',[SeguroAutotransporteController::class, 'segu
 Route::resource('autotrasnporte',AutotransporteController::class);
 Route::get('datatable/autotransporte',[AutotransporteController::class, 'autotransportes'])->name('datatable.AutotransporteController');
 Route::resource('traslados', TrasladoController::class);
+
+
+Route::resource('xmltraslado',XmlTrasladoController::class);

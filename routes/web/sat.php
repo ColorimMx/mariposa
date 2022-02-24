@@ -67,3 +67,6 @@ Route::get('timbradoSifei', [SifeiController::class,'timbrado'])->name('timbrado
 Route::get('mbafacturas',[Mba3FacturaPrincipalController::class,'index'])->name('facturas');
 Route::get('datatable/mbafacturas',[Mba3FacturaPrincipalController::class,'facturas'])->name('datatable.facturasmba3');
 Route::get('datatable/clientesmba3',[DatatableController::class,'cliente'])->name('datatable.clientemba3');
+
+
+

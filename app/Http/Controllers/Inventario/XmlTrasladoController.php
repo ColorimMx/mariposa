@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Inventario;
 
+use App\Http\Controllers\Controller;
 use App\Models\TrasladoDetalle;
 use App\Models\TrasladoPrincipal;
 use Illuminate\Http\Request;
@@ -27,7 +28,7 @@ class XmlTrasladoController extends Controller
      */
     public function create()
     {
-        return view('');
+        //return view('');
     }
 
     /**
