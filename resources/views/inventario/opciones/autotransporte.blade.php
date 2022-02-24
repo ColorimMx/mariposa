@@ -63,10 +63,6 @@
                     <form action="javascript:void(0)" id="modal-form" name="modal-form"  method="post">
                         @csrf
                         <div class="form-group">
-                            <label for="inputID">ID</label>
-                            <input type="text" class="form-control" id="id" placeholder="Ingrese El ID"/>
-                        </div>
-                        <div class="form-group">
                             <label for="inputMarca">Marca</label>
                             <input type="text" class="form-control" id="marca" placeholder="Ingrese La Marca Del Autotransporte"/>
                         </div>
@@ -496,7 +492,7 @@
             });
 
             $('body').on('click', '#btn-save', function () {
-                var id = $("#id").val();
+                //var id = $("#id").val();
                 var marca = $("#marca").val();
                 var modelo = $('#modelo').val();
                 var anio_modelo_vm = $("#anio_modelo_vm").val();
@@ -506,7 +502,7 @@
                 var asegura_resp_civil_id = $('#asegura_resp_civil_id').val();
                 var registro =  validateRow();
 
-                if(id.trim() == '' )
+                if(marca.trim() == '' )
                 {
                     Swal.fire({
                         title: 'Error!',
@@ -514,25 +510,25 @@
                         icon: 'error',
                         confirmButtonText: 'Ok'
                     });
-                    $('#inputID').focus();
+                    $('#inputMarca').focus();
                     return false;
-                }else if(asegura_resp_civil.trim() == '' ){
+                }else if(modelo.trim() == '' ){
                     Swal.fire({
                         title: 'Error!',
                         text: 'Por Favor Ingrese El Nombre De La "Aseguradora".',
                         icon: 'error',
                         confirmButtonText: 'Ok'
                     });
-                    $('#inputAseguradora').focus();
+                    $('#inputModelo').focus();
                     return false;
-                }else if(vigencia.trim() == '' ){
+                }else if(anio_modelo_vm.trim() == '' ){
                     Swal.fire({
                         title: 'Error!',
                         text: 'Por Favor Ingrese La "Vigencia".',
                         icon: 'error',
                         confirmButtonText: 'Ok'
                     });
-                    $('#inputID').focus();
+                    $('#inputAño').focus();
                     return false;
                 }else{
                     if(registro == true){
@@ -562,7 +558,6 @@
                             type:"POST",
                             url: "{{route('autotrasnporte.index')}}",
                             data: {
-                                id:id,
                                 marca:marca,
                                 modelo:modelo,
                                 anio_modelo_vm:anio_modelo_vm,

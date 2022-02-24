@@ -24,9 +24,9 @@ class AutotransporteController extends Controller
      */
     public function index()
     {
-        $permisos = PermisoAutotransporteCatalogo::orderBy('id')->get();
+        $permisos = PermisoAutotransporteCatalogo::where('asignado','=',false)->orderBy('id')->get();
         $config = SatCartaPorteConfigVehicularCatalogo::orderBy('nombre')->get();
-        $seguros = SeguroAutotransporteCatalogo::orderBy('id')->get();
+        $seguros = SeguroAutotransporteCatalogo::where('asignado','=',false)->orderBy('id')->get();
         return view('inventario.opciones.autotransporte',compact('permisos','config','seguros'));
     }
 
@@ -52,27 +52,17 @@ class AutotransporteController extends Controller
      */
     public function store(Request $request)
     {
-        $validated = $request->validate([
-            'marca' => 'bail|required',
-            'modelo' => 'bail|required',
-            'anio_modelo_vm' => 'bail|required',
-            'placa' => 'bail|required',
-            'permiso_autotransporte_id' => 'bail|required',
-            'config_vehicular_id' => 'bail|required',
-            'asegura_resp_civil_id' => 'bail|required'
-        ]);
-
-        $autotransporte = new AutotransporteCatalogo();
-
-        $autotransporte->marca = $validated['marca'];
-        $autotransporte->modelo = $validated['modelo'];
-        $autotransporte->anio_modelo_vm = $validated['anio_modelo_vm'];
-        $autotransporte->placa = $validated['placa'];
-        $autotransporte->permiso_autotransporte_id = $validated['permiso_autotransporte_id'];
-        $autotransporte->config_vehicular_id = $validated['config_vehicular_id'];
-        $autotransporte->asegura_resp_civil_id = $validated['asegura_resp_civil_id'];
-
-        $autotransporte->save();
+        $autotransporte = AutotransporteCatalogo::UpdateOrCreate(
+            [
+                'marca' => $request->marca,
+                'modelo' => $request->modelo,
+                'anio_modelo_vm' => $request->anio_modelo_vm,
+                'placa' => $request->placa,
+                'permiso_autotransporte_id' => $request->permiso_autotransporte_id,
+                'config_vehicular_id' => $request->config_vehicular_id,
+                'asegura_resp_civil_id' => $request->asegura_resp_civil_id
+            ]
+        );
 
         $id_seguro = $request->asegura_resp_civil_id;
         $seguro = SeguroAutotransporteCatalogo::find($id_seguro);
@@ -84,7 +74,7 @@ class AutotransporteController extends Controller
         $permiso->update(['asignado' => true]);
         $permiso->save();
 
-        return $request->all();
+        return response()->json(['success' => 'success']);
     }
 
     /**
@@ -95,7 +85,19 @@ class AutotransporteController extends Controller
      */
     public function show($id)
     {
-        //
+        $autotransporte = AutotransporteCatalogo::find($id);
+
+        if($autotransporte !== null){
+            return response()->json([
+                'status' => "200",
+                'id' => $autotransporte->id
+            ]);
+        }else{
+            return response()->json([
+                'status' => "400",
+                'id' => $id
+            ]);
+        }
     }
 
     /**
@@ -106,7 +108,9 @@ class AutotransporteController extends Controller
      */
     public function edit($id)
     {
-        //
+        $autotransporte = AutotransporteCatalogo::find($id);
+
+        return response()->json($autotransporte);
     }
 
     /**
@@ -129,6 +133,10 @@ class AutotransporteController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $autotransporte = AutotransporteCatalogo::find($id);
+        $autotransporte->delete();
+
+        return response()->json(['success' => 'success']);
+
     }
 }
