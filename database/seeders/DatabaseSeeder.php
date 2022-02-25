@@ -32,7 +32,6 @@ class DatabaseSeeder extends Seeder
 
         $this->call(SatRegimenFiscalCatalogoSeeder::class);
 
-
         $this->call(SatMunicipioCatalogoSeeder::class);
         $this->call(SatLocalidadCatalogoSeeder::class);
         $this->call(SatImpuestoCatalogoSeeder::class);
@@ -52,13 +51,9 @@ class DatabaseSeeder extends Seeder
         $this->call(SatCartaPorteConfigVehicularCatalogoSeeder::class);
         $this->call(SatCartaPorteSubTipoRemCatalogoSeeder::class);
 
-        $this->call(UnidadMedidaCatalogoSeeder::class);
-        $this->call(ProductoGrupoCatalogoSeeder::class);
-        //$this->call(ProductoSubgrupoCatalogoSeeder::class);
-        $this->call(ProductoMarcaCatalogoSeeder::class);
-        $this->call(ProductoModeloCatalogoSeeder::class);
-        $this->call(ProductoSubmodeloCatalogoSeeder::class);
-        $this->call(ProductoCatalogoSeeder::class);
+        $this->call(PermisoAutotransporteCatalogoSeeder::class);
+        $this->call(SeguroAutotransporteCatalogoSeeder::class);
+        $this->call(AutotransporteCatalogoSeeder::class);
 
         $this->call(AreaCatalogoSeeder::class);
         $this->call(DepartamentoCatalogoSeeder::class);
@@ -84,6 +79,14 @@ class DatabaseSeeder extends Seeder
         $this->call(ClienteLocalizacionCatalogoSeeder::class);
 
         $this->call(ContabilidadPlanCuentaSeeder::class);
+
+        $this->call(UnidadMedidaCatalogoSeeder::class);
+        $this->call(ProductoGrupoCatalogoSeeder::class);
+        //$this->call(ProductoSubgrupoCatalogoSeeder::class);
+        $this->call(ProductoMarcaCatalogoSeeder::class);
+        $this->call(ProductoModeloCatalogoSeeder::class);
+        $this->call(ProductoSubmodeloCatalogoSeeder::class);
+        $this->call(ProductoCatalogoSeeder::class);
 
         //$this->call(CartaPortePrincipalSeeder::class);
         //$this->call(CartaPorteDetalleSeeder::class);
