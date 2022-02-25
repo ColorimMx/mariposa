@@ -37,9 +37,9 @@ function println($str){
 
 $dom= new DOMDocument();
 #en este caso se carga el xml desde archivo
-//$dom->load(__DIR__."/xml/A-0000228481-CIMSA.xml");
-$file = Storage::disk('local')->get('A-0000228481-CIMSA.xml');
-$dom->load($file);
+$dom->load(__DIR__."/xml/A-0000228481-CIMSA.xml");
+//$file = Storage::disk('local')->get('A-0000228481-CIMSA.xml');
+//$dom->load($file);
 $utils= new CFDIUtils();
 $utils->setComprobante($dom);
 #todo desde un solo metodo: genera la cadena original, sella y codifica en base64 lista para agregar en el atributo Sello del CFDI
@@ -72,8 +72,8 @@ println("-----Cadena original:");
 println($utils->getCadenaOriginal());
 
 $sello = $utils->getSello(
-    file_get_contents(__DIR__."/KeyCert/Colorim/CSD_COLORANTES_IMPORTADOS_CIM581206CI9_20180213_121348.key"), #llave en formato DER
-    "COLIMP5812",
+    file_get_contents(__DIR__."/KeyCert/Colorim/CSD_SELLODIGITAL2022_CIM581206CI9_20220203_125100.key"), #llave en formato DER
+    "COLIMP2022",
     'DER' );
 
 $cadena = $utils->getCadenaOriginal();
@@ -87,4 +87,4 @@ if ($elements->length >= 1) {
 //echo '<pre>' . htmlspecialchars($dom->saveXML()) . '</pre>';
 
 $el_xml = $dom->saveXML();
-$dom->save(__DIR__."/assets/A-0000228481-CIMSA_Sello.xml");
+$dom->save(__DIR__."/xml/A-0000228481-CIMSA_Sello.xml");

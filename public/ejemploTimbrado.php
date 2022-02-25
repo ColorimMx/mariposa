@@ -7,7 +7,7 @@ use DHF\Sifei\Ws\Soap\Timbrado\getCFDI;
 use DHF\Sifei\Ws\Soap\SifeiTimbradoService;
 
 
-$cfdiSelladoPath=__DIR__."/assets/A-0000228481-CIMSA_Sello.xml";//Ruta del xml sellado
+$cfdiSelladoPath=__DIR__."/xml/A-0000228481-CIMSA_Sello.xml";//Ruta del xml sellado
 $originalName=basename($cfdiSelladoPath);
 #Se lee el contenido del XML
 $xml = file_get_contents($cfdiSelladoPath);

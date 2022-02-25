@@ -23,7 +23,12 @@ class TrasladoController extends Controller
     public function index()
     {
         //
+        $mbatransferencia = new Mba3TransferenciasPrincipal();
+        $traslados = $mbatransferencia->get_trasladoprincipal_all();
 
+        $autotransportes = AutotransporteCatalogo::all();
+
+        return view('inventario.traslados.importar',compact('traslados','autotransportes'));
 
     }
 
@@ -63,9 +68,9 @@ class TrasladoController extends Controller
             $folio = $transferencia->id;
             $traslado->id = $transferencia->id;
             $traslado->trasnferencia_empresa_id = $transferencia->trasnferencia_empresa_id;
-            $dataTimeFecha_i = Carbon::createFromFormat('d/m/Y', $transferencia->fecha);
-            $traslado->fecha = $dataTimeFecha_i;
-            //$traslado->fecha = \Carbon\Carbon::parse($transferencia->fecha)->format('Y-m-d\TH:i:s.v');
+            //$dataTimeFecha_i = Carbon::createFromFormat('d/m/Y', $transferencia->fecha);
+            //$traslado->fecha = $dataTimeFecha_i;
+            $traslado->fecha = \Carbon\Carbon::parse($transferencia->fecha)->format('Y-m-d\TH:i:s.v');
             $traslado->moneda_id = $transferencia->moneda_id;
             $traslado->almacen_id = $transferencia->bodega_id;
             $traslado->destino_almacen_id = $transferencia->destino_bodega_id;
@@ -101,7 +106,7 @@ class TrasladoController extends Controller
         );*/
 
         return redirect()->action(
-            [XmlTrasladoController::class, 'create'], [$id]
+            [XmlTrasladoController::class, 'show'], [$id]
         );
 
     }
