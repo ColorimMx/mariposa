@@ -466,9 +466,9 @@ class SubItemMenuCatalogoSeeder extends Seeder
         ]);
 
         SubItemMenuCatalogo::create([
-            'descripcion' =>	'Sellado',
+            'descripcion' =>	'SifeiSellado',
             'sub_menu_id' =>	'11',
-            'route' =>	'selladoSifei',
+            'route' =>	'sifeiSellado',
             'icon' =>	'fas fa-angle-double-right',
             'icon_color' =>	'pink',
             'classes' => '',

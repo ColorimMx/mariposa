@@ -3,21 +3,22 @@ namespace DHF\Sifei\Ws\Soap\utils;
 
 use Exception;
 use DOMDocument;
+use Illuminate\Support\Facades\Storage;
 use XSLTProcessor;
 
 class CFDIUtils {
-    
+
         /**
-         * 
+         *
          *
          * @var string
          */
         protected $key;
-    
+
         protected $passphrase;
-    
+
         protected $comprobante;
-    
+
         public function pkcs8DER2PEM($keyDerContent){
             $type="ENCRYPTED PRIVATE KEY";
             $pem = chunk_split(base64_encode($keyDerContent), 64, "\n");
@@ -34,7 +35,7 @@ class CFDIUtils {
         public function getSello($key,$passphrase='',$type='PEM'): string
         {
             if($type=='DER'){
-                $key=$this->pkcs8DER2PEM($key);            
+                $key=$this->pkcs8DER2PEM($key);
             }
             #pasamos la llave y la contraseña para preparar la llave y ser usada en la operacion de firmar
             $pkey = openssl_get_privatekey($key,$passphrase);
@@ -49,13 +50,15 @@ class CFDIUtils {
         }
         /**
          * Obtiene el path del xslt que se incluye en este paquete.
-         * SI deseas utilizar tus propios XSLT, extiende esta clase y sobre escribe unicamente este metodo para devolver 
+         * SI deseas utilizar tus propios XSLT, extiende esta clase y sobre escribe unicamente este metodo para devolver
          * el xslt que deseas manejar.
          *
          * @return string
          */
         public function getPathCadenaOriginal(){
-            return  __DIR__.'/../../../../../sat/xslt/cadenaoriginal_3_3.xslt';
+            $patXslt = Storage::path('/sat/xslt/cadenaoriginal_3_3.xslt');
+            //return  __DIR__.'/../../../../../sat/xslt/cadenaoriginal_3_3.xslt';
+            return  $patXslt;
         }
         /**
          * Gets the original string.
@@ -69,18 +72,18 @@ class CFDIUtils {
             $path = $this->getPathCadenaOriginal();
             $path=\realpath($path);
             //$xslt = file_get_contents($path);
-            
-            
+
+
             $xsl->load($path);
             $xslt = new XSLTProcessor();
             $xslt->importStyleSheet($xsl);
-    
+
             $xml = new DOMDocument();
             $xml->loadXML($this->comprobante->saveXML());
             #generamos el xslt
             return (string) $xslt->transformToXml($xml);
         }
-    
+
         /**
          * Set the value of comprobante
          *
@@ -89,8 +92,8 @@ class CFDIUtils {
         public function setComprobante($comprobante)
         {
             $this->comprobante = $comprobante;
-    
+
             return $this;
-        }   
-    
+        }
+
 }
