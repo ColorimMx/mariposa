@@ -6,9 +6,13 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use DOMDocument;
 Use DOMXPath;
+use ZipArchive;
 use Redirect;
 use DHF\Sifei\Ws\Soap\utils\CFDIUtils;
+use DHF\Sifei\Ws\Soap\Timbrado\getCFDI;
+use DHF\Sifei\Ws\Soap\SifeiTimbradoService;
 use Illuminate\Support\Facades\Storage;
+
 
 
 class SifeiController extends Controller
@@ -22,11 +26,11 @@ class SifeiController extends Controller
             echo $str."\n";
         }
 
-        $contents = Storage::disk('local')->get('/xml/A-0000228481-CIMSA.xml');
+        //$contents = Storage::disk('local')->get('/xml/A-0000228481-CIMSA.xml');
+        $pathXml = Storage::path("/xml/".$request->transferencia.".xml");
+        //$pathXml = $request->xml;
 
-        $pathXml = Storage::path('/xml/A-0000228481-CIMSA.xml');
-
-
+        //dd($pathXml);
         if (file_exists($pathXml)) {
 
             $dom= new DOMDocument();
@@ -36,33 +40,7 @@ class SifeiController extends Controller
 
             $utils= new CFDIUtils();
             $utils->setComprobante($dom);
-#todo desde un solo metodo: genera la cadena original, sella y codifica en base64 lista para agregar en el atributo Sello del CFDI
-
-
-#AHORA se establece la llave, la llave puede ser en Formato PEM o formato DER(generalmente cuando tiene extension .key):
-
-#Metodos:
-#(1) PEM
-            /*println("-----Sello mediante KEY en formato PEM:");
-            println($utils->getSello(
-                file_get_contents(__DIR__."/KeyCert/CSD01_AAA010101AAA_KEY.PEM"), #llave en formato PEM
-                "12345678a")                    #contraseña
-            );
-            #O bien:
-            */
-            /*
-            println("-----Sello mediante KEY en formato DER:");
-            #(2)DER. Usando .key directamente (DER)
-            println($utils->getSello(
-                file_get_contents(__DIR__."/KeyCert/CSD01_AAA010101AAA.key"), #llave en formato DER
-                "12345678a",
-                'DER'                    #contraseña
-                )
-            );
-            */
-
             println("-----Cadena original:");
-#si deseas ver la cadena original.
             println($utils->getCadenaOriginal());
 
             $pathKey = Storage::path('/KeyCert/Colorim/CSD_SELLODIGITAL2022_CIM581206CI9_20220203_125100.key');
@@ -80,22 +58,99 @@ class SifeiController extends Controller
                 $element = $elements->item(0);
                 $element->setAttribute('Sello', "$sello");
             }
-//echo '<pre>' . htmlspecialchars($dom->saveXML()) . '</pre>';
 
             $el_xml = $dom->saveXML();
 
-            $patSellados = Storage::path('/sellados/A-0000228481-CIMSA.xml');
+            $patSellados = Storage::path("/sellados/".$request->transferencia.".xml");
 
             $dom->save($patSellados);
+
+            return '<script type="text/javascript">alert("El XML Se Ha Sellado Correctamente!!!"); window.location.href = "sifeiTimbrado";</script>';
+
         } else {
-            exit('Error abriendo test.xml.');
+            exit("Error abriendo ".$request->transferencia.".xml");
         }
     }
 
-    public function timbrado()
+
+
+    public function timbrado(Request $request)
     {
-        //echo 'Timbrado Sifei';
-        return Redirect::to('http://mariposa.mx/ejemploTimbrado.php');
+        include_once 'vendor/autoload.php';
+
+        $fileXml = "A-0000228481-CIMSA";
+
+        $cfdiSelladoPath=Storage::path("/sellados/".$request->transferencia.".xml");
+        $originalName=basename($cfdiSelladoPath);
+#Se lee el contenido del XML
+        $xml = file_get_contents($cfdiSelladoPath);
+        $pathTmp = Storage::path('/tmp');
+        $pathTimbrados= Storage::path('/timbrados');
+        $pathConfig = Storage::path('/config');
+        $array_ini =parse_ini_file($pathConfig."/sifei.ini");
+
+//accesos
+        $usuario=$array_ini['UsuarioSIFEI'];
+        $password=$array_ini['PasswordSIFEI'];
+        $idEquipo=$array_ini['IdEquipoGenerado'];
+
+        $serie='';
+
+
+
+#clase que incluye todos las invocaciones a nuestros servicios de Sifei
+        $sifeiService =new SifeiTimbradoService(
+            SifeiTimbradoService::DEV_ENV,
+            ['trace'=>true]    #Para recuperar el request y response
+        );
+#clase con los parametros de timbrado:
+        $timbradoParams= new getCFDI();
+        $timbradoParams->setUsuario($usuario);
+        $timbradoParams->setPassword($password);
+        $timbradoParams->setIdEquipo($idEquipo);
+
+        $timbradoParams->setSerie($serie);
+
+        $timbradoParams->setArchivoXMLZip($xml);#arhivo xml
+
+
+        try {
+            $res = $sifeiService->getCFDI($timbradoParams);
+            $fileTmpZip = ($pathTmp."/{$fileXml}.zip");
+            //$fileTmpZip = "timbrado.zip";  //nombre del zip
+            //mandamos en un zip el xml timbrado en caso de exito
+            file_put_contents( $fileTmpZip, $res->getReturn());
+            $zipXml = new ZipArchive();//En caso de not found ZipArchive, asegurate de tener instalada la extension
+
+            if ($zipXml->open($fileTmpZip) === TRUE) {
+                $zipXml->extractTo( $pathTimbrados );
+                $zipXml->close();
+            }
+
+
+        } catch (SoapFault $e) {
+            #En caso de un error inspeccionar la excepcion:
+            var_dump( $e->faultcode, $e->faultstring, $e->detail );
+        } finally{
+            $time=time();
+            #En ambiente de pruebas mandamos el requets y response  a un archivo respecticamente para inspeccionarlos en caso de error, se asigna un timestamp para identificarlos:
+            //mandamos en un XML el mensaje soap del request
+
+
+            $doc=new DOMDocument();
+            $doc->loadXML($sifeiService->__getLastRequest());
+            $doc->formatOutput=true;
+            $pathWorkfiles = Storage::path('/workfiles');
+            $doc->save($pathWorkfiles."/timbrado_getCFDI_request_{$time}.xml");
+
+            //mandamos en un XML el response del xml timbrado
+
+            $doc=new DOMDocument();
+            $doc->loadXML($sifeiService->__getLastResponse());
+            $doc->formatOutput=true;
+            $doc->save($pathWorkfiles."/timbrado_getCFDI_response_{$time}.xml");
+        }
+        return '<script type="text/javascript">alert("El XML Se Ha Timbrado Correctamente!!!"); window.location.href = "traslados";</script>';
     }
 
 }

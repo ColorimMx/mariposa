@@ -56,9 +56,9 @@ class CFDIUtils {
          * @return string
          */
         public function getPathCadenaOriginal(){
-            $patXslt = Storage::path('/sat/xslt/cadenaoriginal_3_3.xslt');
+            $pathXslt = Storage::path('/sat/xslt/cadenaoriginal_3_3.xslt');
             //return  __DIR__.'/../../../../../sat/xslt/cadenaoriginal_3_3.xslt';
-            return  $patXslt;
+            return $pathXslt;
         }
         /**
          * Gets the original string.

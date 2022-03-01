@@ -1,12 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\Sifei;
+namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
 use App\Models\TrasladoPrincipal;
+use Illuminate\Http\Request;
 
-class SelladoSifeiController extends Controller
+class TimbradoSifeiController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,7 +16,7 @@ class SelladoSifeiController extends Controller
     {
         $traslados = TrasladoPrincipal::all();
 
-        return view('sat.sifei.loadxml', compact('traslados'));
+        return view('sat.sifei.timbreTraslado', compact('traslados'));
     }
 
     /**

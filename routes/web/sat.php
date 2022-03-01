@@ -25,6 +25,7 @@ use App\Http\Controllers\Sat\SatCartaPorteConfigVehicularCatalogoController;
 use App\Http\Controllers\Sat\SatCartaPorteSubTipoRemCatalogoController;
 use App\Http\Controllers\Sat\SifeiController;
 use App\Http\Controllers\Sifei\SelladoSifeiController;
+Use App\Http\Controllers\TimbradoSifeiController;
 
 use App\Http\Controllers\Clientes\DatatableController;
 use App\Http\Controllers\Clientes\Mba3FacturaPrincipalController;
@@ -64,7 +65,8 @@ Route::resource('remolqueSat',SatCartaPorteSubTipoRemCatalogoController::class);
 Route::get('datatable/remolque',[SatCartaPorteSubTipoRemCatalogoController::class,'remolques'])->name('datatable.SatCartaPorteSubTipoRemCatalogoController');
 Route::resource('sifeiSellado',SelladoSifeiController::class);
 Route::post('selladoSifei', [SifeiController::class,'sellado'])->name('selladoSifei');
-Route::get('timbradoSifei', [SifeiController::class,'timbrado'])->name('timbradoSifei');
+Route::resource('sifeiTimbrado',TimbradoSifeiController::class);
+Route::post('timbradoSifei', [SifeiController::class,'timbrado'])->name('timbradoSifei');
 
 
 

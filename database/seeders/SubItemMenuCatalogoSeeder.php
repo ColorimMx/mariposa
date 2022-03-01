@@ -468,7 +468,7 @@ class SubItemMenuCatalogoSeeder extends Seeder
         SubItemMenuCatalogo::create([
             'descripcion' =>	'SifeiSellado',
             'sub_menu_id' =>	'11',
-            'route' =>	'sifeiSellado',
+            'route' =>	'sifeiSellado.index',
             'icon' =>	'fas fa-angle-double-right',
             'icon_color' =>	'pink',
             'classes' => '',
@@ -478,7 +478,7 @@ class SubItemMenuCatalogoSeeder extends Seeder
         SubItemMenuCatalogo::create([
             'descripcion' =>	'Timbrado',
             'sub_menu_id' =>	'11',
-            'route' =>	'timbradoSifei',
+            'route' =>	'sifeiTimbrado.index',
             'icon' =>	'fas fa-angle-double-right',
             'icon_color' =>	'pink',
             'classes' => '',

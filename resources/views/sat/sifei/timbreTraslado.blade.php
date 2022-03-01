@@ -4,7 +4,7 @@
 
 @section('content_header')
     <h1>
-        Seleccion XML para Sellado
+        Seleccion XML para Timbrado SIFEI
     </h1>
 @stop
 @section('content')
@@ -25,11 +25,11 @@
                     <!-- general form elements -->
                     <div class="card card-orange">
                         <div class="card-header">
-                            <h3 class="card-title">Seleccion de XML Para Procesar el Sellado</h3>
+                            <h3 class="card-title">Seleccion de XML Para Procesar el Timbrado SIFEI</h3>
                         </div>
                         <!-- /.card-header -->
                         <!-- form start -->
-                        <form class="was-validated" action="{{route('selladoSifei')}}" method="POST">
+                        <form class="was-validated" action="{{route('timbradoSifei')}}" method="POST">
                         @csrf
                         <!-- /.card-body -->
                             <div class="card card-olive">
