@@ -106,6 +106,16 @@ class SubItemMenuCatalogoSeeder extends Seeder
         ]);
 
         SubItemMenuCatalogo::create([
+            'descripcion' =>	'Traslados',
+            'sub_menu_id' =>	'4',
+            'route' =>	'trasladosClientes.index',
+            'icon' =>	'fas fa-angle-double-right',
+            'icon_color' =>	'primary',
+            'classes' => '',
+            'activo' => '1'
+        ]);
+
+        SubItemMenuCatalogo::create([
             'descripcion' =>	'Importar Activo Fijo Catálogo',
             'sub_menu_id' =>	'5',
             'route' =>	'impActivoFijo.index',

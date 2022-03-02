@@ -1,6 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Clientes;
+use App\Http\Controllers\Controller;
+Use App\Models\Mba3FacturaPrincipal;
 
 use Illuminate\Http\Request;
 
@@ -13,7 +15,11 @@ class TrasladoClienteController extends Controller
      */
     public function index()
     {
-        //
+        $factura= new Mba3FacturaPrincipal();
+        $facturas = $factura->get_facturas();
+
+        return view('clientes.facturas.importar', compact('facturas'));
+
     }
 
     /**
