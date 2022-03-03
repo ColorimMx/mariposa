@@ -81,9 +81,7 @@ class SatRegimenFiscalCatalogoSeeder extends Seeder
         ]);
         SatRegimenFiscalCatalogo::create([
             'id' => '622',
-            'nombre' => 'Actividades Agrícolas,
-     Ganaderas,
-     Silvícolas y Pesqueras',
+            'nombre' => 'Actividades Agrícolas, Ganaderas, Silvícolas y Pesqueras',
             'activo' => '1',
         ]);
         SatRegimenFiscalCatalogo::create([
@@ -124,6 +122,12 @@ class SatRegimenFiscalCatalogoSeeder extends Seeder
         SatRegimenFiscalCatalogo::create([
             'id' => '625',
             'nombre' => 'Régimen de las Actividades Empresariales con ingresos a través de Plataformas Tecnológicas',
+            'activo' => '1',
+        ]);
+
+        SatRegimenFiscalCatalogo::create([
+            'id' => '626',
+            'nombre' => 'Régimen Simplificado de Confianza',
             'activo' => '1',
         ]);
     }

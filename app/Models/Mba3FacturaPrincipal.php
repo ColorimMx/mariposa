@@ -17,18 +17,21 @@ class Mba3FacturaPrincipal extends Model
             $database = new Mba3();
             $db = $database->openMba3();
 
-            $sql = $db->prepare("SELECT CODIGO_FACTURA AS ID_FACTURA,NUMERO_FACTURA,SerieDocumento AS SERIE,Prefijo_Documento AS PREFIJO,NumeroSecuencialDocumento AS FOLIO, "
-                ."TIPO_DOCUMENTO_FACT_DEV AS TIPO,CODIGO_CLIENTE AS ID_CLIENTE,FECHA_FACTURA,FECHA_VENCIMIENTO, "
-                ."VALOR_FACTURA,SUBTOTAL_CON_IVA AS SUBTOTAL,TOTAL_IMPUESTOS AS IMPUESTO,VALOR_TOTAL_DESCUENTO AS DESCUENTO,VALOR_TOTAL_PAGADO AS PAGO, "
-                ."VALOR_TOTAL_SALDO_A_COBRAR AS SALDO,DIA,MES,ANIO, "
-                ."CODIGO_MONEDA AS ID_MONEDA, INFO_CREACION,INFO_CONFIRMADO,INFO_ANULADO, "
-                ."NUMERO_PEDIDO_SISTEMA AS ID_PEDIDO,ORIGEN AS ID_SUCURSAL, "
-                ."CONFIRMADO,ANULADA AS ANULADO "
+            $sql = $db->prepare("SELECT CODIGO_FACTURA AS id,NUMERO_FACTURA as numero,SerieDocumento AS serie,Prefijo_Documento AS prefijo,NumeroSecuencialDocumento AS folio, "
+                ."TIPO_DOCUMENTO_FACT_DEV AS tipo,CODIGO_CLIENTE AS cliente_id, FECHA_FACTURA as fecha, FECHA_VENCIMIENTO as fecha_vencimiento, "
+                ."COTIZACION AS divisa_valor, CODIGO_MONEDA AS moneda_id, "
+                ."SUBTOTAL_CON_IVA AS subtotal,VALOR_TOTAL_DESCUENTO AS descuento, TOTAL_IMPUESTOS AS impuesto, VALOR_FACTURA as total, VALOR_TOTAL_PAGADO AS pago, "
+                ."VALOR_TOTAL_SALDO_A_COBRAR AS saldo, TERMINOS_PAGO_TEXTO AS condiciones_pago, "
+                ."DIA as dia ,MES as mes, ANIO as anio, "
+                ."INFO_CREACION as info_creacion, INFO_CONFIRMADO as info_confirmado, INFO_ANULADO as info_anulado, "
+                ."NUMERO_PEDIDO_SISTEMA AS pedido_id,ORIGEN AS sucursal_id, "
+                ."CASE WHEN CONFIRMADO = false THEN true ELSE false END as confirmado, "
+                ."CASE WHEN ANULADA = false THEN true ELSE false END AS anulado "
                 ."FROM CLNT_Factura_Principal "
                 ."WHERE TIPO_DOCUMENTO = 'FACT' "
                 ."AND EMPRESA = 'CIMSA' "
                 ."AND ANIO >=2021"
-                ."AND CODIGO_FACTURA = 'CFDF-10000047460-CIMSA'");
+                ."AND CODIGO_FACTURA = 'CFDF-10000050212-CIMSA'");
 
             $sql->execute();
 

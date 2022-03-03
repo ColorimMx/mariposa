@@ -2,17 +2,18 @@
 
 namespace App\Http\Controllers\Clientes;
 
-use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Models\Mba3ClienteCatalogo;
+use Illuminate\Http\Request;
+use App\Models\Mba3FacturaDetalle;
 
-class ClienteCatalogoController extends Controller
+class ClienteFacturaDetalleController extends Controller
 {
-    public function mbaclientes(){
-        $mbafacturas = new Mba3ClienteCatalogo();
-        $clientes = $mbafacturas->get_clientes();
+    public function mbafacturadetalles(){
+        $mbafacturadetalles = new Mba3FacturaDetalle();
+        $facturadetalles = $mbafacturadetalles->get_facturas_detalle();
 
-        return datatables()->of($clientes)->addIndexColumn()->toJson();
+        return datatables()->of($facturadetalles)->addIndexColumn()->toJson();
+
     }
     /**
      * Display a listing of the resource.
@@ -21,7 +22,7 @@ class ClienteCatalogoController extends Controller
      */
     public function index()
     {
-        return view('clientes.impclientes');
+        //
     }
 
     /**

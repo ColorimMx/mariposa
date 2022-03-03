@@ -29,7 +29,7 @@ class Mba3ClienteCatalogo
                 ." terminos_de_pago_alfa_num as termino_credito, limite_credito as limite_credito, balance as saldo,"
                 ." balance_reserv1 as reserva, zona as zona_id, client_type as tipo_id, codigo_giro as giro_id, codigo_categoria as categoria_id,"
                 ." codigo_sector as sector_id, localizacion_cliente as localizacion_id,salesman as vendedor_id, codigo_regimenfiscal as sat_regimen_fiscal_id"
-                ." from     clnt_ficha_principal where empresa = 'CIMSA' and codigo_cliente = 'dfn-0042' ");
+                ." from     clnt_ficha_principal where empresa = 'CIMSA' and codigo_cliente = 'MEX-0591' and codigo_regimenfiscal <> ''");
 
             $sql->execute();
 

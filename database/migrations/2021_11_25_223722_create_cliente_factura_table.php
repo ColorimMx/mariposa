@@ -15,32 +15,32 @@ class CreateClienteFacturaTable extends Migration
     {
         Schema::create('cliente_factura', function (Blueprint $table) {
             $table->char('id',22)->primary();
-            $table->float('numero',11,0);
+            $table->double('numero',8,4);
             $table->char('serie',1);
-            $table->float('prefijo',1,0);
-            $table->float('folio',10,0);
+            $table->integer('prefijo');
+            $table->double('folio',8,2);
             $table->char('tipo',4);
             $table->char('cliente_id',8);
             $table->foreign('cliente_id')->references('id')->on('cliente_catalogos');
             $table->date('fecha');
             $table->date('fecha_vencimiento');
-            $table->decimal('cambio_valor',10,5)->nullable();
+            $table->double('divisa_valor',8,4)->nullable();
             $table->char('moneda_id',2);
             $table->foreign('moneda_id')->references('id')->on('moneda_catalogos');
-            $table->decimal('subtotal',10,5);
-            $table->decimal('descuento',10,5)->nullable();
-            $table->decimal('impuesto',10,5)->nullable();
-            $table->decimal('total',10,5);
-            $table->decimal('pago',10,5)->nullable();
-            $table->decimal('saldo',10,5);
+            $table->double('subtotal',8,4);
+            $table->double('descuento',8,4)->nullable();
+            $table->double('impuesto',8,4)->nullable();
+            $table->double('total',8,4);
+            $table->double('pago',8,4)->nullable();
+            $table->double('saldo',8,4);
             $table->string('condiciones_pago');
-            $table->float('dia',2,0);
-            $table->float('mes',2,0);
-            $table->float('anio',4,0);
+            $table->integer('dia');
+            $table->integer('mes');
+            $table->integer('anio');
             $table->string('info_creacion')->nullable();
             $table->string('info_confirmado')->nullable();
             $table->string('info_anulado')->nullable();
-            $table->char('pedido_id')->nullable();
+            $table->integer('pedido_id')->nullable();
             $table->string('orden_compra_cliente')->nullable();
             $table->char('sucursal_id',3);
             $table->foreign('sucursal_id')->references('id')->on('empresa_sucursal_catalogos');
@@ -63,8 +63,8 @@ class CreateClienteFacturaTable extends Migration
             $table->foreign('sat_comercio_exterior_incoterm_id')->references('id')->on('sat_comercio_exterior_incoterm_catalogos');
             $table->char('sat_comercio_exterior_tipo_operacion_id',1)->nullable();
             $table->foreign('sat_comercio_exterior_tipo_operacion_id')->references('id')->on('sat_comercio_exterior_tipo_operacion_catalogos');
-            $table->boolean('confirmado')->nullable();
-            $table->boolean('anulado')->nullable();
+            $table->boolean('confirmado');
+            $table->boolean('anulado');
             $table->timestamps();
         });
     }

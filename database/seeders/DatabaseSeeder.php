@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 
+use App\Models\ClienteCatalogo;
 use App\Models\SatCartaPorteTipoPermisoCatalogo;
 use Illuminate\Database\Seeder;
 
@@ -55,6 +56,13 @@ class DatabaseSeeder extends Seeder
         $this->call(SeguroAutotransporteCatalogoSeeder::class);
         $this->call(AutotransporteCatalogoSeeder::class);
 
+        $this->call(ClienteGiroCatalogoSeeder::class);
+        $this->call(ClienteLocalizacionCatalogoSeeder::class);
+        $this->call(ClienteTipoCatalogoSeeder::class);
+        $this->call(ClienteVendedorCatalogoSeeder::class);
+        $this->call(ClienteZonaCatalogoSeeder::class);
+        $this->call(ClienteCatalogoSeeder::class);
+
         $this->call(AreaCatalogoSeeder::class);
         $this->call(DepartamentoCatalogoSeeder::class);
         $this->call(PuestoCatalogoSeeder::class);
@@ -76,8 +84,6 @@ class DatabaseSeeder extends Seeder
         $this->call(GuiaDimensionCatalogoSeeder::class);
         $this->call(GuiaItemCatalogoSeeder::class);
 
-        $this->call(ClienteLocalizacionCatalogoSeeder::class);
-
         $this->call(ContabilidadPlanCuentaSeeder::class);
 
         $this->call(UnidadMedidaCatalogoSeeder::class);
@@ -87,6 +93,9 @@ class DatabaseSeeder extends Seeder
         $this->call(ProductoModeloCatalogoSeeder::class);
         $this->call(ProductoSubmodeloCatalogoSeeder::class);
         $this->call(ProductoCatalogoSeeder::class);
+
+        $this->call(ClienteFacturaSeeder::class);
+        $this->call(ClienteFacturaDetalleSeeder::class);
 
         //$this->call(CartaPortePrincipalSeeder::class);
         //$this->call(CartaPorteDetalleSeeder::class);

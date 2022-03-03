@@ -20,7 +20,7 @@ class Mba3ClienteVendedorCatalogo extends Model
             $db = $database->openMba3();
 
             $sql = $db->prepare("SELECT CODE AS id, DESCRIPTION_SPN AS nombre, '1' AS activo"
-                ." FROM SIST_Lista_1 WHERE GROUP_CATEGORY = 'SELLm' ");
+                ." FROM SIST_Lista_1 WHERE GROUP_CATEGORY = 'SELLm' AND CORP = 'CIMSA' ");
 
             $sql->execute();
 
