@@ -16,7 +16,7 @@ class CreateClienteCatalogosTable extends Migration
         Schema::create('cliente_catalogos', function (Blueprint $table) {
             $table->char('id',8)->primary();
             $table->string('nombre');
-            $table->string('rfc');
+            $table->string('rfc',13);
             $table->string('razon_social');
             $table->date('fecha_ingreso');
             $table->string('direccion_principal_1')->nullable();

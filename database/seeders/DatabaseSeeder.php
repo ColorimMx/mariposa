@@ -42,6 +42,7 @@ class DatabaseSeeder extends Seeder
         $this->call(SatMetodoPagoCatalogoSeeder::class);
         $this->call(SatFormaPagoCatalogoSeeder::class);
         $this->call(SatUnidadCatalogoSeeder::class);
+        $this->call(SatTipoFactorCatalogoSeeder::class);
         $this->call(SatProductoServicioCatalogoSeeder::class);
         $this->call(SatComercioExteriorUnidadAduanaCatalogoSeeder::class);
         $this->call(SatComercioExteriorFraccionArancelariaCatalogoSeeder::class);
