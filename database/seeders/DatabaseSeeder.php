@@ -62,7 +62,7 @@ class DatabaseSeeder extends Seeder
         $this->call(ClienteTipoCatalogoSeeder::class);
         $this->call(ClienteVendedorCatalogoSeeder::class);
         $this->call(ClienteZonaCatalogoSeeder::class);
-        $this->call(ClienteCatalogoSeeder::class);
+        //$this->call(ClienteCatalogoSeeder::class);
 
         $this->call(AreaCatalogoSeeder::class);
         $this->call(DepartamentoCatalogoSeeder::class);
