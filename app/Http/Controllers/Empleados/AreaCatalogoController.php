@@ -8,6 +8,10 @@ use App\Models\AreaCatalogo;
 
 class AreaCatalogoController extends Controller
 {
+    public function areas(){
+        $areas = AreaCatalogo::select('id','nombre');
+        return datatables()->of($areas)->addIndexColumn()->toJson();
+    }
     /**
      * Display a listing of the resource.
      *
@@ -15,8 +19,8 @@ class AreaCatalogoController extends Controller
      */
     public function index()
     {
-        $areas = AreaCatalogo::all();
-        return view('empleados.areas', compact('areas'));
+
+        return view('empleados.areas');
     }
 
     /**
@@ -37,7 +41,14 @@ class AreaCatalogoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $area = AreaCatalogo::UpdateOrCreate(
+          [
+              'id' => $request->id
+          ],
+          [
+              'nombre' => $request->nombre,
+              'activo' => $request->activo
+          ]);
     }
 
     /**

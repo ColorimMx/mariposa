@@ -17,6 +17,7 @@ use App\Http\Controllers\Empleados\EstatusEstudioCatalogoController;
 use App\Http\Controllers\Empleados\EmpleadoCatalogoController;
 
 Route::resource('areas',AreaCatalogoController::class);
+Route::get('datatable/areas',[AreaCatalogoController::class,'areas'])->name('datatable.AreaCatalogoController');
 Route::resource('departamentos',DepartamentoCatalogoController::class);
 Route::resource('puestosTipo',PuestoTipoCatalogoController::class);
 Route::resource('puestos',PuestoCatalogoController::class);
