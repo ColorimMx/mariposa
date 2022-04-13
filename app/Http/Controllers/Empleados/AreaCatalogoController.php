@@ -49,6 +49,7 @@ class AreaCatalogoController extends Controller
               'nombre' => $request->nombre,
               'activo' => $request->activo
           ]);
+        return response()->json(['sucess' => 'success']);
     }
 
     /**
@@ -59,7 +60,19 @@ class AreaCatalogoController extends Controller
      */
     public function show($id)
     {
-        //
+        $area = AreaCatalogo::find($id);
+
+        if($area !== null){
+            return response()->json([
+                'status' => "200",
+                'id' => $area->id,
+            ]);
+        }else{
+            return response()->json([
+                'status' => "400",
+                'id' => $id,
+            ]);
+        }
     }
 
     /**
@@ -71,6 +84,8 @@ class AreaCatalogoController extends Controller
     public function edit($id)
     {
         //
+        $area = AreaCatalogo::find($id);
+        return response()->json($area);
     }
 
     /**
@@ -93,6 +108,9 @@ class AreaCatalogoController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $area = AreaCatalogo::find($id);
+        $area->delete();
+
+        return response()->json(['sucess' => true]);
     }
 }

@@ -13,8 +13,8 @@ class DepartamentoCatalogo extends Model
     protected $table = "departamento_catalogos";
     protected $dateFormat = 'Y-m-d\TH:i:s.v';
 
-    public function areas()
+    public function area()
     {
-        return $this->hasOne(AreaCatalogo::class,'id','area_id');
+        return $this->belongsTo(AreaCatalogo::class,'id','area_id');
     }
 }
