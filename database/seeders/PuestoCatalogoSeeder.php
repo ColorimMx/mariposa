@@ -136,6 +136,11 @@ class PuestoCatalogoSeeder extends Seeder
             'activo' => '1'
         ]);
         PuestoCatalogo::create([
+            'id' => 'PROMO',
+            'nombre' =>	'Promotor',
+            'activo' => '1'
+        ]);
+        PuestoCatalogo::create([
             'id' => 'RECEP',
             'nombre' =>	'Recepcion',
             'activo' => '1'
