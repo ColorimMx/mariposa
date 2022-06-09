@@ -9,6 +9,7 @@ use App\Models\SatTipoComprobanteCatalogo;
 class SatTipoComprobanteCatalogoController extends Controller
 {
     public function comprobantes(){
+
         $comprobantes = SatTipoComprobanteCatalogo::select('id', 'nombre');
         return datatables()->of($comprobantes)->addIndexColumn()->toJson();
     }

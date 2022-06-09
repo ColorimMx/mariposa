@@ -45,8 +45,10 @@ Route::resource('impuestosSat',SatImpuestoCatalogoController::class);
 Route::get('datatable/impuestos',[SatImpuestoCatalogoController::class,'impuestos'])->name('datatable.SatImpuestoCatalogoController');
 Route::resource('comprobantesSat',SatTipoComprobanteCatalogoController::class);
 Route::get('datatable/comprobantes',[SatTipoComprobanteCatalogoController::class,'comprobantes'])->name('datatable.SatTipoComprobanteCatalogoController');
+
 Route::resource('relacionSat',SatTipoRelacionCatalogoController::class);
-Route::get('datatable/comprobantes',[SatTipoRelacionCatalogoController::class,'relaciones'])->name('datatable.SatTipoRelacionCatalogoController');
+Route::get('datatable/relaciones',[SatTipoRelacionCatalogoController::class,'relaciones'])->name('datatable.SatTipoRelacionCatalogoController');
+
 Route::resource('usosCfdiSat',SatUsoCfdiCatalogoController::class);
 Route::resource('metodosPagoSat',SatMetodoPagoCatalogoController::class);
 Route::resource('formasPagoSat',SatFormaPagoCatalogoController::class);
