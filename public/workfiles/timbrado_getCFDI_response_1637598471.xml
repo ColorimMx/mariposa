@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+  <S:Body>
+    <S:Fault xmlns:ns4="http://www.w3.org/2003/05/soap-envelope">
+      <faultcode>S:Server</faultcode>
+      <faultstring>El CSD no corresponde al RFC que viene como emisor en el comprobante</faultstring>
+      <detail>
+        <ns2:SifeiException xmlns:ns2="http://MApeados/">
+          <codigo>303</codigo>
+          <error>El Certificado recibido no corresponde al emisor CIM581206CI9</error>
+          <message>El CSD no corresponde al RFC que viene como emisor en el comprobante</message>
+        </ns2:SifeiException>
+      </detail>
+    </S:Fault>
+  </S:Body>
+</S:Envelope>

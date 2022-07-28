@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Certificado="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" CondicionesDePago="CONTADO" Fecha="2021-11-22T11:38:44" Folio="10000047461" FormaPago="99" LugarExpedicion="01180" MetodoPago="PUE" Moneda="MXN" NoCertificado="00001000000409491341" Sello="YjxWuVSvt7gOBNtiZgiVuFPqbkgM1dE8VXQabUcGtpmiE1CVdzC5J0bqUNsB4lS4kvOc/T8/u2kUJLiZjKe9ke35kTbWwmJiWikBJIMvZHAURnQOifFOt1I35k11E8ozVhjXqoeGkIkkehiLx6UvrJDx7ta+Ag1Rv4Zudbnsc/oQzn2BEH7FsQkrCJDML26FHxBFezRFlvpq0JzR+2BHB075PM9Lt27ftdQZBOf1/KLg9TrLaDsvbMlM4j00bTwIJeTeztMub6VYkt9V+i3hoO0s31PZPoLJubNJzB40DWE0pRSq9x/e4lyTW6551lVCxZRc1uW3yCgODDNApVVTgQ==" Serie="C" SubTotal="193.50" TipoCambio="1" TipoDeComprobante="I" Total="224.46" Version="3.3" xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv33.xsd">
+  <cfdi:Emisor Nombre="COLORANTES IMPORTADOS SA DE CV" RegimenFiscal="601" Rfc="CIM581206CI9" />
+  <cfdi:Receptor Nombre="VM/ MERCADO LIBRE" Rfc="XAXX010101000" UsoCFDI="G01" />
+  <cfdi:Conceptos>
+    <cfdi:Concepto Cantidad="1.00000" ClaveProdServ="60121804" ClaveUnidad="H87" Descripcion="CITOCOL PASTILLA AZUL BLUE 43" Importe="38.70" NoIdentificacion="2020010043" Unidad="PIEZAS" ValorUnitario="38.7000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="38.70" Importe="6.192" Impuesto="002" TasaOCuota="0.160000" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto Cantidad="1.00000" ClaveProdServ="60121804" ClaveUnidad="H87" Descripcion="CITOCOL PASTILLA AZUL ACIANO 26" Importe="38.70" NoIdentificacion="2020010026" Unidad="PIEZAS" ValorUnitario="38.7000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="38.70" Importe="6.192" Impuesto="002" TasaOCuota="0.160000" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto Cantidad="3.00000" ClaveProdServ="60121804" ClaveUnidad="H87" Descripcion="CITOCOL PASTILLA CREMA 12" Importe="116.10" NoIdentificacion="2020010012" Unidad="PIEZAS" ValorUnitario="38.7000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="116.10" Importe="18.576" Impuesto="002" TasaOCuota="0.160000" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+  </cfdi:Conceptos>
+  <cfdi:Impuestos TotalImpuestosTrasladados="30.96">
+    <cfdi:Traslados>
+      <cfdi:Traslado Importe="30.96" Impuesto="002" TasaOCuota="0.160000" TipoFactor="Tasa" />
+    </cfdi:Traslados>
+  </cfdi:Impuestos>
+<cfdi:Complemento><tfd:TimbreFiscalDigital xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd" Version="1.1" UUID="0AF2DB23-8744-4474-8C26-907CDCE1CDFC" FechaTimbrado="2021-11-22T11:36:13" RfcProvCertif="SPR190613I52" SelloCFD="YjxWuVSvt7gOBNtiZgiVuFPqbkgM1dE8VXQabUcGtpmiE1CVdzC5J0bqUNsB4lS4kvOc/T8/u2kUJLiZjKe9ke35kTbWwmJiWikBJIMvZHAURnQOifFOt1I35k11E8ozVhjXqoeGkIkkehiLx6UvrJDx7ta+Ag1Rv4Zudbnsc/oQzn2BEH7FsQkrCJDML26FHxBFezRFlvpq0JzR+2BHB075PM9Lt27ftdQZBOf1/KLg9TrLaDsvbMlM4j00bTwIJeTeztMub6VYkt9V+i3hoO0s31PZPoLJubNJzB40DWE0pRSq9x/e4lyTW6551lVCxZRc1uW3yCgODDNApVVTgQ==" NoCertificadoSAT="30001000000400002495" SelloSAT="ISyyvoufX/kVm+Tz/7J75IRsdDWETrPFhwNC13w/q6s2QVZGi9UB8krBBnJp2cx/+ycJYS3sZ5ZfcK7UQ5gpsdjf73/tdnRtc4771kRgfTnlphU2f/RwQdA6/2hD9M0/1hmpPK376RNANnqVouQE8yadnJNfSpK0T8soLN/X0OZ6A61wUJKTg9dWUg2MYiW2FwPCJSJPZNc7a2pGOU5LP36n4X7K/S9SUj9MnSJSto20hQdvnTIJMokMhyNA0R3T8+RDdrl/DeDXLA4iXfV/xIzt0sfL1DjcT/YP92Z3Zs9kqMRiOLKELHF+1UezSYE/FMA4czEIBmBXtDP55DHafQ==" /></cfdi:Complemento></cfdi:Comprobante>

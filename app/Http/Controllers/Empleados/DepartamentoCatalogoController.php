@@ -13,10 +13,17 @@ class DepartamentoCatalogoController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+    public function departamentos(){
+
+        $departamentos = DepartamentoCatalogo::select('id','nombre');
+        return datatables()->of($departamentos)->addIndexColumn()->toJson();
+
+    }
+
     public function index()
     {
-        $departamentos = DepartamentoCatalogo::all();
-        return view('empleados.departamentos', compact('departamentos'));
+        return view('empleados.departamentos');
     }
 
     /**
@@ -37,7 +44,15 @@ class DepartamentoCatalogoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $departamento = DepartamentoCatalogo::UpdateOrCreate(
+            [
+                'id' => $request->id
+            ],
+            [
+                'nombre' => $request->nombre,
+                'activo' => $request->activo
+            ]);
+        return response()->json(['sucess' => 'success']);
     }
 
     /**
@@ -48,7 +63,19 @@ class DepartamentoCatalogoController extends Controller
      */
     public function show($id)
     {
-        //
+        $departamento = DepartamentoCatalogo::find($id);
+
+        if($departamento !== null){
+            return response()->json([
+                'status' => "200",
+                'id' => $departamento->id,
+            ]);
+        }else{
+            return response()->json([
+                'status' => "400",
+                'id' => $id,
+            ]);
+        }
     }
 
     /**
@@ -59,7 +86,8 @@ class DepartamentoCatalogoController extends Controller
      */
     public function edit($id)
     {
-        //
+        $departamento = DepartamentoCatalogo::find($id);
+        return response()->json($departamento);
     }
 
     /**
@@ -82,6 +110,9 @@ class DepartamentoCatalogoController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $departamento = DepartamentoCatalogo::find($id);
+        $departamento->delete();
+
+        return response()->json(['sucess' => true]);
     }
 }

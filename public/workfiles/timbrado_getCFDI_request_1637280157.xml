@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="http://MApeados/">
+  <SOAP-ENV:Body>
+    <ns1:getCFDI>
+      <Usuario>CIM581206CI9</Usuario>
+      <Password>5d75f6b6</Password>
+      <archivoXMLZip/>
+      <Serie/>
+      <IdEquipo>NjM3Y2Q0MzEtODYyMS0zMWZiLWEwODQtNjE4OTVjZWEwMzk0</IdEquipo>
+    </ns1:getCFDI>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
