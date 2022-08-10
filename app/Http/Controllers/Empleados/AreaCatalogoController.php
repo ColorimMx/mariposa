@@ -83,7 +83,6 @@ class AreaCatalogoController extends Controller
      */
     public function edit($id)
     {
-        //
         $area = AreaCatalogo::find($id);
         return response()->json($area);
     }

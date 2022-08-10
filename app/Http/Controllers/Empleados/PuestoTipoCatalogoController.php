@@ -8,6 +8,10 @@ use App\Models\PuestoTipoCatalogo;
 
 class PuestoTipoCatalogoController extends Controller
 {
+    public function puestosTipo(){
+        $puestosTipo = PuestoTipoCatalogo::select('id','nombre');
+        return datatables()->of($puestosTipo)->addIndexColumn()->toJson();
+    }
     /**
      * Display a listing of the resource.
      *
@@ -15,8 +19,8 @@ class PuestoTipoCatalogoController extends Controller
      */
     public function index()
     {
-        $puestostipos = PuestoTipoCatalogo::all();
-        return view('empleados.puestostipos', compact('puestostipos'));
+
+        return view('empleados.puestostipos');
     }
 
     /**
@@ -37,7 +41,15 @@ class PuestoTipoCatalogoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $puestoTipo = PuestoTipoCatalogo::UpdateOrCreate(
+            [
+                'id' => $request->id
+            ],
+            [
+                'nombre' => $request->nombre,
+                'activo' => $request->activo
+            ]);
+        return response()->json(['sucess' => 'success']);
     }
 
     /**
@@ -48,7 +60,19 @@ class PuestoTipoCatalogoController extends Controller
      */
     public function show($id)
     {
-        //
+        $puestoTipo = PuestoTipoCatalogo::find($id);
+
+        if($puestoTipo !== null){
+            return response()->json([
+                'status' => "200",
+                'id' => $puestoTipo->id,
+            ]);
+        }else{
+            return response()->json([
+                'status' => "400",
+                'id' => $id,
+            ]);
+        }
     }
 
     /**
@@ -59,7 +83,8 @@ class PuestoTipoCatalogoController extends Controller
      */
     public function edit($id)
     {
-        //
+        $puestoTipo = PuestoTipoCatalogo::find($id);
+        return response()->json($puestoTipo);
     }
 
     /**
@@ -82,6 +107,9 @@ class PuestoTipoCatalogoController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $puestoTipo = PuestoTipoCatalogo::find($id);
+        $puestoTipo->delete();
+
+        return response()->json(['sucess' => true]);
     }
 }
