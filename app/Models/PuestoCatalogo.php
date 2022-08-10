@@ -13,4 +13,9 @@ class PuestoCatalogo extends Model
     protected $table = "puesto_catalogos";
     protected $dateFormat = 'Y-m-d\TH:i:s.v';
 
+    protected $fillable = [
+        'id', 'nombre', 'activo'
+    ];
+
+
 }

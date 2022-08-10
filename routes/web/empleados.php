@@ -22,6 +22,7 @@ Route::resource('departamentos',DepartamentoCatalogoController::class);
 Route::get('datatable/departamentos',[DepartamentoCatalogoController::class,'departamentos'])->name('datatable.DepartamentoCatalogoController');
 Route::resource('puestosTipo',PuestoTipoCatalogoController::class);
 Route::resource('puestos',PuestoCatalogoController::class);
+Route::get('datatable/puestos',[PuestoCatalogoController::class,'puestos'])->name('datatable.PuestoCatalogoController');
 Route::resource('estadoCivil',EstadoCivilCatalogoController::class);
 Route::resource('nivelEstudios',NivelEstudioCatalogoController::class);
 Route::resource('contratosTipo',ContratoTipoCatalogoController::class);

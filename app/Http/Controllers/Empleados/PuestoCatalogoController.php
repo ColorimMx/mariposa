@@ -6,9 +6,12 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\PuestoCatalogo;
 
-
 class PuestoCatalogoController extends Controller
 {
+    public function puestos(){
+        $puestos = PuestoCatalogo::select('id','nombre');
+        return datatables()->of($puestos)->addIndexColumn()->toJson();
+    }
     /**
      * Display a listing of the resource.
      *
@@ -16,8 +19,7 @@ class PuestoCatalogoController extends Controller
      */
     public function index()
     {
-        $puestos = PuestoCatalogo::all();
-        return view('empleados.puestos', compact('puestos'));
+        return view('empleados.puestos');
     }
 
     /**
@@ -38,7 +40,15 @@ class PuestoCatalogoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $puesto = PuestoCatalogo::UpdateOrCreate(
+          [
+              'id' => $request->id
+          ],
+          [
+              'nombre' => $request->nombre,
+              'activo' => $request->activo
+          ]);
+        return response()->json(['sucess' => 'success']);
     }
 
     /**
@@ -49,7 +59,19 @@ class PuestoCatalogoController extends Controller
      */
     public function show($id)
     {
-        //
+        $puesto = PuestoCatalogo::find($id);
+
+        if($puesto !== null){
+            return response()->json([
+                'status' => "200",
+                'id' => $puesto->id,
+            ]);
+        }else{
+            return response()->json([
+                'status' => "400",
+                'id' => $id,
+            ]);
+        }
     }
 
     /**
@@ -60,7 +82,8 @@ class PuestoCatalogoController extends Controller
      */
     public function edit($id)
     {
-        //
+        $puesto = PuestoCatalogo::find($id);
+        return response()->json($puesto);
     }
 
     /**
@@ -83,6 +106,9 @@ class PuestoCatalogoController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $puesto = PuestoCatalogo::find($id);
+        $puesto->delete();
+
+        return response()->json(['sucess' => true]);
     }
 }
