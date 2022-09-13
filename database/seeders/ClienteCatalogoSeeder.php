@@ -42,13 +42,13 @@ class ClienteCatalogoSeeder extends Seeder
                 'fax' => $cliente->fax,
                 'email_fiscal' => $cliente->email_fiscal,
                 'e_mail' => $cliente->e_mail,
-                //'cuenta_id' => $cliente->cuenta_id,
+                'cuenta_id' => $cliente->cuenta_id,
                 'moneda_id' => $cliente->moneda_id,
                 'dias_credito' => $cliente->dias_credito,
                 'termino_credito' => $cliente->termino_credito,
-                /*'limite_credito' => $cliente->limite_credito,
+                'limite_credito' => $cliente->limite_credito,
                 'saldo' => $cliente->saldo,
-                'reserva' => $cliente->reserva,*/
+                'reserva' => $cliente->reserva,
                 'zona_id' => $cliente->zona_id,
                 //'tipo_id' => $cliente->tipo_id,
                 'giro_id' => $cliente->giro_id,
@@ -56,7 +56,7 @@ class ClienteCatalogoSeeder extends Seeder
                 'sector_id' => $cliente->sector_id,
                 'localizacion_id' => $cliente->localizacion_id,
                 'vendedor_id' => $cliente->vendedor_id,
-                'sat_regimen_fiscal_id' => $cliente->sat_regimen_fiscal_id,
+                //'sat_regimen_fiscal_id' => $cliente->sat_regimen_fiscal_id,
                 'activo' => '1'
             ]);
         }

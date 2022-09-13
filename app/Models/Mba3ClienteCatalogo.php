@@ -26,10 +26,10 @@ class Mba3ClienteCatalogo
                 ." codigo_postal_principal as cp, telefono as telefono, telefono_2 as telefono_2, fax as fax,"
                 ." email_fiscal as email_fiscal, e_mail as e_mail, codigo_cuenta_contable_cliente as cuenta_id,"
                 ." tipo_moneda as moneda_id, terminos_de_pago_dias as dias_credito,"
-                ." terminos_de_pago_alfa_num as termino_credito, limite_credito as limite_credito, balance as saldo,"
-                ." balance_reserv1 as reserva, zona as zona_id, client_type as tipo_id, codigo_giro as giro_id, codigo_categoria as categoria_id,"
+                ." terminos_de_pago_alfa_num as termino_credito, CONVERT(decimal(10, 5),  limite_credito) as limite_credito, CONVERT(decimal(10, 5),  balance) as saldo,"
+                ." CONVERT(decimal(10, 5),  balance_reserv1) as reserva, zona as zona_id, client_type as tipo_id, codigo_giro as giro_id, codigo_categoria as categoria_id,"
                 ." codigo_sector as sector_id, localizacion_cliente as localizacion_id,salesman as vendedor_id, codigo_regimenfiscal as sat_regimen_fiscal_id"
-                ." from     clnt_ficha_principal where empresa = 'CIMSA' and codigo_cliente = 'MEX-0591' and codigo_regimenfiscal <> ''");
+                ." from     clnt_ficha_principal where empresa = 'CIMSA'  and codigo_regimenfiscal <> ''");
 
             $sql->execute();
 

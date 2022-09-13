@@ -53,6 +53,8 @@ class DatabaseSeeder extends Seeder
         $this->call(SatCartaPorteConfigVehicularCatalogoSeeder::class);
         $this->call(SatCartaPorteSubTipoRemCatalogoSeeder::class);
 
+        $this->call(ContabilidadPlanCuentaSeeder::class);
+
         $this->call(PermisoAutotransporteCatalogoSeeder::class);
         $this->call(SeguroAutotransporteCatalogoSeeder::class);
         $this->call(AutotransporteCatalogoSeeder::class);
@@ -62,7 +64,7 @@ class DatabaseSeeder extends Seeder
         $this->call(ClienteTipoCatalogoSeeder::class);
         $this->call(ClienteVendedorCatalogoSeeder::class);
         $this->call(ClienteZonaCatalogoSeeder::class);
-        //$this->call(ClienteCatalogoSeeder::class);
+        $this->call(ClienteCatalogoSeeder::class);
 
         $this->call(AreaCatalogoSeeder::class);
         $this->call(DepartamentoCatalogoSeeder::class);
@@ -85,18 +87,16 @@ class DatabaseSeeder extends Seeder
         $this->call(GuiaDimensionCatalogoSeeder::class);
         $this->call(GuiaItemCatalogoSeeder::class);
 
-        $this->call(ContabilidadPlanCuentaSeeder::class);
-
         $this->call(UnidadMedidaCatalogoSeeder::class);
         $this->call(ProductoGrupoCatalogoSeeder::class);
         //$this->call(ProductoSubgrupoCatalogoSeeder::class);
         $this->call(ProductoMarcaCatalogoSeeder::class);
         $this->call(ProductoModeloCatalogoSeeder::class);
         $this->call(ProductoSubmodeloCatalogoSeeder::class);
-        $this->call(ProductoCatalogoSeeder::class);
+        //$this->call(ProductoCatalogoSeeder::class);
 
-        $this->call(ClienteFacturaSeeder::class);
-        $this->call(ClienteFacturaDetalleSeeder::class);
+       //$this->call(ClienteFacturaSeeder::class);
+        //$this->call(ClienteFacturaDetalleSeeder::class);
 
         //$this->call(CartaPortePrincipalSeeder::class);
         //$this->call(CartaPorteDetalleSeeder::class);
