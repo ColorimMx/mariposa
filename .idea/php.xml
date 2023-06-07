@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="MessDetectorOptionsConfiguration">
+    <option name="transferred" value="true" />
+  </component>
+  <component name="PHPCSFixerOptionsConfiguration">
+    <option name="transferred" value="true" />
+  </component>
+  <component name="PHPCodeSnifferOptionsConfiguration">
+    <option name="highlightLevel" value="WARNING" />
+    <option name="transferred" value="true" />
+  </component>
   <component name="PhpIncludePathManager">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
@@ -128,14 +138,79 @@
       <path value="$PROJECT_DIR$/vendor/phenx/php-font-lib" />
       <path value="$PROJECT_DIR$/vendor/phenx/php-svg-lib" />
       <path value="$PROJECT_DIR$/vendor/yajra/laravel-datatables-oracle" />
+      <path value="$PROJECT_DIR$/public/vendor/jquery-mapael/maps" />
+      <path value="$PROJECT_DIR$/public/vendor/flag-icon-css/flags" />
+      <path value="$PROJECT_DIR$/public/vendor/flag-icon-css/css" />
+      <path value="$PROJECT_DIR$/public/vendor/popper/esm" />
+      <path value="$PROJECT_DIR$/public/vendor/popper/umd" />
+      <path value="$PROJECT_DIR$/public/vendor/adminlte/dist" />
+      <path value="$PROJECT_DIR$/public/vendor/datatables/js" />
+      <path value="$PROJECT_DIR$/public/vendor/datatables/css" />
+      <path value="$PROJECT_DIR$/public/vendor/moment/locale" />
+      <path value="$PROJECT_DIR$/public/vendor/inputmask/bindings" />
+      <path value="$PROJECT_DIR$/public/vendor/inputmask/min" />
+      <path value="$PROJECT_DIR$/public/vendor/inputmask/inputmask" />
+      <path value="$PROJECT_DIR$/public/vendor/fullcalendar-plugins/timegrid" />
+      <path value="$PROJECT_DIR$/public/vendor/fullcalendar-plugins/daygrid" />
+      <path value="$PROJECT_DIR$/public/vendor/fullcalendar-plugins/interaction" />
+      <path value="$PROJECT_DIR$/public/vendor/fullcalendar-plugins/bootstrap" />
+      <path value="$PROJECT_DIR$/public/vendor/ion-rangeslider/less" />
+      <path value="$PROJECT_DIR$/public/vendor/ion-rangeslider/css" />
+      <path value="$PROJECT_DIR$/public/vendor/ion-rangeslider/js" />
+      <path value="$PROJECT_DIR$/public/vendor/bootstrap/js" />
+      <path value="$PROJECT_DIR$/public/vendor/overlayScrollbars/js" />
+      <path value="$PROJECT_DIR$/public/vendor/overlayScrollbars/css" />
+      <path value="$PROJECT_DIR$/public/vendor/pace-progress/themes" />
+      <path value="$PROJECT_DIR$/public/vendor/daterangepicker/website" />
+      <path value="$PROJECT_DIR$/public/vendor/jqvmap/maps" />
+      <path value="$PROJECT_DIR$/public/vendor/fontawesome-free/webfonts" />
+      <path value="$PROJECT_DIR$/public/vendor/datatables-plugins/rowgroup" />
+      <path value="$PROJECT_DIR$/public/vendor/fontawesome-free/css" />
+      <path value="$PROJECT_DIR$/public/vendor/datatables-plugins/jszip" />
+      <path value="$PROJECT_DIR$/public/vendor/jsgrid/i18n" />
+      <path value="$PROJECT_DIR$/public/vendor/datatables-plugins/pdfmake" />
+      <path value="$PROJECT_DIR$/public/vendor/datatables-plugins/fixedheader" />
+      <path value="$PROJECT_DIR$/public/vendor/jquery-ui/images" />
+      <path value="$PROJECT_DIR$/public/vendor/datatables-plugins/fixedcolumns" />
+      <path value="$PROJECT_DIR$/public/vendor/daterangepicker/example" />
+      <path value="$PROJECT_DIR$/public/vendor/datatables-plugins/responsive" />
+      <path value="$PROJECT_DIR$/public/vendor/datatables-plugins/buttons" />
+      <path value="$PROJECT_DIR$/public/vendor/datatables-plugins/rowreorder" />
+      <path value="$PROJECT_DIR$/public/vendor/datatables-plugins/keytable" />
+      <path value="$PROJECT_DIR$/public/vendor/jquery-validation/localization" />
+      <path value="$PROJECT_DIR$/public/vendor/datatables-plugins/colreorder" />
+      <path value="$PROJECT_DIR$/public/vendor/datatables-plugins/autofill" />
+      <path value="$PROJECT_DIR$/public/vendor/datatables-plugins/scroller" />
+      <path value="$PROJECT_DIR$/public/vendor/datatables-plugins/select" />
+      <path value="$PROJECT_DIR$/public/vendor/select2/js" />
+      <path value="$PROJECT_DIR$/public/vendor/select2/css" />
+      <path value="$PROJECT_DIR$/public/vendor/summernote/plugin" />
+      <path value="$PROJECT_DIR$/public/vendor/composer" />
+      <path value="$PROJECT_DIR$/public/vendor/fullcalendar/locales" />
+      <path value="$PROJECT_DIR$/public/vendor/bootstrap-slider/css" />
+      <path value="$PROJECT_DIR$/public/vendor/summernote/lang" />
+      <path value="$PROJECT_DIR$/public/vendor/summernote/font" />
+      <path value="$PROJECT_DIR$/public/vendor/bootstrap-colorpicker/js" />
+      <path value="$PROJECT_DIR$/public/vendor/bootstrap-colorpicker/css" />
+      <path value="$PROJECT_DIR$/public/vendor/tempusdominus-bootstrap-4/js" />
+      <path value="$PROJECT_DIR$/public/vendor/tempusdominus-bootstrap-4/css" />
+      <path value="$PROJECT_DIR$/public/vendor/bootstrap-switch/js" />
+      <path value="$PROJECT_DIR$/public/vendor/bootstrap-switch/css" />
+      <path value="$PROJECT_DIR$/public/vendor/raphael/dev" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.3">
     <option name="suggestChangeDefaultLanguageLevel" value="false" />
   </component>
+  <component name="PhpStanOptionsConfiguration">
+    <option name="transferred" value="true" />
+  </component>
   <component name="PhpUnit">
     <phpunit_settings>
       <PhpUnitSettings configuration_file_path="$PROJECT_DIR$/phpunit.xml" custom_loader_path="$PROJECT_DIR$/vendor/autoload.php" use_configuration_file="true" />
     </phpunit_settings>
+  </component>
+  <component name="PsalmOptionsConfiguration">
+    <option name="transferred" value="true" />
   </component>
 </project>

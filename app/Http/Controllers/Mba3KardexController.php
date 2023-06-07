@@ -1,12 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\Clientes;
-use App\Http\Controllers\Controller;
-Use App\Models\Mba3FacturaPrincipal;
+namespace App\Http\Controllers;
 
+use App\Models\Mba3Kardex;
 use Illuminate\Http\Request;
 
-class TrasladoClienteController extends Controller
+class Mba3KardexController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,11 +14,7 @@ class TrasladoClienteController extends Controller
      */
     public function index()
     {
-        $invoice= new Mba3FacturaPrincipal();
-        $facturas = $invoice->get_facturas();
-
-        return view('clientes.facturas.importar', compact('facturas'));
-
+        //
     }
 
     /**
@@ -46,10 +41,10 @@ class TrasladoClienteController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Models\Mba3Kardex  $mba3Kardex
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Mba3Kardex $mba3Kardex)
     {
         //
     }
@@ -57,10 +52,10 @@ class TrasladoClienteController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Models\Mba3Kardex  $mba3Kardex
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Mba3Kardex $mba3Kardex)
     {
         //
     }
@@ -69,10 +64,10 @@ class TrasladoClienteController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \App\Models\Mba3Kardex  $mba3Kardex
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Mba3Kardex $mba3Kardex)
     {
         //
     }
@@ -80,10 +75,10 @@ class TrasladoClienteController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  \App\Models\Mba3Kardex  $mba3Kardex
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Mba3Kardex $mba3Kardex)
     {
         //
     }

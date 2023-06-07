@@ -9,6 +9,9 @@
       <sourceFolder url="file://$MODULE_DIR$/database/seeders" isTestSource="false" packagePrefix="Database\Seeders\" />
       <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" packagePrefix="Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/public/src/sifei/ws/soap" isTestSource="false" packagePrefix="DHF\Sifei\Ws\Soap\" />
+      <sourceFolder url="file://$MODULE_DIR$/public/src/sifei/ws/soap/cancelacion" isTestSource="false" packagePrefix="DHF\Sifei\Ws\Soap\Cancelacion\" />
+      <sourceFolder url="file://$MODULE_DIR$/public/src/sifei/ws/soap/timbrado" isTestSource="false" packagePrefix="DHF\Sifei\Ws\Soap\Timbrado\" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/webmozart/assert" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/voku/portable-ascii" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/vlucas/phpdotenv" />
@@ -135,6 +138,65 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/phenx/php-font-lib" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/phenx/php-svg-lib" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/yajra/laravel-datatables-oracle" />
+      <excludeFolder url="file://$MODULE_DIR$/public/vendor/adminlte/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/public/vendor/bootstrap-colorpicker/css" />
+      <excludeFolder url="file://$MODULE_DIR$/public/vendor/bootstrap-colorpicker/js" />
+      <excludeFolder url="file://$MODULE_DIR$/public/vendor/bootstrap-slider/css" />
+      <excludeFolder url="file://$MODULE_DIR$/public/vendor/bootstrap-switch/css" />
+      <excludeFolder url="file://$MODULE_DIR$/public/vendor/bootstrap-switch/js" />
+      <excludeFolder url="file://$MODULE_DIR$/public/vendor/bootstrap/js" />
+      <excludeFolder url="file://$MODULE_DIR$/public/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/public/vendor/datatables-plugins/autofill" />
+      <excludeFolder url="file://$MODULE_DIR$/public/vendor/datatables-plugins/buttons" />
+      <excludeFolder url="file://$MODULE_DIR$/public/vendor/datatables-plugins/colreorder" />
+      <excludeFolder url="file://$MODULE_DIR$/public/vendor/datatables-plugins/fixedcolumns" />
+      <excludeFolder url="file://$MODULE_DIR$/public/vendor/datatables-plugins/fixedheader" />
+      <excludeFolder url="file://$MODULE_DIR$/public/vendor/datatables-plugins/jszip" />
+      <excludeFolder url="file://$MODULE_DIR$/public/vendor/datatables-plugins/keytable" />
+      <excludeFolder url="file://$MODULE_DIR$/public/vendor/datatables-plugins/pdfmake" />
+      <excludeFolder url="file://$MODULE_DIR$/public/vendor/datatables-plugins/responsive" />
+      <excludeFolder url="file://$MODULE_DIR$/public/vendor/datatables-plugins/rowgroup" />
+      <excludeFolder url="file://$MODULE_DIR$/public/vendor/datatables-plugins/rowreorder" />
+      <excludeFolder url="file://$MODULE_DIR$/public/vendor/datatables-plugins/scroller" />
+      <excludeFolder url="file://$MODULE_DIR$/public/vendor/datatables-plugins/select" />
+      <excludeFolder url="file://$MODULE_DIR$/public/vendor/datatables/css" />
+      <excludeFolder url="file://$MODULE_DIR$/public/vendor/datatables/js" />
+      <excludeFolder url="file://$MODULE_DIR$/public/vendor/daterangepicker/example" />
+      <excludeFolder url="file://$MODULE_DIR$/public/vendor/daterangepicker/website" />
+      <excludeFolder url="file://$MODULE_DIR$/public/vendor/flag-icon-css/css" />
+      <excludeFolder url="file://$MODULE_DIR$/public/vendor/flag-icon-css/flags" />
+      <excludeFolder url="file://$MODULE_DIR$/public/vendor/fontawesome-free/css" />
+      <excludeFolder url="file://$MODULE_DIR$/public/vendor/fontawesome-free/webfonts" />
+      <excludeFolder url="file://$MODULE_DIR$/public/vendor/fullcalendar-plugins/bootstrap" />
+      <excludeFolder url="file://$MODULE_DIR$/public/vendor/fullcalendar-plugins/daygrid" />
+      <excludeFolder url="file://$MODULE_DIR$/public/vendor/fullcalendar-plugins/interaction" />
+      <excludeFolder url="file://$MODULE_DIR$/public/vendor/fullcalendar-plugins/timegrid" />
+      <excludeFolder url="file://$MODULE_DIR$/public/vendor/fullcalendar/locales" />
+      <excludeFolder url="file://$MODULE_DIR$/public/vendor/inputmask/bindings" />
+      <excludeFolder url="file://$MODULE_DIR$/public/vendor/inputmask/inputmask" />
+      <excludeFolder url="file://$MODULE_DIR$/public/vendor/inputmask/min" />
+      <excludeFolder url="file://$MODULE_DIR$/public/vendor/ion-rangeslider/css" />
+      <excludeFolder url="file://$MODULE_DIR$/public/vendor/ion-rangeslider/js" />
+      <excludeFolder url="file://$MODULE_DIR$/public/vendor/ion-rangeslider/less" />
+      <excludeFolder url="file://$MODULE_DIR$/public/vendor/jquery-mapael/maps" />
+      <excludeFolder url="file://$MODULE_DIR$/public/vendor/jquery-ui/images" />
+      <excludeFolder url="file://$MODULE_DIR$/public/vendor/jquery-validation/localization" />
+      <excludeFolder url="file://$MODULE_DIR$/public/vendor/jqvmap/maps" />
+      <excludeFolder url="file://$MODULE_DIR$/public/vendor/jsgrid/i18n" />
+      <excludeFolder url="file://$MODULE_DIR$/public/vendor/moment/locale" />
+      <excludeFolder url="file://$MODULE_DIR$/public/vendor/overlayScrollbars/css" />
+      <excludeFolder url="file://$MODULE_DIR$/public/vendor/overlayScrollbars/js" />
+      <excludeFolder url="file://$MODULE_DIR$/public/vendor/pace-progress/themes" />
+      <excludeFolder url="file://$MODULE_DIR$/public/vendor/popper/esm" />
+      <excludeFolder url="file://$MODULE_DIR$/public/vendor/popper/umd" />
+      <excludeFolder url="file://$MODULE_DIR$/public/vendor/raphael/dev" />
+      <excludeFolder url="file://$MODULE_DIR$/public/vendor/select2/css" />
+      <excludeFolder url="file://$MODULE_DIR$/public/vendor/select2/js" />
+      <excludeFolder url="file://$MODULE_DIR$/public/vendor/summernote/font" />
+      <excludeFolder url="file://$MODULE_DIR$/public/vendor/summernote/lang" />
+      <excludeFolder url="file://$MODULE_DIR$/public/vendor/summernote/plugin" />
+      <excludeFolder url="file://$MODULE_DIR$/public/vendor/tempusdominus-bootstrap-4/css" />
+      <excludeFolder url="file://$MODULE_DIR$/public/vendor/tempusdominus-bootstrap-4/js" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

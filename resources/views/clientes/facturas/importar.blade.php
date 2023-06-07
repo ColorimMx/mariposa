@@ -45,7 +45,7 @@
                                                     <select id="transferencia" name="transferencia"  class="custom-select" required>
                                                         <option value="">Seleccione la Factura Para Traslado</option>
                                                         @foreach($facturas as $factura)
-                                                            <option value="{{$factura->ID_FACTURA}}"> {{$factura->ID_FACTURA}} </option>
+                                                            <option value="{{$factura->id}}"> {{$factura->id}} </option>
                                                         @endforeach
                                                     </select>
                                                 </div>
