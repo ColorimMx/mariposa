@@ -89,6 +89,8 @@ return [
             'charset' => 'utf8',
             'prefix' => '',
             'prefix_indexes' => true,
+            'encrypt' => 'yes',
+            'trust_server_certificate' => 'true',
         ],
     ],
 
