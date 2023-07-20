@@ -8,15 +8,13 @@ use App\Models\MenuCatalogo;
 
 class MenuCatalogoController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+    public function menus(){
+        $menus = MenuCatalogo::select('id','descripcion');
+        return datatables()->of($menus)->addIndexColumn()->toJson();
+    }
     public function index()
     {
-        $Menus = MenuCatalogo::all();
-        return view('layouts.menu',compact('Menus'));
+        return view('layouts.menu');
     }
 
     /**
@@ -37,7 +35,15 @@ class MenuCatalogoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $menu = MenuCatalogo::UpdateOrCreate(
+            [
+                'id' => $request->id
+            ],
+            [
+                'descripcion' => $request->descripcion,
+                'activo' => $request->activo
+            ]);
+        return response()->json(['sucess' => 'success']);
     }
 
     /**
@@ -48,7 +54,19 @@ class MenuCatalogoController extends Controller
      */
     public function show($id)
     {
-        //
+        $menu = MenuCatalogo::find($id);
+
+        if($menu !== null){
+            return response()->json([
+                'status' => "200",
+                'id' => $menu->id,
+            ]);
+        }else{
+            return response()->json([
+                'status' => "400",
+                'id' => $id,
+            ]);
+        }
     }
 
     /**
@@ -59,7 +77,8 @@ class MenuCatalogoController extends Controller
      */
     public function edit($id)
     {
-        //
+        $menu = MenuCatalogo::find($id);
+        return response()->json($menu);
     }
 
     /**
@@ -82,6 +101,9 @@ class MenuCatalogoController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $menu = MenuCatalogo::find($id);
+        $menu->delete();
+
+        return response()->json(['sucess' => true]);
     }
 }

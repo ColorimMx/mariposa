@@ -47,16 +47,8 @@ class RouteServiceProvider extends ServiceProvider
                 ->namespace($this->namespace)
                 //->group(base_path('routes/web.php'));
                 ->group(function () {
-                    require base_path('routes/web/proveedores.php');
-                    require base_path('routes/web/inventario.php');
-                    require base_path('routes/web/bancos.php');
-                    require base_path('routes/web/clientes.php');
-                    require base_path('routes/web/activofijo.php');
-                    require base_path('routes/web/contabilidad.php');
-                    require base_path('routes/web/empleados.php');
-                    require base_path('routes/web/sat.php');
-                    require base_path('routes/web/administracion.php');
                     require base_path('routes/web.php');
+                    require base_path('routes/web/administracion.php');
                 });
                 });
 

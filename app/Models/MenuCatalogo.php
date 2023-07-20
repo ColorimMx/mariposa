@@ -11,13 +11,12 @@ class MenuCatalogo extends Model
 
     protected $table = "menu_catalogos";
     protected $dateFormat = 'Y-m-d\TH:i:s.v';
+    protected $fillable = [
+        'id', 'descripcion', 'activo'
+    ];
 
     public function submenus(){
         return $this->hasMany('App\Models\SubMenuCatalogo', 'menu_id');
     }
 
-    public static function index(){
-        $Menus = MenuCatalogo::all();
-        return view('layouts.menu',compact('Menus'));
-    }
 }

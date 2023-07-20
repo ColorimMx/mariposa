@@ -13,13 +13,12 @@ use App\Http\Controllers\Administracion\DemografiaPaisCatalogoController;
 use App\Http\Controllers\Administracion\DemografiaEstadoCatalogoController;
 use App\Http\Controllers\Administracion\DemografiaCiudadCatalogoController;
 
-Route::resource('menuPrincipal',MenuCatalogoController::class);
+//Route::resource('menuPrincipal',menuPrincipal::class);
 Route::resource('subMenu',SubMenuCatalogoController::class);
 Route::resource('itemSubmenu',SubItemMenuCatalogoController::class);
-Route::resource('empresas',EmpresaCatalogoController::class);
-Route::resource('sucursales',EmpresaSucursalCatalogoController::class);
-Route::resource('almacenes',EmpresaAlmacenCatalogoController::class);
-Route::resource('monedas',MonedaCatalogoController::class);
-Route::resource('paises',DemografiaPaisCatalogoController::class);
-Route::resource('estados',DemografiaEstadoCatalogoController::class);
-Route::resource('ciudades',DemografiaCiudadCatalogoController::class);
+
+Route::resource('menus',MenuCatalogoController::class);
+Route::get('datatable/menus',[MenuCatalogoController::class,'menus'])->name('datatable.MenuCatalogoController');
+
+
+
